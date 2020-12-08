@@ -74,7 +74,7 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'press'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -176,4 +176,4 @@ html_theme_options = {
     'logo_only': True,
     # ...
 }
-html_logo = "C:\docbook\jp_support\images\\forcs.png"
+html_logo = "C:\docbook\eformsignjp.github.io\images\\forcs.png"
