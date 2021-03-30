@@ -8,7 +8,7 @@ eformsign オンラインサポート
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+
 
    help/chapter1
    help/chapter2
