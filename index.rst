@@ -18,6 +18,7 @@ eformsign オンラインサポート
    help/chapter6
    help/chapter7
    help/chapter8
-   help/chapter9   
+   help/chapter9
+   help/chapter10      
 
 
