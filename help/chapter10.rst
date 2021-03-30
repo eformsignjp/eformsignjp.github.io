@@ -77,7 +77,7 @@ eformsign は、完了文書を外部のクラウドストレージサービス�
 
    .. figure:: resources/analytic_5.png
       :alt: データの連動管理の画面
-      :width: 600px
+      :width: 700px
 
    .. figure:: resources/analytic_6.png
       :alt: データの連動管理の画面
