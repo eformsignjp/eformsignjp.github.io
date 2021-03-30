@@ -14,6 +14,7 @@ Web フォームデザイナーの概要
 
 .. note::
 
+
    Microsoft Office アドイン（Add-in）機能（OZ in Office フォームビルダー）も用意されており、Microsoft Office から電子文書を直接生成することもできます。フォームビルダーについては、`フォームビルダーの紹介 <chapter5.html#formbuilder>`__ を参考に、Microsoft Office にフォームビルダーをインストールしてから使用してください。
 
 -  **マイファイルで作成する** メニューで PDF ファイルをアップロードする
