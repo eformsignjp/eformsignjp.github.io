@@ -14,7 +14,7 @@ Web フォームデザイナーの概要
 
 .. note::
 
-   Microsoft Office アドイン（Add-in）機能（OZ in Office フォームビルダー）も用意されており、Microsoft Office から電子文書を直接生成することもできます。フォームビルダーについては、 `フォームビルダーの紹介 <chapter5.html#formbuilder>`__ を参考に、Microsoft Office にフォームビルダーをインストールしてから使用してください。
+   Microsoft Office アドイン（Add-in）機能（OZ in Office フォームビルダー）も用意されており、Microsoft Office から電子文書を直接生成することもできます。フォームビルダーについては、`フォームビルダーの紹介 <chapter5.html#formbuilder>`__ を参考に、Microsoft Office にフォームビルダーをインストールしてから使用してください。
 
 -  **マイファイルで作成する** メニューで PDF ファイルをアップロードする
 
@@ -660,7 +660,7 @@ ON や OFF など、特定の状態を示すために使用します。\ **ト�
 
 -  **文書 ID：**\ システムがすべての文書に付与する文書固有の ID で、32 桁の英数字の組み合わせで表示されます。例）0077af27a98846c8872f5333920679b7
 
--  **文書番号：** **テンプレートの設定 > 全般**\ で設定した文書番号です。文書番号の設定については、\ `文書番号の自動生成 <chapter6.html#docnumber_wd>`__\ をご参照ください。
+-  **文書番号：** **テンプレートの設定 > 全般**\ で設定した文書番号です。文書番号の設定については、\`文書番号の自動生成 <chapter6.html#docnumber_wd>`__\ をご参照ください。
 
    .. note::
 
@@ -703,7 +703,7 @@ ON や OFF など、特定の状態を示すために使用します。\ **ト�
 
 .. note::
 
-   テンプレートの詳細な説明については、\ `Web フォームデザイナー <chapter6.html#template_wd>`__\ をご参照ください。
+   テンプレートの詳細な説明については、\`Web フォームデザイナー <chapter6.html#template_wd>`__\ をご参照ください。
 
 .. |image1| image:: resources/myfile_create_document.png
    :width: 700px
