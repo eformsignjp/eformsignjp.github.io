@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>外部サービスを連動する方法</title>
+      <title>カスタマイズ</title>
     
       <link rel="stylesheet" href="../_static/pygments.css">
       <link rel="stylesheet" href="../_static/theme.css">
@@ -12,11 +12,10 @@
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
 
       <!-- sphinx script_files -->
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
 
       
       <script src="../_static/theme-vendors.js"></script>
@@ -24,7 +23,8 @@
     
   <link rel="index" title="索引" href="../genindex.html" />
   <link rel="search" title="検索" href="../search.html" />
-  <link rel="prev" title="カスタマイズ" href="chapter8.html" /> 
+  <link rel="next" title="外部サービスとの連動" href="chapter10.html" />
+  <link rel="prev" title="文書トレイ" href="chapter8.html" /> 
   </head>
 
   <body>
@@ -70,7 +70,7 @@
   
     <div class="sidebar-group">
       <p class="caption">
-        <span class="caption-text"><a href="../index.html#eformsign">Contents:</a></span>
+        <span class="caption-text"><a href="../index.html#eformsign">eformsign オンラインサポート</a></span>
       </p>
       <ul class="current">
         
@@ -86,52 +86,58 @@
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter3.html" class="reference internal ">Web フォームデザイナーの紹介</a>
+          <li class="toctree-l1 "><a href="chapter3.html" class="reference internal ">文書の新規作成</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">フォームビルダーの紹介</a>
+          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">Web フォームデザイナーの紹介</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter5.html" class="reference internal ">テンプレート：Web フォームデザイナー</a>
+          <li class="toctree-l1 "><a href="chapter5.html" class="reference internal ">フォームビルダーの紹介</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">テンプレート：フォームビルダー</a>
+          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">テンプレートの作成：Web フォームデザイナー</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">文書トレイ</a>
+          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">テンプレートの作成：フォームビルダー</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter8.html" class="reference internal ">カスタマイズ</a>
+          <li class="toctree-l1 "><a href="chapter8.html" class="reference internal ">文書トレイ</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 current"><a href="#" class="reference internal current">外部サービスを連動する方法</a>
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">カスタマイズ</a>
 
             
               <ul>
                 
-                  <li class="toctree-l2"><a href="#id2" class="reference internal">クラウドストレージの連動方法</a></li>
+                  <li class="toctree-l2"><a href="#id2" class="reference internal">カスタムフィールドの管理</a></li>
                 
-                  <li class="toctree-l2"><a href="#id3" class="reference internal">分析およびレポート</a></li>
+                  <li class="toctree-l2"><a href="#id3" class="reference internal">通知テンプレートの管理</a></li>
                 
               </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter10.html" class="reference internal ">外部サービスとの連動</a>
+
             
           </li>
 
@@ -148,14 +154,18 @@
   <ul class="breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
     
-    <li>外部サービスを連動する方法</li>
+    <li>カスタマイズ</li>
   </ul>
   
 
   <ul class="page-nav">
   <li class="prev">
     <a href="chapter8.html"
-       title="前の章へ">← カスタマイズ</a>
+       title="前の章へ">← 文書トレイ</a>
+  </li>
+  <li class="next">
+    <a href="chapter10.html"
+       title="次の章へ">外部サービスとの連動 →</a>
   </li>
 </ul>
   
@@ -164,113 +174,103 @@
           <div class="content" role="main">
             
   <div class="section" id="id1">
-<h1>外部サービスを連動する方法<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>カスタマイズ<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <div class="section" id="id2">
-<h2>クラウドストレージの連動方法<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>eformsign
-は、完了文書を外部のクラウドストレージサービスに自動で保存するように設定できます。現在、Dropbox、Google
-Drive、OneDrive、box に対応しています。</p>
-<div class="admonition note">
-<p class="first admonition-title">注釈</p>
-<p class="last">外部のクラウドストレージへの連動は代表管理者のみ設定できます。</p>
+<h2>カスタムフィールドの管理<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><strong>会社管理 &gt; カスタムフィールド管理</strong> では、会社、グループ、およびメンバーのフィールドを追加および編集できます。</p>
+<div class="admonition tip">
+<p class="admonition-title">ちなみに</p>
+<p>文書で頻繁に使用する、会社、グループ、メンバーなどの情報（会社の代表電話番号、住所、代表者名など）をカスタムフィールドに追加した後、<strong>テンプレートの設定 &gt; フィールドの設定</strong> に移動し、必要な情報が自動的に入力されるように設定できます。</p>
 </div>
-<p>1.メニューの <strong>コネクト &gt; クラウドストレージ</strong> に移動します。</p>
-<div class="figure" id="id4">
-<a class="reference internal image-reference" href="../_images/connect_1.png"><img alt="クラウドストレージの画面" src="../_images/connect_1.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">クラウドストレージの画面</span></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/Customfield.PNG"><img alt="会社管理 &gt; カスタムフィールド管理" src="../_images/Customfield.PNG" style="width: 700px;" /></a>
 </div>
-<p>2.完了文書を保存するクラウドストレージを選択した後、 <strong>アカウント接続</strong>
-ボタンをクリックしてログインします。</p>
-<p>3.ログインすると、 <strong>接続解除</strong>と <strong>保存パスの設定</strong>
-ボタンが表示されます。必要に応じて <strong>保存パスの設定</strong>
-ボタンをクリックして、保存パスを設定します。</p>
-<div class="figure" id="id5">
-<a class="reference internal image-reference" href="../_images/connect_2.png"><img alt="クラウドストレージのアカウント接続と接続解除" src="../_images/connect_2.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">クラウドストレージのアカウント接続と接続解除</span></p>
+<dl class="simple">
+<dt>① カスタムフィールド管理 &gt; 会社</dt><dd><p>会社の代表管理者、代表管理者の電話番号、法人の印鑑など、会社に関連するフィールドを追加し、値を設定できます。</p>
+</dd>
+<dt>② カスタムフィールド管理 &gt; グループ</dt><dd><p>部署名や責任者など、グループに関連するフィールドを追加し、値を設定できます。</p>
+</dd>
+<dt>③ カスタムフィールド管理 &gt; メンバー</dt><dd><p>役職、メールアドレス、電話番号など、メンバーに関連するフィールドを追加し、値を設定できます。</p>
+</dd>
+<dt>④ フィールドの追加</dt><dd><p>新しいフィールドを追加します。<strong>フィールドの追加</strong> ボタンをクリックすると、ポップアップウィンドウが表示され、カスタムフィールドを追加できます。<strong>フィールド名</strong> と <strong>フィールドタイプ</strong>（テキスト/イメージ）、<strong>フィールド値</strong> をクリックして、<strong>OK</strong> ボタンをクリックすると、フィールドがリストに追加されます。</p>
+</dd>
+</dl>
+<div class="figure align-default">
+<img alt="会社管理 &gt; カスタムフィールド管理" src="../_images/customfield-addfield.PNG" />
 </div>
-<div class="admonition note">
-<p class="first admonition-title">注釈</p>
-<p>保存パスの設定ポップアップは、次の通りです。</p>
-<p>デフォルトのパスは、eformsign
-のサブフォルダーとして会社名が入ります。<strong>新しいフォルダー</strong>
-ボタンをクリックして、新しいフォルダーを作成し、保存パスを変更することもできます。</p>
-<p class="last"><a class="reference internal" href="../_images/connect_3.png"><img alt="image1" src="../_images/connect_3.png" style="width: 450px;" /></a></p>
+<dl>
+<dt>⑤ フィールドリスト</dt><dd><p>フィールドのリストにフィールド名とフィールド値を表示し、フィールド値を削除および編集できます。</p>
+<p>フィールドを削除するには、フィールドリストの左側にあるアイコン (<img alt="会社管理 &gt; カスタムフィールド管理" src="../_images/customfield-list-delete.png" />）をクリックします。</p>
+</dd>
+<dt>⑥ フィールドの編集</dt><dd><p>変更したいフィールドを選択し、修正アイコンをクリックすると、カスタムフィールドの修正ポップアップウィンドウが表示され、フィールド名、タイプ、値などを変更できます。</p>
+<p>フィールドの順序は、順序を変更したいフィールドを選択した後、矢印 (<img alt="image1" src="../_images/customfield-list-order.PNG" />) をクリックして順序を調整できます。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/customfield-edit.PNG"><img alt="会社管理 &gt; カスタムフィールド管理" src="../_images/customfield-edit.PNG" style="width: 700px;" /></a>
 </div>
-<p>4.テンプレート管理メニューに移動します。</p>
-<p>5.クラウドストレージに保存したい文書のテンプレートをクリックし、
-<strong>テンプレートの設定</strong> メニューに移動します。</p>
-<p>6.<strong>ワークフローの設定</strong> メニューに移動します。</p>
-<div class="figure" id="id6">
-<a class="reference internal image-reference" href="../_images/connect_4.png"><img alt="ワークフロー設定時の完了ステップの設定" src="../_images/connect_4.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">ワークフロー設定時の完了ステップの設定</span></p>
-</div>
-<p>7.<strong>完了</strong> ステップの属性タブで
-<strong>別のクラウドストレージに完了文書を保存する</strong>
-にチェックを入れます。上記のクラウドストレージメニューで設定したクラウドストレージが接続されていることが確認でき、文書が完了すれば、eformsign
-に加えて連動中の外部のクラウドストレージにも自動的に保存されます。</p>
-<div class="figure" id="id7">
-<a class="reference internal image-reference" href="../_images/connect_5.png"><img alt="別のクラウドストレージに完了文書を保存するのチェックボックス" src="../_images/connect_5.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">別のクラウドストレージに完了文書を保存するのチェックボックス</span></p>
-</div>
+</dd>
+<dt>⑦ 保存</dt><dd><p>カスタムフィールドの編集が終了すれば、 <strong>保存</strong> ボタンをクリックして、変更内容を保存します。</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="id3">
-<h2>分析およびレポート<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>分析およびレポート 新しい文書を追加するたびに CSV
-ファイルをダウンロードするのが面倒な場合は、この機能の使用を推奨します。入力データが、Google
-スプレッドシートやOffice 365 の Excel
-文書に自動的に保存されるように設定することができます。</p>
-<div class="admonition note">
-<p class="first admonition-title">注釈</p>
-<p class="last"><strong>分析およびレポート</strong>は <strong>代表管理者</strong> のみ設定できます。</p>
+<h2>通知テンプレートの管理<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>文書の依頼時に送信されるメールと SMS のテンプレートは、会社に合わせてカスタマイズできます。</p>
+<p>通知テンプレートを変更するには、 <strong>会社管理 &gt; 通知テンプレート管理</strong> で設定するか、または <strong>テンプレート管理 &gt; テンプレートの設定 &gt; 通知の設定</strong> で行えます。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/notification-template-manage.png"><img alt="会社管理 &gt; 通知テンプレート管理" src="../_images/notification-template-manage.png" style="width: 700px;" /></a>
 </div>
-<div class="figure" id="id8">
-<a class="reference internal image-reference" href="../_images/analytic_1.png"><img alt="分析およびレポートの画面" src="../_images/analytic_1.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">分析およびレポートの画面</span></p>
+<p><strong>会社管理 &gt; 通知テンプレート管理</strong> には、基本的なメールとSMS テンプレートがあり、基本的なテンプレートの内容などを変更したり、新しい通知テンプレートを追加したりできます。</p>
+<p><strong>基本的なテンプレートの種類（メール/SMS）</strong></p>
+<table class="docutils align-default" id="id6">
+<caption><span class="caption-text">テンプレートのタイプと状態</span><a class="headerlink" href="#id6" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>タイプ</p></th>
+<th class="head"><p>状態</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>依頼メッセージ</p></td>
+<td><p>決裁依頼
+時/内部者に処理を依頼時/部外者の処理依頼時/決裁
+返戻時/文書無効化の依頼/文書無効化の依頼の拒否</p></td>
+</tr>
+<tr class="row-odd"><td><p>文書状
+態の通知メッセージ</p></td>
+<td><p>決裁依頼時/内部者が承認時/返戻依頼の承認/外部者
+の文書の最終完了時/文書の最終完了時/文書の修正
+/文書の無効化/文書移管完了/文書の最終完了（PDF
+として送信）</p></td>
+</tr>
+<tr class="row-even"><td><p>メンバー</p></td>
+<td><p>メンバー招待/メン
+バー招待承諾/メンバー招待拒否/メンバー会社脱退</p></td>
+</tr>
+<tr class="row-odd"><td><p>ヘッダー/フッター</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">ちなみに</p>
+<p>デフォルトのヘッダーは eformsign のロゴです。<a href="#id4"><span class="problematic" id="id5">**</span></a>会社管理 &gt; 会社情報 &gt;** <a class="reference external" href="chapter2.html#brand">ブランド</a> で会社のロゴを登録すれば、メールテンプレートに会社のロゴが適用されます。</p>
 </div>
-<p>1.メニューの <strong>コネクト &gt; 分析およびレポート</strong> に移動します。</p>
-<p>2.Google スプレッドシートまたは Office 365
-のうち、連動したいサービスを選択し、 <strong>アカウント接続</strong>
-ボタンをクリックしてログインします。</p>
-<div class="figure" id="id9">
-<a class="reference internal image-reference" href="../_images/analytic_2.png"><img alt="分析およびレポートの画面" src="../_images/analytic_2.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">分析およびレポートの画面</span></p>
-</div>
-<p>3.<strong>データの連動管理</strong> ボタンをクリックします。</p>
-<div class="figure" id="id10">
-<a class="reference internal image-reference" href="../_images/analytic_3.png"><img alt="データの連動管理の画面" src="../_images/analytic_3.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">データの連動管理の画面</span></p>
-</div>
-<p>4.中央または右上にある <strong>データ連動の追加</strong> ボタンをクリックします。</p>
-<div class="figure" id="id11">
-<a class="reference internal image-reference" href="../_images/analytic_4.png"><img alt="データの連動管理の画面" src="../_images/analytic_4.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">データの連動管理の画面</span></p>
-</div>
-<p>5.接続名、データ連動シート、データ送信時点、テンプレートを設定し
-<strong>保存</strong> ボタンをクリックします。</p>
-<div class="figure" id="id12">
-<a class="reference internal image-reference" href="../_images/analytic_5.png"><img alt="データの連動管理の画面" src="../_images/analytic_5.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-text">データの連動管理の画面</span></p>
-</div>
-<div class="figure" id="id13">
-<a class="reference internal image-reference" href="../_images/analytic_6.png"><img alt="データの連動管理の画面" src="../_images/analytic_6.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">データの連動管理の画面</span></p>
-</div>
-<div class="admonition note">
-<p class="first admonition-title">注釈</p>
-<p class="last">データ連動シートについては、Google シートにたとえば、そのシートの URL
-を意味します。</p>
-</div>
-<p>6.<strong>データの連動管理</strong>
-画面に、データが連動されるシートが表示されます。</p>
-<div class="figure" id="id14">
-<a class="reference internal image-reference" href="../_images/analytic_7.png"><img alt="データの連動管理の画面" src="../_images/analytic_7.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">データの連動管理の画面</span></p>
-</div>
-<p>7.連動されたシートに移動すると、データをインポートするカラム（フィールド）が表示されていることが確認できます。</p>
-<div class="figure" id="id15">
-<a class="reference internal image-reference" href="../_images/analytic_8.png"><img alt="データの連動管理の画面" src="../_images/analytic_8.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">データの連動管理の画面</span></p>
-</div>
+<p><strong>新しい通知テンプレートを追加する方法</strong></p>
+<p>既存の登録済みメール/SMS テンプレートに加えて、新しい通知テンプレートを追加できます。</p>
+<ol class="arabic">
+<li><p>サイドバーのメニューで <strong>会社管理 &gt; 通知テンプレート管理</strong> をクリックします。</p></li>
+<li><p><strong>通知テンプレートの管理</strong> 画面の右上にある <strong>通知テンプレートの追加</strong> ボタンをクリックします。</p></li>
+<li><p>目的の <strong>タイプ</strong> を選択し、 <strong>状態</strong> を選択します。<strong>（テーブルテンプレートのタイプと状態を参照）</strong></p>
+<p><a class="reference internal" href="../_images/notification-template-new.PNG"><img alt="image2" src="../_images/notification-template-new.PNG" style="width: 700px;" /></a></p>
+</li>
+<li><p><strong>チャンネル</strong>（メールまたはSMS）を選択し、<strong>通知テンプレートの名前</strong> を入力します。</p></li>
+<li><p><strong>ヘッター</strong> と <strong>フッター</strong> を選択します。</p></li>
+<li><p>内容を作成します。</p></li>
+<li><p><strong>保存</strong> ボタンをクリックして、テンプレートとして追加します。</p></li>
+</ol>
 </div>
 </div>
 
@@ -280,12 +280,16 @@ Drive、OneDrive、box に対応しています。</p>
             <div class="inner"><ul class="page-nav">
   <li class="prev">
     <a href="chapter8.html"
-       title="前の章へ">← カスタマイズ</a>
+       title="前の章へ">← 文書トレイ</a>
+  </li>
+  <li class="next">
+    <a href="chapter10.html"
+       title="次の章へ">外部サービスとの連動 →</a>
   </li>
 </ul><div class="footer" role="contentinfo">
-      &#169; Copyright 2020, FORCS CO., LTD. All rights reserved..
+      &#169; Copyright 2021, FORCS CO., LTD. All rights reserved..
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
 </div>
             </div>
           </div>

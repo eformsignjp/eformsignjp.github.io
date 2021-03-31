@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>カスタマイズ</title>
+      <title>文書トレイ</title>
     
       <link rel="stylesheet" href="../_static/pygments.css">
       <link rel="stylesheet" href="../_static/theme.css">
@@ -12,11 +12,10 @@
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
 
       <!-- sphinx script_files -->
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
 
       
       <script src="../_static/theme-vendors.js"></script>
@@ -24,8 +23,8 @@
     
   <link rel="index" title="索引" href="../genindex.html" />
   <link rel="search" title="検索" href="../search.html" />
-  <link rel="next" title="外部サービスを連動する方法" href="chapter9.html" />
-  <link rel="prev" title="文書トレイ" href="chapter7.html" /> 
+  <link rel="next" title="カスタマイズ" href="chapter9.html" />
+  <link rel="prev" title="テンプレートの作成：フォームビルダー" href="chapter7.html" /> 
   </head>
 
   <body>
@@ -71,7 +70,7 @@
   
     <div class="sidebar-group">
       <p class="caption">
-        <span class="caption-text"><a href="../index.html#eformsign">Contents:</a></span>
+        <span class="caption-text"><a href="../index.html#eformsign">eformsign オンラインサポート</a></span>
       </p>
       <ul class="current">
         
@@ -87,51 +86,57 @@
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter3.html" class="reference internal ">Web フォームデザイナーの紹介</a>
+          <li class="toctree-l1 "><a href="chapter3.html" class="reference internal ">文書の新規作成</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">フォームビルダーの紹介</a>
+          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">Web フォームデザイナーの紹介</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter5.html" class="reference internal ">テンプレート：Web フォームデザイナー</a>
+          <li class="toctree-l1 "><a href="chapter5.html" class="reference internal ">フォームビルダーの紹介</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">テンプレート：フォームビルダー</a>
+          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">テンプレートの作成：Web フォームデザイナー</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">文書トレイ</a>
+          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">テンプレートの作成：フォームビルダー</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 current"><a href="#" class="reference internal current">カスタマイズ</a>
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">文書トレイ</a>
 
             
               <ul>
                 
-                  <li class="toctree-l2"><a href="#id2" class="reference internal">カスタムフィールド管理</a></li>
+                  <li class="toctree-l2"><a href="#id2" class="reference internal">文書トレイ</a></li>
                 
-                  <li class="toctree-l2"><a href="#id3" class="reference internal">通知テンプレートの管理</a></li>
+                  <li class="toctree-l2"><a href="#drafts" class="reference internal">下書きとして保存</a></li>
                 
               </ul>
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">外部サービスを連動する方法</a>
+          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">カスタマイズ</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter10.html" class="reference internal ">外部サービスとの連動</a>
 
             
           </li>
@@ -149,18 +154,18 @@
   <ul class="breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
     
-    <li>カスタマイズ</li>
+    <li>文書トレイ</li>
   </ul>
   
 
   <ul class="page-nav">
   <li class="prev">
     <a href="chapter7.html"
-       title="前の章へ">← 文書トレイ</a>
+       title="前の章へ">← テンプレートの作成：フォームビルダー</a>
   </li>
   <li class="next">
     <a href="chapter9.html"
-       title="次の章へ">外部サービスを連動する方法 →</a>
+       title="次の章へ">カスタマイズ →</a>
   </li>
 </ul>
   
@@ -169,134 +174,324 @@
           <div class="content" role="main">
             
   <div class="section" id="id1">
-<h1>カスタマイズ<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1>文書トレイ<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <div class="section" id="id2">
-<h2>カスタムフィールド管理<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p><strong>会社管理</strong> <strong>&gt;</strong> <strong>カスタムフィールド管理</strong>
-では、会社、グループ、およびメンバーのフィールドを追加および編集できます。</p>
-<div class="admonition tip">
-<p class="first admonition-title">ちなみに</p>
-<p class="last">文書で頻繁に使用する、会社、グループ、メンバーなどの情報（会社の代表電話番号、住所、代表者名など）をカスタムフィールドに追加した後、
-<strong>テンプレートの設定 &gt; フィールドの設定</strong>
-に移動し、必要な情報が自動的に入力されるように設定できます。</p>
+<h2>文書トレイ<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>作成した文書は、状態によって、次の 3 つの文書トレイにそれぞれ保存されます。</p>
+<p>文書トレイ内の各文書の状態と履歴を簡単に表示したり、文書を管理したりすることができるほか、フィルターや検索機能を使用して文書を検索したり、文書を再送信したりすることもできます。また、ワークフローでの文書の削除や返戻などの追加作業を実行できます。下書きとして保存した文書も文書トレイに表示され、文書トレイのリストから作成を再開できます。</p>
+<p>文書トレイでは、すべての文書および関連作業を記録および保存できます。また、文書の状態と履歴に関する詳細情報も確認できます。</p>
+<ul class="simple">
+<li><p><strong>要処理文書：</strong> テンプレートで作成する途中に下書き保存した文書、処理が必要な文書（他のメンバーから作成または決裁の依頼のあった文書）、または外部受信者に送信した文書のうち処理を待機中の文書のリストを確認できます。</p></li>
+<li><p><strong>進行中の文書：</strong> 作成または処理済みで、完了していない文書のリストを確認できます。</p></li>
+<li><p><strong>完了文書：</strong> 自分が作成または処理したすべての文書のリストを確認できます。</p></li>
+</ul>
+<p>この他、文書の管理権限を持つメンバーだけ文書を確認できる <strong>文書管理</strong> メニューも別途存在します。</p>
+<ul class="simple">
+<li><p><strong>文書管理：</strong> このメニューには、文書管理者だけがアクセスできます。文書管理者は、権限を持つテンプレートで作成されたすべての文書を照会できます。</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>代表管理者は、すべての文書を照会および管理できます。</p>
 </div>
-<div class="figure" id="id4">
-<a class="reference internal image-reference" href="../_images/Customfield.PNG"><img alt="会社管理 &gt; カスタムフィールド管理" src="../_images/Customfield.PNG" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">会社管理 &gt; カスタムフィールド管理</span></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/inbox_ex1.png"><img alt="文書トレイのタイプ" src="../_images/inbox_ex1.png" style="width: 700px;" /></a>
 </div>
-<dl class="docutils">
-<dt>① カスタムフィールド管理 &gt; 会社</dt>
-<dd>会社の代表管理者、代表管理者の電話番号、法人の印鑑など、会社に関連するフィールドを追加し、値を設定できます。</dd>
-<dt>② カスタムフィールド管理 &gt; グループ</dt>
-<dd>部署名や責任者など、グループに関連するフィールドを追加し、値を設定できます。</dd>
-<dt>③ カスタムフィールド管理 &gt; メンバー</dt>
-<dd>役職、メールアドレス、電話番号など、メンバーに関連するフィールドを追加し、値を設定できます。</dd>
-<dt>④ フィールドの追加</dt>
-<dd>新しいフィールドを追加します。フィールドの追加
-ボタンをクリックすると、ポップアップウィンドウが表示され、カスタムフィールドを追加できます。<strong>フィールド名</strong>
-と <strong>フィールドタイプ</strong>（テキスト/イメージ）、<strong>フィールド値</strong>
-をクリックして、OK
-ボタンをクリックすると、フィールドがリストに追加されます。</dd>
-</dl>
-<div class="figure" id="id5">
-<img alt="会社管理 &gt; カスタムフィールド管理" src="../_images/customfield-addfield.PNG" />
-<p class="caption"><span class="caption-text">会社管理 &gt; カスタムフィールド管理</span></p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>各文書トレイの形と管理画面の構成はほぼ同じですが、表示される文書は、文書の状態または保有中の権限によって異なります。</p>
 </div>
-<dl class="docutils">
-<dt>⑤ フィールドリスト</dt>
-<dd><p class="first">フィールドのリストにフィールド名とフィールド値を表示し、フィールド値を削除および編集できます。</p>
-<p class="last">フィールドを削除するには、フィールドリストの左側にあるアイコン
-(<img alt="会社管理 &gt; カスタムフィールド管理" src="../_images/customfield-list-delete.png" />）をクリックします。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/inbox_layout.png"><img alt="文書トレイのタイプ" src="../_images/inbox_layout.png" style="width: 700px;" /></a>
+</div>
+<p>文書トレイは、次の 5 つの主要項目で構成されています。</p>
+<dl>
+<dt>① メニューおよびホームアイコン、文書トレイの名前</dt><dd><p><strong>メニュー</strong>（<a class="reference internal" href="../_images/menu_icon_2.png"><img alt="image1" src="../_images/menu_icon_2.png" style="width: 25px;" /></a>）と<strong>ホーム</strong>（<a class="reference internal" href="../_images/home_icon_2.png"><img alt="image2" src="../_images/home_icon_2.png" style="width: 25px;" /></a>）アイコンをクリックして、別のメニューまたはダッシュボードに移動できます。現在表示されている文書トレイの名前を確認できます。</p>
 </dd>
-<dt>⑥ フィールドの編集</dt>
-<dd><p class="first">変更したいフィールドを選択し、修正アイコンをクリックすると、カスタムフィールドの修正ポップアップウィンドウが表示され、フィールド名、タイプ、値などを変更できます。</p>
-<p>フィールドの順序は、順序を変更したいフィールドを選択した後、矢印
-(<img alt="image1" src="../_images/customfield-list-order.PNG" />) をクリックして順序を調整できます。</p>
-<div class="last figure" id="id6">
-<a class="reference internal image-reference" href="../_images/customfield-edit.PNG"><img alt="会社管理 &gt; カスタムフィールド管理" src="../_images/customfield-edit.PNG" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">会社管理 &gt; カスタムフィールド管理</span></p>
+<dt>②カテゴリー表示、フィルター（文書/状態）のコンボボックス、<a class="reference external" href="#category">検索ボックス</a></dt><dd><p><strong>テンプレート管理</strong> メニューで設定したカテゴリー別に文書を表示したり、必要な文書だけがリストに表示されるようにフィルターを適用したりできます。
+キーワード検索に加えて、詳細検索でタイトルと内容の組み合わせで検索、数字や日付の範囲を指定して検索、カスタムフィルターによる検索など、さまざまな検索方法が用意されています。</p>
+</dd>
+<dt>③ 文書リストおよび <a class="reference external" href="#additional_work">作業項目</a></dt><dd><p>文書は、1 ページあたり最大 20 のリストを表示し、20を超える文書についてはページ区分で表示します。
+文書の<strong>状態、タイトル、ステップ、作成者、作成日、処理者、文書 ID、文書番号</strong>などのカラムをベースに文書リストの内容を表示します。表示するカラムのタイプは文書トレイの右上のアイコンのうち、<strong>カラム</strong>（<a class="reference internal" href="../_images/column_icon.png"><img alt="image3" src="../_images/column_icon.png" style="width: 35px;" /></a>）アイコンをクリックしたら表示される <a class="reference external" href="#document_column">カラムのチェックボックス</a> で調整できます。
+文書リストで実行できる追加アクションには、<strong>プレビュー、検討する、修正、無効化、　　削除の依頼、返戻依頼の承認、再依頼、完了文書の送信</strong>などがあります。</p>
+</dd>
+<dt>④ <a class="reference external" href="#history">文書の状態と履歴の表示</a></dt><dd><p><strong>文書の状態</strong> と <strong>履歴</strong> を確認できます。
+<strong>文書の状態</strong> では、文書がいつ作成、処理、完了したかを文書の観点から確認できます。
+<strong>履歴</strong> では、作成者と受信者の観点から誰がどのような作業を実行したかを確認できます。</p>
+</dd>
+<dt>⑤ <a class="reference external" href="#document_column">文書トレイのフィールドの調整</a>、<a class="reference external" href="#document_download">文書のダウンロード</a> および <a class="reference external" href="#document_delete">削除</a> アイコン</dt><dd><p>文書トレイの <strong>カラム</strong>（<a class="reference internal" href="../_images/column_icon.png"><img alt="image4" src="../_images/column_icon.png" style="width: 35px;" /></a>）アイコンをクリックすると、カラムのタイプが表示されます。また、<strong>カラム</strong> のチェックボックスでリストに表示するカラムを選択できます。
+<strong>文書のダウンロード</strong> をクリックして、リストからダウンロードしたい文書を選択し（マルチ選択可能）、PDF 文書、監査証跡証明、および選択フィールドの CSV データをダウンロードできます。
+文書トレイでは、文書の <strong>削除</strong> アイコンは無効になっています。</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>文書の削除は <strong>文書管理</strong> メニューでのみ可能です。つまり、文書を削除するには文書の管理権限が必要です。文書の管理権限は、代表管理者またはテンプレート管理者が、<strong>テンプレート管理 &gt; テンプレートの設定 &gt; 権限の設定 &gt;文書の管理権限</strong> で権限を付与することができます。文書の管理権限はテンプレート毎に指定でき、指定すれば、<strong>文書管理</strong> メニューで、テンプレートで作成された文書を閲覧、削除、およびダウンロード（PDF、CSV）する権限が与えられます。</p>
 </div>
 </dd>
-<dt>⑦ 保存</dt>
-<dd>カスタムフィールドの編集が終了すれば、 <strong>保存</strong>
-ボタンをクリックして、変更内容を保存します。</dd>
 </dl>
+<div class="section" id="category">
+<span id="id3"></span><h3>カテゴリー、キーワードおよびフィルター検索<a class="headerlink" href="#category" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>カテゴリー、キーワードおよびフィルターの検索は、各文書トレイの左上にあるボックスで可能です。文書管理ページには状態別のフィルターもあります。</p>
+<ul>
+<li><p><strong>要処理文書/進行中文書/完了文書</strong></p>
+<p>文書トレイの左上には、カテゴリー別の検索バー、文書別のフィルター、キーワードの検索バーが表示されます。</p>
+</li>
+<li><p><strong>文書管理</strong></p>
+<p>文書トレイの左上には、カテゴリー別の検索バー、文書/状態別のフィルター、およびキーワードの検索バーが表示されます。</p>
+</li>
+</ul>
+<p><strong>カテゴリー検索</strong></p>
+<p><strong>カテゴリー検索</strong> のコンボボックスでは、<strong>テンプレート管理</strong> メニューで設定したカテゴリー別に文書を表示できます。このうち、必要なカテゴリーまたは文書を選択できます。</p>
+<p><strong>カテゴリー検索</strong> のコンボボックスの <strong>X</strong> アイコンをクリックすると、テンプレートで設定したカテゴリーに合わせて作成された文書が表示されます。</p>
+<div class="figure align-default">
+<img alt="カテゴリー検索のコンボボックス" src="../_images/category_search.png" />
 </div>
-<div class="section" id="id3">
-<h2>通知テンプレートの管理<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>文書の依頼時に送信されるメールと SMS
-のテンプレートは、会社に合わせてカスタマイズできます。</p>
-<p>通知テンプレートを変更するには、 <strong>会社管理 &gt; 通知テンプレート管理</strong>
-で設定するか、または <strong>テンプレート管理 &gt; テンプレートの設定 &gt;
-通知の設定</strong> で行えます。</p>
-<div class="figure" id="id7">
-<a class="reference internal image-reference" href="../_images/notification-template-manage.png"><img alt="会社管理 &gt; 通知テンプレート管理" src="../_images/notification-template-manage.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">会社管理 &gt; 通知テンプレート管理</span></p>
-</div>
-<p><strong>会社管理 &gt; 通知テンプレート管理</strong> には、基本的なメールとSMS
-テンプレートがあり、基本的なテンプレートの内容などを変更したり、新しい通知テンプレートを追加したりできます。</p>
-<p><strong>基本的なテンプレートの種類（メール/SMS）</strong></p>
-<table border="1" class="docutils" id="id8">
-<caption><span class="caption-text">テンプレートのタイプと状態</span><a class="headerlink" href="#id8" title="このテーブルへのパーマリンク">¶</a></caption>
+<ul class="simple">
+<li><p><strong>要処理文書</strong></p></li>
+</ul>
+<p><a class="reference internal" href="../_images/actionrequiredbox-status-search.png"><img alt="image5" src="../_images/actionrequiredbox-status-search.png" style="width: 700px;" /></a></p>
+<ul class="simple">
+<li><p><strong>進行中の文書</strong></p></li>
+</ul>
+<p><a class="reference internal" href="../_images/inprocessbox-status-search.png"><img alt="image6" src="../_images/inprocessbox-status-search.png" style="width: 700px;" /></a></p>
+<ul class="simple">
+<li><p><strong>完了文書</strong></p></li>
+</ul>
+<p><a class="reference internal" href="../_images/completedbox-status-search.png"><img alt="image7" src="../_images/completedbox-status-search.png" style="width: 700px;" /></a></p>
+<ul>
+<li><p><strong>文書管理</strong></p>
+<p><a class="reference internal" href="../_images/documentmanage_status_search.png"><img alt="image8" src="../_images/documentmanage_status_search.png" style="width: 700px;" /></a></p>
+</li>
+</ul>
+<p><strong>キーワードおよびフィルターの検索 文書トレイ</strong></p>
+<p>キーワード検索に加えて、詳細検索でタイトルと内容の組み合わせで検索、数字や日付の範囲を指定して検索、カスタムフィルターによる検索など、さまざまな検索方法が用意されています。また、カスタムフィルターを設定して、文書のフィールドの入力値を詳細検索することができます。また、カスタムフィルターを使用して、数字の範囲や日付の期間を設定して検索することもできます。</p>
+<p>検索可能なフィルターの種類は次の通りです。一方、カスタムフィルターは、<strong>完了文書</strong> と <strong>文書管理</strong> でのみ使用できます。</p>
+<table class="docutils align-default" id="id10">
+<caption><span class="caption-text">フィルターの種類</span><a class="headerlink" href="#id10" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
-<col width="29%" />
-<col width="71%" />
+<col style="width: 28%" />
+<col style="width: 21%" />
+<col style="width: 26%" />
+<col style="width: 26%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">タイプ</th>
-<th class="head">状態</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>要処理文書</p></th>
+<th class="head"><p>進行中の文書</p></th>
+<th class="head"><p>完了文書</p></th>
+<th class="head"><p>文書管理</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td>文書の処理依頼</td>
-<td>決裁の依頼、文書の検討および作成の依
-頼（内部/外部）、文書の返戻による修正の依頼/文
-書の無効化の依頼の受信/文書の無効化の依頼の拒否</td>
+<tbody>
+<tr class="row-even"><td><p>タイトル+内容</p></td>
+<td><p>タイトル+内容</p></td>
+<td><p>タイトル+内容</p></td>
+<td><p>タイトル+内容</p></td>
 </tr>
-<tr class="row-odd"><td>文書の処理状態</td>
-<td>文書の承認/文書の削除/文書の返戻/文書の検討
-および作成の完了、文書の最終完了（内部/外部）/
-文書の移管の完了/文書の修正/文書の最終完了（PDF
-送信）、文書の無効化</td>
+<tr class="row-odd"><td><p>タイトル</p></td>
+<td><p>タイトル</p></td>
+<td><p>タイトル</p></td>
+<td><p>タイトル</p></td>
 </tr>
-<tr class="row-even"><td>メンバーの招待</td>
-<td>メンバー招待/メンバー招
-待の承諾/メンバー招待の拒否/メンバー会社の脱退</td>
+<tr class="row-even"><td><p>内容</p></td>
+<td><p>内容</p></td>
+<td><p>内容</p></td>
+<td><p>内容</p></td>
 </tr>
-<tr class="row-odd"><td>ヘッダー/フッター</td>
-<td>&#160;</td>
+<tr class="row-odd"><td><p>文書 ID</p></td>
+<td><p>文書 ID</p></td>
+<td><p>文書 ID</p></td>
+<td><p>文書 ID</p></td>
+</tr>
+<tr class="row-even"><td><p>文書番号</p></td>
+<td><p>文書番号</p></td>
+<td><p>文書番号</p></td>
+<td><p>文書番号</p></td>
+</tr>
+<tr class="row-odd"><td><p>テンプレート名</p></td>
+<td><p>テンプレート名</p></td>
+<td><p>ステップ</p></td>
+<td><p>ステップ</p></td>
+</tr>
+<tr class="row-even"><td><p>作成者</p></td>
+<td><p>ステップ</p></td>
+<td><p>作成者</p></td>
+<td><p>作成者</p></td>
+</tr>
+<tr class="row-odd"><td><p>作成日</p></td>
+<td><p>作成者</p></td>
+<td><p>作成日</p></td>
+<td><p>作成日</p></td>
+</tr>
+<tr class="row-even"><td><p>依頼者</p></td>
+<td><p>作成日</p></td>
+<td><p>処理者</p></td>
+<td><p>処理者</p></td>
+</tr>
+<tr class="row-odd"><td><p>依頼日</p></td>
+<td><p>処理者</p></td>
+<td><p>処理日</p></td>
+<td><p>処理日</p></td>
+</tr>
+<tr class="row-even"><td><p>部外者処理の経過日数</p></td>
+<td><p>処理日</p></td>
+<td><p>カスタムフィルター</p></td>
+<td><p>カスタムフィルター</p></td>
 </tr>
 </tbody>
 </table>
-<div class="admonition tip">
-<p class="first admonition-title">ちなみに</p>
-<p class="last">デフォルトのヘッダーは eformsign のロゴです。<strong>会社管理 &gt; 会社情報
-&gt; ブランド</strong>
-で会社のロゴを登録すれば、メールテンプレートに会社のロゴが適用されます。</p>
-</div>
-<p><strong>新しい通知テンプレートを追加する方法</strong></p>
-<p>既存の登録済みメール/SMS
-テンプレートに加えて、新しい通知テンプレートを追加できます。</p>
+<p><strong>カスタムフィルターの使用方法 文書トレイ カスタムフィルター</strong></p>
 <ol class="arabic">
-<li><p class="first">サイドバーのメニューで <strong>会社管理 &gt; 通知テンプレート管理</strong>
-をクリックします。</p>
+<li><p><strong>詳細</strong>のコンボボックスで、<strong>カスタムフィルター</strong> を選択します。</p>
+<p><img alt="image9" src="../_images/userdefined_search1.png" /></p>
 </li>
-<li><p class="first"><strong>通知テンプレートの管理</strong> 画面の右上にある
-<strong>通知テンプレートの追加</strong> ボタンをクリックします。</p>
+<li><p><strong>フィールド名</strong>、<strong>フィールドタイプ</strong>、および <strong>検索値</strong> を設定します。</p>
+<p><strong>フィールド名</strong> はフォルト値が空です。検索したい文書入力フィールドの表示名（テンプレートのフィールド設定の表示名）を直接入力する必要があります。</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>1.存在しない文書入力フィールドの表示名を設定して検索した場合、文書は照会されません。</p>
+<p>2.<strong>フィールド名</strong> に特殊文字（「、'、;、&lt;、&gt;、\）を入力することはできません。</p>
+<p>3.<strong>フィールド名</strong> の先頭と末尾のスペースは削除されて追加されます。例：「休暇　申込書 」&gt;「休暇　申込書」</p>
+<p>4.追加または変更時に、既存のカスタムフィルターと同じフィールド名を入力すると、フィールドタイプとフィールドの検索値が以前に設定した情報で表示されます。例）既存のカスタムフィルター「勤続年数」：5 ～ 10 を追加した状態でカスタムフィルターを再度追加する場合、フィールド名に同じ名前の「勤続年数」を入力すると、フィールドタイプは「範囲」、検索値1は「5」、値2は「10」と既存の設定が表示されます。</p>
+</div>
+<p><strong>フィールドタイプ</strong> として、キーワード、範囲、期間のうち1つを選択します。デフォルト値はキーワードです。</p>
+<p><strong>フィールドタイプ</strong> の選択によって、検索値として表示される入力ボックスが異なります。</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 32%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>フィールドタイプ</p></th>
+<th class="head"><p>入力ボックス 1</p></th>
+<th class="head"><p>入力ボックス 2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>キーワード</p></td>
+<td><p>1行テキスト</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>範囲</p></td>
+<td><p>開始値</p></td>
+<td><p>終了値</p></td>
+</tr>
+<tr class="row-even"><td><p>期間</p></td>
+<td><p>開始日</p></td>
+<td><p>終了日</p></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p><strong>キーワード</strong></p>
+<p>複数の値をコンマ（ , ）で区切って設定できます。デフォルト値は空の値です。</p>
+<p>設定したテキストを含む値が検索されます。これは、複数のキーワードのうち1つ以上を含む文書を検索します。</p>
+<p>例) フィールド名：果物/フィールドタイプ：キーワード/値 1:イチゴ、リンゴなどの果物の中で「イチゴ」と「リンゴ」のうち少なくとも1つ以上を含む文書を検索</p>
 </li>
-<li><p class="first">目的の <strong>タイプ</strong> を選択し、 <strong>状態</strong>
-を選択します。<strong>（テーブルテンプレートのタイプと状態を参照</strong>）</p>
-<p><a class="reference internal" href="../_images/notification-template-new.PNG"><img alt="image2" src="../_images/notification-template-new.PNG" style="width: 700px;" /></a></p>
+<li><p><strong>範囲</strong></p>
+<p>数字または日付の間の値を検索するときに使用します。例）番号：100-200/期間：2019/01/01~2019/06/30</p>
+<p>設定した開始値と終了値の間の値が検索されます。範囲の値のうち、開始値のみを入力した場合は、少なくとも開始値以上の値が検索されます。範囲の値の終了値のみを入力した場合は、終了値以下の値が検索されます。例）年給：1000~/
+年給：~5000</p>
 </li>
-<li><p class="first"><strong>チャンネル</strong>（メールまたはSMS）を選択し、
-<strong>通知テンプレートの名前</strong> を入力します。</p>
+<li><p><strong>期間</strong></p>
+<p>表示されるカレンダーで日付の期間を設定します。デフォルト値は1週の差があります。</p>
+<p>設定した開始日と終了日の間の日付を検索します。</p>
 </li>
-<li><p class="first"><strong>ヘッター</strong> と <strong>フッター</strong> を選択します。</p>
+</ul>
 </li>
-<li><p class="first">内容を作成します。</p>
+<li><p><strong>検索の追加</strong> (<img alt="image10" src="../_images/searchplus.png" />)
+ボタンをクリックすると、<strong>検索キーワード</strong> が追加され、設定した条件に合わせて文書が検索されます。</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>1.複数のカスタムフィルターを追加したり、カスタムフィルターを変更または削除したりできます。</p>
+<p>2.重複するフィールド名を持つ複数のカスタムフィルターを追加することはできません。</p>
+<p>3.既に指定したカスタムフィルターを変更すると、フィールドタイプと検索値は最新の入力値に変更されます。</p>
+</div>
 </li>
-<li><p class="first"><strong>保存</strong> ボタンをクリックして、テンプレートとして追加します。</p>
+</ol>
+<p><strong>検索キーワードの表示方法とその変更/削除方法</strong></p>
+<ol class="arabic simple">
+<li><p>検索キーワードは <strong>フィールド名：価値</strong>の形で次のように追加されます。</p>
+<ul class="simple">
+<li><p>キーワード：「勤務形態：正規社員、契約社員」</p></li>
+<li><p>範囲：「勤続年数：5~10」</p></li>
+<li><p>期間：「労働契約期間_年日：2018-01-01~2018-12-31」</p></li>
+</ul>
 </li>
+<li><p>追加した検索キーワードを選択して、カスタムフィルターを修正します。修正時には、詳細検索フィルターの項目が <strong>カスタムフィルター</strong> に変わり、選択した<strong>フィルターのフィールド名、フィールドタイプ、検索値</strong>が表示されます。</p></li>
+<li><p>追加した検索キーワードを削除するには、右側の <strong>X</strong> アイコンをクリックします。</p></li>
+</ol>
+</div>
+<div class="section" id="additional-work">
+<span id="id4"></span><h3>各文書トレイの作業項目<a class="headerlink" href="#additional-work" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>文書リストで実行できる追加アクションには、プレビュー、検討する、修正、無効化、完了文書の送信などがあります。</p>
+<ul>
+<li><p><strong>要処理文書</strong></p>
+<p>プレビュー、修正、無効化、完了文書の送信、ダウンロードを行うことができます。</p>
+</li>
+<li><p><strong>進行中の文書</strong></p>
+<p>プレビュー、検討する、修正、無効化、完了文書の送信、ダウンロードを行うことができます。</p>
+</li>
+<li><p><strong>完了文書</strong></p>
+<p>プレビュー、無効化、完了文書の送信、ダウンロードを行うことができます。</p>
+</li>
+<li><p><strong>文書管理</strong></p>
+<p>プレビュー、無効化、完了文書の送信、永久削除、ダウンロードの他、文書の削除を行うことができます。文書は、<strong>文書管理</strong>でのみ削除できます。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="history">
+<span id="id5"></span><h3>状態および履歴の表示<a class="headerlink" href="#history" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>文書トレイのリストから文書を1つ選択すると、その文書の状態と履歴が画面の右側に表示されます。</p>
+<p><strong>文書の状態</strong> では、文書がいつ作成、処理、完了したかを文書の観点から確認できます。また、<strong>履歴</strong> では、作成者と受信者の観点から誰がどのような作業を実行したかを確認できます。</p>
+<div class="figure align-default">
+<img alt="文書状態タブ" src="../_images/document_status.png" />
+</div>
+<div class="figure align-default">
+<img alt="履歴タブ" src="../_images/document_history.png" />
+</div>
+</div>
+<div class="section" id="document-download">
+<span id="id6"></span><h3>文書のダウンロード<a class="headerlink" href="#document-download" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>eformsign で作成されたほとんどの文書は、長期間安全に保管する必要がある文書です。すべての文書は長期アーカイブファイル形式（PDF/A）で保存され、指定された管理者のみが文書およびデータを閲覧または削除できます。</p>
+<ol class="arabic simple">
+<li><p>文書トレイのリストの右側にある <strong>ダウンロード</strong> (<img alt="image11" src="../_images/download_icon.png" />) アイコンをクリックします。</p></li>
+<li><p>ダウンロードしたい文書を選択し、<strong>ダウンロード</strong> ボタンをクリックします。</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="文書のダウンロードのポップアップ" src="../_images/download_popup.png" />
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>CSV ファイルは、PDF 文書をダウンロードした場所からダウンロードできます。<strong>ダウンロード</strong> のポップアップウィンドウで CSV を選択し、ダウンロードしたいフィールドを確認した後、<strong>ダウンロード</strong> ボタンをクリックしてください。</p>
+</div>
+</div>
+<div class="section" id="document-delete">
+<span id="id7"></span><h3>文書の削除<a class="headerlink" href="#document-delete" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>eformsign では、指定された管理者のみが文書を削除できます。</p>
+<ol class="arabic simple">
+<li><p>文書トレイのリストの右側にある <strong>削除</strong>（<img alt="image12" src="../_images/delete_icon1.png" />）アイコンをクリックします。</p></li>
+<li><p>削除したい文書を選択し、<strong>削除</strong> ボタンをクリックします。</p></li>
+<li><p><strong>削除</strong> のポップアップウィンドウで <strong>はい</strong> をクリックすると、文書が削除されます。</p></li>
+</ol>
+</div>
+<div class="section" id="document-column">
+<span id="id8"></span><h3>文書トレイのカラムの設定<a class="headerlink" href="#document-column" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>文書トレイの右上にあるアイコンのうち、<strong>カラム</strong>（<a class="reference internal" href="../_images/column_icon.png"><img alt="image13" src="../_images/column_icon.png" style="width: 35px;" /></a>）アイコンをクリックすると、リストに表示したいカラムを選択できます。</p>
+<div class="figure align-default">
+<img alt="文書トレイのカラムの設定アイコン" src="../_images/column_type.png" />
+</div>
+</div>
+</div>
+<div class="section" id="drafts">
+<span id="id9"></span><h2>下書きとして保存<a class="headerlink" href="#drafts" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><strong>下書きとして保存</strong> には <strong>マイファイルで作成する</strong> で <strong>文書作成をスタート</strong> をクリックする前に <strong>下書きとして保存</strong> をクリックして下書き保存した文書が保存されます。<strong>下書きとして保存</strong> に保存されたファイルはいつでも作成を続行したり文書を削除したりすることもできます。</p>
+<ol class="arabic">
+<li><p>サイドバーのメニューで <strong>下書きとして保存</strong> をクリックして移動します。</p>
+<p><a class="reference internal" href="../_images/draftbox-menu.png"><img alt="image14" src="../_images/draftbox-menu.png" style="width: 700px;" /></a></p>
+</li>
+<li><p>下書き保存された文書のリストから目的の文書の <strong>継続する</strong> ボタンをクリックします。</p>
+<p><a class="reference internal" href="../_images/draftbox-documentlist.png"><img alt="image15" src="../_images/draftbox-documentlist.png" style="width: 700px;" /></a></p>
+</li>
+<li><p><strong>マイファイルで作成する</strong> 画面が表示されます。文書を修正した後、送信します。</p></li>
 </ol>
 </div>
 </div>
@@ -307,16 +502,16 @@
             <div class="inner"><ul class="page-nav">
   <li class="prev">
     <a href="chapter7.html"
-       title="前の章へ">← 文書トレイ</a>
+       title="前の章へ">← テンプレートの作成：フォームビルダー</a>
   </li>
   <li class="next">
     <a href="chapter9.html"
-       title="次の章へ">外部サービスを連動する方法 →</a>
+       title="次の章へ">カスタマイズ →</a>
   </li>
 </ul><div class="footer" role="contentinfo">
-      &#169; Copyright 2020, FORCS CO., LTD. All rights reserved..
+      &#169; Copyright 2021, FORCS CO., LTD. All rights reserved..
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
 </div>
             </div>
           </div>

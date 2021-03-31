@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>Web フォームデザイナーの紹介</title>
+      <title>文書の新規作成</title>
     
       <link rel="stylesheet" href="../_static/pygments.css">
       <link rel="stylesheet" href="../_static/theme.css">
@@ -12,11 +12,10 @@
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
 
       <!-- sphinx script_files -->
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/translations.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
 
       
       <script src="../_static/theme-vendors.js"></script>
@@ -24,7 +23,7 @@
     
   <link rel="index" title="索引" href="../genindex.html" />
   <link rel="search" title="検索" href="../search.html" />
-  <link rel="next" title="フォームビルダーの紹介" href="chapter4.html" />
+  <link rel="next" title="Web フォームデザイナーの紹介" href="chapter4.html" />
   <link rel="prev" title="基本情報" href="chapter2.html" /> 
   </head>
 
@@ -71,7 +70,7 @@
   
     <div class="sidebar-group">
       <p class="caption">
-        <span class="caption-text"><a href="../index.html#eformsign">Contents:</a></span>
+        <span class="caption-text"><a href="../index.html#eformsign">eformsign オンラインサポート</a></span>
       </p>
       <ul class="current">
         
@@ -87,55 +86,59 @@
           </li>
 
         
-          <li class="toctree-l1 current"><a href="#" class="reference internal current">Web フォームデザイナーの紹介</a>
+          <li class="toctree-l1 current"><a href="#" class="reference internal current">文書の新規作成</a>
 
             
               <ul>
                 
-                  <li class="toctree-l2"><a href="#id1" class="reference internal">Web フォームデザイナーの概要</a></li>
+                  <li class="toctree-l2"><a href="#id2" class="reference internal">概要</a></li>
                 
-                  <li class="toctree-l2"><a href="#id3" class="reference internal">コンポーネントの概要</a></li>
+                  <li class="toctree-l2"><a href="#id3" class="reference internal">マイファイルで作成する</a></li>
                 
-                  <li class="toctree-l2"><a href="#id5" class="reference internal">コンポーネント別の使用方法</a></li>
-                
-                  <li class="toctree-l2"><a href="#id19" class="reference internal">テンプレートを追加設定する</a></li>
+                  <li class="toctree-l2"><a href="#id4" class="reference internal">テンプレートで作成する</a></li>
                 
               </ul>
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">フォームビルダーの紹介</a>
+          <li class="toctree-l1 "><a href="chapter4.html" class="reference internal ">Web フォームデザイナーの紹介</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter5.html" class="reference internal ">テンプレート：Web フォームデザイナー</a>
+          <li class="toctree-l1 "><a href="chapter5.html" class="reference internal ">フォームビルダーの紹介</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">テンプレート：フォームビルダー</a>
+          <li class="toctree-l1 "><a href="chapter6.html" class="reference internal ">テンプレートの作成：Web フォームデザイナー</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">文書トレイ</a>
+          <li class="toctree-l1 "><a href="chapter7.html" class="reference internal ">テンプレートの作成：フォームビルダー</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter8.html" class="reference internal ">カスタマイズ</a>
+          <li class="toctree-l1 "><a href="chapter8.html" class="reference internal ">文書トレイ</a>
 
             
           </li>
 
         
-          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">外部サービスを連動する方法</a>
+          <li class="toctree-l1 "><a href="chapter9.html" class="reference internal ">カスタマイズ</a>
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 "><a href="chapter10.html" class="reference internal ">外部サービスとの連動</a>
 
             
           </li>
@@ -153,7 +156,7 @@
   <ul class="breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
     
-    <li>Web フォームデザイナーの紹介</li>
+    <li>文書の新規作成</li>
   </ul>
   
 
@@ -164,7 +167,7 @@
   </li>
   <li class="next">
     <a href="chapter4.html"
-       title="次の章へ">フォームビルダーの紹介 →</a>
+       title="次の章へ">Web フォームデザイナーの紹介 →</a>
   </li>
 </ul>
   
@@ -172,492 +175,181 @@
 <hr>
           <div class="content" role="main">
             
-  <div class="section" id="web">
-<span id="webform"></span><h1>Web フォームデザイナーの紹介<a class="headerlink" href="#web" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<div class="section" id="id1">
-<h2>Web フォームデザイナーの概要<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>eformsign
-のテンプレート管理メニューで、電子文書の背景書式になる PDF
-ファイルをアップロードすると、Web
-フォームデザイナーが表示されます。左側のツリーの様々なコンポーネントから目的のコンポーネントを選択して、Web
-フォームデザイナーに表示される背景ファイルの上にドラッグアンドドロップし、各コンポーネントのプロパティを詳細設定することで、テンプレートを簡単に作成できます。</p>
-<div class="admonition note">
-<p class="first admonition-title">注釈</p>
-<p class="last">現在は PDF ファイルのみをサポートしていますが、今後 Microsoft
-Office、JPG、PNG
-などの画像ファイルを含め、様々なファイル形式にも対応していく予定です。</p>
-</div>
-<div class="admonition note">
-<p class="first admonition-title">注釈</p>
-<p class="last">Microsoft Office アドイン（Add-in）機能（OZ in
-Office：フォームビルダー）も用意されており、Microsoft Office
-から直接電子文書を生成することもできます。フォームビルダーについては、
-<a class="reference external" href="chapter4.html#formbuilder">フォームビルダー</a> を参考に、Microsoft Office
-にフォームビルダーをインストールしてから使用してください。</p>
-</div>
-<p>1.メニューのうち、<strong>テンプレート管理</strong>
-画面に移動すれば、次のような画面が表示されます。</p>
-<div class="figure" id="id20">
-<a class="reference internal image-reference" href="../_images/web-form_1.png"><img alt="Web フォームデザイナーの画面" src="../_images/web-form_1.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">Web フォームデザイナーの画面</span></p>
-</div>
-<p>2.テンプレート管理
-画面に直接ファイルをドラッグするか、<strong>PCからファイルを選択</strong>
-をクリックして、ローカルコンピューターからアップロードしたいファイルを選択します。</p>
-<div class="figure" id="id21">
-<a class="reference internal image-reference" href="../_images/web-form_2.png"><img alt="Web フォームデザイナーの画面" src="../_images/web-form_2.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">Web フォームデザイナーの画面</span></p>
-</div>
-<p>3.ファイルがアップロードされれば、次のような画面が表示されます。</p>
-<div class="figure" id="id22">
-<a class="reference internal image-reference" href="../_images/web-form_3.png"><img alt="Web フォームデザイナーの画面" src="../_images/web-form_3.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">Web フォームデザイナーの画面</span></p>
-</div>
+  <div class="section" id="createnew">
+<span id="id1"></span><h1>文書の新規作成<a class="headerlink" href="#createnew" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <div class="section" id="id2">
-<h3>Web フォームデザイナーのメニューの構成<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>Web
-フォームデザイナーは、大きく、文書を全面表示する文書表示ペイン、トップバー、そして左側と右側のペインの４つの領域で構成されています。</p>
-<div class="figure" id="id23">
-<a class="reference internal image-reference" href="../_images/web-form_4.png"><img alt="Web フォームデザイナーのメニューの構成" src="../_images/web-form_4.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">Web フォームデザイナーのメニューの構成</span></p>
+<h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>eformsign を使用すると、誰もが簡単にお手持ちのファイルを電子文書化し、文書を作成、依頼、および処理できます。eformsign で電子文書を作成および送信する方法は、大きく2種類に分けられます。PCに保存されているファイルを直接アップロードして電子文書を作成する方法と、eformsign に保存されている既存のテンプレートを利用する方法です。</p>
+<ul class="simple">
+<li><p><strong>マイファイルで作成する</strong>：PCに保存された文書ファイル (PDF形式) を使って電子フォームを作成し、参加者に送信できます。</p></li>
+<li><p><strong>テンプレートで作成する</strong>：既存のテンプレートを使用して文書を作成します。<strong>テンプレートで作成する</strong> メニューをクリックすると、代表管理者またはテンプレートの管理権限を持つメンバーが作成しておいたテンプレートが画面に表示されます。</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>テンプレートの作成は、代表管理者またはテンプレー管理の権限を持つメンバーのみが可能です。また、<strong>テンプレートで作成する</strong> メニューで表示されるテンプレートは、各テンプレートの <strong>権限の設定</strong> で <strong>テンプレートの使用権限</strong> を付与したメンバーのみに表示されます。テンプレートは、<strong>Webフォームデザイナー</strong> と <strong>フォームビルダー</strong> で作成できます。詳しくは <a class="reference external" href="chapter6.html#template_wd">Web フォームデザイナー</a> と <a class="reference external" href="chapter7.html#template_fb">フォームビルダー</a> をご参照ください。</p>
 </div>
-<ol class="arabic simple">
-<li><strong>文書表示ペイン：</strong>アップロードした背景書式の文書が表示されます。</li>
-<li><strong>トップバー：</strong>「デザインする」と「設定する」の手順が表示され、テンプレート管理のリスト画面に戻ったり、コンポーネントを追加したテンプレートをプレビューしたりすることができます。</li>
-<li><strong>コンポーネントのリスト：</strong>現在の時点では、1行テキスト、複数行テキスト、署名、チェック、選択を含む
-14
-のコンポーネントをサポートしていますが、今後、カスタムアイテムや図形などの新しいコンポーネントを継続して追加する予定です。</li>
-<li><strong>プロパティ：</strong>署名、テキスト、チェックなどのコンポーネントを背景書式にドラッグして、各コンポーネントのプロパティを設定します。</li>
-</ol>
+<div class="admonition important">
+<p class="admonition-title">重要</p>
+<p><strong>マイファイルで作成する</strong> で文書を作成する場合、作成した文書をテンプレートに変更したり保存したりすることはできません。よく使う文書の場合、テンプレートに登録しておくと便利です。</p>
 </div>
 </div>
 <div class="section" id="id3">
-<h2>コンポーネントの概要<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>コンポーネントは、ユーザーが電子文書に内容を入力するための入力欄として機能します。署名、チェック、日付、テキストなど多様な種類のコンポーネントがあり、各コンポーネントは、プロパティタブを介して詳細に設定することができます。</p>
-<div class="figure" id="id24">
-<a class="reference internal image-reference" href="../_images/component_web_1.png"><img alt="Webフォームデザイナーでコンポーネントを追加した例" src="../_images/component_web_1.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">Webフォームデザイナーでコンポーネントを追加した例</span></p>
+<h2>マイファイルで作成する<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>PDF形式のファイルを直接アップロードして、文書の上にコンポーネントを自由に配置します。各コンポーネントを参加者毎に指定した後、参加者および/または検討者の情報を入力し、送信することができます。</p>
+<ol class="arabic">
+<li><p><strong>マイファイルで作成する</strong> メニューに移動します。</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-menu.png"><img alt="image1" src="../_images/newfrommyfile-menu.png" style="width: 700px;" /></a></p>
+</li>
+<li><p>文書ファイル (PDF形式) をアップロードします。</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-uploadfile.png"><img alt="image2" src="../_images/newfrommyfile-uploadfile.png" style="width: 700px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>現在は PDF 形式のみをサポートしていますが、今後様々なファイル形式にも対応していく予定です。</p>
+</div>
+</li>
+<li><p>文書の作成に参加する <strong>参加者</strong> を追加し、タイプを設定します。</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-participants-popup.png"><img alt="image3" src="../_images/newfrommyfile-participants-popup.png" style="width: 400px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>画面左上の <strong>参加者を追加する</strong> ボタンをクリックして参加者を追加することもでき、最大30人まで設定できます。</p>
+<p><strong>受信先を指定する</strong>
+ステップでも設定した参加者の情報を変更および追加、削除できます。</p>
+</div>
+</li>
+<li><p>各参加者が入力するコンポーネントを追加し、各コンポーネントの詳細設定を右側の <strong>プロパティ</strong> タブで指定します。</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-formdesign.png"><img alt="image4" src="../_images/newfrommyfile-formdesign.png" style="width: 700px;" /></a></p>
+</li>
+<li><p>コンポーネントを追加した後、<strong>受信先を指定する</strong> ステップでメールアドレス、携帯電話番号など連絡先の情報を入力し、<strong>各受信者の詳細オプション</strong>を設定します。</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-recipients.png"><img alt="image5" src="../_images/newfrommyfile-recipients.png" style="width: 700px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>受信者は、<strong>参加者</strong> と <strong>検討者</strong> に区別されます。文書を作成するときに追加した参加者が <strong>受信先を指定する</strong> ステップに表示され、各受信者のメールアドレスなど連絡先の情報を入力します。<strong>受信先を指定する</strong> 画面で参加者/検討者を削除/追加でき、各受信者の詳細オプションを設定します。</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">ちなみに</p>
+<p><strong>参加者と検討者の違い</strong></p>
+<p>参加者は署名、記入など文書のコンポーネントに入力することができます。一方、検討者は文書に入力することができず、文書を検討し、承認するかどうかのみを決定します。</p>
+<p>ただし、コンポーネントの作成権限を <strong>誰でも作成可能</strong> に設定した場合、検討者もコンポーネントに入力することができます。</p>
+<p><img alt="image6" src="../_images/newfrommyfile-recipients-type.png" /></p>
+</div>
+</li>
+<li><p><strong>オプション</strong> をクリックし、文書のタイトル、完了文書に対するタイムスタンプの付与などを設定します。</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-option.png"><img alt="image7" src="../_images/newfrommyfile-option.png" style="width: 700px;" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>このステップまでがフォームを設定するステップです。<strong>文書作成をスタート</strong> をクリックする前に下書き保存して作成を終了する場合、`下書きとして保存 &lt;chapter8.html#drafts&gt;`__ トレイに保存されます。保存されたファイルを開けば、作成を再開できます。文書の下書き保存は右上のメニュー (<img alt="image8" src="../_images/menu_icon_3.png" />) アイコンをクリックして表示される <strong>下書きとして保存</strong> をクリックします。</p>
+<p><img alt="image9" src="../_images/newfrommyfile-saveasdrafts.png" /></p>
+</div>
+</li>
+<li><p>すべての設定を完了した後、<strong>文書作成をスタート</strong> をクリックします。</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-startfromnow.png"><img alt="image10" src="../_images/newfrommyfile-startfromnow.png" style="width: 700px;" /></a></p>
+<div class="admonition caution">
+<p class="admonition-title">注意</p>
+<p><strong>文書作成をスタート</strong>
+をクリックした時点から課金の対象として集計されます。</p>
+</div>
+</li>
+<li><p>文書を確認し、<strong>送信</strong>
+ボタンをクリックすると、受信先に文書が送信されます。</p>
+<p><a class="reference internal" href="../_images/newfrommyfile-startfromnow-send.png"><img alt="image11" src="../_images/newfrommyfile-startfromnow-send.png" style="width: 700px;" /></a></p>
+</li>
+</ol>
+<p><strong>受信先を指定する &gt; 受信先のオプション</strong></p>
+<p><strong>デザインする</strong> または <strong>受信先を指定する</strong> ステップで文書の参加者、つまり文書の受信先を追加することができます。</p>
+<p><strong>受信先を指定する</strong> ステップでは、参加者に対する詳細設定を行う <strong>受信先のオプション</strong> の設定はもちろん、参加者を追加または削除したり、文書を検討する検討者を追加したりできます。</p>
+<p>各参加者または検討者に対し、名前と送信先のメールアドレスまたは ID を入力する必要があります。参加者がメンバーである場合、リストから選択すると、登録されたメンバー情報が自動で入力されます。<strong>受信先のオプション</strong> は、参加者または 検討者がメンバーである場合と、メンバーではない外部の受信者である場合でそれぞれ異なって表示されます。</p>
+<ul>
+<li><p><strong>受信者がメンバーである場合</strong></p>
+<p>登録されたメールアドレスと携帯電話番号が自動で表示され、文書を送信する手段を選択できます。</p>
+<div class="admonition caution">
+<p class="admonition-title">注意</p>
+<p><strong>モバイル</strong>
+を選択する場合、SMSまたはカカオトーク通知で送信され、件数に比例して追加料金が発生します。</p>
+</div>
+<p><a class="reference internal" href="../_images/newformmyfile-recipientoption-member.png"><img alt="image12" src="../_images/newformmyfile-recipientoption-member.png" style="width: 400px;" /></a></p>
+</li>
+<li><p><strong>メンバーではない外部の受信者である場合</strong></p>
+<p>入力した情報がメンバーの情報と一致しない場合、外部受信者と認識され、次の項目についての詳細オプションを設定する必要があります。</p>
+<ul>
+<li><p><strong>送信手段の選択：メール</strong> と <strong>モバイル</strong> のうち一つまたは両方を選択でき、<strong>モバイル</strong> を選択した場合は携帯電話番号を入力する必要があります。</p>
+<div class="admonition caution">
+<p class="admonition-title">注意</p>
+<p><strong>モバイル</strong>を選択する場合、SMSまたはカカオトーク通知で送信され、件数に比例した追加料金が発生します。</p>
+</div>
+</li>
+<li><p><strong>文書の送信期限：</strong>外部受信者が文書を閲覧し、送信できる期限を設定でき、設定された期限が切れると文書を作成することができません。</p></li>
+<li><p><strong>パスワードの設定：</strong>チェックを入れると、外部受信者が文書を閲覧する前に、設定しておいたパスワードを入力する必要があります。<strong>パスワードのヒント</strong> で、受信者がパスワードを推測できるようなヒントを設定し、表示することができます。</p></li>
+<li><p><strong>文書の検討前に携帯電話で本人確認する：</strong>外部受信者が文書を閲覧/作成する前に、携帯電話で本人確認を行うよう設定します。この機能は追加料金が発生します。</p></li>
+<li><p><strong>完了文書の閲覧前に携帯電話で本人確認する：</strong>外部受信者が完了文書を閲覧する前に、携帯電話で本人確認を行うよう設定します。この機能は追加料金が発生します。</p></li>
+</ul>
+<p><a class="reference internal" href="../_images/newformmyfile-recipientoption-external.png"><img alt="image13" src="../_images/newformmyfile-recipientoption-external.png" style="width: 400px;" /></a></p>
+</li>
+</ul>
 </div>
 <div class="section" id="id4">
-<h3>コンポーネントのタイプ<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>eformsign は次ようなのコンポーネントをサポートしています。</p>
-<ul class="simple">
-<li><a class="reference external" href="#text2">1行テキスト</a><strong>：</strong>
-1つまたは2つの短い単語を入力します。</li>
-<li><a class="reference external" href="#text2">複数行テキスト</a><strong>：</strong>
-複数行の長いテキストを入力します。</li>
-<li><a class="reference external" href="#signature2">署名</a><strong>：</strong>
-署名を入力します。</li>
-<li><a class="reference external" href="#check2">チェック</a><strong>：</strong>
-チェックする項目がある場合に使用します。</li>
-<li><a class="reference external" href="#select2">選択</a><strong>：</strong>
-複数の項目から1つを選択します。複数選択も設定できます。</li>
-<li><a class="reference external" href="#label2">ラベル</a><strong>：</strong> フォーム ID
-を設定します。</li>
-<li><a class="reference external" href="#combo2">リスト選択</a><strong>：</strong>
-クリックすると、ドロップダウンメニューが表示され、複数の項目のうち1つを選択します。</li>
-<li><a class="reference external" href="#date2">日付</a><strong>：</strong>
-特定の日付を入力します。</li>
-<li><a class="reference external" href="#numeric2">数字</a><strong>：</strong> 数字を入力します。</li>
-<li><a class="reference external" href="#toggle2">トグル</a><strong>：</strong>
-複数の値を入力すると、ボタンをクリックするたびに異なる値に切り替わります。</li>
-<li><a class="reference external" href="#camera2">写真</a><strong>：</strong>
-カメラを搭載しているデバイス（スマートフォン、タブレットなど）では、カメラで写真を撮るか、アルバムから写真を選択します。カメラのないデバイス（通常の
-PC ）では、画像ファイルを選択します。</li>
-<li><a class="reference external" href="#record2">録音</a><strong>：</strong>
-録音機能を搭載している端末でボタンをクリックして録音します。</li>
-<li><a class="reference external" href="#attach2">添付</a><strong>：</strong>
-ファイル添付機能を追加します。</li>
-<li><a class="reference external" href="#document2">文書</a><strong>：</strong>
-文書内の文書番号または文書 ID を入力します。</li>
-</ul>
+<h2>テンプレートで作成する<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>よく使うフォームをテンプレート化しておくと、文書の処理過程であるワークフローなどの詳細設定をテンプレート毎に保存し、必要に応じて文書を作成および送信できます。テンプレートは <strong>Webフォームデザイナー</strong> または <strong>フォームビルダー</strong> を使って作成できます。詳しくは <a class="reference external" href="chapter6.html#template_wd">Webフォームデザイナー</a> と <a class="reference external" href="chapter7.html#template_fb">フォームビルダー</a> をご参照ください。</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>文書の作成は、テンプレート管理の権限を持つメンバーが <strong>テンプレートの設定 &gt; 権限の設定</strong> で <strong>テンプレートの使用権限</strong> (=文書の作成権限) を付与したグループまたはメンバーのみが可能です。テンプレートの使用権限を付与されたグループまたはメンバーのテンプレートリストのみにそのテンプレートが表示され、作成できます。</p>
 </div>
+<ol class="arabic">
+<li><p>ダッシュボードまたはサイドバーのメニューで <strong>テンプレートで作成する</strong>をクリックします。</p>
+<p><a class="reference internal" href="../_images/menu-startfromtemplate.png"><img alt="image14" src="../_images/menu-startfromtemplate.png" style="width: 700px;" /></a></p>
+</li>
+<li><p>目的のテンプレートの <strong>作成</strong> アイコン(<img alt="image15" src="../_images/create-icon.PNG" />) をクリックします。</p>
+<p><a class="reference internal" href="../_images/startfromtemplate-create.png"><img alt="image16" src="../_images/startfromtemplate-create.png" style="width: 700px;" /></a></p>
+</li>
+<li><p>文書を作成し、画面右上の <strong>作成完了</strong> もしくは <strong>依頼</strong> ボタンをクリックすると、文書のワークフローに指定された次のステップに送信されます。途中で作成をやめて保存する場合は、<strong>下書き保存</strong> ボタンをクリックして保存します。</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>テンプレートに設定されたワークフローによっては <strong>作成完了、提出</strong> もしくは <strong>依頼</strong> ボタンに異なって表示されます。</p>
 </div>
+<div class="admonition important">
+<p class="admonition-title">重要</p>
+<p>テンプレートで作成する途中に <strong>下書き保存</strong> ボタンをクリックして下書き保存した文書は、<strong>下書きとして保存</strong> トレイではなく、<strong>要処理文書</strong> トレイに保存されます。</p>
+<p><strong>要処理文書</strong> のリストから下書き保存した文書の <strong>編集</strong> ボタンをクリックすると、作成を続行できます。</p>
+</div>
+</li>
+</ol>
 <div class="section" id="id5">
-<h2>コンポーネント別の使用方法<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>すべてのコンポーネントには、共通のプロパティと固有なプロパティがあります。コンポーネントのプロパティウィンドウで、各コンポーネントの共通のプロパティと固有なプロパティを表示できます。共通のプロパティには、「名前」と「ツールヒントのテキスト」があり、各プロパティの意味は次のとおりです。</p>
-<ul class="simple">
-<li><strong>名前：</strong>
-外部プログラムがコンポーネントの値を抽出するときに使用する固有なキーです。</li>
-<li><strong>ツールヒントのテキスト：</strong>
-文書が受信者に表示される Windows
-環境では、コンポーネントにカーソルを合わせるとツールヒントのテキストが吹き出しの形で表示されます。モバイル環境では、コンポーネントがダイアログで起動されるときにツールヒントのテキストがダイアログのタイトルとして表示されます。</li>
-</ul>
+<h3>一括生成<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>文書トレイ 一括生成 テンプレートで作成する場合、<strong>一括生成</strong> の機能を使用すると、一度に複数の文書を作成できます。</p>
 <div class="admonition note">
-<p class="first admonition-title">注釈</p>
-<p class="last">情報タイプの文書には、「ツールヒントのテキスト」プロパティがありません。</p>
+<p class="admonition-title">注釈</p>
+<p>この作業を行うには、代表管理者の権限またはテンプレートの管理権限が必要です。</p>
 </div>
-<p>各コンポーネントの説明は次のとおりです。</p>
-<div class="section" id="text2">
-<span id="id6"></span><h3>1行テキストと複数行テキスト<a class="headerlink" href="#text2" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>1行テキストのコンポーネントと複数行テキストのコンポーネントの両方とも、テキストの入力欄を作成するときに使用します。1行テキストのコンポーネントは
-1 ～
-2単語の短いテキストに適用し、複数行テキストのコンポーネントは1行以上の長いテキストに適用します。</p>
-<p><strong>コンポーネントのプロパティ</strong></p>
-<div class="figure" id="id25">
-<img alt="1行テキストと複数行テキストのプロパティの設定" src="../_images/text-component-properties_web.png" />
-<p class="caption"><span class="caption-text">1行テキストと複数行テキストのプロパティの設定</span></p>
+<ol class="arabic">
+<li><p><strong>文書の新規作成</strong> <strong>&gt; テンプレートで作成する</strong> メニューに移動します。</p></li>
+<li><p>目的のテンプレートの <strong>一括生成</strong> アイコンをクリックします。</p>
+<div class="figure align-default">
+<img alt="一括生成アイコン" src="../_images/bulk-creation-icon.png" />
 </div>
-<p><strong>① 名前</strong></p>
-<p>1行テキストもしくは複数行テキストのコンポーネント項目の「名前」を入力します。たとえば、木村、鈴木などが入力されるコンポーネントの名前は「氏名」です。</p>
-<p><img alt="image1" src="../_images/text-component-properties_web_name.png" /></p>
-<div class="admonition note">
-<p class="first admonition-title">注釈</p>
-<p class="last">「名前」も自動的に付与されますが、コンポーネントを追加した後、受信者の入力を依頼するかどうかを決定する際に、その「名前」が表示されるので、認識しやすい名前を設定することを推奨します。</p>
-</div>
-<p><strong>② 入力可能な最大文字数</strong></p>
-<p>入力可能な最大文字数（空白を含む）を設定できます。デフォルトは「0」が設定されており、文字数に制限はありません。</p>
-<p><strong>③ キーボードタイプ</strong></p>
-<p>コンポーネントに入力時に実行するキーボードのタイプを選択します。キーボードタイプは、スマートフォンやタブレットなどのモバイル環境でのみ動作します。</p>
-<p><strong>④ パスワード文字で表示</strong></p>
-<p>テキストのコンポーネントでのみ設定可能なプロパティです。テキスト入力時に入力した内容がパスワード文字（●）で入力され、入力内容を隠すことができます。入力された内容は
-PDF ではパスワード文字で表示されます。ただし、CSV
-データをダウンロードしたときには入力内容が表示されます。</p>
-<p><strong>④ ツールヒントのテキスト</strong></p>
-<p>入力欄にカーソルを合わせると、入力した説明がツールヒントのテキストとして表示されます。</p>
-</div>
-<div class="section" id="signature2">
-<span id="id7"></span><h3>署名<a class="headerlink" href="#signature2" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>文書への署名依頼をする必要がある場合は、署名コンポーネントを使用します。</p>
-<p>署名コンポーネントを入力すると、署名が必要な文書に次のように署名ポップアップが表示されます。署名を直接手書きで描画するか、テキストを入力して署名を生成できます。既存の署名がある場合は、その署名を使用することもできます。</p>
-<p><img alt="image2" src="../_images/signature.png" /></p>
-<p><strong>コンポーネントのプロパティ</strong></p>
-<div class="figure" id="id26">
-<img alt="署名コンポーネントのプロパティの設定" src="../_images/Signature-component-properties_web.png" />
-<p class="caption"><span class="caption-text">署名コンポーネントのプロパティの設定</span></p>
-</div>
-<p><strong>① 名前</strong></p>
-<p>署名コンポーネントの「名前」を入力します。たとえば、契約者の署名である場合、コンポーネントの名前は「契約者の署名」にします。</p>
-<p><strong>② 署名タイプ</strong></p>
-<p>署名時に使用する署名を選択します。</p>
-<ul class="simple">
-<li><strong>直接署名：</strong>
-署名欄をクリックすると、署名ポップアップが表示され、手書き、テキスト、モバイル、印鑑・スタンプ、または登録済み署名タブのうち、入力したい方式で署名を入力します。</li>
-<li><strong>登録の署名：</strong>
-文書の作成者が「マイ署名」を事前に登録している場合は、署名欄をクリックすると、登録済みの署名が自動的に入力されます。</li>
-<li><strong>登録のイニシャル：</strong>
-登録の署名と同様に、「マイ署名」にイニシャルが登録されている場合、署名欄をクリックすると登録済みのイニシャルが自動的に入力されます。</li>
-</ul>
-<div class="admonition note">
-<p class="first admonition-title">注釈</p>
-<p class="last">署名とイニシャルが登録されている場合、署名は自動的に署名欄に入力されますが、署名とイニシャルが登録されていない場合は、直接署名と同じ署名ポップアップが表示されます。</p>
+</li>
+<li><p>画面に表示される各コンポーネントに説明を入力します。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/bulk_create.png"><img alt="一括生成画面" src="../_images/bulk_create.png" style="width: 700px;" /></a>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">注釈</p>
-<p class="last">署名ではなく印鑑やスタンプを使用する必要がある場合もあります。eformsign
-では、印鑑やスタンプの画像を使用して文書の署名欄に印鑑・スタンプを入れることもできます。印鑑・スタンプの画像を使用するには、署名ポップアップで
-<strong>印鑑・スタンプ</strong>
-タブをクリックして、印鑑・スタンプの画像を選択した後、OK
-ボタンをクリックします。</p>
+<p class="admonition-title">注釈</p>
+<p>文書内のコンポーネントが各カラムとして表示されているテーブルです。コンポーネントの ID が、各カラムのタイトルとして表示されます。<strong>番号</strong> カラムの一番下の行の番号が作成される文書の数です。</p>
+<p>テーブルは、Excel と同様の方法で入力します。各セルをダブルクリックして内容を入力し、マウスを右クリックして行を追加または削除できます。セルに入力した値をコピーと貼り付け、ドラッグして入力することができます。</p>
 </div>
-<p><strong>③ 署名ペンの太さ</strong></p>
-<p>署名を手書きで描画するときに表示される線の太さを設定します。</p>
-<p><strong>④ 署名ペンの色</strong></p>
-<p>署名を手書きで描画するときに表示される線の色を設定します。</p>
-<p><strong>⑤ ツールヒントのテキスト</strong></p>
-<p>入力欄にカーソルを合わせると、入力した説明がツールヒントのテキストとして表示されます。</p>
+</li>
+<li><p>右上の <strong>プレビュー</strong> ボタンをクリックして、作成した文書の内容を確認した後、<strong>生成</strong> ボタンをクリックして文書の作成を完了します。</p>
 <div class="admonition note">
-<p class="first admonition-title">注釈</p>
-<p>電子契約書や電子同意書など、署名の入る文書に署名日付が自動的に入力されるように設定できます。</p>
-<p>1.電子書式に変換する文書ファイル（Word、Excel、PowerPoint）を開くか、新しい文書を作成します。</p>
-<p>2.署名が必要な箇所に署名コンポーネントを追加します。</p>
-<p>3.追加した署名コンポーネントのプロパティタブにコンポーネントの 名前
-を入力します。例）署名</p>
-<p>4.署名日付を入力したい箇所に使用日コンポーネントを追加します。</p>
-<p>5.使用日コンポーネントの「プロパティ」タブを開きます。</p>
-<p>6.使用日の書式設定を「入力値の変更日」とします。</p>
-<p>7.下部に表示されるコンポーネントの「名前」の入力欄に、署名コンポーネントの
-名前の「署名」を入力します。</p>
-<p class="last">*
-使用日コンポーネントの「書式設定」を設定することで、日付の表示形式を任意に変更できます。</p>
+<p class="admonition-title">注釈</p>
+<p><strong>一括生成</strong> のテーブルに表示される青い領域には、依頼を送信する外部受信者の名前、メールアドレスなどを入力します。外部受信者の処理ステップの設定に応じて、携帯電話番号、認証パスワードなどを入力できます。</p>
+<p><a class="reference internal" href="../_images/bulk-creation-table-blue-section.png"><img alt="image17" src="../_images/bulk-creation-table-blue-section.png" style="width: 700px;" /></a></p>
 </div>
+<div class="admonition tip">
+<p class="admonition-title">ちなみに</p>
+<p>テンプレートのコンポーネントの一部が <strong>一括生成</strong> 画面に表示されない場合は、次の2つのケースを確認してください。</p>
+<p>1.<strong>一括生成</strong> で入力できないコンポーネント：<strong>写真</strong>、<strong>録音</strong>、およびグループ化されている <strong>ラジオ</strong> コンポーネントは、<strong>一括生成</strong> では作成できないコンポーネントです。</p>
+<p>2.<strong>作成</strong> ステップでアクセスが許可されているコンポーネント：<strong>テンプレート管理 &gt; テンプレートの設定(⚙) &gt; ワークフローの設定</strong> でアクセスが許可されているコンポーネントのみが表示されます。</p>
 </div>
-<div class="section" id="check2">
-<span id="id8"></span><h3>チェック<a class="headerlink" href="#check2" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>チェックコンポーネントは、各項目にチェックが入っているかどうかを確認する場合に使用します。同様のコンポーネントには、「選択」コンポーネントがあります。両方の違いは、チェックコンポーネントは項目へのチェック有無を確認するときに使用し、選択コンポーネントは何を選択したのかを確認する必要があるときに使用することにあります。</p>
-<p>チェックコンポーネントの入力値は、データをダウンロードすれば、次のように表示されます。</p>
-<ul class="simple">
-<li>項目にチェックが入っている場合：true</li>
-<li>項目にチェックが入っていない場合：false</li>
-</ul>
-<p>Word、PowerPoint
-では、チェックコンポーネントが長方形の図形のように表示されます。コンポーネントの内容は、コンポーネントの図形の中に入力する必要があります。</p>
-<p><strong>コンポーネントのプロパティ</strong></p>
-<div class="figure" id="id27">
-<img alt="チェックコンポーネントのプロパティの設定" src="../_images/check-component-properties-1_web.png" />
-<p class="caption"><span class="caption-text">チェックコンポーネントのプロパティの設定</span></p>
-</div>
-<p><strong>① 名前</strong></p>
-<p>チェックコンポーネントは、各コンポーネントごとに異なる 名前
-を指定する必要があります。複数のチェックコンポーネントに同じ 名前
-が与えられている場合は、最後のコンポーネントの入力値のみが表示されます。</p>
-<p><strong>② チェックスタイル</strong></p>
-<p>選択コンポーネントは、プロパティでスタイルを設定できます。チェックを入れると、プロパティでチェックボックスがデフォルト設定されることになります。チェックボックス以外に、ラジオボタン、赤い丸囲みの円の形を選択することもできます。</p>
-<p>次の例では、左からチェック/ラジオ/丸囲みを選択すると、各チェックボックスがどのように表示されるかが確認できます。</p>
-<p><a class="reference internal" href="../_images/check-component-style-settings.png"><img alt="image3" src="../_images/check-component-style-settings.png" style="width: 700px;" /></a></p>
-</div>
-<div class="section" id="select2">
-<span id="id9"></span><h3>選択<a class="headerlink" href="#select2" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>選択コンポーネントは、複数の項目のうち、どの項目が選択されているかを確認する必要がある場合に使用します。選択コンポーネントの選択値は、データがダウンロードされると、選択した項目の名前で表示されます。</p>
-<p>Word、PowerPoint
-では、選択コンポーネントが長方形の図形のように表示されます。コンポーネントの内容は、コンポーネントの図形の中に入力する必要があります。</p>
-<p><strong>コンポーネントのプロパティ</strong></p>
-<div class="figure" id="id28">
-<img alt="選択コンポーネントのプロパティの設定" src="../_images/Radio-component-properties_web.png" />
-<p class="caption"><span class="caption-text">選択コンポーネントのプロパティの設定</span></p>
-</div>
-<p><strong>① 名前</strong></p>
-<p>選択コンポーネント内の選択項目には、各選択グループに対して同じ 名前
-を指定する必要があります。</p>
-<p>たとえば、問題 1 に対して 1、2、3、4、5
-の選択肢がある場合、1、2、3、4、5の項目に同じ 名前の
-「問題1」を指定します。問題 2 の選択肢の1、2、3、4、5 に対しては 名前 を
-「問題2」にします。次の例では、すべての選択項目の 名前 を
-「年齢の選択」とします。</p>
-<div class="figure" id="id29">
-<a class="reference internal image-reference" href="../_images/radio-items-should-have-same-ID.png"><img alt="選択コンポーネントの設定の例" src="../_images/radio-items-should-have-same-ID.png" style="width: 700px;" /></a>
-<p class="caption"><span class="caption-text">選択コンポーネントの設定の例</span></p>
-</div>
-<p><strong>② 選択スタイル</strong></p>
-<p>選択コンポーネントは、プロパティでスタイルを設定できます。赤い丸囲みの「円」がデフォルトで設定されており、それ以外にチェックボックスとラジオボタン表示を選択することもできます。</p>
-<p><strong>③ マルチ選択の可能</strong></p>
-<p><strong>マルチ選択の可能</strong>
-にチェックを入れれば、複数の項目を選択できます。複数の項目が選択されている場合、データを保存するときに、選択した複数の項目がコンマ（
-, ）で区切られて保存されます。</p>
-<p><strong>④ 未選択可能</strong></p>
-<p><strong>未選択可能</strong>
-にチェックを入れれば、選択した項目をもう一度クリックして選択解除できます。</p>
-<p><strong>⑤ ツールヒントのテキスト</strong></p>
-<p>入力欄にカーソルを合わせると、入力した説明がツールヒントのテキストとして表示されます。</p>
-</div>
-<div class="section" id="label2">
-<span id="id10"></span><h3>ラベル<a class="headerlink" href="#label2" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>文書のフォーム ID を設定できます。</p>
-<p><strong>コンポーネントのプロパティ</strong></p>
-<div class="figure" id="id30">
-<img alt="ラベルコンポーネントのプロパティの設定" src="../_images/label_property_web.png" />
-<p class="caption"><span class="caption-text">ラベルコンポーネントのプロパティの設定</span></p>
-</div>
-<p><strong>① 名前</strong></p>
-<p>文書のフォーム ID は自動で生成され、変更もできます。</p>
-<p>ここで定義したフォーム ID は、文書を編集時に適用できます。</p>
-</div>
-<div class="section" id="combo2">
-<span id="id11"></span><h3>リスト選択<a class="headerlink" href="#combo2" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>複数の項目から 1
-つの項目を選択する必要がある場合は、リスト選択コンポーネントを使用します。</p>
-<p>チェックボックスをクリックすると、項目のリストが表示されます。</p>
-<p><img alt="image4" src="../_images/combo-1.png" /></p>
-<p><strong>コンポーネントのプロパティ</strong></p>
-<div class="figure" id="id31">
-<img alt="リスト選択コンポーネントのプロパティの設定" src="../_images/combo-component-properties_web.png" />
-<p class="caption"><span class="caption-text">リスト選択コンポーネントのプロパティの設定</span></p>
-</div>
-<p><strong>① 名前</strong></p>
-<p>リスト選択コンポーネントの「名前」を入力します。たとえば、お気に入りの色を選択するコンポーネントの名前は「お気に入りの色」とします。</p>
-<p><strong>② リスト表示項目</strong></p>
-<p>選択肢の項目を入力します。複数の項目を Enter キーで区切ります。</p>
-<div class="admonition note">
-<p class="first admonition-title">注釈</p>
-<p class="last">リスト選択コンポーネントの最上部に「選択してください」を表示するには、リスト表示項目の第一項目として「選択してください」と入力します。その後、文書を送信する前のプレビュー時に、そのコンポーネント内で「選択してください」を選択してから送信してください。</p>
-</div>
-<p><strong>③ 入力データを初期化可能</strong></p>
-<p>「入力データを初期化可能」にチェックを入れると、選択した項目を選択解除できます。入力データの初期化は、次のように実行します。</p>
-<ul class="simple">
-<li>PC
-環境：コンポーネントを右クリックして表示されるポップアップメニューから「入力データを初期化可能」を選択します。</li>
-<li>モバイル環境：ごみ箱 アイコンをクリックします。</li>
-</ul>
-<p><strong>④ ツールヒントのテキスト</strong></p>
-<p>選択欄にカーソルを合わせると、入力した説明がツールヒントのテキストに表示されます。</p>
-</div>
-<div class="section" id="date2">
-<span id="id12"></span><h3>日付<a class="headerlink" href="#date2" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>日付を入力する必要がある場合に使用します。入力欄をクリックすると、日付ピッカーが表示され、目的の日付を選択できます。</p>
-<p><strong>コンポーネントのプロパティ</strong></p>
-<div class="figure" id="id32">
-<img alt="日付コンポーネントのプロパティの設定" src="../_images/datetime-component-properties_02_web.png" />
-<p class="caption"><span class="caption-text">日付コンポーネントのプロパティの設定</span></p>
-</div>
-<p><strong>① 名前</strong></p>
-<p>日付コンポーネントの「名前」を入力します。たとえば、休暇の開始日を選択するコンポーネントの名前
-は 「休暇の開始日」 にします。</p>
-<p><strong>② 書式設定</strong></p>
-<p>日付を表示する書式を指定します。デフォルト設定は、date_yyyy-MM-dd です。</p>
-<ul class="simple">
-<li><strong>yyyy：</strong> 「年度」を表示します。（yyyy年＝2020年）</li>
-<li><strong>MM：</strong>
-「月」を表示します。月の表現は大文字にする必要があります。（MM月＝8月）</li>
-<li><strong>dd：</strong> 「日」を表示します。（dd日 = 10日）</li>
-</ul>
-<p>「2020年 2月 5日」のように表示するには、書式設定に「yyyy年 MM月
-dd日」と入力します。</p>
-<p><strong>③ 入力可能な最小/最大日付</strong></p>
-<p>日付の選択時に選択可能な最小日付と最大日付を指定して、入力可能な日付の範囲を設定します。</p>
-<p><strong>④ 空の値の場合、今日の日付を表示</strong></p>
-<p>文書を開いたときに今日の日付が自動で入力されるように設定します。日付コンポーネントを追加すると、デフォルトでチェックが入っています。別の日付を選択するには、今日の日付が入力されている入力欄をもう一度クリックしてください。</p>
-<p><strong>⑥ ツールヒントのテキスト</strong></p>
-<p>入力欄にカーソルを合わせると、入力した説明がツールヒントのテキストとして表示されます。</p>
-</div>
-<div class="section" id="numeric2">
-<span id="id13"></span><h3>数字<a class="headerlink" href="#numeric2" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>数字を入力する必要がある場合に使用します。入力欄をクリックすると、2つの矢印が表示されます。「上へ」もしくは「下へ」の矢印ボタンを押して、数字を増減できます。PC
-のキーボード環境では、入力欄に任意の数字を直接入力できます。スマートフォンやタブレット環境では、入力範囲の数字リストをスクロールして目的の数字を選択できます。</p>
-<p><strong>コンポーネントのプロパティ</strong></p>
-<div class="figure" id="id33">
-<img alt="数字コンポーネントのプロパティの設定" src="../_images/number-component-properties_web.png" />
-<p class="caption"><span class="caption-text">数字コンポーネントのプロパティの設定</span></p>
-</div>
-<p><strong>① 名前</strong></p>
-<p>数字コンポーネントの 名前
-を入力します。たとえば、予約人員の数を入力するコンポーネントの 名前
-は、「予約人員」にします。</p>
-<p><strong>② 変化の増分</strong></p>
-<p>入力欄の増加/減少のアイコンをクリックするたびに、現在入力されている値から増減する値を入力します。たとえば、増分の単位を
-100
-に設定して文書を作成する場合、入力欄の右側にある上への矢印（▲）をクリックすると、入力値から
-200、300、... に増加します。</p>
-<p><strong>③ 入力可能な最小値/最大値</strong></p>
-<p>入力可能な最小値と最大値を指定して、入力可能な数字の範囲を設定します。たとえば、生年月日の場合は、通常、最小値を1900、最大値を現在の年度、増分の単位を1で指定します。最小値または最大値が指定されている状態で範囲外の数字を入力すると、最小値または最大値が自動で入力されます。つまり、最大値が
-100 の場合、入力欄に 101 を入力すると、数字が自動的に最大値の 100
-に変更されます。</p>
-<p><strong>④ ツールヒントのテキスト</strong></p>
-<p>入力欄にカーソルを合わせると、入力した説明がツールヒントのテキストとして表示されます。</p>
-</div>
-<div class="section" id="toggle2">
-<span id="id14"></span><h3>トグル<a class="headerlink" href="#toggle2" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>ON や OFF
-など、特定の状態を示すために使用します。トグルコンポーネントを使用すれば、コンポーネントをクリックするたびに、予め設定しておいた項目順で入力値が切り替わります。</p>
-<p>次のようにコンポーネントをクリックして、「良好」または「不良」に変更できます。</p>
-<p><img alt="image5" src="../_images/toggle.png" /></p>
-<p><strong>コンポーネントのプロパティ</strong></p>
-<div class="figure" id="id34">
-<img alt="トグルコンポーネントのプロパティの設定" src="../_images/toggle-component-properties_web.png" />
-<p class="caption"><span class="caption-text">トグルコンポーネントのプロパティの設定</span></p>
-</div>
-<p><strong>① 名前</strong></p>
-<p>トグルコンポーネントの 名前
-を入力します。たとえば、最初の点検項目に対するコンポーネントであれば、「点検項目
-1」にします。</p>
-<p><strong>② リスト表示項目</strong></p>
-<p>トグルコンポーネントをクリックするたびに、切り替わる項目のリストを入力します。複数の項目を
-Enter キーで区切ります。</p>
-<p><strong>③ ツールヒントのテキスト</strong></p>
-<p>入力欄にカーソルを合わせると、入力した説明がツールヒントのテキストとして表示されます。</p>
-</div>
-<div class="section" id="camera2">
-<span id="id15"></span><h3>写真<a class="headerlink" href="#camera2" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>スマートフォンやタブレットなどのカメラを搭載したデバイスで写真を撮り、文書にアップロードするときに使用します。カメラのない
-PC
-環境では、コンポーネントをクリックすると選択ウィンドウが表示され、画像ファイルを選択できます。</p>
-<p>選択した画像のサイズが入力欄のサイズより大きい場合、入力欄内に入るサイズに縮小してアップロードされます。</p>
-<div class="admonition note">
-<p class="first admonition-title">注釈</p>
-<p class="last">写真コンポーネントの場合、カメラを利用できる環境ではカメラ機能が実行され、カメラの利用できない環境では画像ファイルの選択ウィンドウが実行されます。</p>
-</div>
-<p><strong>コンポーネントのプロパティ</strong></p>
-<div class="figure" id="id35">
-<img alt="カメラコンポーネントのプロパティの設定" src="../_images/Camera-component-properties_web.png" />
-<p class="caption"><span class="caption-text">カメラコンポーネントのプロパティの設定</span></p>
-</div>
-<p><strong>① 名前</strong></p>
-<p>カメラコンポーネントの 名前
-を入力します。たとえば、IDカードの写真を撮影するコンポーネントの名前は「身分証明のための写真」です。</p>
-<p><strong>② ツールヒントのテキスト</strong></p>
-<p>入力欄にカーソルを合わせると、入力した説明がツールヒントのテキストとして表示されます。</p>
-</div>
-<div class="section" id="record2">
-<span id="id16"></span><h3>録音<a class="headerlink" href="#record2" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>ユーザーの録音データを文書に保存する必要がある場合に使用します。最大録音時間を設定することも、すでに録音された内容を聴けるように設定することもできます。</p>
-<p>OZ in Office
-に録音コンポーネントを追加すると、ビューアーで録音したコンテンツを再生したり、新しい録音を行ったりすることができます。</p>
-<p><a class="reference internal" href="../_images/record1.png"><img alt="image6" src="../_images/record1.png" style="width: 300px;" /></a></p>
-<div class="admonition note">
-<p class="first admonition-title">注釈</p>
-<p>録音のタイムアウトが1以上に設定されている場合、設定した時間（単位：秒）の分だけ録音したら、自動で録音が完了します。</p>
-<p>ActiveX ビューアーでは、Windows 8 以降から、録音の再生 UI
-をサポートしています。</p>
-<p class="last">録音コンポーネントを PC
-環境で実行する場合、ボイスレコーダーを利用できるときだけ機能します。</p>
-</div>
-<p><strong>コンポーネントのプロパティ</strong></p>
-<div class="figure" id="id36">
-<img alt="録音コンポーネントのプロパティの設定" src="../_images/record_component_web.png" />
-<p class="caption"><span class="caption-text">録音コンポーネントのプロパティの設定</span></p>
-</div>
-<p><strong>① 名前</strong></p>
-<p>録音コンポーネントの「名前」を入力します。たとえば、録音を再生するコンポーネントの
-名前 を「録音」に設定します。</p>
-<p><strong>② ツールヒントのテキスト</strong></p>
-<p>入力欄にカーソルを合わせると、入力した説明がツールヒントのテキストとして表示されます。</p>
-</div>
-<div class="section" id="attach2">
-<span id="id17"></span><h3>添付<a class="headerlink" href="#attach2" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>文書に添付が必要な他の文書がある場合に使用します。添付コンポーネントを使用して文書を添付すると、添付した文書は元来の文書の最後に新しいページとして追加されます。</p>
-<p>添付可能なファイルのタイプとサイズは次のとおりです。</p>
-<ul class="simple">
-<li>ファイルタイプ：PDF、JPG、PNG、GIF</li>
-<li>ファイルサイズ：最大 5 MB までサポート</li>
-</ul>
-<p><strong>コンポーネントのプロパティ</strong></p>
-<div class="figure" id="id37">
-<img alt="添付コンポーネントのプロパティの設定" src="../_images/Attachment-component-properties_web.png" />
-<p class="caption"><span class="caption-text">添付コンポーネントのプロパティの設定</span></p>
-</div>
-<p><strong>① 名前</strong></p>
-<p>添付コンポーネントの 名前
-を入力します。たとえば、在職証明書を添付するコンポーネントの 名前
-は「在職証明書」とします。</p>
-<p><strong>② ツールヒントのテキスト</strong></p>
-<p>入力欄にカーソルを合わせると、入力した説明がツールヒントのテキストとして表示されます。</p>
-</div>
-<div class="section" id="document2">
-<span id="id18"></span><h3>文書<a class="headerlink" href="#document2" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>文書コンポーネントは、文書内に文書関連の情報を入力する必要がある場合に使用します。文書
-ID と文書番号のいずれかを選択した後、必要な情報を入力します。</p>
-<p>文書 ID は、システムが付与する文書固有の ID
-であるため、設定を必要としません。文書番号に関する設定は、テンプレートをアップロードした後、
-<strong>テンプレートの設定 &gt; 全般</strong> で行えます。</p>
-<p><strong>コンポーネントのプロパティ</strong></p>
-<div class="figure" id="id38">
-<img alt="文書コンポーネントのプロパティの設定" src="../_images/document-domponent-properties_web.png" />
-<p class="caption"><span class="caption-text">文書コンポーネントのプロパティの設定</span></p>
-</div>
-<p><strong>① 名前</strong></p>
-<p>文書コンポーネントの 名前
-を入力します。たとえば、文書番号を入力すると、コンポーネントの 名前
-は「文書番号」になります。</p>
-<p><strong>② 文書情報のタイプ</strong></p>
-<p>使用したい文書情報を選択します。</p>
-<ul class="simple">
-<li><strong>文書 ID：</strong>システムがすべての文書に付与する文書固有の ID で、32
-桁の英数字の組み合わせで表示されます。例）0077af27a98846c8872f5333920679b7</li>
-<li><strong>文書番号：</strong> <strong>テンプレートの設定 &gt;
-全般</strong>で設定した文書番号です。文書番号の設定については、<a class="reference external" href="#docnumber_wd">???</a>をご参照ください。</li>
-</ul>
-</div>
-</div>
-<div class="section" id="id19">
-<h2>テンプレートを追加設定する<a class="headerlink" href="#id19" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>背景書式の上にコンポーネントを追加したら、テンプレートで作成した文書について、テンプレートのタイトル、文書番号、ワークフローなどの追加設定を行うことができます。</p>
-<p>「デザインする」の画面で、 <strong>次へ</strong> ボタンをクリックして設定する
-に移動します。「設定する」画面では、次の5つの設定を行い、テンプレートを設定することができます。</p>
-<ul class="simple">
-<li><strong>全般：</strong>テンプレート名、略称、文書のタイトル、文書番号などを設定します。</li>
-<li><strong>権限の設定：</strong>このテンプレートで作成した文書を管理するメンバーまたはグループを指定します。</li>
-<li><strong>ワークフローの設定：</strong>文書の作成から完了までのステップをを設定します。</li>
-<li><strong>フィールドの設定：</strong>フィールドの基本値、自動入力値などのデフォルト値を設定します。</li>
-<li><strong>通知の設定：</strong>テンプレートを利用して作成した文書を依頼するときとその文書に関する通知を送信するときの通知メッセージを設定します。</li>
-</ul>
-<div class="figure" id="id39">
-<a class="reference internal image-reference" href="../_images/component_web_2.png"><img alt="テンプレートの 5つの設定項目" src="../_images/component_web_2.png" style="width: 750px;" /></a>
-<p class="caption"><span class="caption-text">テンプレートの 5つの設定項目</span></p>
-</div>
-<p>4 すべての設定が完了したら、 <strong>保存</strong>
-ボタンをクリックして設定を保存します。</p>
-<div class="admonition note">
-<p class="first admonition-title">注釈</p>
-<p class="last">テンプレートの詳細な説明については、<a class="reference external" href="chapter5.html#template_wd">テンプレート：Webフォームデザイナー</a>をご参照ください。</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
@@ -672,12 +364,12 @@ ID と文書番号のいずれかを選択した後、必要な情報を入力�
   </li>
   <li class="next">
     <a href="chapter4.html"
-       title="次の章へ">フォームビルダーの紹介 →</a>
+       title="次の章へ">Web フォームデザイナーの紹介 →</a>
   </li>
 </ul><div class="footer" role="contentinfo">
-      &#169; Copyright 2020, FORCS CO., LTD. All rights reserved..
+      &#169; Copyright 2021, FORCS CO., LTD. All rights reserved..
     <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a>.
 </div>
             </div>
           </div>
