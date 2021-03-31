@@ -704,7 +704,7 @@ ON や OFF など、特定の状態を示すために使用します。\ **ト�
 
 .. note::
 
-   テンプレートの詳細な説明については、`Web フォームデザイナー <chapter6.html#template_wd>`__\ をご参照ください。
+   テンプレートの詳細な説明については、`Web フォームデザイナー <chapter6.html#template_wd>`__ をご参照ください。
 
 .. |image1| image:: resources/myfile_create_document.png
    :width: 700px
