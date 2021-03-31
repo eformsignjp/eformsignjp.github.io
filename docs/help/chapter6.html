@@ -295,7 +295,7 @@
 <img alt="テンプレートの略称" src="../_images/template-short-name.png" />
 </div>
 </dd>
-<dt>③ カテゴリ</dt><dd><p>テンプレートをタイプごとに区分するために使用します。カテゴリー名で<strong>テンプレート管理</strong> 画面のテンプレート、または <strong>文書トレイ</strong>、<strong>文書管理</strong>
+<dt>③ カテゴリー</dt><dd><p>テンプレートをタイプごとに区分するために使用します。カテゴリー名で<strong>テンプレート管理</strong> 画面のテンプレート、または <strong>文書トレイ</strong>、<strong>文書管理</strong>
 メニューで文書をフィルタリングできます。既存のカテゴリーから選択することも、新しい名前を入力して新しいカテゴリーを作成することもできます。</p>
 <p>区切り文字（<strong>/</strong>）を使用すれば、サブカテゴリーを含むマルチレベルのカテゴリーを設定できます。たとえば、カテゴリーを <strong>人事チーム/休暇</strong> で設定すれば、最上位レベルのカテゴリーである <strong>人事チーム</strong> に第2レベルのサブカテゴリーである <strong>休暇</strong> カテゴリーが生成されます。</p>
 </dd>
@@ -322,6 +322,7 @@
 <div class="section" id="id6">
 <h3>全般 &gt; 文書タイトルの自動生成ルールの作成<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p><strong>テンプレートの設定</strong> では、テンプレートで生成される文書のタイトルルールを設定できます。</p>
+<p><strong>文書タイトルの自動生成ルール</strong></p>
 <p>文書に関する情報が文書タイトルに自動で入力されるよう設定することができます。文書タイトルの自動生成ルールを設定すると、文書の作成時の情報に基づいて文書タイトルが生成されます。この文書タイトルは、すべての文書トレイ（要処理、進行中、完了文書）と 文書管理メニューの文書リストで確認できます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -340,17 +341,14 @@
 <li><p><strong>全般</strong> 画面上の <strong>文書タイトルの自動生成ルール</strong> の入力欄に、目的のタイトルルールを入力します。</p></li>
 <li><p>右上の <strong>保存</strong> ボタンをクリックして、変更内容を保存します。</p></li>
 </ol>
-<p><strong>予約語を使用する方法 テンプレート 予約語</strong></p>
+<p><strong>予約語を使用する方法</strong></p>
 <div class="figure align-default">
 <img alt="予約語を使用して文書タイトルの自動生成ルールの設定" src="../_images/template-setting-general-doc-numering_rule_reserved.png" />
 </div>
-<p><strong>{{</strong> 文書に入力した内容を文書タイトルに追加したい場合には、</p>
-<blockquote>
-<div><p><strong>文書タイトルの自動生成ルール</strong> の入力欄に <strong>{{</strong> を入力すると、テンプレートに追加されているコンポーネントの <strong>名前</strong> のリストが表示され、目的の <strong>名前</strong> を選択すると、そのコンポーネントに入力される内容が文書タイトルに追加されます。</p>
-</div></blockquote>
-<p><strong>$$</strong> 文書に関連する情報をタイトルに追加したい場合には、</p>
-<blockquote>
-<div><p><strong>文書タイトルの自動生成ルール</strong> の入力欄に <strong>$$</strong> を入力すると、ドロップダウンメニューが表示され、以下の情報から目的の情報を選択できます。</p>
+<p><strong>{{</strong> ：文書に入力した内容を文書タイトルに追加したい場合には、</p>
+<p><strong>文書タイトルの自動生成ルール</strong> の入力欄に <strong>{{</strong> を入力すると、テンプレートに追加されているコンポーネントの <strong>名前</strong> のリストが表示され、目的の <strong>名前</strong> を選択すると、そのコンポーネントに入力される内容が文書タイトルに追加されます。</p>
+<p><strong>$$</strong> ：文書に関連する情報をタイトルに追加したい場合には、</p>
+<p><strong>文書タイトルの自動生成ルール</strong> の入力欄に <strong>$$</strong> を入力すると、ドロップダウンメニューが表示され、以下の情報から目的の情報を選択できます。</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 32%" />
@@ -411,7 +409,6 @@
 </tr>
 </tbody>
 </table>
-</div></blockquote>
 <div class="admonition tip">
 <p class="admonition-title">ちなみに</p>
 <p><strong>文書のタイトルの変更を許可する</strong> にチェックが入っているかどうかを確認してください！</p>
