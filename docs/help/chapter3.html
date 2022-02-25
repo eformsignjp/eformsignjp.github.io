@@ -89,21 +89,22 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="chapter1.html">概要</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">eformsignのご紹介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">基本情報</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">文書の新規作成</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">概要</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">マイファイルで作成する</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">テンプレートで作成する</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id5">一括生成</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">マイファイルで作成する</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3"><strong>受信先を指定する &gt; 受信先のオプション設定</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4"><strong>オプション設定</strong></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">テンプレートで作成する</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bulksend">一括作成して文書を送信する</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter4.html">Web フォームデザイナーの紹介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter5.html">フォームビルダーの紹介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter6.html">テンプレートの作成：Web フォームデザイナー</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter7.html">テンプレートの作成：フォームビルダー</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">ウェブフォームデザイナーでテンプレートを作成する</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">フォームビルダーでテンプレート作成</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter8.html">文書トレイ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter9.html">カスタマイズ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter10.html">外部サービスとの連動</a></li>
@@ -174,178 +175,226 @@
             
   <div class="section" id="createnew">
 <span id="id1"></span><h1>文書の新規作成<a class="headerlink" href="#createnew" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<div class="section" id="id2">
-<h2>概要<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>eformsign を使用すると、誰もが簡単にお手持ちのファイルを電子文書化し、文書を作成、依頼、および処理できます。eformsign で電子文書を作成および送信する方法は、大きく2種類に分けられます。PCに保存されているファイルを直接アップロードして電子文書を作成する方法と、eformsign に保存されている既存のテンプレートを利用する方法です。</p>
+<p>eformsignを使用することで、既存のファイルを簡単に電子文書化し、文書を作成、依頼、および処理することができます。eformsignによる電子文書の作成と送信のやり方は2種類にあります。PCに保存されているファイルをそのままアップロードして電子文書を作成する方法と、eformsignに保存されているテンプレートを使用する方法があります。</p>
 <ul class="simple">
-<li><p><strong>マイファイルで作成する</strong>：PCに保存された文書ファイル (PDF形式) を使って電子フォームを作成し、参加者に送信できます。</p></li>
-<li><p><strong>テンプレートで作成する</strong>：既存のテンプレートを使用して文書を作成します。<strong>テンプレートで作成する</strong> メニューをクリックすると、代表管理者またはテンプレートの管理権限を持つメンバーが作成しておいたテンプレートが画面に表示されます。</p></li>
+<li><p><strong>マイファイルで作成する</strong>：PC内の既存の文書ファイルを使用して文書を作成します。電子フォームを作成し、受信者に送信することができます。</p></li>
+<li><p><strong>テンプレートで作成する</strong>：既存のテンプレートを使用して文書を作成します。
+<strong>テンプレートで作成する</strong>をクリックすると、代表管理者およびテンプレートの管理権限を持つメンバーがアップロードしたテンプレートが表示されます。</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>テンプレートの作成は、代表管理者またはテンプレー管理の権限を持つメンバーのみが可能です。また、<strong>テンプレートで作成する</strong> メニューで表示されるテンプレートは、各テンプレートの <strong>権限の設定</strong> で <strong>テンプレートの使用権限</strong> を付与したメンバーのみに表示されます。テンプレートは、<strong>Webフォームデザイナー</strong> と <strong>フォームビルダー</strong> で作成できます。詳しくは <a class="reference external" href="chapter6.html#template_wd">Web フォームデザイナー</a> と <a class="reference external" href="chapter7.html#template_fb">フォームビルダー</a> をご参照ください。</p>
+<p>テンプレートの作成は、代表管理者およびテンプレート管理の権限を持つメンバーのみ可能です。また、 アップロードされたテンプレートはそのテンプレートの権限設定で <strong>使用権限</strong>を付与されたメンバーの <strong>テンプレートで作成する</strong>の画面に表示されます。詳しくは <a class="reference external" href="chapter6.html#template_wd">Web フォームデザイナー</a>と <a class="reference external" href="chapter7.html#template_fb">フォームビルダー</a>をご参照ください。</p>
 </div>
-<div class="admonition important">
-<p class="admonition-title">重要</p>
-<p><strong>マイファイルで作成する</strong> で文書を作成する場合、作成した文書をテンプレートに変更したり保存したりすることはできません。よく使う文書の場合、テンプレートに登録しておくと便利です。</p>
+<div class="admonition tip">
+<p class="admonition-title">ちなみに</p>
+<p><strong>マイファイルで作成する</strong>で文書作成する場合は、テンプレートを変更・保存することはできません。 従って、頻繁に使用する文書は、テンプレートとしてアップロードすることで、スムーズな作業が可能になります。</p>
 </div>
-</div>
-<div class="section" id="id3">
-<h2>マイファイルで作成する<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>PDF形式のファイルを直接アップロードして、文書の上にコンポーネントを自由に配置します。各コンポーネントを参加者毎に指定した後、参加者および/または検討者の情報を入力し、送信することができます。</p>
+<div class="section" id="id2">
+<h2>マイファイルで作成する<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>使用したい文書ファイルをアップロードし、文書上に入力コンポーネントを自由に配置することができます。
+また、各コンポーネントを参加者ごとに指定することで、参加者および検討者情報を入力した上で、送信できます。</p>
 <ol class="arabic">
 <li><p><strong>マイファイルで作成する</strong> メニューに移動します。</p>
 <p><a class="reference internal" href="../_images/newfrommyfile-menu.png"><img alt="image1" src="../_images/newfrommyfile-menu.png" style="width: 700px;" /></a></p>
 </li>
-<li><p>文書ファイル (PDF形式) をアップロードします。</p>
+<li><p>文書ファイルをアップロードします。</p>
 <p><a class="reference internal" href="../_images/newfrommyfile-uploadfile.png"><img alt="image2" src="../_images/newfrommyfile-uploadfile.png" style="width: 700px;" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>現在は PDF 形式のみをサポートしていますが、今後様々なファイル形式にも対応していく予定です。</p>
+<p>アップロード可能なファイル形式は pdf, hwp, doc, docx, xls, xlsx, ppt, pptx, odt, jpg, png, gif, tiff となります。
+アップロード可能なファイルの容量は最大9MBまでです。</p>
 </div>
 </li>
-<li><p>文書の作成に参加する <strong>参加者</strong> を追加し、タイプを設定します。</p>
+<li><p>文書の作成に参加する <strong>参加者</strong>を追加し、役割を設定します。</p>
 <p><a class="reference internal" href="../_images/newfrommyfile-participants-popup.png"><img alt="image3" src="../_images/newfrommyfile-participants-popup.png" style="width: 400px;" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>画面左上の <strong>参加者を追加する</strong> ボタンをクリックして参加者を追加することもでき、最大30人まで設定できます。</p>
-<p><strong>受信先を指定する</strong>
-ステップでも設定した参加者の情報を変更および追加、削除できます。</p>
+<p>画面左上の <strong>参加者を追加する</strong>をクリックすると参加者を追加することが可能で、最大30人まで設定できます。
+フォームデザインの次に <strong>受信先を指定する</strong>では、追加した参加者の情報を変更、追加および削除ができます。</p>
 </div>
 </li>
-<li><p>各参加者が入力するコンポーネントを追加し、各コンポーネントの詳細設定を右側の <strong>プロパティ</strong> タブで指定します。</p>
+<li><p>各参加者が入力するコンポーネントを追加し、各コンポーネントの詳細設定を右側の画面で指定します。</p>
 <p><a class="reference internal" href="../_images/newfrommyfile-formdesign.png"><img alt="image4" src="../_images/newfrommyfile-formdesign.png" style="width: 700px;" /></a></p>
 </li>
-<li><p>コンポーネントを追加した後、<strong>受信先を指定する</strong> ステップでメールアドレス、携帯電話番号など連絡先の情報を入力し、<strong>各受信者の詳細オプション</strong>を設定します。</p>
+<li><p>コンポーネントを追加した後、 <strong>受信先を指定する</strong>でメールアドレス、携帯電話番号等の連絡先を入力し <strong>各受信者の詳細オプション</strong>を設定します。</p>
 <p><a class="reference internal" href="../_images/newfrommyfile-recipients.png"><img alt="image5" src="../_images/newfrommyfile-recipients.png" style="width: 700px;" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>受信者は、<strong>参加者</strong> と <strong>検討者</strong> に区別されます。文書を作成するときに追加した参加者が <strong>受信先を指定する</strong> ステップに表示され、各受信者のメールアドレスなど連絡先の情報を入力します。<strong>受信先を指定する</strong> 画面で参加者/検討者を削除/追加でき、各受信者の詳細オプションを設定します。</p>
+<p>受信者は、参加者と検討者に分けられます。追加した参加者は受信先を指定するステップで表示されます。各受信者のメールアドレスなどの連絡先を入力します。受信先を指定する画面では、参加者/検討者の削除/追加、各受信者の詳細オプションを設定できます。</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">ちなみに</p>
-<p><strong>参加者と検討者の違い</strong></p>
-<p>参加者は署名、記入など文書のコンポーネントに入力することができます。一方、検討者は文書に入力することができず、文書を検討し、承認するかどうかのみを決定します。</p>
-<p>ただし、コンポーネントの作成権限を <strong>誰でも作成可能</strong> に設定した場合、検討者もコンポーネントに入力することができます。</p>
+<p><strong>参加者と検討者の相違点</strong></p>
+<p>参加者は入力コンポーネントに署名・記入等を入力することができます。検討者は文書に入力不可能で、文書の承認の可否のみ入力します。</p>
 <p><img alt="image6" src="../_images/newfrommyfile-recipients-type.png" /></p>
 </div>
 </li>
-<li><p><strong>オプション</strong> をクリックし、文書のタイトル、完了文書に対するタイムスタンプの付与などを設定します。</p>
+<li><p><strong>オプション</strong>をクリックして文書のタイトル、完了文書に対するタイムスタンプの付与などを設定します。</p>
 <p><a class="reference internal" href="../_images/newfrommyfile-option.png"><img alt="image7" src="../_images/newfrommyfile-option.png" style="width: 700px;" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>このステップまでがフォームを設定するステップです。<strong>文書作成をスタート</strong> をクリックする前に下書き保存して作成を終了する場合、`下書きとして保存 &lt;chapter8.html#drafts&gt;`__ トレイに保存されます。保存されたファイルを開けば、作成を再開できます。文書の下書き保存は右上のメニュー (<img alt="image8" src="../_images/menu_icon_3.png" />) アイコンをクリックして表示される <strong>下書きとして保存</strong> をクリックします。</p>
+<p>このステップまでがフォームを設定するステップです。 <strong>文書作成をスタート</strong>をクリックする前に下書き保存して作成を終了する場合、<a class="reference external" href="chapter8.html#drafts">下書きとして保存</a>トレイに保存されます。保存されたファイルを開くと、作成を再開することができます。文書の下書き保存は右上のメニュー (<img alt="image8" src="../_images/menu_icon_3.png" />) アイコンをクリックして表示される <strong>下書きとして保存</strong> をクリックすることで可能です。</p>
 <p><img alt="image9" src="../_images/newfrommyfile-saveasdrafts.png" /></p>
 </div>
 </li>
-<li><p>すべての設定を完了した後、<strong>文書作成をスタート</strong> をクリックします。</p>
+<li><p>全ての設定を完了した後、 <strong>文書作成をスタート</strong>をクリックします。</p>
 <p><a class="reference internal" href="../_images/newfrommyfile-startfromnow.png"><img alt="image10" src="../_images/newfrommyfile-startfromnow.png" style="width: 700px;" /></a></p>
 <div class="admonition caution">
 <p class="admonition-title">注意</p>
-<p><strong>文書作成をスタート</strong>
-をクリックした時点から課金の対象として集計されます。</p>
+<p><strong>文書作成をスタート</strong>をクリックした時点から課金の対象として集計されます。</p>
 </div>
 </li>
-<li><p>文書を確認し、<strong>送信</strong>
-ボタンをクリックすると、受信先に文書が送信されます。</p>
+<li><p>文書を確認し、 <strong>送信</strong>をクリックすると、受信先に文書が送信されます。</p>
 <p><a class="reference internal" href="../_images/newfrommyfile-startfromnow-send.png"><img alt="image11" src="../_images/newfrommyfile-startfromnow-send.png" style="width: 700px;" /></a></p>
 </li>
 </ol>
-<p><strong>受信先を指定する &gt; 受信先のオプション</strong></p>
-<p><strong>デザインする</strong> または <strong>受信先を指定する</strong> ステップで文書の参加者、つまり文書の受信先を追加することができます。</p>
-<p><strong>受信先を指定する</strong> ステップでは、参加者に対する詳細設定を行う <strong>受信先のオプション</strong> の設定はもちろん、参加者を追加または削除したり、文書を検討する検討者を追加したりできます。</p>
-<p>各参加者または検討者に対し、名前と送信先のメールアドレスまたは ID を入力する必要があります。参加者がメンバーである場合、リストから選択すると、登録されたメンバー情報が自動で入力されます。<strong>受信先のオプション</strong> は、参加者または 検討者がメンバーである場合と、メンバーではない外部の受信者である場合でそれぞれ異なって表示されます。</p>
+<div class="section" id="id3">
+<h3><strong>受信先を指定する &gt; 受信先のオプション設定</strong><a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p><strong>デザインする</strong>ステップで文書作成に参加する参加者、つまり文書の受信者を追加して各受信者の入力コンポーネントを設定します。<strong>受信先を指定する</strong>で追加した参加者の詳細設定を行います。参加者の順番変更や作成した文書検討者の追加が可能です。</p>
+<p>各参加者もしくは検討者には、名前・送信先のメールアドレスまたはIDを入力する必要があります。参加者がメンバーである場合、リストを選択すると
+登録されたメンバーが自動的に入力されます。受信先のオプションは、参加者もしくは検討者がメンバー/非メンバーかで設定が異なります。</p>
 <ul>
 <li><p><strong>受信者がメンバーである場合</strong></p>
-<p>登録されたメールアドレスと携帯電話番号が自動で表示され、文書を送信する手段を選択できます。</p>
-<div class="admonition caution">
-<p class="admonition-title">注意</p>
-<p><strong>モバイル</strong>
-を選択する場合、SMSまたはカカオトーク通知で送信され、件数に比例して追加料金が発生します。</p>
-</div>
-<p><a class="reference internal" href="../_images/newformmyfile-recipientoption-member.png"><img alt="image12" src="../_images/newformmyfile-recipientoption-member.png" style="width: 400px;" /></a></p>
-</li>
-<li><p><strong>メンバーではない外部の受信者である場合</strong></p>
-<p>入力した情報がメンバーの情報と一致しない場合、外部受信者と認識され、次の項目についての詳細オプションを設定する必要があります。</p>
 <ul>
-<li><p><strong>送信手段の選択：メール</strong> と <strong>モバイル</strong> のうち一つまたは両方を選択でき、<strong>モバイル</strong> を選択した場合は携帯電話番号を入力する必要があります。</p>
+<li><p><strong>文書送信手段の選択:</strong> メールとSMSの中から1つを選択または全て選択することができます。保存されているメールアドレスと携帯電話番号が表示されます。</p>
 <div class="admonition caution">
 <p class="admonition-title">注意</p>
-<p><strong>モバイル</strong>を選択する場合、SMSまたはカカオトーク通知で送信され、件数に比例した追加料金が発生します。</p>
+<p>SMSは追加料金が発生します。</p>
 </div>
 </li>
-<li><p><strong>文書の送信期限：</strong>外部受信者が文書を閲覧し、送信できる期限を設定でき、設定された期限が切れると文書を作成することができません。</p></li>
-<li><p><strong>パスワードの設定：</strong>チェックを入れると、外部受信者が文書を閲覧する前に、設定しておいたパスワードを入力する必要があります。<strong>パスワードのヒント</strong> で、受信者がパスワードを推測できるようなヒントを設定し、表示することができます。</p></li>
-<li><p><strong>文書の検討前に携帯電話で本人確認する：</strong>外部受信者が文書を閲覧/作成する前に、携帯電話で本人確認を行うよう設定します。この機能は追加料金が発生します。</p></li>
-<li><p><strong>完了文書の閲覧前に携帯電話で本人確認する：</strong>外部受信者が完了文書を閲覧する前に、携帯電話で本人確認を行うよう設定します。この機能は追加料金が発生します。</p></li>
+<li><p><strong>通知:</strong><strong>通知編集</strong>をクリックすることで、文書を送信する際に送られる通知メール、及びSMSの内容を編集できます。</p></li>
+<li><p><strong>文書の送信期限の設定:</strong>受信者が文書を送信できる期限を設定できます。提出期限が過ぎると文書の検討および作成ができなくなります。</p>
+<div class="admonition tip">
+<p class="admonition-title">ちなみに</p>
+<p>文書の送信期限を無期限にするには、 <strong>文書の送信期限をOO日OO時間</strong>と設定します。</p>
+</div>
+</li>
 </ul>
-<p><a class="reference internal" href="../_images/newformmyfile-recipientoption-external.png"><img alt="image13" src="../_images/newformmyfile-recipientoption-external.png" style="width: 400px;" /></a></p>
+<p><a class="reference internal" href="../_images/newformmyfile-recipientoption-member.png"><img alt="image12" src="../_images/newformmyfile-recipientoption-member.png" style="width: 700px;" /></a></p>
+</li>
+<li><p><strong>受信者がメンバーではない場合</strong></p>
+<p>入力した情報がメンバーの情報と一致しない場合、外部受信者として認識され、次の項目に対して詳細オプションを設定する必要があります。</p>
+<ul>
+<li><p><strong>文書送信手段の選択:</strong> メールおよびSMSから選択できます。SMSを選択した場合は送信先の携帯電話番号を入力する必要があります。</p>
+<div class="admonition caution">
+<p class="admonition-title">注意</p>
+<p>SMSは追加料金が発生します。</p>
+</div>
+</li>
+<li><p><strong>文書の送信期限の設定:</strong> 受信者が文書を送信できる期限を設定できます。提出期限が過ぎると文書の検討および作成ができなくなります。文書の送信期限を無期限に設定できません。</p></li>
+<li><p><strong>文書の閲覧前に本人確認する</strong></p>
+<ul class="simple">
+<li><p><strong>本人確認情報</strong>: 各項目にチェックを入れると、外部受信者が文書を検討する際に、チェックされた項目に関する情報の入力が必須になります。入力内容に関するヒントを入力することもできます。</p></li>
+<li><p><strong>追加確認手段</strong>: <strong>メール確認</strong> を行った後、検討ができるように設定します。</p></li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 </div>
 <div class="section" id="id4">
-<h2>テンプレートで作成する<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>よく使うフォームをテンプレート化しておくと、文書の処理過程であるワークフローなどの詳細設定をテンプレート毎に保存し、必要に応じて文書を作成および送信できます。テンプレートは <strong>Webフォームデザイナー</strong> または <strong>フォームビルダー</strong> を使って作成できます。詳しくは <a class="reference external" href="chapter6.html#template_wd">Webフォームデザイナー</a> と <a class="reference external" href="chapter7.html#template_fb">フォームビルダー</a> をご参照ください。</p>
+<h3><strong>オプション設定</strong><a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>最後のステップであるオプション設定では、文書タイトルの作成、通知の設定及び編集、することができます。また、タイムスタンプの付与も可能です。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/wfd-option.png"><img alt="オプション設定の画面" src="../_images/wfd-option.png" style="width: 700px;" /></a>
+</div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>テンプレートで作成する<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>頻繁に使用するフォームをテンプレート化することで、ワークフロー（文書の処理プロセス）等の設定をテンプレートごとに保存し、必要な際に文書の作成及び送信ができます。テンプレートは <strong>Webフォームデザイナー</strong> または <strong>フォームビルダー</strong> を使って作成できます。詳しくは <a class="reference external" href="chapter6.html#template_wd">Webフォームデザイナー</a> と <a class="reference external" href="chapter7.html#template_fb">フォームビルダー</a> をご参照ください。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>文書の作成は、テンプレート管理の権限を持つメンバーが <strong>テンプレートの設定 &gt; 権限の設定</strong> で <strong>テンプレートの使用権限</strong> (=文書の作成権限) を付与したグループまたはメンバーのみが可能です。テンプレートの使用権限を付与されたグループまたはメンバーのテンプレートリストのみにそのテンプレートが表示され、作成できます。</p>
+<p>文書の作成は、テンプレート管理の権限を持つメンバーが <strong>テンプレートの設定 &gt; 権限の設定</strong> から <strong>テンプレートの使用権限</strong> (=文書の作成権限) を付与したグループまたはメンバーのみ可能です。テンプレートの使用権限を付与されたグループまたはメンバーの <strong>テンプレートで作成する</strong> リストでのみ、そのテンプレートが表示され、作成することができます。</p>
 </div>
 <ol class="arabic">
-<li><p>ダッシュボードまたはサイドバーのメニューで <strong>テンプレートで作成する</strong>をクリックします。</p>
+<li><p>ダッシュボードまたはサイドバーのメニューから <strong>テンプレートで作成する</strong>をクリックします。</p>
 <p><a class="reference internal" href="../_images/menu-startfromtemplate.png"><img alt="image14" src="../_images/menu-startfromtemplate.png" style="width: 700px;" /></a></p>
 </li>
-<li><p>目的のテンプレートの <strong>作成</strong> アイコン(<img alt="image15" src="../_images/create-icon.PNG" />) をクリックします。</p>
+<li><p>使用したいテンプレートの作成アイコン(<img alt="image15" src="../_images/create-icon.PNG" />) をクリックします。</p>
 <p><a class="reference internal" href="../_images/startfromtemplate-create.png"><img alt="image16" src="../_images/startfromtemplate-create.png" style="width: 700px;" /></a></p>
 </li>
-<li><p>文書を作成し、画面右上の <strong>作成完了</strong> もしくは <strong>依頼</strong> ボタンをクリックすると、文書のワークフローに指定された次のステップに送信されます。途中で作成をやめて保存する場合は、<strong>下書き保存</strong> ボタンをクリックして保存します。</p>
+<li><p>文書を作成して右上の <strong>完了</strong> もしくは <strong>送信</strong>をクリックすると文書に設定されているワークフローにしたがって次のステップに送信されます。途中で作成を中止したい場合は <strong>下書き保存</strong>をクリックして保存します。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>テンプレートに設定されたワークフローによっては <strong>作成完了、提出</strong> もしくは <strong>依頼</strong> ボタンに異なって表示されます。</p>
+<p>テンプレートに設定されているワークフローによって、<em>完了</em> 、 <em>提出</em> 、 <em>送信</em> ボタンのいずれかが表示されます。</p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">重要</p>
-<p>テンプレートで作成する途中に <strong>下書き保存</strong> ボタンをクリックして下書き保存した文書は、<strong>下書きとして保存</strong> トレイではなく、<strong>要処理文書</strong> トレイに保存されます。</p>
-<p><strong>要処理文書</strong> のリストから下書き保存した文書の <strong>編集</strong> ボタンをクリックすると、作成を続行できます。</p>
+<p>テンプレートで作成する途中で <strong>下書き保存</strong> ボタンをクリックして下書き保存した文書は、 <strong>下書きとして保存</strong>トレイではなく、 <strong>要処理文書</strong>で確認することができます。</p>
+<p>下書き保存した文書の作成を続けたい場合は <strong>要処理文書</strong> のリストから下書き保存した文書の <strong>編集</strong> をクリックして進めることができます。</p>
 </div>
 </li>
 </ol>
-<div class="section" id="id5">
-<h3>一括生成<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>文書トレイ 一括生成 テンプレートで作成する場合、<strong>一括生成</strong> の機能を使用すると、一度に複数の文書を作成できます。</p>
+</div>
+<div class="section" id="bulksend">
+<span id="id6"></span><h2>一括作成して文書を送信する<a class="headerlink" href="#bulksend" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>テンプレートで文書を作成する際、一括作成機能を使用することで、一度に複数の文書を送信できます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>この作業を行うには、代表管理者の権限またはテンプレートの管理権限が必要です。</p>
+<p>この作業を行うには、代表管理者の権限またはテンプレート管理の権限が必要です。</p>
 </div>
+<p><strong>一括作成する</strong></p>
 <ol class="arabic">
 <li><p><strong>文書の新規作成</strong> <strong>&gt; テンプレートで作成する</strong> メニューに移動します。</p></li>
-<li><p>目的のテンプレートの <strong>一括生成</strong> アイコンをクリックします。</p>
+<li><p>使用したいテンプレートの一括生成アイコンをクリックします。</p>
 <div class="figure align-default">
-<img alt="一括生成アイコン" src="../_images/bulk-creation-icon.png" />
+<img alt="一括作成アイコン" src="../_images/bulk-creation-icon.png" />
 </div>
 </li>
-<li><p>画面に表示される各コンポーネントに説明を入力します。</p>
+<li><p>一括作成したい文書にデータを入力する方法を選択します。eformsignの画面に <strong>直接編集</strong> または <strong>ファイルのアップロード</strong>することで、データの入力ができます。</p>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/bulk_create.png"><img alt="一括生成画面" src="../_images/bulk_create.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/bulksend.png"><img alt="一括作成" src="../_images/bulksend.png" style="width: 700px;" /></a>
+</div>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">ちなみに</p>
+<p><strong>一括作成文書データの入力方法</strong></p>
+<p><strong>方法 1. データの直接編集: 最大200件まで一括作成可能</strong></p>
+<p><strong>直接編集</strong>をクリックすると、eformsign画面で直接データを入力できる表が表示されます。文書の入力コンポーネント1つを1列として表示します。各入力コンポーネントの名前が、各列のタイトルとして表示されます。1行を1件の文書として扱います。1列目の最下行にある数字が、作成される文書の総件数です。</p>
+<p>表は、エクセルのような感覚で使用できます。各セルをダブルクリックすることで内容の入力、右クリックすることで行の追加、削除ができます。セルに入力された値をコピー、貼り付けまたはドラッグ＆ドロップして入力することもできます。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/bulksend-edit.png"><img alt="一括作成_直接編集" src="../_images/bulksend-edit.png" style="width: 700px;" /></a>
+</div>
+<p><strong>方法 2. ファイルのアップロード: 最大1,000件まで一括作成可能</strong></p>
+<p>ファイルのアップロードを選択すると、文書の入力コンポーネントが書かれたエクセルファイルがダウンロードされます。そのファイルに各入力コンポーネントのデータを入力し、アップロードします。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/bulksend-fileupload.png"><img alt="一括作成_ファイルのアップロード" src="../_images/bulksend-fileupload.png" style="width: 400px;" /></a>
+</div>
+</div>
+<ol class="arabic" start="4">
+<li><p>右上の <strong>プレビュー</strong>をクリックして、作成した文書の内容を確認します。</p></li>
+<li><p><strong>予約送信</strong>もしくは <strong>即時送信</strong>をクリックすると文書の一括作成が完了します。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/bulksend-sending.png"><img alt="一括作成送信" src="../_images/bulksend-sending.png" style="width: 700px;" /></a>
 </div>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>文書内のコンポーネントが各カラムとして表示されているテーブルです。コンポーネントの ID が、各カラムのタイトルとして表示されます。<strong>番号</strong> カラムの一番下の行の番号が作成される文書の数です。</p>
-<p>テーブルは、Excel と同様の方法で入力します。各セルをダブルクリックして内容を入力し、マウスを右クリックして行を追加または削除できます。セルに入力した値をコピーと貼り付け、ドラッグして入力することができます。</p>
+<p><strong>予約送信</strong>をクリックすると、文書予約送信ポップアップが表示されます。送信する日時を選択してください。
+予約送信は現在時刻を基準に、10分後から可能です。</p>
+</div>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/bulksend-schedule.png"><img alt="一括作成予約送信" src="../_images/bulksend-schedule.png" style="width: 400px;" /></a>
 </div>
 </li>
-<li><p>右上の <strong>プレビュー</strong> ボタンをクリックして、作成した文書の内容を確認した後、<strong>生成</strong> ボタンをクリックして文書の作成を完了します。</p>
-<div class="admonition note">
-<p class="admonition-title">注釈</p>
-<p><strong>一括生成</strong> のテーブルに表示される青い領域には、依頼を送信する外部受信者の名前、メールアドレスなどを入力します。外部受信者の処理ステップの設定に応じて、携帯電話番号、認証パスワードなどを入力できます。</p>
-<p><a class="reference internal" href="../_images/bulk-creation-table-blue-section.png"><img alt="image17" src="../_images/bulk-creation-table-blue-section.png" style="width: 700px;" /></a></p>
+<li><p><strong>一括作成文書</strong>で文書の送信状況等の文書に関する情報を確認します。</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">ちなみに</p>
+<p><strong>一括作成文書 TIP 1: 一括作成時に入力されたデータのエラーの確認</strong></p>
+<p><strong>直接編集</strong>または <strong>ファイルのアップロード</strong>で文書を一括作成する際、入力されたデータのエラーを確認することができます。不当なデータの入力や、必須項目のデータが無い場合は、データエラーとして表示されます。エラーで表示された文書は送信不可能であり、正常なデータのみ送信可能です。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/bulksend-error.png"><img alt="データエラーの確認" src="../_images/bulksend-error.png" style="width: 400px;" /></a>
+</div>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">ちなみに</p>
-<p>テンプレートのコンポーネントの一部が <strong>一括生成</strong> 画面に表示されない場合は、次の2つのケースを確認してください。</p>
-<p>1.<strong>一括生成</strong> で入力できないコンポーネント：<strong>写真</strong>、<strong>録音</strong>、およびグループ化されている <strong>ラジオ</strong> コンポーネントは、<strong>一括生成</strong> では作成できないコンポーネントです。</p>
-<p>2.<strong>作成</strong> ステップでアクセスが許可されているコンポーネント：<strong>テンプレート管理 &gt; テンプレートの設定(⚙) &gt; ワークフローの設定</strong> でアクセスが許可されているコンポーネントのみが表示されます。</p>
-</div>
-</li>
+<p><strong>一括作成文書 TIP 2: 一括作成時、要チェック!</strong></p>
+<p>テンプレートの入力コンポーネントのうち、一部が <strong>一括作成</strong>画面に表示されない場合、以下2つの内容を確認する必要があります。</p>
+<ol class="arabic simple">
+<li><p>一括作成で入力できないコンポーネントの確認: カメラ、録音、グループ化されたコンポーネント</p></li>
+<li><p>作成ステップでアクセス許可されたコンポーネントの確認: <strong>テンプレート管理 &gt; テンプレートの設定(⚙) &gt; ワークフローの設定 &gt;</strong>作成ステップのうち、アクセスが許可されたコンポーネントのみ表示されます。</p></li>
 </ol>
 </div>
 </div>
