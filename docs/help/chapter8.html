@@ -40,7 +40,7 @@
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="カスタマイズ" href="chapter9.html" />
-    <link rel="prev" title="テンプレートの作成：フォームビルダー" href="chapter7.html" /> 
+    <link rel="prev" title="フォームビルダーでテンプレート作成" href="chapter7.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -89,16 +89,21 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="chapter1.html">概要</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">eformsignのご紹介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">基本情報</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">文書の新規作成</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter4.html">Web フォームデザイナーの紹介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter5.html">フォームビルダーの紹介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter6.html">テンプレートの作成：Web フォームデザイナー</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter7.html">テンプレートの作成：フォームビルダー</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">ウェブフォームデザイナーでテンプレートを作成する</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">フォームビルダーでテンプレート作成</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">文書トレイ</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">文書トレイ</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#category">カテゴリー、キーワードおよびフィルター検索</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">文書トレイ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">文書トレイの構成</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#category">カテゴリー、キーワードおよびフィルター検索</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id5"><strong>文書の状態別検索</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6"><strong>キーワード及びフィルター検索</strong></a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#additional-work">各文書トレイの作業項目</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#history">状態および履歴の表示</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#document-download">文書のダウンロード</a></li>
@@ -180,182 +185,123 @@
 <h1>文書トレイ<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <div class="section" id="id2">
 <h2>文書トレイ<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>作成した文書は、状態によって、次の 3 つの文書トレイにそれぞれ保存されます。</p>
-<p>文書トレイ内の各文書の状態と履歴を簡単に表示したり、文書を管理したりすることができるほか、フィルターや検索機能を使用して文書を検索したり、文書を再送信したりすることもできます。また、ワークフローでの文書の削除や返戻などの追加作業を実行できます。下書きとして保存した文書も文書トレイに表示され、文書トレイのリストから作成を再開できます。</p>
+<p>作成した文書はその状態により、3つの文書トレイに分けて保存されます。</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>一括作成した文書は <a class="reference external" href="#bulksend-documents">一括作成文書</a> で確認できます。</p>
+</div>
+<p>文書トレイ内の各文書の状態と履歴を詳細情報を確認・管理でき、文書の処理、再転送、完了文書の転送など、追加アクションを行うことができます。文書作成途中に一時保存した文書は、 <strong>要処理文書</strong> に表示され、リストから文章を選択し、転送できます。</p>
 <p>文書トレイでは、すべての文書および関連作業を記録および保存できます。また、文書の状態と履歴に関する詳細情報も確認できます。</p>
 <ul class="simple">
-<li><p><strong>要処理文書：</strong> テンプレートで作成する途中に下書き保存した文書、処理が必要な文書（他のメンバーから作成または決裁の依頼のあった文書）、または外部受信者に送信した文書のうち処理を待機中の文書のリストを確認できます。</p></li>
+<li><p><strong>要処理文書：</strong> 一時保存した文書、処理が必要な文書（他のメンバーから作成または決裁の依頼のあった文書）、または外部受信者に送信した文書のうち、未処理の文書のリストを確認できます。</p></li>
 <li><p><strong>進行中の文書：</strong> 作成または処理済みで、完了していない文書のリストを確認できます。</p></li>
-<li><p><strong>完了文書：</strong> 自分が作成または処理したすべての文書のリストを確認できます。</p></li>
+<li><p><strong>完了文書：</strong> 自分が作成または処理した全ての文書のリストを確認できます。</p></li>
 </ul>
-<p>この他、文書の管理権限を持つメンバーだけ文書を確認できる <strong>文書管理</strong> メニューも別途存在します。</p>
+<p><strong>文書管理</strong> メニューではテンプレート設定で文書管理権限を付与されたメンバーが、当該テンプレートで作成された全ての文書を確認できます。</p>
 <ul class="simple">
-<li><p><strong>文書管理：</strong> このメニューには、文書管理者だけがアクセスできます。文書管理者は、権限を持つテンプレートで作成されたすべての文書を照会できます。</p></li>
+<li><p><strong>文書管理：</strong> このメニューには、文書管理の権限を持つメンバーのみアクセスできます。文書管理の権限を持つ場合、管理権限を持つテンプレートで作成された全ての文書を照会できます。</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>代表管理者は、すべての文書を照会および管理できます。</p>
+<p>代表管理者は、全ての文書を照会および管理できます。</p>
 </div>
-<div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/inbox_ex1.png"><img alt="文書トレイのタイプ" src="../_images/inbox_ex1.png" style="width: 700px;" /></a>
-</div>
+<p><a class="reference internal" href="../_images/inbox_ex1.png"><img alt="image1" src="../_images/inbox_ex1.png" style="width: 700px;" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>各文書トレイの形と管理画面の構成はほぼ同じですが、表示される文書は、文書の状態または保有中の権限によって異なります。</p>
+<p>各文書トレイと管理画面の構成はほぼ同じですが、表示される文書は、文書の状態または保有中の権限によって異なります。</p>
 </div>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/inbox_layout.png"><img alt="文書トレイのタイプ" src="../_images/inbox_layout.png" style="width: 700px;" /></a>
 </div>
-<p>文書トレイは、次の 5 つの主要項目で構成されています。</p>
+</div>
+<div class="section" id="id3">
+<h2>文書トレイの構成<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>文書トレイは、次の5つの主要項目で構成されています。</p>
+<p>① <strong>メニュー</strong>（<a class="reference internal" href="../_images/inbox_ex1.png"><img alt="image1" src="../_images/inbox_ex1.png" style="width: 700px;" /></a>）と<strong>ホーム</strong>（<a class="reference internal" href="../_images/menu_icon_2.png"><img alt="image2" src="../_images/menu_icon_2.png" style="width: 25px;" /></a>）アイコンをクリックすることで、別のメニューまたはダッシュボードに移動できます。また、現在表示されている文書トレイの名前を確認できます。</p>
+<p>メニュー(<a class="reference internal" href="../_images/menu_icon_2.png"><img alt="image2" src="../_images/menu_icon_2.png" style="width: 25px;" /></a>)とホーム(<a class="reference internal" href="../_images/home_icon_2.png"><img alt="image3" src="../_images/home_icon_2.png" style="width: 25px;" /></a>) アイコンをクリックすることで、別のメニューまたはダッシュボードに移動できます。 また、現在表示されている文書トレイの名前を確認できます。</p>
 <dl>
-<dt>① メニューおよびホームアイコン、文書トレイの名前</dt><dd><p><strong>メニュー</strong>（<a class="reference internal" href="../_images/menu_icon_2.png"><img alt="image1" src="../_images/menu_icon_2.png" style="width: 25px;" /></a>）と<strong>ホーム</strong>（<a class="reference internal" href="../_images/home_icon_2.png"><img alt="image2" src="../_images/home_icon_2.png" style="width: 25px;" /></a>）アイコンをクリックして、別のメニューまたはダッシュボードに移動できます。現在表示されている文書トレイの名前を確認できます。</p>
+<dt>②`カテゴリー &lt;#category&gt;`__ 表示欄, フィルター、コンボボックスおよび検索ボックス</dt><dd><p><strong>テンプレート管理</strong> メニューで設定したカテゴリー別に文書を表示したり、フィルターを使って必要な文書だけがリストに表示されるように設定できます。
+キーワード検索に加え、タイトルと内容の組み合わせによる検索、数字や日付の範囲を指定した検索、カスタムフィルターによる検索など、様々な検索方法が用意されています。</p>
 </dd>
-<dt>②カテゴリー表示、フィルター（文書/状態）のコンボボックス、<a class="reference external" href="#category">検索ボックス</a></dt><dd><p><strong>テンプレート管理</strong> メニューで設定したカテゴリー別に文書を表示したり、必要な文書だけがリストに表示されるようにフィルターを適用したりできます。
-キーワード検索に加えて、詳細検索でタイトルと内容の組み合わせで検索、数字や日付の範囲を指定して検索、カスタムフィルターによる検索など、さまざまな検索方法が用意されています。</p>
+<dt>③ 文書リストおよび <a class="reference external" href="#additional_work">作業項目</a></dt><dd><p>1ページに20件の文書を表示することができます。文書が20件を超える場合は次のページに表示します。
+文書の状態、 タイトル、 ステップ、 作成者、作成日、処理者、処理日、文書ID、文書番号などのカラムを基に文書リストの内容を表示します。</p>
 </dd>
-<dt>③ 文書リストおよび <a class="reference external" href="#additional_work">作業項目</a></dt><dd><p>文書は、1 ページあたり最大 20 のリストを表示し、20を超える文書についてはページ区分で表示します。
-文書の<strong>状態、タイトル、ステップ、作成者、作成日、処理者、文書 ID、文書番号</strong>などのカラムをベースに文書リストの内容を表示します。表示するカラムのタイプは文書トレイの右上のアイコンのうち、<strong>カラム</strong>（<a class="reference internal" href="../_images/column_icon.png"><img alt="image3" src="../_images/column_icon.png" style="width: 35px;" /></a>）アイコンをクリックしたら表示される <a class="reference external" href="#document_column">カラムのチェックボックス</a> で調整できます。
-文書リストで実行できる追加アクションには、<strong>プレビュー、検討する、修正、無効化、　　削除の依頼、返戻依頼の承認、再依頼、完了文書の送信</strong>などがあります。</p>
+<dt>表示するカラムの種類は、右上のアイコンのうち、カラム(<a class="reference internal" href="../_images/column_icon.png"><img alt="image4" src="../_images/column_icon.png" style="width: 35px;" /></a>)アイコンをクリックすることで表示される <a class="reference external" href="#document_column">カラムのチェックボックス</a>で選択できます。</dt><dd><p>文書リストで実行できる追加アクションには、<strong>プレビュー、削除の依頼、再依頼、完了文書の送信</strong> などがあります。</p>
 </dd>
-<dt>④ <a class="reference external" href="#history">文書の状態と履歴の表示</a></dt><dd><p><strong>文書の状態</strong> と <strong>履歴</strong> を確認できます。
-<strong>文書の状態</strong> では、文書がいつ作成、処理、完了したかを文書の観点から確認できます。
-<strong>履歴</strong> では、作成者と受信者の観点から誰がどのような作業を実行したかを確認できます。</p>
+<dt>④ <a class="reference external" href="#history">文書の状態と履歴の表示</a></dt><dd><p>文書の状態と履歴を確認できます。</p>
+<p><strong>文書の状態</strong> では、文書がいつ作成、処理、完了したかを文書の観点から確認できます。</p>
+<p><strong>履歴</strong> では、作成者と受信者の観点から誰がどのような作業を実行したかを確認できます。</p>
 </dd>
-<dt>⑤ <a class="reference external" href="#document_column">文書トレイのフィールドの調整</a>、<a class="reference external" href="#document_download">文書のダウンロード</a> および <a class="reference external" href="#document_delete">削除</a> アイコン</dt><dd><p>文書トレイの <strong>カラム</strong>（<a class="reference internal" href="../_images/column_icon.png"><img alt="image4" src="../_images/column_icon.png" style="width: 35px;" /></a>）アイコンをクリックすると、カラムのタイプが表示されます。また、<strong>カラム</strong> のチェックボックスでリストに表示するカラムを選択できます。
-<strong>文書のダウンロード</strong> をクリックして、リストからダウンロードしたい文書を選択し（マルチ選択可能）、PDF 文書、監査証跡証明、および選択フィールドの CSV データをダウンロードできます。
-文書トレイでは、文書の <strong>削除</strong> アイコンは無効になっています。</p>
+<dt>⑤ <a class="reference external" href="#document_column">文書トレイのフィールドの調整</a>、<a class="reference external" href="#document_download">文書のダウンロード</a> および <a class="reference external" href="#document_delete">削除</a> アイコン</dt><dd><p>文書トレイのカラム(<a class="reference internal" href="../_images/column_icon.png"><img alt="image5" src="../_images/column_icon.png" style="width: 35px;" /></a>)アイコンをクリックすると、表示項目の種類が表示されます。カラムのチェックボックスからリストに表示する項目を選択できます。</p>
+<p>文書のダウンロードをクリックし、リストからダウンロードしたい文書を選択(複数選択可能)することで、PDF文書、監査証跡証明、および選択フィールドのCSVデータをダウンロードできます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>文書の削除は <strong>文書管理</strong> メニューでのみ可能です。つまり、文書を削除するには文書の管理権限が必要です。文書の管理権限は、代表管理者またはテンプレート管理者が、<strong>テンプレート管理 &gt; テンプレートの設定 &gt; 権限の設定 &gt;文書の管理権限</strong> で権限を付与することができます。文書の管理権限はテンプレート毎に指定でき、指定すれば、<strong>文書管理</strong> メニューで、テンプレートで作成された文書を閲覧、削除、およびダウンロード（PDF、CSV）する権限が与えられます。</p>
+<p><strong>文書の削除方法</strong></p>
+<p>文書トレイでは、文書の削除アイコンが非活性化されています。</p>
+<p>文書の削除は <strong>文書管理</strong>メニューでのみ可能で、削除には <strong>文書管理権限</strong>が必要です。</p>
+<p>文書の管理権限は、代表管理者またはテンプレート管理者が、<strong>テンプレート管理 &gt; テンプレート設定 &gt; 権限設定 &gt; 文書管理権限</strong>から付与することができます。</p>
+<p>文書の管理権限は、各テンプレートごとに指定でき、指定すれば <strong>文書管理</strong>メニューから当該テンプレートで作成された文書を閲覧、削除およびダウンロード(PDF,CSV)することができる権限が与えられます。</p>
 </div>
 </dd>
 </dl>
 <div class="section" id="category">
-<span id="id3"></span><h3>カテゴリー、キーワードおよびフィルター検索<a class="headerlink" href="#category" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>カテゴリー、キーワードおよびフィルターの検索は、各文書トレイの左上にあるボックスで可能です。文書管理ページには状態別のフィルターもあります。</p>
+<span id="id4"></span><h3>カテゴリー、キーワードおよびフィルター検索<a class="headerlink" href="#category" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>カテゴリー、キーワードおよびフィルターの検索は、各文書トレイ画面の左上にあるボックスから可能です。また、文書の状態ごとのフィルター機能も備えています。</p>
 <ul>
 <li><p><strong>要処理文書/進行中文書/完了文書</strong></p>
-<p>文書トレイの左上には、カテゴリー別の検索バー、文書別のフィルター、キーワードの検索バーが表示されます。</p>
+<p>文書トレイ画面の左上には、カテゴリー別検索バー、文書の状態別フィルター、キーワード検索バーが表示されます。</p>
 </li>
 <li><p><strong>文書管理</strong></p>
 <p>文書トレイの左上には、カテゴリー別の検索バー、文書/状態別のフィルター、およびキーワードの検索バーが表示されます。</p>
 </li>
 </ul>
 <p><strong>カテゴリー検索</strong></p>
-<p><strong>カテゴリー検索</strong> のコンボボックスでは、<strong>テンプレート管理</strong> メニューで設定したカテゴリー別に文書を表示できます。このうち、必要なカテゴリーまたは文書を選択できます。</p>
-<p><strong>カテゴリー検索</strong> のコンボボックスの <strong>X</strong> アイコンをクリックすると、テンプレートで設定したカテゴリーに合わせて作成された文書が表示されます。</p>
+<p><strong>カテゴリー検索</strong> のコンボボックスでは、<strong>テンプレート管理</strong> メニューで設定したカテゴリーごとに文書を表示でき、任意のカテゴリーまたは文書を確認することができます。</p>
+<p><strong>カテゴリー検索</strong> のコンボボックスの <strong>X</strong> アイコンをクリックすると、以下のようにテンプレートで設定したカテゴリーに合わせて文書が表示されます。</p>
 <div class="figure align-default">
-<img alt="カテゴリー検索のコンボボックス" src="../_images/category_search.png" />
+<a class="reference internal image-reference" href="../_images/category_search.png"><img alt="カテゴリー検索のコンボボックス" src="../_images/category_search.png" style="width: 500px;" /></a>
 </div>
+<div class="section" id="id5">
+<h4><strong>文書の状態別検索</strong><a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <ul class="simple">
 <li><p><strong>要処理文書</strong></p></li>
 </ul>
-<p><a class="reference internal" href="../_images/actionrequiredbox-status-search.png"><img alt="image5" src="../_images/actionrequiredbox-status-search.png" style="width: 700px;" /></a></p>
+<p><a class="reference internal" href="../_images/actionrequiredbox-status-search.png"><img alt="image6" src="../_images/actionrequiredbox-status-search.png" style="width: 700px;" /></a></p>
 <ul class="simple">
 <li><p><strong>進行中の文書</strong></p></li>
 </ul>
-<p><a class="reference internal" href="../_images/inprocessbox-status-search.png"><img alt="image6" src="../_images/inprocessbox-status-search.png" style="width: 700px;" /></a></p>
+<p><a class="reference internal" href="../_images/inprocessbox-status-search.png"><img alt="image7" src="../_images/inprocessbox-status-search.png" style="width: 700px;" /></a></p>
 <ul class="simple">
 <li><p><strong>完了文書</strong></p></li>
 </ul>
-<p><a class="reference internal" href="../_images/completedbox-status-search.png"><img alt="image7" src="../_images/completedbox-status-search.png" style="width: 700px;" /></a></p>
+<p><a class="reference internal" href="../_images/completedbox-status-search.png"><img alt="image8" src="../_images/completedbox-status-search.png" style="width: 700px;" /></a></p>
 <ul>
 <li><p><strong>文書管理</strong></p>
-<p><a class="reference internal" href="../_images/documentmanage_status_search.png"><img alt="image8" src="../_images/documentmanage_status_search.png" style="width: 700px;" /></a></p>
+<p><a class="reference internal" href="../_images/documentmanage_status_search.png"><img alt="image9" src="../_images/documentmanage_status_search.png" style="width: 700px;" /></a></p>
 </li>
 </ul>
-<p><strong>キーワードおよびフィルターの検索 文書トレイ</strong></p>
-<p>キーワード検索に加えて、詳細検索でタイトルと内容の組み合わせで検索、数字や日付の範囲を指定して検索、カスタムフィルターによる検索など、さまざまな検索方法が用意されています。また、カスタムフィルターを設定して、文書のフィールドの入力値を詳細検索することができます。また、カスタムフィルターを使用して、数字の範囲や日付の期間を設定して検索することもできます。</p>
-<p>検索可能なフィルターの種類は次の通りです。一方、カスタムフィルターは、<strong>完了文書</strong> と <strong>文書管理</strong> でのみ使用できます。</p>
-<table class="docutils align-default" id="id10">
-<caption><span class="caption-text">フィルターの種類</span><a class="headerlink" href="#id10" title="このテーブルへのパーマリンク">¶</a></caption>
-<colgroup>
-<col style="width: 28%" />
-<col style="width: 21%" />
-<col style="width: 26%" />
-<col style="width: 26%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>要処理文書</p></th>
-<th class="head"><p>進行中の文書</p></th>
-<th class="head"><p>完了文書</p></th>
-<th class="head"><p>文書管理</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>タイトル+内容</p></td>
-<td><p>タイトル+内容</p></td>
-<td><p>タイトル+内容</p></td>
-<td><p>タイトル+内容</p></td>
-</tr>
-<tr class="row-odd"><td><p>タイトル</p></td>
-<td><p>タイトル</p></td>
-<td><p>タイトル</p></td>
-<td><p>タイトル</p></td>
-</tr>
-<tr class="row-even"><td><p>内容</p></td>
-<td><p>内容</p></td>
-<td><p>内容</p></td>
-<td><p>内容</p></td>
-</tr>
-<tr class="row-odd"><td><p>文書 ID</p></td>
-<td><p>文書 ID</p></td>
-<td><p>文書 ID</p></td>
-<td><p>文書 ID</p></td>
-</tr>
-<tr class="row-even"><td><p>文書番号</p></td>
-<td><p>文書番号</p></td>
-<td><p>文書番号</p></td>
-<td><p>文書番号</p></td>
-</tr>
-<tr class="row-odd"><td><p>テンプレート名</p></td>
-<td><p>テンプレート名</p></td>
-<td><p>ステップ</p></td>
-<td><p>ステップ</p></td>
-</tr>
-<tr class="row-even"><td><p>作成者</p></td>
-<td><p>ステップ</p></td>
-<td><p>作成者</p></td>
-<td><p>作成者</p></td>
-</tr>
-<tr class="row-odd"><td><p>作成日</p></td>
-<td><p>作成者</p></td>
-<td><p>作成日</p></td>
-<td><p>作成日</p></td>
-</tr>
-<tr class="row-even"><td><p>依頼者</p></td>
-<td><p>作成日</p></td>
-<td><p>処理者</p></td>
-<td><p>処理者</p></td>
-</tr>
-<tr class="row-odd"><td><p>依頼日</p></td>
-<td><p>処理者</p></td>
-<td><p>処理日</p></td>
-<td><p>処理日</p></td>
-</tr>
-<tr class="row-even"><td><p>部外者処理の経過日数</p></td>
-<td><p>処理日</p></td>
-<td><p>カスタムフィルター</p></td>
-<td><p>カスタムフィルター</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>カスタムフィルターの使用方法 文書トレイ カスタムフィルター</strong></p>
+</div>
+<div class="section" id="id6">
+<h4><strong>キーワード及びフィルター検索</strong><a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>キーワード検索に加え、詳細検索を行うことでタイトルと内容の組み合わせによる検索、数字や日付の範囲を指定した検索、カスタムフィルターによる検索など、さまざまな検索方法を備えています。また、カスタムフィルターを設定することで、文書のフィールドの入力値を詳細検索することも可能です。また、カスタムフィルターを使用することで、数字の範囲や日付の期間を設定して検索することもできます。</p>
+<p>使用可能なフィルターの種類は以下の通りです。また、カスタムフィルターは、<strong>完了文書</strong> と <strong>文書管理</strong> でのみ使用できます。</p>
+<div class="section" id="id7">
+<h5><strong>カスタムフィルターの使用方法</strong><a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h5>
 <ol class="arabic">
-<li><p><strong>詳細</strong>のコンボボックスで、<strong>カスタムフィルター</strong> を選択します。</p>
-<p><img alt="image9" src="../_images/userdefined_search1.png" /></p>
+<li><p>詳細のコンボボックスから、<strong>カスタムフィルター</strong>を選択します。</p>
+<p><img alt="image10" src="../_images/userdefined_search1.png" /></p>
 </li>
-<li><p><strong>フィールド名</strong>、<strong>フィールドタイプ</strong>、および <strong>検索値</strong> を設定します。</p>
-<p><strong>フィールド名</strong> はフォルト値が空です。検索したい文書入力フィールドの表示名（テンプレートのフィールド設定の表示名）を直接入力する必要があります。</p>
+<li><p>フィールド名、フィールドタイプ、検索値を設定します。</p>
+<p>フィールド名のデフォルト値は空です。検索する場合、検索したい文書入力フィールドの表示名（テンプレートのフィールド設定の表示名）を直接入力する必要があります。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>1.存在しない文書入力フィールドの表示名を設定して検索した場合、文書は照会されません。</p>
-<p>2.<strong>フィールド名</strong> に特殊文字（「、'、;、&lt;、&gt;、\）を入力することはできません。</p>
-<p>3.<strong>フィールド名</strong> の先頭と末尾のスペースは削除されて追加されます。例：「休暇　申込書 」&gt;「休暇　申込書」</p>
-<p>4.追加または変更時に、既存のカスタムフィルターと同じフィールド名を入力すると、フィールドタイプとフィールドの検索値が以前に設定した情報で表示されます。例）既存のカスタムフィルター「勤続年数」：5 ～ 10 を追加した状態でカスタムフィルターを再度追加する場合、フィールド名に同じ名前の「勤続年数」を入力すると、フィールドタイプは「範囲」、検索値1は「5」、値2は「10」と既存の設定が表示されます。</p>
+<p>1.存在しない文書入力フィールド名を入力し検索した場合、文書は照会されません。</p>
+<p>2.<strong>フィールド名</strong> に特殊文字（”、'、;、&lt;、&gt;、\）を使用することはできません。</p>
+<p>3.<strong>フィールド名</strong> の前後のスペースは削除されます。例：「休暇　申込書 」&gt;「休暇　申込書」</p>
+<p>4.追加/修正の際、既存のカスタムフィルターと同名のフィールド名を入力すると、以前のフィールドタイプとフィールドの検索値が表示されます。例）既存のカスタムフィルター「勤続年数」：5 ～ 10 を追加した状態でカスタムフィルターを再度追加する場合、フィールド名に同名の「勤続年数」と入力すると、フィールドタイプは「範囲」、検索値1は「5」、検索値2は「10」と既存の設定が表示されます。</p>
 </div>
-<p><strong>フィールドタイプ</strong> として、キーワード、範囲、期間のうち1つを選択します。デフォルト値はキーワードです。</p>
-<p><strong>フィールドタイプ</strong> の選択によって、検索値として表示される入力ボックスが異なります。</p>
+<p>フィールドタイプとしてキーワード、範囲、期間のうち1つを選択します。デフォルト値はキーワードです。</p>
+<p>フィールドタイプの選択によって、検索値の入力欄として表示される入力ボックスが変わります。</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 36%" />
@@ -385,116 +331,120 @@
 </table>
 <ul>
 <li><p><strong>キーワード</strong></p>
-<p>複数の値をコンマ（ , ）で区切って設定できます。デフォルト値は空の値です。</p>
+<p>コンマ（ , ）で区切ることで、複数の値を設定できます。デフォルト値は空の値です。</p>
 <p>設定したテキストを含む値が検索されます。これは、複数のキーワードのうち1つ以上を含む文書を検索します。</p>
-<p>例) フィールド名：果物/フィールドタイプ：キーワード/値 1:イチゴ、リンゴなどの果物の中で「イチゴ」と「リンゴ」のうち少なくとも1つ以上を含む文書を検索</p>
+<p>例) フィールド名：果物 / フィールドタイプ：キーワード / 値1：イチゴ、リンゴ　→　果物に「イチゴ」と「リンゴ」、2つのうち1つ以上を含む文書を検索します。</p>
 </li>
 <li><p><strong>範囲</strong></p>
-<p>数字または日付の間の値を検索するときに使用します。例）番号：100-200/期間：2019/01/01~2019/06/30</p>
-<p>設定した開始値と終了値の間の値が検索されます。範囲の値のうち、開始値のみを入力した場合は、少なくとも開始値以上の値が検索されます。範囲の値の終了値のみを入力した場合は、終了値以下の値が検索されます。例）年給：1000~/
-年給：~5000</p>
+<p>数字や一定の日付の間の値を検索する際に使用します。例）数字：100-200 / 期間：2019/01/01~2019/06/30</p>
+<p>設定した開始値と終了値の間の値が検索されます。開始値のみを入力した場合は、開始値以上の値を検索します。終了値のみを入力した場合は、終了値以下の値を検索します。例）年収：1000~ / 年収：~5000</p>
 </li>
 <li><p><strong>期間</strong></p>
-<p>表示されるカレンダーで日付の期間を設定します。デフォルト値は1週の差があります。</p>
+<p>表示されるカレンダーから、日付の期間を設定します。デフォルト値は直近の1週間です。</p>
 <p>設定した開始日と終了日の間の日付を検索します。</p>
 </li>
 </ul>
 </li>
-<li><p><strong>検索の追加</strong> (<img alt="image10" src="../_images/searchplus.png" />)
-ボタンをクリックすると、<strong>検索キーワード</strong> が追加され、設定した条件に合わせて文書が検索されます。</p>
+<li><p><strong>検索の追加</strong> (<img alt="image11" src="../_images/searchplus.png" />)ボタンをクリックすることで、検索キーワードに追加し、設定した条件で文書を検索します。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>1.複数のカスタムフィルターを追加したり、カスタムフィルターを変更または削除したりできます。</p>
-<p>2.重複するフィールド名を持つ複数のカスタムフィルターを追加することはできません。</p>
-<p>3.既に指定したカスタムフィルターを変更すると、フィールドタイプと検索値は最新の入力値に変更されます。</p>
+<p>1.複数のカスタムフィルターの追加およびカスタムフィルターの変更、削除ができます。</p>
+<p>2.重複したフィールド名のカスタムフィルターを複数追加することはできません。</p>
+<p>3.設定済みのカスタムフィルターに変更を加えると、フィールドタイプと検索値は最新の入力値に更新されます。</p>
 </div>
 </li>
 </ol>
-<p><strong>検索キーワードの表示方法とその変更/削除方法</strong></p>
+</div>
+<div class="section" id="id8">
+<h5><strong>検索キーワードの表示方法及び修正/削除方法</strong><a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h5>
 <ol class="arabic simple">
-<li><p>検索キーワードは <strong>フィールド名：価値</strong>の形で次のように追加されます。</p>
+<li><p>検索キーワードは <strong>フィールド名：値</strong>の形式で、次のように追加されます。</p>
 <ul class="simple">
-<li><p>キーワード：「勤務形態：正規社員、契約社員」</p></li>
+<li><p>キーワード：「勤務形態：正社員、契約社員」</p></li>
 <li><p>範囲：「勤続年数：5~10」</p></li>
-<li><p>期間：「労働契約期間_年日：2018-01-01~2018-12-31」</p></li>
+<li><p>期間：「労働契約期間_年月日：2018-01-01~2018-12-31」</p></li>
 </ul>
 </li>
 <li><p>追加した検索キーワードを選択して、カスタムフィルターを修正します。修正時には、詳細検索フィルターの項目が <strong>カスタムフィルター</strong> に変わり、選択した<strong>フィルターのフィールド名、フィールドタイプ、検索値</strong>が表示されます。</p></li>
-<li><p>追加した検索キーワードを削除するには、右側の <strong>X</strong> アイコンをクリックします。</p></li>
+<li><p>追加した検索キーワードを削除するには、キーワードの右側の <strong>X</strong> アイコンをクリックします。</p></li>
 </ol>
 </div>
+</div>
+</div>
 <div class="section" id="additional-work">
-<span id="id4"></span><h3>各文書トレイの作業項目<a class="headerlink" href="#additional-work" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>文書リストで実行できる追加アクションには、プレビュー、検討する、修正、無効化、完了文書の送信などがあります。</p>
+<span id="id9"></span><h3>各文書トレイの作業項目<a class="headerlink" href="#additional-work" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>各文書リストで実行できる追加アクションには、プレビュー、削除依頼、再要請、完了文書送信予約などがあります。</p>
 <ul>
 <li><p><strong>要処理文書</strong></p>
-<p>プレビュー、修正、無効化、完了文書の送信、ダウンロードを行うことができます。</p>
+<p>編集、検討する、再要請、プレビュー、修正、無効化、完了文書送信予約、ダウンロードができます。</p>
 </li>
 <li><p><strong>進行中の文書</strong></p>
-<p>プレビュー、検討する、修正、無効化、完了文書の送信、ダウンロードを行うことができます。</p>
+<p>再要請、プレビュー、修正、無効化、完了文書送信予約、ダウンロードができます。</p>
 </li>
 <li><p><strong>完了文書</strong></p>
 <p>プレビュー、無効化、完了文書の送信、ダウンロードを行うことができます。</p>
 </li>
 <li><p><strong>文書管理</strong></p>
-<p>プレビュー、無効化、完了文書の送信、永久削除、ダウンロードの他、文書の削除を行うことができます。文書は、<strong>文書管理</strong>でのみ削除できます。</p>
+<p>プレビュー、無効化、完了文書の送信、永久削除、ダウンロードの他、文書の削除を行うことができます。文書は、<em>文書管理</em>でのみ削除できます。</p>
 </li>
 </ul>
 </div>
 <div class="section" id="history">
-<span id="id5"></span><h3>状態および履歴の表示<a class="headerlink" href="#history" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<span id="id10"></span><h3>状態および履歴の表示<a class="headerlink" href="#history" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>文書トレイのリストから文書を1つ選択すると、その文書の状態と履歴が画面の右側に表示されます。</p>
-<p><strong>文書の状態</strong> では、文書がいつ作成、処理、完了したかを文書の観点から確認できます。また、<strong>履歴</strong> では、作成者と受信者の観点から誰がどのような作業を実行したかを確認できます。</p>
+<p><strong>文書の状態</strong> ：ワークフローのステップごとに文書がいつ、誰によって作成/処理されたか表示する。</p>
 <div class="figure align-default">
-<img alt="文書状態タブ" src="../_images/document_status.png" />
+<a class="reference internal image-reference" href="../_images/document_status.png"><img alt="文書状態タブ" src="../_images/document_status.png" style="width: 300px;" /></a>
 </div>
 <div class="figure align-default">
-<img alt="履歴タブ" src="../_images/document_history.png" />
+<a class="reference internal image-reference" href="../_images/document_history.png"><img alt="履歴タブ" src="../_images/document_history.png" style="width: 300px;" /></a>
 </div>
 </div>
 <div class="section" id="document-download">
-<span id="id6"></span><h3>文書のダウンロード<a class="headerlink" href="#document-download" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>eformsign で作成されたほとんどの文書は、長期間安全に保管する必要がある文書です。すべての文書は長期アーカイブファイル形式（PDF/A）で保存され、指定された管理者のみが文書およびデータを閲覧または削除できます。</p>
+<span id="id11"></span><h3>文書のダウンロード<a class="headerlink" href="#document-download" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>eformsignで作成されるほとんどの文書は、長期間安全に保管する必要がある文書です。全ての文書は長期アーカイブファイル形式（PDF/A）で保存され、指定された管理者のみが文書・データの閲覧および削除ができます。</p>
 <ol class="arabic simple">
-<li><p>文書トレイのリストの右側にある <strong>ダウンロード</strong> (<img alt="image11" src="../_images/download_icon.png" />) アイコンをクリックします。</p></li>
-<li><p>ダウンロードしたい文書を選択し、<strong>ダウンロード</strong> ボタンをクリックします。</p></li>
+<li><p>文書トレイのリストの右側にあるダウンロード(<img alt="image12" src="../_images/download_icon.png" />)アイコンをクリックします。</p></li>
+<li><p>ダウンロードしたい文書を選択し、 <strong>ダウンロード</strong> ボタンをクリックします。</p></li>
 </ol>
 <div class="figure align-default">
-<img alt="文書のダウンロードのポップアップ" src="../_images/download_popup.png" />
+<a class="reference internal image-reference" href="../_images/download_popup.png"><img alt="文書のダウンロードのポップアップ" src="../_images/download_popup.png" style="width: 400px;" /></a>
 </div>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>CSV ファイルは、PDF 文書をダウンロードした場所からダウンロードできます。<strong>ダウンロード</strong> のポップアップウィンドウで CSV を選択し、ダウンロードしたいフィールドを確認した後、<strong>ダウンロード</strong> ボタンをクリックしてください。</p>
+<p><strong>CSVダウンロード</strong>は、文書に入力されたデータをエクセルファイルでダウンロードできる機能です。
+CSVダウンロードを選択し、ダウンロードしたデータを確認後 <strong>ダウンロード</strong> ボタンをクリックします。</p>
 </div>
 </div>
 <div class="section" id="document-delete">
-<span id="id7"></span><h3>文書の削除<a class="headerlink" href="#document-delete" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<span id="id12"></span><h3>文書の削除<a class="headerlink" href="#document-delete" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>eformsign では、指定された管理者のみが文書を削除できます。</p>
 <ol class="arabic simple">
-<li><p>文書トレイのリストの右側にある <strong>削除</strong>（<img alt="image12" src="../_images/delete_icon1.png" />）アイコンをクリックします。</p></li>
-<li><p>削除したい文書を選択し、<strong>削除</strong> ボタンをクリックします。</p></li>
-<li><p><strong>削除</strong> のポップアップウィンドウで <strong>はい</strong> をクリックすると、文書が削除されます。</p></li>
+<li><p>文書トレイのリストの右上にある <strong>削除</strong>（<img alt="image13" src="../_images/delete_icon1.png" />）アイコンをクリックします。</p></li>
+<li><p>削除したい文書を選択後、 <strong>削除</strong> ボタンをクリックします。</p></li>
+<li><p>削除の確認ポップアップウィンドウで <strong>はい</strong> をクリックすると、文書が削除されます。</p></li>
 </ol>
 </div>
 <div class="section" id="document-column">
-<span id="id8"></span><h3>文書トレイのカラムの設定<a class="headerlink" href="#document-column" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>文書トレイの右上にあるアイコンのうち、<strong>カラム</strong>（<a class="reference internal" href="../_images/column_icon.png"><img alt="image13" src="../_images/column_icon.png" style="width: 35px;" /></a>）アイコンをクリックすると、リストに表示したいカラムを選択できます。</p>
+<span id="id13"></span><h3>文書トレイのカラムの設定<a class="headerlink" href="#document-column" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>文書トレイの右上にあるアイコンのうち、カラム(<a class="reference internal" href="../_images/column_icon.png"><img alt="image14" src="../_images/column_icon.png" style="width: 35px;" /></a>)アイコンをクリックすることで、リストに表示したい項目を選択できます。</p>
 <div class="figure align-default">
 <img alt="文書トレイのカラムの設定アイコン" src="../_images/column_type.png" />
 </div>
 </div>
 </div>
 <div class="section" id="drafts">
-<span id="id9"></span><h2>下書きとして保存<a class="headerlink" href="#drafts" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p><strong>下書きとして保存</strong> には <strong>マイファイルで作成する</strong> で <strong>文書作成をスタート</strong> をクリックする前に <strong>下書きとして保存</strong> をクリックして下書き保存した文書が保存されます。<strong>下書きとして保存</strong> に保存されたファイルはいつでも作成を続行したり文書を削除したりすることもできます。</p>
+<span id="id14"></span><h2>下書きとして保存<a class="headerlink" href="#drafts" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><strong>下書きとして保存</strong>には <strong>マイファイルで作成する</strong> で <strong>文書作成をスタート</strong> をクリックする前に <strong>下書きとして保存</strong>をクリックすることで、下書き保存した文書が保存されます。
+<strong>下書きとして保存</strong>　に保存されたファイルはいつでも作成を継続したり、文書を削除することもできます。</p>
 <ol class="arabic">
-<li><p>サイドバーのメニューで <strong>下書きとして保存</strong> をクリックして移動します。</p>
-<p><a class="reference internal" href="../_images/draftbox-menu.png"><img alt="image14" src="../_images/draftbox-menu.png" style="width: 700px;" /></a></p>
+<li><p>サイドバーのメニューから <strong>下書きとして保存</strong> をクリックして移動します。</p>
+<p><a class="reference internal" href="../_images/draftbox-menu.png"><img alt="image15" src="../_images/draftbox-menu.png" style="width: 700px;" /></a></p>
 </li>
-<li><p>下書き保存された文書のリストから目的の文書の <strong>継続する</strong> ボタンをクリックします。</p>
-<p><a class="reference internal" href="../_images/draftbox-documentlist.png"><img alt="image15" src="../_images/draftbox-documentlist.png" style="width: 700px;" /></a></p>
+<li><p>下書き保存された文書のリストから、任意の文書の <strong>継続する</strong>ボタンをクリックします。</p>
+<p><a class="reference internal" href="../_images/draftbox-documentlist.png"><img alt="image16" src="../_images/draftbox-documentlist.png" style="width: 700px;" /></a></p>
 </li>
-<li><p><strong>マイファイルで作成する</strong> 画面が表示されます。文書を修正した後、送信します。</p></li>
+<li><p><strong>マイファイルで作成する</strong>画面が表示されます。文書を修正後、送信します。</p></li>
 </ol>
 </div>
 </div>
@@ -510,7 +460,7 @@
         <a href="chapter9.html" class="btn btn-neutral float-right" title="カスタマイズ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="chapter7.html" class="btn btn-neutral float-left" title="テンプレートの作成：フォームビルダー" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="chapter7.html" class="btn btn-neutral float-left" title="フォームビルダーでテンプレート作成" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
