@@ -97,26 +97,22 @@
 <li class="toctree-l1"><a class="reference internal" href="chapter6.html">ウェブフォームデザイナーでテンプレートを作成する</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter7.html">フォームビルダーでテンプレート作成</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">文書トレイ</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">文書トレイ</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id3">文書トレイの構成</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#category">カテゴリー、キーワードおよびフィルター検索</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">文書トレイ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">文書トレイの構成</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#category">カテゴリー、キーワードおよびフィルター検索</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id5"><strong>文書の状態別検索</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6"><strong>キーワード及びフィルター検索</strong></a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#additional-work">各文書トレイの作業項目</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#history">状態および履歴の表示</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#document-download">文書のダウンロード</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#document-delete">文書の削除</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#document-column">文書トレイのカラムの設定</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id5"><strong>文書の状態別検索</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id6"><strong>キーワード及びフィルター検索</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#additional-work">各文書トレイの作業項目</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#history">状態および履歴の表示</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#document-download">文書のダウンロード</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#document-delete">文書の削除</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#document-column">文書トレイのカラムの設定</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#drafts">下書きとして保存</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#bulksend-documents">一括作成文書</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#drafts">下書きとして保存</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bulksend-documents">一括作成文書</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter9.html">カスタマイズ</a></li>
@@ -186,8 +182,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="id1">
-<h1>文書トレイ<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+  <div class="section" id="documents">
+<span id="id1"></span><h1>文書トレイ<a class="headerlink" href="#documents" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <div class="section" id="id2">
 <h2>文書トレイ<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>作成した文書はその状態により、3つの文書トレイに分けて保存されます。</p>
@@ -195,7 +191,7 @@
 <p class="admonition-title">注釈</p>
 <p>一括作成した文書は <a class="reference external" href="#bulksend-documents">一括作成文書</a> で確認できます。</p>
 </div>
-<p>文書トレイ内の各文書の状態と履歴を詳細情報を確認・管理でき、文書の処理、再転送、完了文書の転送など、追加アクションを行うことができます。文書作成途中に一時保存した文書は、 <strong>要処理文書</strong>に表示され、リストから文章を選択し、転送できます。</p>
+<p>文書トレイ内の各文書の状態と履歴を詳細情報を確認・管理でき、文書の処理、再転送、完了文書の転送など、追加アクションを行うことができます。文書作成途中に一時保存した文書は、 <strong>要処理文書</strong> に表示され、リストから文章を選択し、転送できます。</p>
 <p>文書トレイでは、すべての文書および関連作業を記録および保存できます。また、文書の状態と履歴に関する詳細情報も確認できます。</p>
 <ul class="simple">
 <li><p><strong>要処理文書：</strong> 一時保存した文書、処理が必要な文書（他のメンバーから作成または決裁の依頼のあった文書）、または外部受信者に送信した文書のうち、未処理の文書のリストを確認できます。</p></li>
@@ -218,10 +214,11 @@
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/inbox_layout.png"><img alt="文書トレイのタイプ" src="../_images/inbox_layout.png" style="width: 700px;" /></a>
 </div>
+</div>
 <div class="section" id="id3">
-<h3>文書トレイの構成<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h2>文書トレイの構成<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>文書トレイは、次の5つの主要項目で構成されています。</p>
-<p>① <strong>メニュー</strong>（<a class="reference internal" href="../_images/menu_icon_2.png"><img alt="image2" src="../_images/menu_icon_2.png" style="width: 25px;" /></a>）と<strong>ホーム</strong>（<a class="reference internal" href="../_images/home_icon_2.png"><img alt="image3" src="../_images/home_icon_2.png" style="width: 25px;" /></a>）アイコンをクリックすることで、別のメニューまたはダッシュボードに移動できます。また、現在表示されている文書トレイの名前を確認できます。</p>
+<p>① <strong>メニュー</strong>（ <a class="reference internal" href="../_images/menu_icon_2.png"><img alt="image2" src="../_images/menu_icon_2.png" style="width: 25px;" /></a> ）と <strong>ホーム</strong>（<a class="reference internal" href="../_images/home_icon_2.png"><img alt="image3" src="../_images/home_icon_2.png" style="width: 25px;" /></a> ）アイコンをクリックすることで、別のメニューまたはダッシュボードに移動できます。また、現在表示されている文書トレイの名前を確認できます。</p>
 <p>メニュー(<a class="reference internal" href="../_images/menu_icon_2.png"><img alt="image2" src="../_images/menu_icon_2.png" style="width: 25px;" /></a>)とホーム(<a class="reference internal" href="../_images/home_icon_2.png"><img alt="image3" src="../_images/home_icon_2.png" style="width: 25px;" /></a>) アイコンをクリックすることで、別のメニューまたはダッシュボードに移動できます。 また、現在表示されている文書トレイの名前を確認できます。</p>
 <dl>
 <dt>②  <a class="reference external" href="#category">カテゴリ</a> 表示欄、 フィルター、コンボボックスおよび検索ボックス</dt><dd><p><strong>テンプレート管理</strong>メニューで設定したカテゴリー別に文書を表示したり、フィルターを使って必要な文書だけがリストに表示されるように設定できます。
@@ -249,7 +246,7 @@
 </dd>
 </dl>
 <div class="section" id="category">
-<span id="id4"></span><h4>カテゴリー、キーワードおよびフィルター検索<a class="headerlink" href="#category" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<span id="id4"></span><h3>カテゴリー、キーワードおよびフィルター検索<a class="headerlink" href="#category" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>カテゴリー、キーワードおよびフィルターの検索は、各文書トレイ画面の左上にあるボックスから可能です。また、文書の状態ごとのフィルター機能も備えています。</p>
 <ul>
 <li><p><strong>要処理文書/進行中文書/完了文書</strong></p>
@@ -265,11 +262,8 @@
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/category_search.png"><img alt="カテゴリー検索のコンボボックス" src="../_images/category_search.png" style="width: 500px;" /></a>
 </div>
-</div>
-</div>
-</div>
 <div class="section" id="id5">
-<h2><strong>文書の状態別検索</strong><a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h4><strong>文書の状態別検索</strong><a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <ul class="simple">
 <li><p><strong>要処理文書</strong></p></li>
 </ul>
@@ -282,17 +276,90 @@
 <li><p><strong>完了文書</strong></p></li>
 </ul>
 <p><a class="reference internal" href="../_images/completedbox-status-search.png"><img alt="image8" src="../_images/completedbox-status-search.png" style="width: 700px;" /></a></p>
-<ul>
-<li><p><strong>文書管理</strong></p>
-<p><a class="reference internal" href="../_images/documentmanage_status_search.png"><img alt="image9" src="../_images/documentmanage_status_search.png" style="width: 700px;" /></a></p>
-</li>
+<ul class="simple">
+<li><p><strong>文書管理</strong></p></li>
 </ul>
+<p><a class="reference internal" href="../_images/documentmanage_status_search.png"><img alt="image9" src="../_images/documentmanage_status_search.png" style="width: 700px;" /></a></p>
+</div>
 <div class="section" id="id6">
-<h3><strong>キーワード及びフィルター検索</strong><a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h4><strong>キーワード及びフィルター検索</strong><a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>キーワード検索に加え、詳細検索を行うことでタイトルと内容の組み合わせによる検索、数字や日付の範囲を指定した検索、カスタムフィルターによる検索など、さまざまな検索方法を備えています。また、カスタムフィルターを設定することで、文書のフィールドの入力値を詳細検索することも可能です。また、カスタムフィルターを使用することで、数字の範囲や日付の期間を設定して検索することもできます。</p>
 <p>使用可能なフィルターの種類は以下の通りです。また、カスタムフィルターは、 <strong>完了文書</strong>と <strong>文書管理</strong>でのみ使用できます。</p>
-<blockquote>
-<div></div></blockquote>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 27%" />
+<col style="width: 26%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>要処理文書</p></th>
+<th class="head"><p>進行中の文書</p></th>
+<th class="head"><p>完了文書</p></th>
+<th class="head"><p>文書管理</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>タイトル+内容</p></td>
+<td><p>タイトル+内容</p></td>
+<td><p>タイトル+内容</p></td>
+<td><p>タイトル+内容</p></td>
+</tr>
+<tr class="row-odd"><td><p>タイトル</p></td>
+<td><p>タイトル</p></td>
+<td><p>タイトル</p></td>
+<td><p>タイトル</p></td>
+</tr>
+<tr class="row-even"><td><p>内容</p></td>
+<td><p>内容</p></td>
+<td><p>内容</p></td>
+<td><p>内容</p></td>
+</tr>
+<tr class="row-odd"><td><p>文書 ID</p></td>
+<td><p>文書 ID</p></td>
+<td><p>文書 ID</p></td>
+<td><p>文書 ID</p></td>
+</tr>
+<tr class="row-even"><td><p>文書番号</p></td>
+<td><p>文書番号</p></td>
+<td><p>文書番号</p></td>
+<td><p>文書番号</p></td>
+</tr>
+<tr class="row-odd"><td><p>テンプレート名</p></td>
+<td><p>テンプレート名</p></td>
+<td><p>ステップ</p></td>
+<td><p>ステップ</p></td>
+</tr>
+<tr class="row-even"><td><p>ステップ</p></td>
+<td><p>ステップ</p></td>
+<td><p>作成者</p></td>
+<td><p>作成者</p></td>
+</tr>
+<tr class="row-odd"><td><p>作成者</p></td>
+<td><p>作成者</p></td>
+<td><p>作成日</p></td>
+<td><p>作成日</p></td>
+</tr>
+<tr class="row-even"><td><p>作成日</p></td>
+<td><p>作成日</p></td>
+<td><p>処理者</p></td>
+<td><p>処理者</p></td>
+</tr>
+<tr class="row-odd"><td><p>依頼者</p></td>
+<td><p>処理者</p></td>
+<td><p>処理日</p></td>
+<td><p>処理日</p></td>
+</tr>
+<tr class="row-even"><td><p>依頼日</p></td>
+<td><p>処理日</p>
+<p>文書処理の経過日数</p>
+</td>
+<td><p>カスタムフィルター</p></td>
+<td><p>カスタムフィルター</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>カスタムフィルターの使用方法</strong></p>
 <ol class="arabic">
 <li><p>詳細のコンボボックスから、<strong>カスタムフィルター</strong>を選択します。</p>
 <p><img alt="image10" src="../_images/userdefined_search1.png" /></p>
@@ -304,11 +371,11 @@
 <p>1.存在しない文書入力フィールド名を入力し検索した場合、文書は照会されません。</p>
 <ol class="arabic simple" start="2">
 <li><p><strong>フィールド名</strong>に特殊文字（”、'、;、&lt;、&gt;、\）を使用することはできません。</p></li>
-<li><p><strong>フィールド名</strong>の前後のスペースは削除されます。例：「休暇　申込書 」&gt;「休暇　申込書」</p></li>
+<li><p><strong>フィールド名</strong>の前後のスペースは削除されます。（例：「休暇　申込書 」&gt;「休暇　申込書」）</p></li>
 </ol>
-<p>4.追加/修正の際、既存のカスタムフィルターと同名のフィールド名を入力すると、以前のフィールドタイプとフィールドの検索値が表示されます。例）既存のカスタムフィルター「勤続年数」：5 ～ 10 を追加した状態でカスタムフィルターを再度追加する場合、フィールド名に同名の「勤続年数」と入力すると、フィールドタイプは「範囲」、検索値1は「5」、検索値2は「10」と既存の設定が表示されます。</p>
+<p>4.追加/修正の際、既存のカスタムフィルターと同名のフィールド名を入力すると、以前のフィールドタイプとフィールドの検索値が表示されます。（例：既存のカスタムフィルター「勤続年数」：5 ～ 10 を追加した状態でカスタムフィルターを再度追加する場合、フィールド名に同名の「勤続年数」と入力すると、フィールドタイプは「範囲」、検索値1は「5」、検索値2は「10」と既存の設定が表示されます。）</p>
 </div>
-<p>フィールドタイプとしてキーワード、範囲、期間のうち1つを選択します。デフォルト値はキーワードです。</p>
+<p><strong>フィールドタイプ</strong>としてキーワード、範囲、期間のうち1つを選択します。デフォルト値はキーワードです。</p>
 <p>フィールドタイプの選択によって、検索値の入力欄として表示される入力ボックスが変わります。</p>
 <table class="docutils align-default">
 <colgroup>
@@ -344,8 +411,8 @@
 <p>例) フィールド名：果物 / フィールドタイプ：キーワード / 値1：イチゴ、リンゴ　→　果物に「イチゴ」と「リンゴ」、2つのうち1つ以上を含む文書を検索します。</p>
 </li>
 <li><p><strong>範囲</strong></p>
-<p>数字や一定の日付の間の値を検索する際に使用します。例）数字：100-200 / 期間：2019/01/01~2019/06/30</p>
-<p>設定した開始値と終了値の間の値が検索されます。開始値のみを入力した場合は、開始値以上の値を検索します。終了値のみを入力した場合は、終了値以下の値を検索します。例）年収：1000~ / 年収：~5000</p>
+<p>数字や一定の日付の間の値を検索する際に使用します。（例：数字：100-200 / 期間：2019/01/01~2019/06/30）</p>
+<p>設定した開始値と終了値の間の値が検索されます。開始値のみを入力した場合は、開始値以上の値を検索します。終了値のみを入力した場合は、終了値以下の値を検索します。（例：年収：1000~ / 年収：~5000）</p>
 </li>
 <li><p><strong>期間</strong></p>
 <p>表示されるカレンダーから、日付の期間を設定します。デフォルト値は直近の1週間です。</p>
@@ -353,7 +420,7 @@
 </li>
 </ul>
 </li>
-<li><p><strong>検索の追加</strong>(<img alt="image11" src="../_images/searchplus.png" />)ボタンをクリックすることで、検索キーワードに追加し、設定した条件で文書を検索します。</p>
+<li><p><strong>検索の追加</strong> (<img alt="image11" src="../_images/searchplus.png" />)ボタンをクリックすることで、検索キーワードに追加し、設定した条件で文書を検索します。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>1.複数のカスタムフィルターの追加およびカスタムフィルターの変更、削除ができます。</p>
@@ -362,6 +429,7 @@
 </div>
 </li>
 </ol>
+<p><strong>検索キーワードの表示方法及び修正/削除方法</strong></p>
 <ol class="arabic simple">
 <li><p>検索キーワードは <strong>フィールド名：値</strong>の形式で、次のように追加されます。</p>
 <ul class="simple">
@@ -373,8 +441,10 @@
 <li><p>追加した検索キーワードを選択して、カスタムフィルターを修正します。修正時には、詳細検索フィルターの項目が <strong>カスタムフィルター</strong>に変わり、選択した <strong>フィルターのフィールド名、フィールドタイプ、検索値</strong>が表示されます。</p></li>
 <li><p>追加した検索キーワードを削除するには、キーワードの右側の <strong>X</strong>アイコンをクリックします。</p></li>
 </ol>
+</div>
+</div>
 <div class="section" id="additional-work">
-<span id="id7"></span><h4>各文書トレイの作業項目<a class="headerlink" href="#additional-work" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<span id="id7"></span><h3>各文書トレイの作業項目<a class="headerlink" href="#additional-work" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>各文書リストで実行できる追加アクションには、プレビュー、削除依頼、再要請、完了文書送信予約などがあります。</p>
 <ul>
 <li><p><strong>要処理文書</strong></p>
@@ -392,9 +462,9 @@
 </ul>
 </div>
 <div class="section" id="history">
-<span id="id8"></span><h4>状態および履歴の表示<a class="headerlink" href="#history" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<span id="id8"></span><h3>状態および履歴の表示<a class="headerlink" href="#history" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>文書トレイのリストから文書を1つ選択すると、その文書の状態と履歴が画面の右側に表示されます。</p>
-<p><strong>文書の状態</strong> ：ワークフローのステップごとに文書がいつ、誰によって作成/処理されたか表示する。</p>
+<p><strong>文書の状態</strong>：ワークフローのステップごとに文書がいつ、誰によって作成/処理されたか表示する。</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/document_status.png"><img alt="文書状態タブ" src="../_images/document_status.png" style="width: 300px;" /></a>
 </div>
@@ -403,7 +473,7 @@
 </div>
 </div>
 <div class="section" id="document-download">
-<span id="id9"></span><h4>文書のダウンロード<a class="headerlink" href="#document-download" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<span id="id9"></span><h3>文書のダウンロード<a class="headerlink" href="#document-download" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>eformsignで作成されるほとんどの文書は、長期間安全に保管する必要がある文書です。全ての文書は長期アーカイブファイル形式（PDF/A）で保存され、指定された管理者のみが文書・データの閲覧および削除ができます。</p>
 <ol class="arabic simple">
 <li><p>文書トレイのリストの右側にあるダウンロード(<img alt="image12" src="../_images/download_icon.png" />)アイコンをクリックします。</p></li>
@@ -419,7 +489,7 @@ CSVダウンロードを選択し、ダウンロードしたデータを確認�
 </div>
 </div>
 <div class="section" id="document-delete">
-<span id="id10"></span><h4>文書の削除<a class="headerlink" href="#document-delete" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<span id="id10"></span><h3>文書の削除<a class="headerlink" href="#document-delete" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>eformsign では、指定された管理者のみが文書を削除できます。</p>
 <ol class="arabic simple">
 <li><p>文書トレイのリストの右上にある <strong>削除</strong>（<img alt="image13" src="../_images/delete_icon1.png" />）アイコンをクリックします。</p></li>
@@ -428,7 +498,7 @@ CSVダウンロードを選択し、ダウンロードしたデータを確認�
 </ol>
 </div>
 <div class="section" id="document-column">
-<span id="id11"></span><h4>文書トレイのカラムの設定<a class="headerlink" href="#document-column" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<span id="id11"></span><h3>文書トレイのカラムの設定<a class="headerlink" href="#document-column" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>文書トレイの右上にあるアイコンのうち、カラム(<a class="reference internal" href="../_images/column_icon.png"><img alt="image14" src="../_images/column_icon.png" style="width: 35px;" /></a>)アイコンをクリックすることで、リストに表示したい項目を選択できます。</p>
 <div class="figure align-default">
 <img alt="文書トレイのカラムの設定アイコン" src="../_images/column_type.png" />
@@ -436,7 +506,7 @@ CSVダウンロードを選択し、ダウンロードしたデータを確認�
 </div>
 </div>
 <div class="section" id="drafts">
-<span id="id12"></span><h3>下書きとして保存<a class="headerlink" href="#drafts" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<span id="id12"></span><h2>下書きとして保存<a class="headerlink" href="#drafts" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p><strong>下書きとして保存</strong>には <strong>マイファイルで作成する</strong>で <strong>文書作成をスタート</strong>をクリックする前に <strong>下書きとして保存</strong>をクリックすることで、下書き保存した文書が保存されます。
 <strong>下書きとして保存</strong>　に保存されたファイルはいつでも作成を継続したり、文書を削除することもできます。</p>
 <ol class="arabic">
@@ -450,11 +520,11 @@ CSVダウンロードを選択し、ダウンロードしたデータを確認�
 </ol>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>マイファイルで文書を作成する方法は <a class="reference external" href="chapter3.html#id2">マイファイルで作成する</a> をご参考ください。</p>
+<p>マイファイルで文書を作成する方法は <a class="reference external" href="chapter3.html#id2">マイファイルで作成する</a> をご参照ください。</p>
 </div>
 </div>
 <div class="section" id="bulksend-documents">
-<span id="id13"></span><h3>一括作成文書<a class="headerlink" href="#bulksend-documents" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<span id="id13"></span><h2>一括作成文書<a class="headerlink" href="#bulksend-documents" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>一括作成文書一括作成・送信した文書を確認できます。一括作成した文書の進行状況を確認し、予約送信の変更、キャンセルまたは再依頼ができます。</p>
 <div class="figure align-default">
 <img alt="一括作成文書" src="../_images/bulksend-documents.png" />
@@ -479,8 +549,7 @@ CSVダウンロードを選択し、ダウンロードしたデータを確認�
 </div>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>一括作成の方法は <a class="reference external" href="chapter3.html#bulksend">一括作成で文書を送信する</a> をご参考ください。</p>
-</div>
+<p>一括作成の方法は <a class="reference external" href="chapter3.html#bulksend">一括作成で文書を送信する</a> をご参照ください。</p>
 </div>
 </div>
 </div>

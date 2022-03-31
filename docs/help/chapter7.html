@@ -249,7 +249,7 @@
 <div class="section" id="id4">
 <h2>ワークフロー概要<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p><strong>ワークフロー</strong>とは、文章の作成から完了までの、文書のリクエストおよび処理プロセスを言います。</p>
-<p>ワークフローは、テンプレート管理者がテンプレート別に <strong>テンプレートの設定</strong> &gt; <strong>ワークフローの設定</strong>で設定を行えます。</p>
+<p>ワークフローは、テンプレート管理者がテンプレート別に <strong>テンプレートの設定</strong>&gt; <strong>ワークフローの設定</strong>で設定を行えます。</p>
 <p>ワークフローは、<strong>開始 - 完了</strong>が基本ステップです。また、以下のように <strong>検討者</strong>、<strong>参加者</strong>の2つのステップを必要に応じて追加してワークフローを作成することも可能です。</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/workflow_new.png"><img alt="ワークフローの段階" src="../_images/workflow_new.png" style="width: 500px;" /></a>
@@ -306,7 +306,7 @@
 <dt><strong>⑤ 説明</strong></dt><dd><p>テンプレートに関する説明文を入力します。この説明文は、テンプレートリスト及び 'テンプレートで作成する'を開く際に表示されます。</p>
 </dd>
 <dt><strong>⑥ テンプレート有効期限</strong></dt><dd><p>テンプレートで文書の作成できる期限を設定します。開始日の初期値はテンプレートをアップロードした日付となり、任意の日付に変更できます。</p>
-<p><strong>期間の制限無し</strong>にチェックを入れると、期限に関わらずいつでも文書を作成できます。 <strong>期間の制限無し</strong> のチェックを外すと終了日を設定できます。終了日を設定すると、終了日が過ぎた場合当該テンプレートで文書を作成できなくなります。</p>
+<p><strong>期間の制限無し</strong>にチェックを入れると、期限に関わらずいつでも文書を作成できます。 <strong>期間の制限無し</strong>のチェックを外すと終了日を設定できます。終了日を設定すると、終了日が過ぎた場合当該テンプレートで文書を作成できなくなります。</p>
 </dd>
 </dl>
 </div>
@@ -328,7 +328,7 @@
 <div class="section" id="id9">
 <h4>全般 &gt; 文書タイトルの自動生成ルールの作成<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p><strong>テンプレートの設定</strong>では、テンプレートから作成される文書のタイトル生成ルールを設定できます。</p>
-<p>文書に入力した内容、または文書作成に関する情報が文書タイトルに自動に入力されるように設定できます。文書タイトルの自動生成ルールを設定すると、文書の作成時の情報に基づいて文書タイトルが生成されます。、この文書タイトルは、すべての文書トレイ（進行中の文書、要処理文書、完了文書）と <strong>文書管理</strong>メニューの文書リストから確認できます。</p>
+<p>文書に入力した内容、または文書作成に関する情報が文書タイトルに自動に入力されるように設定できます。文書タイトルの自動生成ルールを設定すると、文書の作成時の情報に基づいて文書タイトルが生成されます。、この文書タイトルは、すべての文書トレイ（進行中の文書、要処理文書、完了文書）と**文書管理**メニューの文書リストから確認できます。</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/document-list.png"><img alt="文書管理 &gt; 文書リスト" src="../_images/document-list.png" style="width: 700px;" /></a>
 </div>
@@ -340,7 +340,7 @@
 <ol class="arabic simple">
 <li><p>サイドバーのメニューで <strong>テンプレート管理</strong>に移動します。</p></li>
 <li><p>テンプレートの <strong>設定</strong>アイコン (<img alt="image4" src="../_images/config-icon.PNG" />) をクリックして <strong>テンプレートの設定</strong>画面に移動します。</p></li>
-<li><p><strong>全般</strong>画面上の <strong>文書タイトルの自動生成ルール</strong>の入力欄に、任意のタイトルルールを入力します。</p></li>
+<li><p><strong>全般</strong> 画面上の <strong>文書タイトルの自動生成ルール</strong>の入力欄に、任意のタイトルルールを入力します。</p></li>
 <li><p>右上の <strong>保存</strong>ボタンをクリックして、変更内容を保存します。</p></li>
 </ol>
 </div>
@@ -373,7 +373,11 @@
 <td><p>文書を作成した時点の時刻（例：午後02:59)</p></td>
 </tr>
 <tr class="row-even"><td><p>現在_日付時刻</p></td>
-<td><p>文書作成時点の日付と時刻（例：2020年2月20日午後02:59）</p></td>
+<td><blockquote>
+<div><p>文書を作成した時点の日付・時刻</p>
+</div></blockquote>
+<p>（例：2020年2月20日午後02:59）</p>
+</td>
 </tr>
 <tr class="row-odd"><td><p>文書_作成者_ID</p></td>
 <td><p>文書を作成したメンバーの ID</p></td>
@@ -414,8 +418,8 @@
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">ちなみに</p>
-<p><strong>文書のタイトルの変更を許可する</strong> にチェックが入っているかを確認してください！</p>
-<p>文書タイトルの自動生成ルールを設定しても、<strong>文書のタイトルの変更を許可する</strong>にチェックが入っていると、文書作成者は文書のタイトルを任意に変更することが可能です。文書タイトルの変更を変更したくない場合は、<strong>文書のタイトルの変更を許可する</strong> のチェックを外してください。</p>
+<p><strong>文書のタイトルの変更を許可する</strong>にチェックが入っているかを確認してください！</p>
+<p>文書タイトルの自動生成ルールを設定しても、<strong>文書のタイトルの変更を許可する</strong>にチェックが入っていると、文書作成者は文書のタイトルを任意に変更することが可能です。文書タイトルの変更を変更したくない場合は、<strong>文書のタイトルの変更を許可する</strong>のチェックを外してください。</p>
 </div>
 <div class="figure align-default">
 <img alt="文書タイトルの変更を許可するを確認" src="../_images/template-setting-general-doc-numering_rule_allow_change.png" />
@@ -432,9 +436,9 @@
 <a class="reference internal image-reference" href="../_images/template-setting-general-doc-numering1.png"><img alt="文書番号の設定" src="../_images/template-setting-general-doc-numering1.png" style="width: 600px;" /></a>
 </div>
 <ol class="arabic">
-<li><p>サイドバーのメニューから <strong>テンプレート管理</strong> に移動します。</p></li>
-<li><p>テンプレートの <strong>設定</strong> アイコン(<img alt="image5" src="../_images/config-icon.PNG" />)をクリックして <strong>テンプレートの設定</strong> 画面に移動します。</p></li>
-<li><p><strong>全般</strong> 画面上の <strong>文書番号の自動付与</strong> にチェックを入れます。</p>
+<li><p>サイドバーのメニューから <strong>テンプレート管理</strong>に移動します。</p></li>
+<li><p>テンプレートの <strong>設定</strong>アイコン(<img alt="image5" src="../_images/config-icon.PNG" />)をクリックして <strong>テンプレートの設定</strong>画面に移動します。</p></li>
+<li><p><strong>全般</strong>画面上の <strong>文書番号の自動付与</strong>にチェックを入れます。</p>
 <p>▪  <strong>文書番号の自動付与ルールの選択</strong></p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="../_images/template-setting-general-doc-numering1_1.png"><img alt="文書番号の自動付与ルールの選択" src="../_images/template-setting-general-doc-numering1_1.png" style="width: 600px;" /></a>
@@ -442,25 +446,25 @@
 <ul>
 <li><dl>
 <dt><strong>シリアル番号</strong></dt><dd><p>文書の作成順に1番から生成します。</p>
-<p>例）1、2、3...</p>
+<p>（例：1、2、3...）</p>
 </dd>
 </dl>
 </li>
 <li><dl>
 <dt><strong>年度_シリアル番号</strong></dt><dd><p>文書が作成された年度 + 文書の作成順に1番から生成します。</p>
-<p>例）2020_1、2020_2...</p>
+<p>（例：2020_1、2020_2...）</p>
 </dd>
 </dl>
 </li>
 <li><dl>
 <dt><strong>テンプレート略称のシリアル番号</strong></dt><dd><p>テンプレート略称 + 文書の作成順に1番から生成します。</p>
-<p>例）申込書1、申込書2...</p>
+<p>（例：申込書1、申込書2...）</p>
 </dd>
 </dl>
 </li>
 <li><dl>
 <dt><strong>テンプレート略称年度_シリアル番号</strong></dt><dd><p>テンプレートの略称 + 文書が作成された年度 + 文書の作成順に1番から生成します。</p>
-<p>例）申込書2020_1、申込書2020_2...</p>
+<p>（例：申込書2020_1、申込書2020_2...）</p>
 </dd>
 </dl>
 </li>
@@ -483,7 +487,7 @@
 </ul>
 </div></blockquote>
 <ol class="arabic simple" start="4">
-<li><p>右上の <strong>保存</strong> ボタンをクリックして設定を保存します。</p></li>
+<li><p>右上の <strong>保存</strong>ボタンをクリックして設定を保存します。</p></li>
 </ol>
 </div>
 <div class="section" id="id14">
@@ -596,7 +600,7 @@
 <blockquote>
 <div><ul class="simple">
 <li><p><strong>ステップ名</strong>（共通）：デフォルトで設定されているステップ名を変更することができます。</p></li>
-<li><p><strong>文書作成数の制限</strong>：チェックを入れることで、そのテンプレートで生成可能な文書の最大数を設定します。</p></li>
+<li><p><strong>文書作成数の制限</strong> ：チェックを入れることで、そのテンプレートで生成可能な文書の最大数を設定します。</p></li>
 <li><p><strong>URLでの文書作成を許可する</strong>：メンバー以外の外部ユーザーに文書作成を要請する際に使用します。eformsignへのログイン無しで、文書を作成できる公開リンクを生成します。</p></li>
 <li><p><strong>アクセス許可ドメイン・IP</strong>:　特定のドメインまたはからのみ文書を作成できるように設定できます。</p></li>
 <li><p><strong>文書の重複送信を防止する</strong>：選択したフィールドについて重複の有無を確認し、文書を重複して送信することを防ぎます。</p></li>
@@ -611,8 +615,8 @@
 <li><p><strong>ステップ名</strong>: 当該ステップの名前を設定できます。</p></li>
 <li><p><strong>通知</strong>: 受信者に文書作成を要請した際に、通知を送信する方法を設定します。通知内容は編集が可能です。</p>
 <ul>
-<li><p><strong>通知方法の選択:</strong> 通知はデフォルトで電子メールでのみ送信されます。SMSを選択すると、<strong>SMS</strong>でも送信可能です。</p></li>
-<li><p><strong>通知内容編集:</strong> 各ステップで受信者に送信される文書の通知内容を編集できます。</p></li>
+<li><p><strong>通知方法の選択:</strong>通知はデフォルトで電子メールでのみ送信されます。SMSを選択すると、<strong>SMS</strong>でも送信可能です。</p></li>
+<li><p><strong>通知内容編集:</strong>各ステップで受信者に送信される文書の通知内容を編集できます。</p></li>
 </ul>
 </li>
 <li><p><strong>文書の送信期限</strong>: 受信者が文書を受信した後、次のステップの受信者に文書を送信するまでの期限を設定します。文書の送信期限を設定したくない場合は0日0時間と入力してください。</p></li>
@@ -622,7 +626,7 @@
 <li><p><strong>本人確認情報</strong>: <strong>受信者の名前</strong>、 <strong>入力フィールドから選択</strong>、または <strong>送信者が直接入力する</strong> の中で1つを選択して受信者が文書閲覧する前に入力が必要な情報を設定します。</p></li>
 </ul>
 </li>
-<li><p><strong>文書一部を非表示にする:</strong> 2つ以上のシートで作られたExcel文書または2つ以上の区域で分けたWordファイルの場合、設定することができます。</p></li>
+<li><p><strong>文書一部を非表示にする:</strong>2つ以上のシートで作られたExcel文書または2つ以上の区域で分けたWordファイルの場合、設定することができます。</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -693,14 +697,14 @@
 <p class="admonition-title">注釈</p>
 <p><strong>文書の作成者</strong>オプションにチェックを入れ、 <strong>各ステップの処理者</strong>オプションのチェックを外した場合、文書を最初に作成した人にステータス通知を送信します。</p>
 <p><strong>文書の作成者</strong>オプションのチェックを外し、 <strong>各ステップの処理者</strong>オプションにチェックを入れた場合、文書の作成者を除く、現在のステップの前に文書を処理した人にステータス通知を送信します。</p>
-<p><strong>文書の作成者</strong>, <strong>各ステップの処理者</strong> オプション両方にチェックを入れた場合、文書の作成者・現在ステップ以前に文書を処理した処理者全員に状態通知を送信します。</p>
+<p><strong>文書の作成者</strong>, <strong>各ステップの処理者</strong>オプション両方にチェックを入れた場合、文書の作成者・現在ステップ以前に文書を処理した処理者全員に状態通知を送信します。</p>
 <p><strong>文書の作成者</strong>, <strong>各ステップの処理者</strong>オプション両方のチェックを外した場合、当該ステップのステータス通知は送信されません。</p>
 </div>
 </div>
 </div>
 <div class="section" id="id23">
 <h2>テンプレートの個別操作メニュー<a class="headerlink" href="#id23" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p><strong>テンプレート管理</strong>画面で、テンプレート名の右側にあるメニューアイコン (<img alt="image24" src="../_images/template-hamburgericon.png" />) をクリックすると、各テンプレートごとのメニューが表示されます。</p>
+<p><strong>テンプレート管理</strong> 画面で、テンプレート名の右側にあるメニューアイコン (<img alt="image24" src="../_images/template-hamburgericon.png" />) をクリックすると、各テンプレートごとのメニューが表示されます。</p>
 <p><a class="reference internal" href="../_images/template-manage-menu.png"><img alt="image25" src="../_images/template-manage-menu.png" style="width: 700px;" /></a></p>
 <ul>
 <li><p><strong>複製</strong> ：テンプレートを複製します。テンプレートの文書ファイルとテンプレートの設定が複製されます。詳細設定の変更、保存が可能です。</p></li>
@@ -710,7 +714,7 @@
 <li><p><strong>所有者を変更</strong> ：テンプレートの所有者を変更できます。デフォルトでは、テンプレートの所有者はテンプレートを作成した人になります。所有者を変更して他のメンバーに所有者を変更することもできます。テンプレートの所有者は、テンプレートの管理権限を持つメンバーの中から選択できます。</p>
 <p><img alt="image26" src="../_images/template-owner-change.PNG" /></p>
 </li>
-<li><p><strong>文書管理者の設定</strong>： 当該テンプレートで作成される文書の文書管理者を設定できます。 <strong>テンプレート設定 &gt; 権限の設定</strong>と同様です。</p>
+<li><p><strong>文書管理者の設定：</strong> 当該テンプレートで作成される文書の文書管理者を設定できます。 <strong>テンプレート設定 &gt; 権限の設定</strong>と同様です。</p>
 <p><img alt="image27" src="../_images/document-manager-setting.PNG" /></p>
 </li>
 </ul>
