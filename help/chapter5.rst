@@ -361,7 +361,7 @@ eformsignはMicrosoft Officeの **OZ in Office**\ リボンメニューでは、
 
 **コンポーネントのプロパティ**
 
-.. figure:: resources/handwriting-component-properties_web.pnghandwriting-component-properties_fb.png
+.. figure:: resources/handwriting-component-properties_fb.png
    :alt: コンポーネントのプロパティの設定
 
 
