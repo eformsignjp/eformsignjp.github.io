@@ -611,8 +611,10 @@ eformsignはメンバーに権限を付与することができ、6段階の権�
 
    **会社管理** > **署名の設定**\ から手書き、テキストの中から文書の署名欄に表示される署名方式を制限及び許可できます。
 
+
    .. figure:: resources/signature-method.png
-      :width: 400px
+      :alt: 署名方式
+      :width: 700px
 
 
 
