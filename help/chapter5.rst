@@ -307,8 +307,7 @@ eformsignはMicrosoft Officeの **OZ in Office** リボンメニューでは、�
 
    2. 署名が必要な箇所に署名コンポーネントを追加します。
 
-   3. 追加した署名コンポーネントのプロパティタブにコンポーネントの名前を入力します。
-   例)署名
+   3. 追加した署名コンポーネントのプロパティタブにコンポーネントの名前を入力します。例)署名
 
    4. 署名の日付を入力する箇所に **使用日** コンポーネントを追加します。
 
@@ -316,8 +315,7 @@ eformsignはMicrosoft Officeの **OZ in Office** リボンメニューでは、�
 
    .. figure:: resources/date-component-properties.png
       :alt: 使用日コンポーネントプロパティ
-      :width: 500px
-
+      :width: 300px
 
    6. 使用日の書式設定を **入力値の変更日**\ とします。
 
