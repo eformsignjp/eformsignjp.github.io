@@ -50,21 +50,23 @@
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">文書の新規作成</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter4.html">Webフォームデザイナーの紹介</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">フォームビルダーの紹介</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">フォームビルダーのダウンロード及びインストール</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">フォームビルダーのダウンロード及びインストール手順</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id3">フォームビルダーのメニューの構成</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id4">コンポーネントの概要</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id5">コンポーネントのタイプ</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id6">基本コンポーネント</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">入力コンポーネント</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id7">情報コンポーネント</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id8">コンポーネントのプロパティを確認する方法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">コンポーネントプロパティの確認方法</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id9">コンポーネントの追加方法</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id10">コンポーネントの削除方法</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id11">各コンポーネントの使用方法</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#signature">署名</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#company-stamp">会社印</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#text">1行テキストと複数行テキスト</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#handwriting">手書き</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#number">数字</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#label">ラベル</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#check">チェック</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#select">選択</a></li>
@@ -83,7 +85,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#upload-form-file">フォームファイルのアップロード</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id29">アップロードしたテンプレートを追加設定する</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id31">アップロードしたテンプレートを追加設定する</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter6.html">ウェブフォームデザイナーでテンプレートを作成する</a></li>
@@ -119,75 +121,77 @@
              
   <section id="formbuilder">
 <span id="id1"></span><h1>フォームビルダーの紹介<a class="headerlink" href="#formbuilder" title="この見出しへのパーマリンク"></a></h1>
-<p>フォームビルダーは、 <strong>OZ in Office</strong>とも呼びます。 <strong>OZ in Office</strong>とは、Microsoft Office で作成した文書を、入力機能を備えた電子文書に変換するフォームエディターです。 <strong>OZ in Office</strong>を使用すれば、既存のExcel、Word、PowerPointの文書フォーム (契約書、申込書、同意書、稟議書など) を簡単に電子文書に変換できます。</p>
-<p><strong>OZ in Office</strong>はMS OfficeにAdd-inとして搭載され、リボンメニューに表示されます。電子署名、チェック、テキスト、カメラ、録音など、OZ製品の多様な入力機能を提供しています。</p>
-<p><strong>OZ in Office</strong>を利用して電子文書を作成するプロセスは次の通りです。</p>
+<p>フォームビルダー(Microsoft Officeアドイン)とは、Excel、Word、PowerPointなどのMicrosoft Office製品で作成した文書を、入力機能を備えた電子文書に変換するフォームエディターです。フォームビルダーを使用することで、現在使用中のExcel、Word、PowerPointで作成した文書 (契約書、申込書、同意書、稟議書など) を簡単に電子文書に変換することができます。</p>
+<p>フォームビルダーはExcel、Word、PowerPointなどのMicrosoft Office製品のリボンメニューにアドインとして追加して使用します。電子署名、チェックボックス、テキストボックス、カメラ、録音など、様々な入力機能を備えています。</p>
+<p>フォームビルダーを利用して電子文書を作成するプロセスは次の通りです。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/ozinoffice-flow_1.png"><img alt="OZ in Officeの使用プロセス" src="../_images/ozinoffice-flow_1.png" style="width: 750px;" /></a>
 </figure>
 <section id="id2">
-<h2>フォームビルダーのダウンロード及びインストール<a class="headerlink" href="#id2" title="この見出しへのパーマリンク"></a></h2>
+<h2>フォームビルダーのダウンロード及びインストール手順<a class="headerlink" href="#id2" title="この見出しへのパーマリンク"></a></h2>
 <ol class="arabic">
-<li><p>eformsignにログイン後、ダッシュボード画面の左上にあるメニューアイコン (<img alt="image1" src="../_images/menu_icon.png" />) をクリックすると、サイドバーメニューが表示されます。サイドバーメニューの一番下にある <strong>フォームビルダーをダウンロード</strong>ボタンをクリックします。</p>
+<li><p>eformsignにログイン後、ダッシュボード画面の左上にあるメニューアイコン (<img alt="image1" src="../_images/menu_icon.png" />) をクリックすると、サイドバーメニューが表示されます。サイドバーメニューの一番下にある <strong>フォームビルダーをダウンロード</strong> ボタンをクリックします。</p>
 <p><a class="reference internal" href="../_images/formbuilder_download.png"><img alt="image2" src="../_images/formbuilder_download.png" style="width: 700px;" /></a></p>
 </li>
-<li><p>以下のような、eformsignフォームビルダーのダウンロードページが表示されます。ページ下部の <strong>フォームビルダーのダウンロード</strong>ボタンをクリックします。</p>
+<li><p>以下のような、eformsignフォームビルダーのダウンロードページが表示されます。ページ下部の <strong>フォームビルダーのダウンロード</strong> ボタンをクリックします。</p>
 <p><a class="reference internal" href="../_images/formbuilder_download_2.png"><img alt="image3" src="../_images/formbuilder_download_2.png" style="width: 700px;" /></a></p>
 </li>
-<li><p>ダウンロードしたフォームビルダーの実行ファイルをクリックすると、以下のようなインストール画面が表示されます。オプションから <strong>すべて（C）</strong>を選択し、 <strong>次へ（N） &gt;</strong>ボタンをクリックします。</p>
+<li><p>ダウンロードしたフォームビルダーの実行ファイルをクリックすると、以下のようなインストール画面が表示されます。オプションから <strong>すべて（C）</strong>を選択し、 <strong>次へ（N） &gt;</strong> ボタンをクリックします。</p>
 <p><a class="reference internal" href="../_images/formbuilder_wizard_1.png"><img alt="image4" src="../_images/formbuilder_wizard_1.png" style="width: 400px;" /></a></p>
 </li>
 <li><p>インストールを続行すると、以下のような画面が表示されます。</p>
 <p><a class="reference internal" href="../_images/formbuilder_wizard_2.png"><img alt="image5" src="../_images/formbuilder_wizard_2.png" style="width: 400px;" /></a></p>
 </li>
-<li><p>インストールが完了したら、 <strong>完了</strong>ボタンをクリックして、インストール画面を閉じます。</p>
+<li><p>インストールが完了したら、 <strong>完了</strong> ボタンをクリックして、インストール画面を閉じます。</p>
 <p><a class="reference internal" href="../_images/formbuilder_wizard_3.png"><img alt="image6" src="../_images/formbuilder_wizard_3.png" style="width: 400px;" /></a></p>
 </li>
-<li><p>MS Office (Word、Excel、PowerPoint) を実行して、フォームビルダーが正しくインストールされていることを確認します。次のように <strong>OZ in Word/Excel/PowerPoint</strong>が表示されていることを確認します。</p>
+<li><p>Microsoft Office製品(Word、Excel、PowerPoint) を実行して、フォームビルダーが正しくインストールされていることを確認します。次のように <strong>OZ in Word/Excel/PowerPoint</strong>が表示されていることを確認します。</p>
 <p><a class="reference internal" href="../_images/formbuilder-ozinword-menu1.png"><img alt="image7" src="../_images/formbuilder-ozinword-menu1.png" style="width: 750px;" /></a></p>
 </li>
 </ol>
 </section>
 <section id="id3">
 <h2>フォームビルダーのメニューの構成<a class="headerlink" href="#id3" title="この見出しへのパーマリンク"></a></h2>
-<p>フォームビルダーのインストール後、MS OfficeのExcel、 Word、PowerPoint を実行すると、リボンメニューにOZ in Excel、OZ in Word、OZ in PowerPointタブが追加されていることが確認できます。</p>
+<p>フォームビルダーのインストール後、Excel、 Word、PowerPoint を実行すると、リボンメニューにOZ in Excel、OZ in Word、OZ in PowerPointタブが追加されていることが確認できます。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/formbuilder-ozinword-menu.png"><img alt="Microsoft Office の OZ in Office リボンメニュー" src="../_images/formbuilder-ozinword-menu.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/formbuilder-ozinword-menu.png"><img alt="Microsoft OfficeのOZ in Office リボンメニュー" src="../_images/formbuilder-ozinword-menu.png" style="width: 700px;" /></a>
 </figure>
-<p><strong>1. ファイル：</strong> 作成した文書を電子フォームで実行することで、eformsignへファイルのアップロード、eformsignからファイルのダウンロードができます。</p>
-<p><strong>2. プロパティ：</strong> コンポーネントの名前 、アイテムなどのプロパティを設定します。</p>
-<p><strong>3. 入力：</strong> 電子フォームに使用するコンポーネントを追加します。</p>
-<p><strong>4. 情報：</strong> 電子フォームにメンバーや使用日情報の自動入力を行うために、使用者及び使用日情報のコンポーネントを追加します。</p>
+<p><strong>1. ファイル：</strong> 作成した文書を電子フォームとして実行することで、eformsignにテンプレートのアップロード、eformsignからファイルのダウンロードができます。</p>
+<p><strong>2. プロパティ：</strong> コンポーネント(入力項目)の名前、項目などのプロパティを設定します。</p>
+<p><strong>3. 入力：</strong> テンプレートに使用する入力項目を選択します。</p>
+<p><strong>4. 情報：</strong> テンプレートにメンバーや使用日情報の自動入力を行う、使用者と使用日情報の入力項目を選択します。</p>
 <p><strong>5. 配置：</strong> コンポーネントを選択し、任意の箇所、サイズで追加します。 <strong>配置</strong>は、WordとPowerPointでのみサポートしている機能です。</p>
-<p><strong>6. 削除：</strong> コンポーネントを選択後 <strong>削除</strong>ボタンをクリックすると、コンポーネントが削除されます。</p>
-<p><strong>7. ウィンドウ：</strong> コンポーネントの <strong>プロパティ</strong>タブを開くか、コンポーネントを選択します。</p>
-<p><strong>8. ヘルプ：</strong> フォームビルダーのバージョンの確認と、更新を行います。</p>
+<p><strong>6. 削除：</strong> コンポーネントを選択後し、削除 ボタンをクリックすると、コンポーネントが削除されます。</p>
+<p><strong>7. ウィンドウ：</strong> コンポーネントのプロパティタブを開くか、コンポーネントを選択します。</p>
+<p><strong>8. ヘルプ：</strong> フォームビルダーのバージョンの確認と、アップデートを行います。</p>
 </section>
 <section id="id4">
 <h2>コンポーネントの概要<a class="headerlink" href="#id4" title="この見出しへのパーマリンク"></a></h2>
-<p>コンポーネントは、ユーザーが電子文書にコンテンツを入力するための入力欄として機能します。署名、チェック、日付、テキストなど多様なコンポーネントがあります。各コンポーネントは、<strong>プロパティ</strong>タブから詳細な設定が可能です。</p>
+<p>コンポーネント(入力項目)は、ユーザーが電子文書にコンテンツを入力するための入力欄として機能します。署名、チェック、日付、テキストなど、様々なコンポーネントがあります。各コンポーネントは、プロパティタブから詳細な設定を行うことができます。</p>
 <section id="id5">
 <h3>コンポーネントのタイプ<a class="headerlink" href="#id5" title="この見出しへのパーマリンク"></a></h3>
 <p>eformsignは、次のコンポーネントをサポートしています。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/components-in-word.png"><img alt="コンポーネントのタイプ" src="../_images/components-in-word.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/components-in-word.png"><img alt="コンポーネントの種類" src="../_images/components-in-word.png" style="width: 700px;" /></a>
 </figure>
 <section id="id6">
-<h4>基本コンポーネント<a class="headerlink" href="#id6" title="この見出しへのパーマリンク"></a></h4>
+<h4>入力コンポーネント<a class="headerlink" href="#id6" title="この見出しへのパーマリンク"></a></h4>
 <ul class="simple">
 <li><p><a class="reference external" href="#signature">署名</a><strong>:</strong> 署名を入力します。</p></li>
+<li><p><a class="reference external" href="#companystamp">社印</a><strong>:</strong> 登録されている社印を入力します。</p></li>
 <li><p><a class="reference external" href="#text">1行テキスト</a><strong>:</strong> １, 2単語程度の短いテキストを入力します。</p></li>
-<li><p><a class="reference external" href="#handwriting">手書き</a><strong>:</strong> 下書きとなるテキストを入力します。入力された文字をなぞり書きすることができます。</p></li>
+<li><p><a class="reference external" href="#handwriting">手書き</a><strong>:</strong> 下書きとなるテキストを入力します。入力した文字をなぞり書きすることができます。</p></li>
 <li><p><a class="reference external" href="#text">複数行テキスト</a><strong>:</strong> 複数行の長いテキストを入力します。</p></li>
-<li><p><a class="reference external" href="#label">ラベル</a><strong>：</strong> 別途設定した値を文書に表示する場合に使用します。</p></li>
-<li><p><a class="reference external" href="#check">チェック</a><strong>：</strong> チェックする項目がある場合に使用します。</p></li>
+<li><p><a class="reference external" href="#number">数字</a><strong>:</strong> 数字を入力します。</p></li>
+<li><p><a class="reference external" href="#label">ラベル</a><strong>：</strong> 事前に設定した値を文書に表示する場合に使用します。</p></li>
+<li><p><a class="reference external" href="#check">チェック</a><strong>：</strong> チェックボックスを作成し、チェックする項目がある場合に使用します。</p></li>
 <li><p><a class="reference external" href="#select">選択</a><strong>：</strong> 複数の項目から1つを選択します。複数選択も可能です。</p></li>
-<li><p><a class="reference external" href="#combo">リスト選択</a><strong>：</strong> クリックすると、ドロップダウンメニューが表示されます。複数の項目のうち1つを選択します。</p></li>
-<li><p><a class="reference external" href="#toggle">トグル</a><strong>：</strong> 複数の値を入力すると、ボタンをクリックするたびに異なる値に切り替わります。</p></li>
+<li><p><a class="reference external" href="#combo">リスト選択</a><strong>：</strong> クリックすると、ドロップダウンメニューが表示されます。複数項目から1つを選択します。</p></li>
+<li><p><a class="reference external" href="#toggle">トグル</a><strong>：</strong> 2つ以上の値を入力すると、ボタンをクリックするたびに値が切り替わります。</p></li>
 <li><p><a class="reference external" href="#date">日付</a><strong>：</strong> 特定の日付を入力します。</p></li>
-<li><p><a class="reference external" href="#numeric">増減</a><strong>：</strong> 数字を入力します。</p></li>
-<li><p><a class="reference external" href="#camera">カメラ</a><strong>：</strong> カメラを搭載しているデバイス（スマートフォン、タブレットなど）では、カメラで写真を撮るか、アルバムから写真を選択します。カメラのないデバイス（通常のPC）では、画像ファイルを選択します。</p></li>
-<li><p><a class="reference external" href="#record">録音</a><strong>：</strong> 録音機能を搭載している端末でボタンをクリックして録音します。</p></li>
+<li><p><a class="reference external" href="#numeric">増減</a><strong>：</strong> 増減ボタンをクリックして数字を入力します。</p></li>
+<li><p><a class="reference external" href="#camera">カメラ</a><strong>：</strong> カメラを搭載しているデバイス（スマートフォン、タブレットなど）では、カメラで写真を撮るか、アルバムから写真を選択します。カメラのないデバイス（PCなど）では、画像ファイルを選択します。</p></li>
+<li><p><a class="reference external" href="#record">録音</a><strong>：</strong> 録音機能を搭載している端末において、ボタンをクリックして録音します。</p></li>
 <li><p><a class="reference external" href="#attach">添付</a><strong>：</strong> ファイル添付機能を追加します。</p></li>
 </ul>
 </section>
@@ -196,168 +200,204 @@
 <ul class="simple">
 <li><p><a class="reference external" href="#user">使用者</a><strong>:</strong> 文書を作成、または修正したメンバーの情報を入力します。</p></li>
 <li><p><a class="reference external" href="#usedate">使用日</a><strong>:</strong> 文書を作成、または修正した日付を入力します。</p></li>
-<li><p><a class="reference external" href="#document">文書</a><strong>:</strong> 文書内に文書番号や文書名を入力します。</p></li>
+<li><p><a class="reference external" href="#document">文書</a><strong>:</strong> 文書内に文書番号や文書IDを入力します。</p></li>
 </ul>
 </section>
 </section>
 <section id="id8">
-<h3>コンポーネントのプロパティを確認する方法<a class="headerlink" href="#id8" title="この見出しへのパーマリンク"></a></h3>
-<p>すべてのコンポーネントには、設定を行う <strong>プロパティ</strong>タブがあります。プロパティを表示するには、 <strong>プロパティ表示</strong>アイコン、または <strong>プロパティ</strong>メニューをクリックします。</p>
+<h3>コンポーネントプロパティの確認方法<a class="headerlink" href="#id8" title="この見出しへのパーマリンク"></a></h3>
+<p>全てのコンポーネントは、プロパティタブから詳細設定を行うことができます。プロパティを表示するには、プロパティアイコン、またはプロパティメニューをクリックします。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/checking-components-properties.png"><img alt="コンポーネントのプロパティを表示する" src="../_images/checking-components-properties.png" style="width: 750px;" /></a>
+<a class="reference internal image-reference" href="../_images/checking-components-properties.png"><img alt="コンポーネントのプロパティを表示" src="../_images/checking-components-properties.png" style="width: 750px;" /></a>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>すべてのコンポーネントに名前をつける必要があります。 名前は、コンポーネントを追加すれば自動的に生成されますが、コンポーネントへの入力内容を示す単語に変更することを推奨します。(例：木村、佐々木などの名前を入力するコンポーネントの名前は「氏名」と設定する)</p>
+<p>全てのコンポーネントに名前をつける必要があります。
+名前は、コンポーネントを追加すると自動的に生成されますが、コンポーネントへの入力内容が一目で分かるような単語に設定することを推奨します。
+例) 木村、佐々木などの名前を入力するコンポーネントの名前は <strong>「氏名」</strong> と設定します</p>
 </div>
 </section>
 <section id="id9">
 <h3>コンポーネントの追加方法<a class="headerlink" href="#id9" title="この見出しへのパーマリンク"></a></h3>
-<p>コンポーネントを追加する方法には大きく、Excelから追加する方法と、WordやPowerPointから追加する方法があります。WordまたはPowerPointでは、次の2つの方法でコンポーネントを追加できます。</p>
-<ul class="simple">
-<li><p><strong>Excelからコンポーネントを追加する</strong></p></li>
-</ul>
-<ol class="arabic">
-<li><p>Excelを開いて、 <strong>OZ in Excel</strong>リボンメニューに移動します。</p>
+<p>コンポーネントを追加する方法には、Excelから追加する方法と、WordやPowerPointから追加する方法があります。WordまたはPowerPointでは、次の2つの方法でコンポーネントを追加することができます。</p>
+<ul>
+<li><p><strong>Excelからコンポーネントを追加</strong></p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Excelを開き、 <strong>OZ in Excel</strong> リボンメニューに移動します。</p>
 <p><img alt="image8" src="../_images/ozinexcel_1.png" /></p>
 </li>
-<li><p>コンポーネントを追加したいセルを選択します。</p>
+<li><p>コンポーネントを追加するセルを選択します。</p>
 <p><img alt="image9" src="../_images/ozinexcel_2.png" /></p>
 </li>
 <li><p>任意のコンポーネントをクリックします。</p>
 <p><img alt="image10" src="../_images/ozinexcel_3.png" /></p>
 </li>
-<li><p>コンポーネントのプロパティで、詳細項目を設定します。</p></li>
+<li><p>コンポーネントのプロパティから、詳細項目を設定します。</p></li>
 </ol>
-<ul class="simple">
-<li><p><strong>Word または PowerPointからコンポーネントを追加する</strong></p></li>
-</ul>
-<p><strong>方法 1：コンポーネントをクリックして追加する</strong></p>
+</div></blockquote>
+</li>
+<li><p><strong>WordまたはPowerPointからコンポーネントを追加</strong></p>
+<blockquote>
+<div><p><strong>方法 1：コンポーネントをクリックして追加する</strong></p>
 <ol class="arabic">
-<li><p>WordまたはPowerPointファイルを開き、コンポーネントを追加したい箇所を選択します。</p>
+<li><p>WordまたはPowerPointファイルを開き、コンポーネントを追加する箇所を選択します。</p>
 <p><img alt="image11" src="../_images/ozinword_1.png" /></p>
 </li>
-<li><p><strong>OZ in Word</strong>または <strong>OZ in PowerPoint</strong>のリボンメニューから、追加したいコンポーネントをクリックします。</p>
+<li><p><strong>OZ in Word</strong> または <strong>OZ in PowerPoint</strong> のリボンメニューから、追加するコンポーネントをクリックします。</p>
 <p><img alt="image12" src="../_images/ozinword_2.png" /></p>
 </li>
 <li><p>追加したコンポーネントのサイズを調整します。</p>
 <p><img alt="image13" src="../_images/ozinword_3.png" /></p>
 </li>
 </ol>
-<p><strong>方法 2：コンポーネントを描画して配置する</strong></p>
+<p><strong>方法 2：コンポーネントを選択して配置する</strong></p>
 <ol class="arabic">
-<li><p>WordまたはPowerPointを開き、 <strong>OZ in Word</strong>または <strong>OZ in PowerPoint</strong>のリボンメニューに移動します。</p></li>
-<li><p><strong>入力項目</strong>アイコンをクリックして、表示されるドロップダウンリストから追加したいコンポーネントを選択します。</p>
+<li><p>WordまたはPowerPointを開き、 <strong>OZ in Word</strong> または <strong>OZ in PowerPoint</strong> のリボンメニューに移動します。</p></li>
+<li><p><strong>入力項目</strong> アイコンをクリックして、表示されるドロップダウンリストから追加するコンポーネントを選択します。</p>
 <p><img alt="image14" src="../_images/ozinword_2_1.png" /></p>
 </li>
 <li><p>任意の位置とサイズでコンポーネントを追加します。</p>
 <p><img alt="image15" src="../_images/ozinword_2_2.png" /></p>
 </li>
 </ol>
+</div></blockquote>
+</li>
+</ul>
 </section>
 <section id="id10">
 <h3>コンポーネントの削除方法<a class="headerlink" href="#id10" title="この見出しへのパーマリンク"></a></h3>
-<p>削除したいコンポーネントを選択し、 <strong>OZ in Office</strong>メニューの <strong>削除</strong>（<img alt="image16" src="../_images/delete-icon.png" />）アイコンをクリックします。コンポーネントを複数選択して削除することもできます。</p>
+<p>削除するコンポーネントを選択し、 <strong>OZ in Office</strong> メニューの <strong>削除</strong>（<img alt="image16" src="../_images/delete-icon.png" />）アイコンをクリックします。コンポーネントを複数選択して削除することもできます。</p>
 </section>
 <section id="id11">
 <h3>各コンポーネントの使用方法<a class="headerlink" href="#id11" title="この見出しへのパーマリンク"></a></h3>
-<p>eformsignはMicrosoft Officeの <strong>OZ in Office</strong>リボンメニューでは、チェック 、リスト選択、テキスト、署名など、様々なコンポーネントをサポートしています。</p>
-<p><strong>OZ in Office</strong>のすべてのコンポーネントには、共通のプロパティと固有のプロパティがあります。コンポーネントのプロパティウィンドウから、各コンポーネントの共通のプロパティと固有のプロパティを表示できます。共通のプロパティには、名前とツールヒントの内容があり、各プロパティの意味は次の通りです。</p>
+<p>eformsignはMicrosoft Officeの <strong>OZ in Office</strong> リボンメニューでは、チェックボックス、リスト選択、テキスト、署名など、様々なコンポーネントをサポートしています。</p>
+<p><strong>OZ in Office</strong>の全てのコンポーネントは、共通プロパティと固有プロパティを持ちます。 <strong>OZコンポーネントの属性</strong> ウィンドウから、共通プロパティと固有プロパティを表示することができます。共通プロパティには、名前とツールヒントの内容があり、各プロパティの機能は次のとおりです。</p>
 <ul class="simple">
-<li><p><strong>名前：</strong> 各コンポーネントを識別できる固有の名前です。ワークフローまたはフィールドの設定ステップで必須入力または修正制限がかかっている場合、コンポーネントの名前で確認・指定ができます。CSV形式で入力データを抽出して確認する場合もコンポーネントの <strong>名前</strong> で区別できます。</p></li>
-<li><p><strong>ツールヒントの内容：</strong>文書が受信者に表示される際、Windows環境では、コンポーネントにカーソルを合わせるとツールヒントの内容が吹き出しの形で表示されます。モバイル環境では、コンポーネントがダイアログで実行される際に、ツールヒントの内容がダイアログのタイトルとして表示されます。</p></li>
+<li><p><strong>名前：</strong>  各コンポーネントを識別するための固有の名前です。ワークフローまたはフィールドの設定ステップで必須入力または修正制限がかかっている場合、コンポーネントの名前で確認・指定ができます。CSV形式で入力データを抽出して確認する場合もコンポーネントの 名前で区別することができます。</p></li>
+<li><p><strong>ツールヒントの内容：</strong> 受信者が文書を閲覧する際、Windows環境ではコンポーネントにカーソルを合わせるとツールヒントの内容が吹き出し形式で表示されます。モバイル環境では、コンポーネントがダイアログで実行される際に、ツールヒントの内容がダイアログのタイトルとして表示されます。</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>コンポーネントの <strong>プロパティ</strong>ウィンドウは、ココンポーネントが適用された箇所を選択後、OZ in Officeメニューの <strong>プロパティ</strong>アイコン(<img alt="image17" src="../_images/property-icon.png" />)をクリックすると表示されます。</p>
+<p>OZコンポーネントの属性ウィンドウは、コンポーネントが適用された箇所を選択後、OZ in Officeメニューの <strong>プロパティ</strong>アイコン(<img alt="image17" src="../_images/property-icon.png" />)をクリックすると表示されます。</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>情報タイプの <strong>使用者</strong>、 <strong>使用日</strong>、 <strong>文書</strong>、 <strong>ラベル</strong>には <strong>ツールヒントの内容</strong>プロパティがありません。</p>
+<p>情報タイプの使用者、使用日、文書、ラベルには、ツールヒントの内容がありません。</p>
 </div>
 <section id="signature">
 <span id="id12"></span><h4>署名<a class="headerlink" href="#signature" title="この見出しへのパーマリンク"></a></h4>
-<p>文書への署名依頼をする必要がある場合に、<em>署名</em> コンポーネントを使用します。</p>
+<p>署名コンポーネントは、文書への署名依頼をする必要がある場合に使用します。</p>
 <p><img alt="image28" src="../_images/form-builder-components_signature.png" /></p>
-<p>署名コンポーネントを追加すると、署名が必要な文書に次のような <strong>署名</strong>ポップアップが表示されます。署名を直接手書きで描画するか、テキストを入力することで署名を生成できます。既に登録されている署名がある場合は、その署名を使用することもできます。</p>
+<p>署名コンポーネントを追加すると、署名が必要な文書に次のような <strong>署名</strong> ポップアップが表示されます。署名を手書きで描画するか、テキストを入力することで署名を作成することができます。既に登録されている署名がある場合は、その署名を使用することもできます。</p>
 <p><img alt="image29" src="../_images/signature.png" /></p>
 <p><strong>コンポーネントのプロパティ</strong></p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/Signature-component-properties.png"><img alt="署名コンポーネントのプロパティの設定" src="../_images/Signature-component-properties.png" style="width: 300px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
-<p><em>署名</em> コンポーネントの <strong>名前</strong>を入力します。(例：契約者の署名の場合、コンポーネントの <em>名前</em> は「契約者の署名」とする)</p>
+<p>署名コンポーネントの名前を入力します。
+例）契約者の署名の場合、コンポーネントの名前は「契約者の署名」とする)</p>
 <p><strong>② 署名タイプ</strong></p>
 <p>署名時に使用する署名を選択します。</p>
 <ul class="simple">
-<li><p><strong>サイン:</strong>文書の作成者が事前に登録した <strong>マイ署名</strong>がある場合、署名欄をクリックまたは署名入力ボタンをクリックすることで登録済みの署名が自動的に入力されます。</p></li>
-<li><p><strong>イニシャル:</strong> <strong>マイ署名</strong>に登録されたイニシャルがある場合、署名欄をクリックまたはイニシャル入力ボタンをクリックすることで登録済みのイニシャルが自動的に入力されます。</p></li>
-<li><p><strong>スタンプ:</strong><strong>マイ署名</strong>に登録されたスタンプがある場合、署名欄をクリックまたはスタンプ入力ボタンをクリックすることで登録済みのスタンプが自動的に入力されます。</p></li>
+<li><p><strong>サイン:</strong> 文書の作成者が事前に登録した <strong>マイ署名</strong>がある場合、署名欄をクリックまたは署名入力ボタンをクリックすることで、登録済みの署名が自動的に入力されます。</p></li>
+<li><p><strong>イニシャル:</strong>  <strong>マイ署名</strong>に登録されたイニシャルがある場合、署名欄をクリックまたはイニシャル入力ボタンをクリックすることで登録済みのイニシャルが自動的に入力されます。</p></li>
+<li><p><strong>スタンプ:</strong> <strong>マイ署名</strong>に登録されたスタンプがある場合、署名欄をクリックまたはスタンプ入力ボタンをクリックすることで登録済みのスタンプが自動的に入力されます。</p></li>
+<li><p><strong>直接入力のみ許可</strong>: <strong>直接入力のみ許可</strong>にチェックを入れると、タブレットPCなどで署名欄に直接サインできるよう設定します。署名欄をクリックすると署名ポップアップが表示され、 <strong>手書き、キーボード、モバイル、eformsignアプリ</strong> タブから任意の方法で署名を入力します。</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>登録された署名、イニシャル、スタンプがある場合、当該署名が署名欄に自動的に入力されますが、登録された署名、イニシャル、スタンプが無い場合、署名を直接入力できるポップアップが表示されます。
-署名タイプを1種類だけ選択した場合、署名欄をクリックすると当該署名タイプが表示されます。署名タイプを2種類以上選択した場合、署名欄をクリックすると次のような選択可能な署名タイプボタンが表示されます。</p>
+<p>登録された署名、イニシャル、スタンプがある場合、その署名が署名欄に自動的に入力されます。署名、イニシャル、スタンプが登録されていない場合、署名を入力するポップアップが表示されます。
+署名タイプを1種類だけ選択した場合、署名欄をクリックするとその署名タイプが表示されます。署名タイプを2種類以上選択した場合、署名欄をクリックすると次のような選択可能な署名タイプボタンが表示されます。</p>
 <figure class="align-default">
 <img alt="署名タイプ選択" src="../_images/select-signature-type.png" />
 </figure>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>署名ではなく印鑑やスタンプを使用する必要がある場合もあります。eformsignでは、印鑑やスタンプの画像を使用して文書の署名欄に印鑑・スタンプを入れることもできます。印鑑・スタンプの画像を使用するには、<strong>署名</strong> ポップアップで <strong>印鑑・スタンプ</strong> タブをクリックして、印鑑・スタンプの画像を選択した後、<strong>OK</strong> ボタンをクリックします。
-会社法人印鑑など、社印がある場合、会社の印鑑で登録しておけば、社印のコンポーネントで安全で簡単に使用することができます。</p>
+<p><strong>文書にスタンプ押印</strong></p>
+<p>署名ではなく、職印や個人印鑑を使用する場合もあります。eformsignではスタンプ画像を使用して文書の署名欄にスタンプを押すことができます。</p>
+<p><strong>① スタンプ画像を使用</strong></p>
+<p>スタンプ画像を使用する場合、署名ポップアップで <strong>スタンプ</strong> タブをクリックし、スタンプの画像を選択後、 <strong>確認</strong> ボタンを押します。</p>
+<p><strong>② 会社印を使用</strong></p>
+<p>会社の法人印鑑など、会社の職印がある場合、 <strong>会社管理メニューから会社印</strong>として登録後、 <strong>会社印</strong> コンポーネントでより安全に、簡単に使用できます。</p>
 </div>
-<p><strong>③ 署名方法</strong></p>
-<p><strong>直接入力のみ許可</strong>にチェックを入れると、タブレットPCなどで署名欄に直接署名をできるように設定できます。署名欄をクリックすると署名ポップアップが表示され、<strong>手書き、キーボード、モバイル、eformsignアプリ</strong>から任意の方式で署名を入力します。</p>
-<p><strong>④ 署名ペンの太さ</strong></p>
+<p><strong>③ 署名ペンの太さ</strong></p>
 <p>署名を手書きで描画するときに表示される線の太さを設定します。</p>
-<p><strong>⑤ 署名ペンの色</strong></p>
+<p><strong>④ 署名ペンの色</strong></p>
 <p>署名を手書きで描画するときに表示される線の色を設定します。</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
+<p><strong>署名日の自動入力設定方法</strong></p>
 <p>電子契約書や電子同意書など、署名の入る文書に署名日付が自動的に入力されるように設定できます。</p>
 <ol class="arabic simple">
-<li><p>電子書式に変換する文書ファイル（Word、Excel、PowerPoint）を開くか、新しい文書を作成します。</p></li>
-<li><p>署名が必要な箇所に <strong>署名</strong>コンポーネントを追加します。</p></li>
-<li><p>追加した <strong>署名</strong>コンポーネントのプロパティタブにコンポーネントの <strong>名前</strong>を入力します。(例：署名)</p></li>
-<li><p>署名の日付を入力したい箇所に <strong>使用日</strong>コンポーネントを追加します。</p></li>
-<li><p>使用日コンポーネントのプロパティタブを開きます。</p></li>
+<li><p>電子書式に変換する文書ファイル（Word、Excel、PowerPoint）を開くか、新規文書を作成します。</p></li>
+<li><p>署名が必要な箇所に署名コンポーネントを追加します。</p></li>
+</ol>
+<p>3. 追加した署名コンポーネントのプロパティタブにコンポーネントの名前を入力します。
+例)署名</p>
+<ol class="arabic simple" start="4">
+<li><p>署名の日付を入力する箇所に <strong>使用日</strong> コンポーネントを追加します。</p></li>
+<li><p><strong>使用日</strong> コンポーネントのプロパティタブを開きます。</p></li>
 </ol>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/date-component-properties.png"><img alt="使用日コンポーネントプロパティ" src="../_images/date-component-properties.png" style="width: 500px;" /></a>
 </figure>
-<ol class="arabic" start="6">
+<ol class="arabic simple" start="6">
 <li><p>使用日の書式設定を <strong>入力値の変更日</strong>とします。</p></li>
-<li><p>下部に表示されるコンポーネントの名前の入力欄に、<strong>署名</strong> コンポーネントの名前である「署名」と入力します。</p>
+<li><p>下部に表示されるコンポーネントの名前の入力欄に、署名コンポーネントの名前である「署名」と入力します。</p></li>
+</ol>
 <dl class="simple">
-<dt>※使用日コンポーネントの「書式設定」から設定することで、任意の表示形式に変更できます。</dt><dd><p>(例： date-yyyy-MM-dd → date-yyyy年 MM月 dd日)</p>
+<dt>※使用日コンポーネントの「書式設定」から設定することで、任意の表示形式に変更できます。</dt><dd><p>例) date-yyyy-MM-dd → date-yyyy年 MM月 dd日</p>
 </dd>
 </dl>
-</li>
-</ol>
 </div>
 </section>
+<section id="company-stamp">
+<span id="id13"></span><h4>会社印<a class="headerlink" href="#company-stamp" title="この見出しへのパーマリンク"></a></h4>
+<p>会社の代表印鑑、社用印鑑、法人印鑑など、 <strong>会社管理 &gt; 会社印管理</strong>に登録された会社印を入力する際に使用します。
+会社印は <strong>会社管理 &gt; 会社印管理</strong>に登録された印鑑と使用権限を付与されたメンバーのみ使用できます。会社印に関する履歴は <strong>会社印管理</strong> メニューに記録されます。</p>
+<figure class="align-default">
+<img alt="会社印" src="../_images/form-builder-components_companystamp.png" />
+</figure>
+<p><strong>コンポーネントのプロパティ</strong></p>
+<figure class="align-default">
+<img alt="会社印入力項目プロパティ設定" src="../_images/companystamp-component-properties_fb.png" />
+</figure>
+<p><strong>① 名前</strong></p>
+<p>会社印入力項目の名前を入力します。
+例）法人印鑑の場合、入力項目の名前は「法人印鑑」と設定します。</p>
+</section>
 <section id="text">
-<span id="id13"></span><h4>1行テキストと複数行テキスト<a class="headerlink" href="#text" title="この見出しへのパーマリンク"></a></h4>
-<p>1行テキストのコンポーネントと複数行テキストのコンポーネントはどちらも、入力欄を作成する際に使用します。1行テキストのコンポーネントは1、 2単語程度の短いテキストに、複数行テキストのコンポーネントは1行以上の長いテキストへの使用に適しています。</p>
+<span id="id14"></span><h4>1行テキストと複数行テキスト<a class="headerlink" href="#text" title="この見出しへのパーマリンク"></a></h4>
+<p>1行テキストのコンポーネントと複数行テキストのコンポーネントはどちらも、入力欄を作成する際に使用します。1行テキストは1、 2単語程度の短いテキストに、複数行テキストは2行以上の長いテキストへの使用に適しています。</p>
 <p><img alt="image23" src="../_images/text-and-muliline-components.png" /></p>
 <p><strong>コンポーネントのプロパティ</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/text-component-properties.png"><img alt="1行テキストと複数行テキストのプロパティの設定" src="../_images/text-component-properties.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/text-component-properties_fb.png"><img alt="1行テキストと複数行テキストのプロパティの設定" src="../_images/text-component-properties_fb.png" style="width: 300px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
-<p>1行テキストまたは複数行テキストのコンポーネントの名前を入力します。(例：木村、鈴木などが入力されるコンポーネントの <strong>名前</strong>は「氏名」とします)</p>
-<p><strong>② 入力可能な最大文字数</strong></p>
-<p>入力可能な最大文字数（空白を含む）を設定できます。デフォルトは「0」が設定されており、文字数に制限はありません。</p>
-<p><strong>③ キーボードタイプ</strong></p>
+<p>1行テキスト/複数行テキストのコンポーネントの名前を入力します。
+例)木村、鈴木などが入力されるコンポーネントの名前は「氏名」とします)</p>
+<p><strong>② テキストタイプ</strong></p>
+<p>テキストタイプをテキスト、パスワードから選択します。</p>
+<ul class="simple">
+<li><p><strong>テキスト:</strong> 一般的なテキストを入力する際に使用します。</p></li>
+<li><p><strong>パスワード:</strong> 入力した内容が表示されないよう設定します。テキスト入力時、入力した内容がアスタリスク(*)またはパスワード文字（●）で表示され、入力内容を隠すことができます。入力された内容はPDFではパスワード文字で表示され、CSVデータをダウンロードしたときにのみ確認することができます。</p></li>
+</ul>
+<p><strong>③ 入力項目のサイズに合わせて文字数を制限</strong></p>
+<p><strong>入力項目のサイズに合わせて文字数を制限</strong>にチェックを入れると、入力項目のサイズに合わせて文字数が制限されるよう設定できます。
+短いテキストを入力する場合は項目のサイズを小さく、長いテキストを入力する場合は項目のサイズを大きく設定してください。</p>
+<p><strong>④ 入力可能な最大文字数</strong></p>
+<p>入力可能な最大文字数（空白を含む）を設定できます。デフォルトは「0」が設定されており、この場合文字数に制限はありません。</p>
+<p><strong>⑤ キーボードタイプ(モバイルにのみ適用)</strong></p>
 <p>コンポーネントに入力時に実行するキーボードのタイプを選択します。キーボードタイプは、スマートフォンやタブレットなどのモバイル環境でのみ動作します。</p>
-<p><strong>④ パスワード文字で表示</strong></p>
-<p>テキストのコンポーネントでのみ設定可能なプロパティです。テキスト入力時に入力した内容がパスワード文字（●）で表示され、入力内容を隠すことができます。入力された内容はPDFではパスワード文字で表示されますが、CSV データをダウンロードしたときにはパスワード文字が適用されません。</p>
 </section>
 <section id="handwriting">
-<span id="id14"></span><h4>手書き<a class="headerlink" href="#handwriting" title="この見出しへのパーマリンク"></a></h4>
+<span id="id15"></span><h4>手書き<a class="headerlink" href="#handwriting" title="この見出しへのパーマリンク"></a></h4>
 <p>手書きコンポーネントは、予め入力されたテキストをなぞり書きする必要がある場合に使用します。</p>
-<p>文書に表示されるテキストを入力し、文書の受信者は当該テキストを自筆でなぞり書きすることができます。</p>
+<p>文書に表示されるテキストを入力しておくと、文書の受信者はテキストをなぞり書きすることができます。</p>
 <figure class="align-default">
 <img alt="手書きコンポーネント" src="../_images/handwriting-component-fb.png" />
 </figure>
@@ -366,7 +406,7 @@
 </figure>
 <p><strong>コンポーネントのプロパティ</strong></p>
 <figure class="align-default">
-<img alt="コンポーネントのプロパティの設定" src="../_images/handwriting-component-properties_fb.png" />
+<a class="reference internal image-reference" href="../_images/handwriting-component-properties_fb.png"><img alt="手書きコンポーネントのプロパティの設定" src="../_images/handwriting-component-properties_fb.png" style="width: 300px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
 <p>手書きコンポーネントの名前を入力します。</p>
@@ -375,48 +415,88 @@
 <p><strong>③ 文字の色</strong></p>
 <p>なぞり書きする際に表示される線の色を設定します。</p>
 <p><strong>④ なぞり書きテキストを維持</strong></p>
-<p>手書きコンポーネントに入力したテキストが表示されるように設定します。</p>
+<p>手書きコンポーネントに入力したテキストが背景に表示されるように設定します。</p>
 </section>
-<section id="label">
-<span id="id15"></span><h4>ラベル<a class="headerlink" href="#label" title="この見出しへのパーマリンク"></a></h4>
-<p>ラベルコンポーネントは、別途設定した値を文書に表示する場合に使用します。当該入力欄にテキストを入力すると、文書上に入力したテキストが表示されます。</p>
+<section id="number">
+<span id="id16"></span><h4>数字<a class="headerlink" href="#number" title="この見出しへのパーマリンク"></a></h4>
+<p>数字コンポーネントは、金額などの数字を入力する場合に使用します。</p>
 <figure class="align-default">
-<img alt="ラベルコンポーネントのプロパティ" src="../_images/label_property-menu.png" />
+<img alt="数字コンポーネント" src="../_images/number-component-fb.png" />
 </figure>
 <p><strong>コンポーネントのプロパティ</strong></p>
 <figure class="align-default">
-<img alt="ラベルコンポーネントのプロパティの設定" src="../_images/label_property.png" />
+<img alt="数字コンポーネントのプロパティ設定" src="../_images/number_property_fb.png" />
+</figure>
+<p><strong>① 名前</strong></p>
+<p>数字コンポーネントの名前を設定します。
+例) 決済金額が入力されるコンポーネントの名前は「決済金額」と設定します。</p>
+<p><strong>② 負の値の入力許可</strong></p>
+<p>本オプションにチェックを入れると、負の値の入力ができるようになります。</p>
+<p><strong>③ 入力可能な最小値/最大値</strong></p>
+<p>入力可能な最小値/最大値を設定します。</p>
+<div class="admonition caution">
+<p class="admonition-title">注意</p>
+<p><strong>最小値/最大値を設定した場合の注意事項</strong></p>
+<p>最小値を設定した場合に入力値が最小値を下回る場合、最小値に置き換えられて入力されます。
+最大値を設定した場合に入力値が最大値を上回る場合、最大値に置き換えられて入力されます。</p>
+</div>
+<p><strong>④ 入力可能な小数点桁数</strong></p>
+<p>入力可能な小数点の桁数を設定します。小数点の桁数は0～10の間で設定できます。</p>
+<p><strong>⑤ 千単位の区分記号の表示</strong></p>
+<p>本オプションにチェックを入れると、入力値に自動的に千の単位を区分するコンマが表示されます。</p>
+<p><strong>⑥ 接頭辞/接尾辞</strong></p>
+<p>数字に必要な接頭辞/接尾辞を自動的に入力するよう設定します。
+例)「計10,000円」と入力する場合には接頭辞を「計」、接尾辞を「円」と設定します。</p>
+</section>
+<section id="label">
+<span id="id17"></span><h4>ラベル<a class="headerlink" href="#label" title="この見出しへのパーマリンク"></a></h4>
+<p>ラベルコンポーネントは、別途設定した値を文書に表示する場合に使用します。当該入力欄にテキストを入力すると、文書上に入力したテキストが表示されます。</p>
+<figure class="align-default">
+<img alt="ラベルコンポーネントのプロパティ" src="../_images/label-component-fb.png" />
+</figure>
+<p><strong>コンポーネントのプロパティ</strong></p>
+<figure class="align-default">
+<img alt="ラベルコンポーネントのプロパティの設定" src="../_images/label_property_fb.png" />
 </figure>
 <p><strong>① 名前</strong></p>
 <p>ラベルコンポーネントの名前を設定します。</p>
 </section>
 <section id="check">
-<span id="id16"></span><h4>チェック<a class="headerlink" href="#check" title="この見出しへのパーマリンク"></a></h4>
-<p><strong>チェック</strong> コンポーネントは、各項目にチェックが入っているかどうかを確認する場合に使用します。<strong>選択</strong>コンポーネントとよく似ていますが、 <strong>チェック</strong> コンポーネントは項目へのチェック有無を確認する場合に使用し、 <strong>選択</strong>コンポーネントは何を選択したのかを確認する必要がある場合に使用します。</p>
+<span id="id18"></span><h4>チェック<a class="headerlink" href="#check" title="この見出しへのパーマリンク"></a></h4>
+<p><strong>チェック</strong> コンポーネントは、各項目にチェックを入れる場合に使用します。</p>
+<p><strong>選択</strong>コンポーネントとよく似ていますが、 <strong>チェック</strong> コンポーネントは各項目へのチェックの有無を確認する場合に使用し、 <strong>選択</strong>コンポーネントは複数項目から何を選択したのかを確認する場合に使用します。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>チェックコンポーネントと選択コンポーネントの違い</strong></p>
+<p><strong>チェック</strong> コンポーネントは <strong>選択</strong> コンポーネントと似ていますが、異なるコンポーネントです。
+<strong>チェック</strong> コンポーネントはその項目のチェックの有無を確認する際に使用し、 <strong>選択</strong> コンポーネントは複数項目から何を選択したのかを確認する場合に使用します。</p>
+</div>
 <p><img alt="image18" src="../_images/form-builder-components_check.png" /></p>
-<p>チェックコンポーネントの入力値はデータをダウンロードすると次のように表示されます。</p>
+<p>チェックコンポーネントの入力値は、データをダウンロードすると次のように表示されます。</p>
 <ul class="simple">
 <li><p>項目にチェックが入っている場合: true</p></li>
 <li><p>項目にチェックが入っていない場合: false</p></li>
 </ul>
-<p>Word、PowerPointでは、チェックコンポーネントが長方形の図形のように表示されます。
-コンポーネントの内容は、コンポーネントの図形内に入力する必要があります。</p>
+<p>Word、PowerPointでは、チェックコンポーネントが長方形の図形で表示されます。
+各項目の内容は、コンポーネントの図形内に入力する必要があります。</p>
 <p><strong>コンポーネントのプロパティ</strong></p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/check-component-properties-1.png"><img alt="チェックコンポーネントのプロパティの設定" src="../_images/check-component-properties-1.png" style="width: 300px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
-<p>チェックコンポーネントは各選択項目ごとに異なる名前をつける必要があります。複数のチェックコンポーネントに同一の名前が付けれられた場合、当該コンポーネントの最後のコンポーネントの入力値のみ表示されます。</p>
-<p><strong>② チェックスタイル</strong></p>
+<p>チェックコンポーネントは各選択項目ごとに異なる名前をつける必要があります。複数のチェックコンポーネントに同一の名前が付けられた場合、当該コンポーネントの最後のコンポーネントの入力値のみ表示されます。</p>
+<p><strong>② 選択スタイル</strong></p>
 <p>チェックコンポーネントはプロパティからスタイルを設定できます。チェックを選択した場合、チェックボックスがデフォルト設定となります。これ以外にもラジオ、丸囲みを表示するよう設定できます。</p>
 <p>以下は、チェック/ラジオ/丸囲みを選択した場合の、各チェックボックスの表示例です。</p>
+<p><strong>③ 非選択スタイル</strong></p>
+<p>選択されていない項目に表示されるスタイルを指定することができます。チェックボックスは四角形、ラジオボタンは円形、丸囲みは何も表示されません。</p>
 <p><a class="reference internal" href="../_images/check-component-style-settings.png"><img alt="image19" src="../_images/check-component-style-settings.png" style="width: 700px;" /></a></p>
 </section>
 <section id="select">
-<span id="id17"></span><h4>選択<a class="headerlink" href="#select" title="この見出しへのパーマリンク"></a></h4>
-<p>選択コンポーネントは、複数の項目のうち、どの項目が選択されているかを確認する必要がある場合に使用します。選択コンポーネントの選択値は、データのダウンロード時に、選択した項目の名前で表示されます。</p>
-<p><img alt="image20" src="../_images/form-builder-components.png" /></p>
-<p>Word、PowerPoint では、選択コンポーネントが長方形の図形のように表示されます。コンポーネントの内容は、コンポーネントの図形内に入力する必要があります。</p>
+<span id="id19"></span><h4>選択<a class="headerlink" href="#select" title="この見出しへのパーマリンク"></a></h4>
+<p>選択コンポーネントは、複数の項目のうち、どの項目が選択されているかを確認する必要がある場合に使用します。データのダウンロード時、選択コンポーネントの選択値は選択した項目の名前で表示されます。</p>
+<p><img alt="image20" src="../_images/form-builder-components_radio.png" /></p>
+<p>Word、PowerPoint では、選択コンポーネントが長方形で表示されます。コンポーネントの内容は、コンポーネントの図形内に入力する必要があります。</p>
 <p><strong>コンポーネントのプロパティ</strong></p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/Radio-component-properties.png"><img alt="選択コンポーネントのプロパティの設定" src="../_images/Radio-component-properties.png" style="width: 300px;" /></a>
@@ -430,13 +510,15 @@
 </figure>
 <p><strong>② 選択スタイル</strong></p>
 <p>選択コンポーネントは、プロパティでスタイルを設定できます。赤い丸囲みの「円」がデフォルトで設定されています。他にもチェックボックスとラジオボタン表示を選択できます。</p>
-<p><strong>③ マルチ選択の可能</strong></p>
+<p><strong>③ 非選択スタイル</strong></p>
+<p>選択されていない項目に表示されるスタイルを指定することができます。</p>
+<p><strong>④ マルチ選択の可能</strong></p>
 <p><strong>マルチ選択の可能</strong>にチェックを入れると、複数の項目を選択できます。複数の項目が選択されている場合、データを保存する際に、選択した複数の項目がコンマ（ , ）で区切られて保存されます。</p>
-<p><strong>④ 未選択可能</strong></p>
+<p><strong>⑤ 未選択可能</strong></p>
 <p><strong>未選択可能</strong>にチェックを入れると、選択した項目をもう一度クリックすることで選択解除できるようになります。</p>
 </section>
 <section id="combo">
-<span id="id18"></span><h4>リスト選択<a class="headerlink" href="#combo" title="この見出しへのパーマリンク"></a></h4>
+<span id="id20"></span><h4>リスト選択<a class="headerlink" href="#combo" title="この見出しへのパーマリンク"></a></h4>
 <p>複数の項目から1つの項目を選択する必要がある場合に、リスト選択コンポーネントを使用します。</p>
 <p><img alt="image21" src="../_images/form-builder-components_Combo.png" /></p>
 <p>次のようなチェックボックスをクリックすると、項目のリストが表示されます。</p>
@@ -446,12 +528,13 @@
 <a class="reference internal image-reference" href="../_images/combo-component-properties.png"><img alt="リスト選択コンポーネントのプロパティの設定" src="../_images/combo-component-properties.png" style="width: 300px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
-<p>リスト選択コンポーネントの名前を入力します。(例：お気に入りの色を選択するコンポーネントの <strong>名前</strong>は「お気に入りの色」とします。)</p>
+<p>リスト選択コンポーネントの名前を入力します。
+例) お気に入りの色を選択するコンポーネントの名前は「お気に入りの色」とします。</p>
 <p><strong>② リスト表示項目</strong></p>
 <p>選択肢の項目を入力します。各項目はEnterキーで区切ります。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>リスト選択コンポーネントの最上部に「選択してください」を表示するには、リスト表示項目の第一項目として「選択してください」と入力します。</p>
+<p>リスト選択コンポーネントに「選択してください」と表示するには、リスト表示項目の1項目に「選択してください」と設定します。</p>
 </div>
 <p><strong>③ 入力データのリセット可能</strong></p>
 <p><strong>入力データのリセット可能</strong>にチェックを入れると、選択済みの項目を選択解除できるようになります。 入力データのリセットは、次のように行います。</p>
@@ -461,19 +544,20 @@
 </ul>
 </section>
 <section id="toggle">
-<span id="id19"></span><h4>トグル<a class="headerlink" href="#toggle" title="この見出しへのパーマリンク"></a></h4>
+<span id="id21"></span><h4>トグル<a class="headerlink" href="#toggle" title="この見出しへのパーマリンク"></a></h4>
 <p>ONやOFFなど、特定の状態を示すために使用します。トグルコンポーネントを使用すれば、コンポーネントをクリックするたびに、予め設定しておいた項目の順番で入力値が切り替わります。</p>
 <p><img alt="image26" src="../_images/form-builder-components_toggle.png" /></p>
-<p>次のようなコンポーネントをクリックすることで、「良好」または「不良」に変更できます。</p>
+<p>次のようなコンポーネントをクリックすることで、 <strong>良好</strong> 、 <strong>不良</strong> を切り替えることができます。</p>
 <p><img alt="image27" src="../_images/toggle.png" /></p>
 <p><strong>コンポーネントのプロパティ</strong></p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/toggle-component-properties.png"><img alt="トグルコンポーネントのプロパティ" src="../_images/toggle-component-properties.png" style="width: 300px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
-<p>トグルコンポーネントの名前を入力します。(例：最初の点検項目に対するコンポーネントであれば、「点検項目1」とします)</p>
+<p>トグルコンポーネントの名前を入力します。
+例) 最初の点検項目に対するコンポーネントの場合、「点検項目1」とします</p>
 <p><strong>② リスト表示項目</strong></p>
-<p>トグルコンポーネントをクリックするたびに、切り替わる項目のリストを入力します。複数の項目をEnterキーで区切ります。</p>
+<p>トグルコンポーネントをクリックするたびに、切り替わる項目のリストを入力します。複数の項目を入力する場合、Enterキーで区切ります。</p>
 <p><strong>③  入力データのリセット可能</strong></p>
 <p>入力データのリセット可能にチェックを入れると、入力した項目を削除できるようになります。トグルコンポーネントは一度選択すると、別の項目に変更はできますが、項目の選択を解除することはできません。入力データをリセット可能にチェックを入れた場合のみ、何も入力していない状態に変更できます。</p>
 <ul class="simple">
@@ -482,7 +566,7 @@
 </ul>
 </section>
 <section id="date">
-<span id="id20"></span><h4>日付<a class="headerlink" href="#date" title="この見出しへのパーマリンク"></a></h4>
+<span id="id22"></span><h4>日付<a class="headerlink" href="#date" title="この見出しへのパーマリンク"></a></h4>
 <p>日付を入力する必要がある場合に使用します。入力欄をクリックすると日付ピッカーが表示され、任意の日付を選択できます。</p>
 <p><img alt="image24" src="../_images/form-builder-components_datetime.png" /></p>
 <p><strong>コンポーネントのプロパティ</strong></p>
@@ -490,54 +574,57 @@
 <a class="reference internal image-reference" href="../_images/datetime-component-properties_02.png"><img alt="日付コンポーネントのプロパティの設定" src="../_images/datetime-component-properties_02.png" style="width: 300px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
-<p>日付コンポーネントの名前を入力します。(例：休暇の開始日を選択するコンポーネントの名前は「休暇の開始日」とします)</p>
+<p>日付コンポーネントの名前を入力します。
+例) 休暇の開始日を選択するコンポーネントの名前は「休暇の開始日」とします</p>
 <p><strong>② 書式設定</strong></p>
 <p>日付を表示する形式を指定します。</p>
 <ul class="simple">
 <li><p><strong>yyyy:</strong> <strong>年度</strong>を表示します。（yyyy年＝2020年）</p></li>
-<li><p><strong>MM:</strong> <strong>月</strong>を表示します。月の表現は大文字にする必要があります。（MM月＝8月）</p></li>
+<li><p><strong>MM:</strong> <strong>月</strong>を表示します。大文字で入力します。（MM月＝8月）</p></li>
 <li><p><strong>dd:</strong> <strong>日</strong> を表示します。(dd日 = 10日)</p></li>
 </ul>
 <p>「2020年 2月 5日」のように表示するには、書式設定に「yyyy年 MM月 dd日」と入力します。</p>
 <p><strong>③ 入力可能な最小/最大日付</strong></p>
 <p>日付の選択時に選択可能な最小日付と最大日付を指定して、入力可能な日付の範囲を設定します。</p>
 <p><strong>④ 空の値の場合、今日の日付を表示</strong></p>
-<p>文書を開いた際に、今日の日付が自動的に入力されるように設定します。日付コンポーネントを追加すると、デフォルトでチェックが入っています。別の日付を選択するには、今日の日付が入力されている入力欄をもう一度クリックしてください。</p>
+<p>文書を開いた際に、今日の日付が自動的に入力されるように設定します。日付コンポーネントを追加すると、デフォルトでチェックが入ります。今日の日付が入力されている入力欄をもう一度クリックすると、別の日付を選択することができます。</p>
 <p><strong>⑤ 入力データのリセット可能</strong></p>
 <p>入力データのリセット可能にチェックを入れると、選択した日付を削除できるようになります。日付コンポーネントは一度選択しても別の日付に変更できますが、日付の選択を解除することはできません。入力データのリセット可能にチェックを入れた場合のみ、何も選択されていない状態に変更できます。また、何も選択されていない場合に <strong>空の値の場合、今日の日付を表示</strong>にチェックが入っている場合は、今日の日付が選択されます。</p>
 <ul class="simple">
-<li><p>PC環境：コンポーネントを右クリックして表示されるポップアップメニューから「入力データをリセット可能」を選択します。</p></li>
+<li><p>PC環境：コンポーネントを右クリックして表示されるポップアップメニューから「入力データのリセット可能」を選択します。</p></li>
 <li><p>モバイル環境：ごみ箱アイコンをクリックします。</p></li>
 </ul>
 <p><strong>⑥ ツールヒントの内容</strong></p>
 <p>ツールヒントの内容に入力された説明は、入力欄にカーソルを合わせた際に表示されます。</p>
 </section>
 <section id="numeric">
-<span id="id21"></span><h4>増減<a class="headerlink" href="#numeric" title="この見出しへのパーマリンク"></a></h4>
-<p>数字を入力する必要がある場合に使用します。入力欄をクリックすると、2つの矢印が表示されます。
-<strong>上へ</strong>もしくは <strong>下へ</strong>の矢印ボタンを押すことで、数字を増減できます。PCのキーボード環境では、入力欄に任意の数字を直接入力できます。スマートフォンやタブレット環境では、入力範囲の数字リストをスクロールすることで任意の数字を選択できます。</p>
+<span id="id23"></span><h4>増減<a class="headerlink" href="#numeric" title="この見出しへのパーマリンク"></a></h4>
+<p>増減ボタンを押して数字を入力する際に使用します。入力欄をクリックすると、2つの矢印が表示され、上下矢印を押すことで数字の増減ができます。
+PCのキーボード環境では、入力欄に任意の数字を直接入力できます。スマートフォンやタブレット環境では、入力範囲の数字リストをスクロールすることで任意の数字を選択できます。</p>
 <p><img alt="image25" src="../_images/form-builder-components_numeric.png" /></p>
 <p><strong>コンポーネントのプロパティ</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/number-component-properties.png"><img alt="数字コンポーネントのプロパティの設定" src="../_images/number-component-properties.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/numeric-component-properties.png"><img alt="増減コンポーネントのプロパティの設定" src="../_images/numeric-component-properties.png" style="width: 300px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
-<p>増減コンポーネントの名前を入力します。(例：予約人員の数を入力するコンポーネントの名前は、「予約人員」とします)</p>
+<p>増減コンポーネントの名前を入力します。
+例) 予約人数を入力するコンポーネントの名前は、「予約人数」とします。</p>
 <p><strong>② 変化の増分</strong></p>
-<p>入力欄の増加と減少のアイコンをクリックするたびに、現在入力されている値から増減する値を入力します。(例：増分の単位を100に設定して文書を作成した場合、入力欄の右側にある上への矢印（▲）をクリックすると、入力値は200、300...と増加します)</p>
+<p>入力欄の増加/減少のアイコンをクリックするたびに、現在入力されている値から増減する値を入力します。
+例) 変化の増分を100に設定して文書を作成した場合、入力欄の右側にある上への矢印（▲）をクリックすると、入力値は200、300...と増加します</p>
 <p><strong>③ 入力可能な最小値/最大値</strong></p>
 <p>入力可能な最小値と最大値を指定して、入力可能な数字の範囲を設定します。
-(例：生年月日の場合は通常、現在の年度の最小値を1900、最大値を、増分の単位を1に指定します。最小値または最大値が指定されている状態で範囲外の数字を入力すると、最小値または最大値が自動で入力されます。最大値が100の場合、入力欄に 101を入力すると、数字が自動的に最大値の100に変更されます)</p>
+例) 生年月日の場合は、現在の年度の最小値を1900、最大値を現在の年度、増分の単位を1に指定します。最小値または最大値が指定されている状態で範囲外の数字を入力すると、最小値/最大値が自動で入力されます。最大値が100の場合、入力欄に 101を入力すると、数字が自動的に最大値の100に変更されます。</p>
 <p><strong>④ 入力データのリセット可能</strong></p>
-<p>入力データのリセット可能にチェックを入れると、入力した数字を削除できるようになります。数字コンポーネントは一度数字を入力すると別の数字に変更はできますが、数字を削除することはできません。入力データをリセット可能にチェックを入れることで、何も入力されていない状態に変更できます。</p>
+<p>入力データのリセット可能にチェックを入れると、入力した数字を削除できるようになります。数字コンポーネントは一度数字を入力すると別の数字に変更はできますが、数字を削除することはできません。入力データのリセット可能にチェックを入れることで、何も入力されていない状態に変更できます。</p>
 <ul class="simple">
-<li><p>PC 環境：コンポーネントを右クリックして表示されるポップアップメニューから、 <strong>入力データをリセット可能</strong>を選択します。</p></li>
+<li><p>PC環境：コンポーネントを右クリックして表示されるポップアップメニューから、 <strong>入力データのリセット可能</strong>を選択します。</p></li>
 <li><p>モバイル環境：ごみ箱アイコンをクリックします。</p></li>
 </ul>
 </section>
 <section id="camera">
-<span id="id22"></span><h4>写真<a class="headerlink" href="#camera" title="この見出しへのパーマリンク"></a></h4>
-<p>スマートフォンやタブレットなどのカメラを搭載したデバイスで写真を撮り、文書にアップロードする際に使用します。カメラのないPC環境では、コンポーネントをクリックすると選択ウィンドウが表示され、画像ファイルを選択できます。</p>
+<span id="id24"></span><h4>写真<a class="headerlink" href="#camera" title="この見出しへのパーマリンク"></a></h4>
+<p>スマートフォンやタブレットなどのカメラを搭載したデバイスで写真を撮り、文書にアップロードする際に使用します。カメラのないPC環境では、コンポーネントをクリックすると画像ファイルを選択するウィンドウが表示されます。</p>
 <p><img alt="image30" src="../_images/form-builder-components_camera.png" /></p>
 <p>選択した画像のサイズが入力欄のサイズより大きい場合、入力欄内に入るサイズに縮小してアップロードされます。</p>
 <div class="admonition note">
@@ -547,25 +634,26 @@
 <p><img alt="image31" src="../_images/camera1.png" /></p>
 <p><strong>コンポーネントのプロパティ</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/Camera-component-properties-.png"><img alt="写真コンポーネントのプロパティの設定" src="../_images/Camera-component-properties-.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/Camera-component-properties.png"><img alt="写真コンポーネントのプロパティの設定" src="../_images/Camera-component-properties.png" style="width: 300px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
-<p>写真コンポーネントの名前を入力します。(例：IDカードの写真を撮影するコンポーネントの名前は「身分証明用写真」とします)</p>
+<p>写真コンポーネントの名前を入力します。
+例) IDカードの写真を撮影するコンポーネントの名前は「身分証明用写真」とします</p>
 <p><strong>②  ツールヒントの内容</strong></p>
 <p>ツールヒントの内容に入力された説明は、入力欄にカーソルを合わせた際に表示されます。</p>
 </section>
 <section id="record">
-<span id="id23"></span><h4>録音<a class="headerlink" href="#record" title="この見出しへのパーマリンク"></a></h4>
-<p>ユーザーの録音データを文書に保存する必要がある場合に使用します。最大録音時間の設定、既に録音された内容を聴けるように設定もできます。</p>
+<span id="id25"></span><h4>録音<a class="headerlink" href="#record" title="この見出しへのパーマリンク"></a></h4>
+<p>ユーザーの録音データを文書に保存する場合に使用します。最大録音時間の設定、録音済みの音声を聴けるように設定もできます。</p>
 <figure class="align-default">
 <img alt="録音コンポーネント" src="../_images/record_component-menu.png" />
 </figure>
-<p>OZ in Office に録音コンポーネントを追加することで、ビューアーから録音したコンテンツを再生したり、新しく録音を行ったりすることができます。</p>
+<p>OZ in Office に録音コンポーネントを追加することで、以下のようにビューアーから録音したコンテンツを再生したり、新しく録音を行ったりすることができます。</p>
 <p><a class="reference internal" href="../_images/record1.png"><img alt="image32" src="../_images/record1.png" style="width: 400px;" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>録音のタイムアウトが1以上に設定されている場合、設定した時間（単位：秒）の分だけ録音後、自動で録音が完了します。</p>
-<p>ActiveXビューアーでは、Windows 8以降から録音の再生UIをサポートしています。</p>
+<p>ActiveXビューアーでは、Windows8以降から録音の再生UIをサポートしています。</p>
 <p>録音コンポーネントをPC環境で実行する場合、ボイスレコーダーを利用できる場合にのみ機能します。</p>
 </div>
 <p><strong>コンポーネントのプロパティ</strong></p>
@@ -573,13 +661,14 @@
 <a class="reference internal image-reference" href="../_images/record_component.png"><img alt="録音コンポーネントのプロパティの設定" src="../_images/record_component.png" style="width: 300px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
-<p>録音コンポーネントの名前を入力します。(例：録音を再生するコンポーネントの名前は「録音」と設定します)</p>
+<p>録音コンポーネントの名前を入力します。
+例) 録音を再生するコンポーネントの名前は「録音」と設定します</p>
 <p><strong>② ツールヒントの内容</strong></p>
 <p>ツールヒントの内容に入力された説明は、入力欄にカーソルを合わせた際に表示されます。</p>
 </section>
 <section id="attach">
-<span id="id24"></span><h4>添付<a class="headerlink" href="#attach" title="この見出しへのパーマリンク"></a></h4>
-<p>文書に別途添付が必要な文書がある場合に使用します。添付コンポーネントを使用して文書を添付すると、添付した文書は元の文書の最後に新規ページとして追加されます。</p>
+<span id="id26"></span><h4>添付<a class="headerlink" href="#attach" title="この見出しへのパーマリンク"></a></h4>
+<p>文書にファイルを添付する場合に使用します。添付コンポーネントを使用して文書を添付すると、添付したファイルは元の文書の最後に新規ページとして追加されます。</p>
 <p><img alt="image33" src="../_images/form-builder-components_attachment.png" /></p>
 <p>添付可能なファイルの種類とサイズは次の通りです。</p>
 <ul class="simple">
@@ -591,12 +680,13 @@
 <a class="reference internal image-reference" href="../_images/Attachment-component-properties.png"><img alt="添付コンポーネントのプロパティの設定" src="../_images/Attachment-component-properties.png" style="width: 300px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
-<p>添付コンポーネントの名前を入力します。(例：在職証明書を添付するコンポーネントの名前は「在職証明書」とします)</p>
+<p>添付コンポーネントの名前を入力します。
+例) 在職証明書を添付するコンポーネントの名前は「在職証明書」とします。</p>
 <p><strong>② ツールヒントの内容</strong></p>
 <p>ツールヒントの内容に入力された説明は、入力欄にカーソルを合わせた際に表示されます。</p>
 </section>
 <section id="user">
-<span id="id25"></span><h4>使用者<a class="headerlink" href="#user" title="この見出しへのパーマリンク"></a></h4>
+<span id="id27"></span><h4>使用者<a class="headerlink" href="#user" title="この見出しへのパーマリンク"></a></h4>
 <p>文書を作成または変更したメンバーの情報を、文書に自動的に入力する場合に使用します。設定によって、名前、連絡先などのメンバーの基本情報またはカスタムフィールド情報が使用者コンポーネントに自動的に入力されます。</p>
 <p><img alt="image34" src="../_images/form-builder-components_user.png" /></p>
 <p><strong>コンポーネントのプロパティ</strong></p>
@@ -604,73 +694,74 @@
 <a class="reference internal image-reference" href="../_images/user-component-properties-.png"><img alt="使用者コンポーネントのプロパティの設定" src="../_images/user-component-properties-.png" style="width: 300px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
-<p>使用者コンポーネントの名前を入力します。(例：文書を作成したメンバーの名前を表示するコンポーネントの名前は「作成者名」とします)</p>
+<p>使用者コンポーネントの名前を入力します。
+例) 文書を作成したメンバーの名前を表示するコンポーネントの名前は「作成者名」とします。</p>
 <p><strong>② 使用者表示タイプ</strong></p>
 <ul class="simple">
 <li><p><strong>作成者:</strong> 最初に文書を作成したメンバーの情報を表示します。</p></li>
 <li><p><strong>アクセス者:</strong> 文書を最後に閲覧または変更したメンバーの情報を表示します。</p></li>
 <li><p><strong>入力値の修正者:</strong>  特定のコンポーネントに内容を入力したメンバーの情報を表示します。</p></li>
 </ul>
-<p><strong>入力値の修正者</strong>を選択すると、コンポーネントの名前の入力欄が次のように表示されます。リンクしたいコンポーネントの名前はここに入力します。</p>
+<p><strong>入力値の修正者</strong>を選択すると、入力コンポーネントの入力欄が次のように表示されます。連携したいコンポーネントの名前はここに入力します。</p>
 <p><a class="reference internal" href="../_images/user-input-certain-component.png"><img alt="image35" src="../_images/user-input-certain-component.png" style="width: 300px;" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>この作業には、 <strong>会社管理（代表管理者）</strong>権限または <strong>テンプレート管理</strong>権限が必要です。</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">注釈</p>
-<p>コンポーネントに署名した担当者の名前を自動的に入力するには、まず担当者の署名欄に署名コンポーネントを作成後、署名コンポーネントの名前を「担当者の署名」とします。次に、担当者の名前を入力する使用者コンポーネントをもう一つ作成します。使用者コンポーネントの使用者表示タイプの項目として <strong>入力値の修正者</strong>を選択し、コンポーネントの 名前の入力欄に「担当者の署名」と入力します。</p>
+<p><strong>署名者名の自動入力の設定方法</strong></p>
+<p>担当者の署名欄に署名した担当者の名前を自動的に入力するには、まず担当者の署名欄に署名コンポーネントを作成後、署名コンポーネントの名前を「担当者の署名」とします。次に、担当者の名前を入力する使用者コンポーネントをもう一つ作成します。使用者コンポーネントの使用者表示タイプの項目として <strong>入力値の修正者</strong>を選択し、コンポーネントの名前の入力欄に「担当者の署名」と入力します。</p>
 </div>
 <p><strong>③ ユーザーの表示情報</strong></p>
-<p>メンバーの情報のうち、表示したいメンバーの情報を選択します。メンバーの基本情報、またはカスタムフィールドに入力した追加情報のうち、任意の情報を選択します。</p>
+<p>メンバーの情報の中から、表示するメンバーの情報を選択します。メンバーの基本情報、またはカスタムフィールドに入力した追加情報のうち、任意の情報を選択します。</p>
 <ul class="simple">
 <li><p>メンバー基本情報タイプ：名前、ID、部門、役職、携帯電話、固定電話</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>メンバーの基本情報を変更するには、 <strong>代表管理者権限</strong>または <strong>会社管理権限</strong>が必要です。</p>
-<p>メンバーの基本情報を変更するにはeformsign にログイン後、<strong>会社管理 &gt; メンバー管理</strong>メニューに移動します。メンバーリストからメンバーを選択し、画面の右側に表示される詳細情報で変更後、<strong>保存</strong>ボタンをクリックします。</p>
+<p><strong>メンバーの基本情報の修正方法</strong></p>
+<p>メンバーの基本情報を変更するには、 <strong>代表管理者</strong> または <strong>会社管理</strong> 権限が必要です。</p>
+<ol class="arabic simple">
+<li><p><strong>会社管理 &gt; メンバー管理</strong> メニューに移動します。</p></li>
+<li><p>メンバーリストからメンバーを選択します。</p></li>
+<li><p>画面の右側に表示される詳細情報を修正します。</p></li>
+<li><p><strong>保存</strong> ボタンをクリックし、変更を保存します。</p></li>
+</ol>
 </div>
 </section>
 <section id="usedate">
-<span id="id26"></span><h4>使用日<a class="headerlink" href="#usedate" title="この見出しへのパーマリンク"></a></h4>
+<span id="id28"></span><h4>使用日<a class="headerlink" href="#usedate" title="この見出しへのパーマリンク"></a></h4>
 <p>文書が作成または変更された日付を、文書に自動的に入力する場合に使用します。設定によって、文書を作成した日付、文書にアクセスした日付、または特定のコンポーネントを入力した日付が自動的に入力されます。</p>
 <p><img alt="image36" src="../_images/form-builder-components_date.png" /></p>
 <p><strong>コンポーネントのプロパティ</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/date-component-properties_.png"><img alt="使用日コンポーネントのプロパティの設定" src="../_images/date-component-properties_.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/date-component-properties.png"><img alt="使用日コンポーネントのプロパティの設定" src="../_images/date-component-properties.png" style="width: 300px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
-<p>使用日コンポーネントの名前を入力します。(例：文書に署名した日付を表示するコンポーネントの <strong>名前</strong>は「署名日」とします)</p>
+<p>使用日コンポーネントの名前を入力します。
+例) 文書に署名した日付を表示するコンポーネントの名前は「署名日」とします</p>
 <p><strong>② 書式設定</strong></p>
 <p>日付を表示する書式を指定します。</p>
 <ul class="simple">
-<li><p><strong>yyyy:</strong> <strong>年と</strong>を表示します。（yyyy年＝2020年）</p></li>
-<li><p><strong>MM:</strong> <strong>月</strong>を表示します。月の表現は大文字にする必要があります。（MM月＝8月）</p></li>
+<li><p><strong>yyyy:</strong> <strong>年度</strong>を表示します。（yyyy年＝2020年）</p></li>
+<li><p><strong>MM:</strong> <strong>月</strong>を表示します。大文字で入力します。（MM月＝8月）</p></li>
 <li><p><strong>dd:</strong> <strong>日</strong>を表示します。（dd日 = 10日）
 「2020年 2月 5日」のように表示するには、書式設定に「yyyy年 MM月 dd日」と入力します。</p></li>
 </ul>
 <p><strong>③ 使用日表示タイプ</strong></p>
 <ul class="simple">
-<li><p><strong>作成日付:</strong>文書を最初に作成した日付が表示されます。</p></li>
-<li><p><strong>アクセス日付:</strong>文書を修正または閲覧した最新の日付が表示されます。</p></li>
-<li><p><strong>入力値の修正日付:</strong>特定のコンポーネントに内容を入力した日付が表示されます。</p></li>
+<li><p><strong>作成日付:</strong> 文書を最初に作成した日付が表示されます。</p></li>
+<li><p><strong>アクセス日付:</strong> 文書を修正または閲覧した最新の日付が表示されます。</p></li>
+<li><p><strong>入力値の修正日付:</strong> 特定のコンポーネントに内容を入力した日付が表示されます。</p></li>
 </ul>
-<p><strong>入力値の修正日付</strong>を選択すると、コンポーネントの <em>名前</em> の入力欄が次のように表示されます。リンクしたいコンポーネントの名前をここに入力します。</p>
+<p>「入力値の修正日付」を選択すると、コンポーネントの入力欄が次のように表示されます。連携するコンポーネントの名前をここに入力します。</p>
 <p><a class="reference internal" href="../_images/date-component-connecting-other-component.png"><img alt="image37" src="../_images/date-component-connecting-other-component.png" style="width: 300px;" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>この作業には、会社管理（代表管理者）権限またはテンプレート管理権限が必要です。</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">注釈</p>
-<p>契約者の署名日を自動的に入力するには、まず契約書の署名欄に <strong>署名</strong>コンポーネントを作成後、署名コンポーネントの名前を「契約者の署名」とします。
-署名日を入力する <strong>使用日</strong>コンポーネントをもう1つ作成します。使用日コンポーネントの使用日の表示タイプのプロパティで「入力値の変更日」を選択し、コンポーネントの名前の入力欄に「契約者の署名」と入力します。</p>
+<p>契約者の署名日を自動的に入力するには、まず契約書の署名欄に署名コンポーネントを作成後、署名コンポーネントの名前を「契約者の署名」とします。
+署名日を入力する使用日コンポーネントをもう1つ作成します。使用日コンポーネントの使用日の表示タイプのプロパティで「入力値の変更日」を選択し、コンポーネントの名前の入力欄に「契約者の署名」と入力します。</p>
 </div>
 </section>
 <section id="document">
-<span id="id27"></span><h4>文書<a class="headerlink" href="#document" title="この見出しへのパーマリンク"></a></h4>
-<p>文書コンポーネントは、文書内に文書関連の情報を入力する必要がある場合に使用します。文書 IDか文書番号のいずれかを選択後、任意の情報を入力します。</p>
+<span id="id29"></span><h4>文書<a class="headerlink" href="#document" title="この見出しへのパーマリンク"></a></h4>
+<p>文書コンポーネントは、文書内に文書関連の情報を入力する必要がある場合に使用します。文書IDか文書番号のいずれかを選択後、任意の情報を入力します。</p>
 <p><img alt="image38" src="../_images/document-component-in-list.png" /></p>
 <p>文書IDはシステムが付与する文書固有のIDであるため、設定を必要としません。文書番号に関する設定は、テンプレートをアップロード後、 <strong>テンプレート設定 &gt; 全般</strong>から行えます。</p>
 <p><strong>コンポーネントのプロパティ</strong></p>
@@ -678,65 +769,70 @@
 <a class="reference internal image-reference" href="../_images/document-component-properties.png"><img alt="文書コンポーネントのプロパティの設定" src="../_images/document-component-properties.png" style="width: 300px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
-<p>文書コンポーネントの名前を入力します。(例：文書番号を入力する場合、コンポーネントの名前は「文書番号」とします)</p>
+<p>文書コンポーネントの名前を入力します。
+例) 文書番号を入力する場合、コンポーネントの名前は「文書番号」とします</p>
 <p><strong>② 文書情報のタイプ</strong></p>
 <p>使用する文書情報を選択します。</p>
-<blockquote>
-<div><dl class="simple">
-<dt>-<strong>文書ID:</strong>システムがすべての文書に付与する文書固有のIDです。 32桁の英数字の組み合わせで表示されます。</dt><dd><p>(例：0077af27a98846c8872f5333920679b7)</p>
-</dd>
-</dl>
-<p>-<strong>文書番号:</strong> <strong>テンプレート設定 &gt; 全般</strong>で設定した文書番号です。文書番号の設定については`文書番号の自動生成 &lt;chapter6.html#docnumber_wd&gt;`__をご参照ください。</p>
-</div></blockquote>
+<ul class="simple">
+<li><p><strong>文書ID:</strong> システムがすべての文書に付与する文書固有のIDです。 32桁の英数字の組み合わせで表示されます。
+例) 0077af27a98846c8872f5333920679b7</p></li>
+<li><p><strong>文書番号:</strong> <strong>テンプレート設定 &gt; 全般</strong>で設定した文書番号です。文書番号の設定については`文書番号の自動生成 &lt;chapter6.html#docnumber_wd&gt;`__をご参照ください。</p></li>
+</ul>
 </section>
 </section>
 </section>
 <section id="upload-form-file">
-<span id="id28"></span><h2>フォームファイルのアップロード<a class="headerlink" href="#upload-form-file" title="この見出しへのパーマリンク"></a></h2>
-<p>OZ in Officeを通して文書にコンポーネントを追加し、編集が完了したファイルは次の手順でアップロードします。</p>
+<span id="id30"></span><h2>フォームファイルのアップロード<a class="headerlink" href="#upload-form-file" title="この見出しへのパーマリンク"></a></h2>
+<p>OZ in Officeから文書にコンポーネントを追加し、編集が完了したファイルは次の手順でアップロードします。</p>
 <ol class="arabic simple">
 <li><p>リボンメニューのファイルグループにある <strong>実行</strong>(<img alt="image39" src="../_images/excute_button.png" />)アイコンをクリックすると、次のようなログインポップアップ画面が表示されます。</p></li>
 </ol>
-<figure class="align-default" id="id30">
+<figure class="align-default" id="id32">
 <a class="reference internal image-reference" href="../_images/ozinword-menu-file.png"><img alt="実行する" src="../_images/ozinword-menu-file.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text"><a class="reference internal" href="../_images/form_upload_login.png"><img alt="image40" src="../_images/form_upload_login.png" style="width: 700px;" /></a></span><a class="headerlink" href="#id30" title="この画像へのパーマリンク"></a></p>
+<p><span class="caption-text"><a class="reference internal" href="../_images/form_upload_login.png"><img alt="image40" src="../_images/form_upload_login.png" style="width: 700px;" /></a></span><a class="headerlink" href="#id32" title="この画像へのパーマリンク"></a></p>
 </figcaption>
 </figure>
 <ol class="arabic" start="2">
 <li><p>ログインすると、電子文書形式に変換された文書のプレビューが表示されます。</p>
 <p><a class="reference internal" href="../_images/upload_preview.png"><img alt="image41" src="../_images/upload_preview.png" style="width: 700px;" /></a></p>
 </li>
-<li><p>プレビュー画面で <strong>フォームファイルのアップロード</strong>をクリックするか、リボンメニューの <strong>アップロード</strong>(<img alt="image42" src="../_images/upload_button.png" />) アイコンをクリックすることで、テンプレートの一覧と <strong>テンプレートの新規作成</strong>ができる画面が表示されます。</p>
+<li><p>プレビュー画面で <strong>フォームファイルのアップロード</strong>をクリックするか、リボンメニューの <strong>アップロード</strong>(<img alt="image42" src="../_images/upload_button.png" />) アイコンをクリックすることで、テンプレートの一覧と <strong>テンプレートの新規作成</strong> ができる画面が表示されます。</p>
 <p><a class="reference internal" href="../_images/upload_list.png"><img alt="image43" src="../_images/upload_list.png" style="width: 700px;" /></a></p>
 </li>
 </ol>
-<p>4. <strong>テンプレートの新規作成</strong>をクリックすると、先ほどアップロードした文書のテンプレート設定画面が表示されます。
+<p>4. <strong>テンプレートの新規作成</strong> をクリックすると、先ほどアップロードした文書のテンプレート設定画面が表示されます。
 左側の設定タブから当該テンプレートに関する追加設定を完了後、右上の <strong>保存</strong>ボタンをクリックすることでテンプレートを保存及び生成します。</p>
 <blockquote>
 <div><p><a class="reference internal" href="../_images/upload_save.png"><img alt="image44" src="../_images/upload_save.png" style="width: 700px;" /></a></p>
 </div></blockquote>
 </section>
-<section id="id29">
-<h2>アップロードしたテンプレートを追加設定する<a class="headerlink" href="#id29" title="この見出しへのパーマリンク"></a></h2>
+<section id="id31">
+<h2>アップロードしたテンプレートを追加設定する<a class="headerlink" href="#id31" title="この見出しへのパーマリンク"></a></h2>
 <p>テンプレートをeformsignにアップロード後は、テンプレートで作成した文書について、テンプレートのタイトル、文書番号、ワークフローなどの追加設定を行うことができます。</p>
 <ol class="arabic simple">
-<li><p>eformsign にログイン後、 <strong>テンプレート管理</strong>メニューに移動します。</p></li>
-<li><p><strong>テンプレート設定</strong>アイコンをクリックし、テンプレート設定画面に移動します。</p>
+<li><p>eformsign にログイン後、 <strong>テンプレート管理</strong> メニューに移動します。</p></li>
+<li><p><strong>テンプレート設定</strong> アイコンをクリックし、テンプレート設定画面に移動します。</p>
 <ul class="simple">
 <li><p><strong>全般：</strong> テンプレート名、テンプレートの略称、文書タイトルの自動生成ルール、文書番号などを設定します。</p></li>
-<li><p><strong>権限の設定:</strong>テンプレートを使って文書を作成するメンバーまたはグループ、テンプレートを修正できるメンバー、作成した文書を管理するメンバーまたはグループを指定します。</p></li>
+<li><p><strong>権限の設定:</strong> テンプレートを使って文書を作成するメンバー/グループ、テンプレートを修正できるメンバーを指定します。</p></li>
 <li><p><strong>ワークフローの設定:</strong> 文書の作成から完了までの、文書の処理ステップを設定します。</p></li>
-<li><p><strong>フィールドの設定:</strong> フィールドの表示有無、順序、基本値、自動入力値などを設定します。</p></li>
-<li><p><strong>通知の設定:</strong>テンプレートから作成した文書に対するステータス通知の受信者を設定し、最終完了通知メッセージを編集します。</p></li>
+<li><p><strong>フィールドの設定:</strong> フィールドの表示有無、順序、デフォルト値、自動入力値などを設定します。</p></li>
+<li><p><strong>通知の設定:</strong> テンプレートから作成した文書に対するステータス通知の受信者を設定し、最終完了通知メッセージを編集します。</p></li>
 </ul>
 </li>
-<li><p>全ての設定を完了後、 <strong>保存</strong>ボタンをクリックすることでテンプレートを配布します。</p></li>
+<li><p>全ての設定を完了後、 <strong>保存</strong> ボタンをクリックすることでテンプレートを配布します。</p></li>
 </ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>作成したテンプレートで文書を作成できるようにするには、 <strong>テンプレートを保存後に配布</strong>する必要があります。</p>
+<div class="admonition important">
+<p class="admonition-title">重要</p>
+<p><strong>テンプレートの配布とは？</strong></p>
+<p>作成したテンプレートで文書を作成できるようにするには、 <strong>テンプレートを保存後に配布</strong>する必要があります。
+テンプレートをメンバーが使用できるように公開することができます。</p>
 <p>テンプレートを配布せず保存のみ行った場合、保存したテンプレートはテンプレートの使用権限を持つメンバーの <strong>テンプレートで作成する &gt; テンプレート一覧</strong>画面に表示されません。</p>
+<p>配布されていないテンプレートは以下の画像のようにテンプレートに <strong>配布前</strong>と表示されます。テンプレートを配布するにはテンプレートの三点メニューから配布をクリックするか、テンプレートの設定から保存ボタンをクリックして配布して配布の有無を選択することができます。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/template_publish.png"><img alt="テンプレートの5つの設定項目" src="../_images/template_publish.png" style="width: 750px;" /></a>
+</figure>
 </div>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
