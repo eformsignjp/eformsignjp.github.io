@@ -7,12 +7,12 @@
   <title>Webフォームデザイナーの紹介 &mdash; eformsign User Guide 2023.04.07 ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-    <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
@@ -20,7 +20,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="フォームビルダーの紹介" href="chapter5.html" />
+    <link rel="next" title="Webフォームデザイナーでテンプレート作成" href="chapter5.html" />
     <link rel="prev" title="文書の新規作成" href="chapter3.html" /> 
 </head>
 
@@ -34,7 +34,6 @@
           
           <a href="../index.html">
             
-              <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -50,7 +49,7 @@
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">文書の新規作成</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Webフォームデザイナーの紹介</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id1">ファイルのアップロード</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2"><strong>マイファイルで作成する</strong>メニューからファイルをアップロード</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2"><strong>マイファイルで作成する</strong> メニューからファイルをアップロード</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id3"><strong>テンプレート管理</strong> メニューからファイルをアップロード</a></li>
 </ul>
 </li>
@@ -74,6 +73,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#date2">日付</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#numeric2">増減</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#label2">ラベル</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hyperlink2">ハイパーリンク</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#camera2">写真</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#record2">録音</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#attach2">添付</a></li>
@@ -82,15 +82,15 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id25">テンプレートの追加設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id26">テンプレートの追加設定</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="chapter5.html">フォームビルダーの紹介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter6.html">ウェブフォームデザイナーでテンプレートを作成する</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">Webフォームデザイナーでテンプレート作成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">フォームビルダーの紹介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter7.html">フォームビルダーでテンプレート作成</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter8.html">文書トレイ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter9.html">カスタマイズ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter10.html">外部サービスとの連動</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">外部サービスとの連携</a></li>
 </ul>
 
         </div>
@@ -120,7 +120,7 @@
   <section id="web">
 <span id="webform"></span><h1>Webフォームデザイナーの紹介<a class="headerlink" href="#web" title="この見出しへのパーマリンク"></a></h1>
 <p><strong>Webフォームデザイナー</strong>は、既存の文書ファイルをeformsignサービスにアップロードし、電子文書化できるエディターです。</p>
-<p><strong>マイファイルで作成する</strong>または <strong>テンプレート管理</strong>メニューから文書ファイルをアップロードするとWebフォームデザイナーが起動します。eformsignで用意している様々な入力項目から任意の入力項目を選択して、文書上にドラッグアンドドロップし、各入力項目のプロパティを設定することで、電子フォームを簡単に作成できます。</p>
+<p><strong>マイファイルで作成する</strong> または <strong>テンプレート管理</strong> メニューから文書ファイルをアップロードするとWebフォームデザイナーが起動します。eformsignで用意している様々な入力項目から任意の入力項目を選択して、文書上にドラッグアンドドロップし、各入力項目のプロパティを設定することで、電子フォームを簡単に作成できます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>アップロード可能なファイル形式はpdf、hwp、doc、docx、xls、xlsx、ppt、pptx、odt、jpg、png、gif、tiffです。
@@ -133,28 +133,31 @@
 <section id="id1">
 <h2>ファイルのアップロード<a class="headerlink" href="#id1" title="この見出しへのパーマリンク"></a></h2>
 <section id="id2">
-<h3><strong>マイファイルで作成する</strong>メニューからファイルをアップロード<a class="headerlink" href="#id2" title="この見出しへのパーマリンク"></a></h3>
-<ol class="arabic simple">
-<li><p>サイドバーメニューまたはダッシュボードの <strong>マイファイルで作成する</strong>をクリックします。</p></li>
-</ol>
+<h3><strong>マイファイルで作成する</strong> メニューからファイルをアップロード<a class="headerlink" href="#id2" title="この見出しへのパーマリンク"></a></h3>
+<ol class="arabic">
+<li><p>サイドバーメニューまたはダッシュボードの <strong>マイファイルで作成する</strong> をクリックします。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/myfile_create_document.png"><img alt="マイファイルで作成するメニュー" src="../_images/myfile_create_document.png" style="width: 700px;" /></a>
 </figure>
-<ol class="arabic" start="2">
+</li>
 <li><p>画面上にファイルをドラッグ＆ドロップするか、 <strong>PCからファイルを選択</strong>をクリックして、コンピュータ内からアップロードしたいファイルを選択します。</p>
 <p><a class="reference internal" href="../_images/myfile_create_document2.png"><img alt="image2" src="../_images/myfile_create_document2.png" style="width: 500px;" /></a></p>
 </li>
-<li><p>文書作成に参加する参加者とその役割を追加・設定します。設定後、文書に入力項目を追加するWebフォームデザイナー画面が表示されます。</p></li>
-</ol>
+<li><p>文書作成に参加する参加者とその役割を追加・設定します。設定後、文書に入力項目を追加するWebフォームデザイナー画面が表示されます。</p>
 <figure class="align-default">
 <img alt="参加者追加画面" src="../_images/myfile_create_document_addparticipants.png" />
 </figure>
+</li>
+</ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>ファイルを追加・変更する場合、画面下側の <strong>ファイル追加</strong>またはファイル名の横の三点メニューから <strong>ファイル変更</strong>をクリックします。</p>
+<p>ファイルを追加・変更する場合、画面下側の <strong>ファイル追加</strong> またはファイル名の横の三点メニュー(⋮)から <strong>ファイル変更</strong>をクリックします。</p>
 <p>❗ファイルの数に関わらず、全ファイルの合計サイズで数えて9MBまで追加できます。</p>
 <figure class="align-default">
 <img alt="ファイル追加/変更" src="../_images/add-file.png" />
+</figure>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/add-file-menu.png"><img alt="ファイル追加三点メニュー" src="../_images/add-file-menu.png" style="width: 400px;" /></a>
 </figure>
 </div>
 </section>
@@ -164,30 +167,32 @@
 <p class="admonition-title">注釈</p>
 <p>テンプレート管理メニューからテンプレート作成する場合代表管理者、またはテンプレート管理者権限が必要です。</p>
 </div>
-<ol class="arabic simple">
-<li><p><strong>テンプレート管理</strong>メニューに移動します。</p></li>
-</ol>
+<ol class="arabic">
+<li><p><strong>テンプレート管理</strong> メニューに移動します。</p>
 <figure class="align-default">
 <img alt="Webフォームデザイナーの画面" src="../_images/web-form_1.png" />
 </figure>
-<ol class="arabic simple" start="2">
-<li><p>テンプレート管理画面でファイルをドラッグ＆ドロップするか、 <strong>PCからファイルを選択</strong>をクリックして、コンピュータ内からアップロードしたいファイルを選択します。</p></li>
-</ol>
+</li>
+<li><p>テンプレート管理画面でファイルをドラッグ＆ドロップするか、 <strong>PCからファイルを選択</strong>をクリックして、コンピュータ内からアップロードするファイルを選択します。</p>
 <figure class="align-default">
 <img alt="Webフォームデザイナーの画面" src="../_images/web-form_2.png" />
 </figure>
-<ol class="arabic simple" start="3">
-<li><p>文書作成に参加する参加者と役割を追加・設定します。設定後、文書に入力項目を追加するWebフォームデザイナー画面が表示されます。</p></li>
-</ol>
+</li>
+<li><p>文書作成に参加する参加者と役割を追加・設定します。設定後、文書に入力項目を追加するWebフォームデザイナー画面が表示されます。</p>
 <figure class="align-default">
 <img alt="Webフォームデザイナーの画面" src="../_images/web-form_3.png" />
 </figure>
+</li>
+</ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>ファイルを追加・変更する場合、画面下側の <strong>ファイル追加</strong> またはファイル横の三点メニューから <strong>ファイル変更</strong>をクリックします。</p>
+<p>ファイルを追加・変更する場合、画面下側の <strong>ファイル追加</strong> またはファイル横の三点メニュー(⋮)から <strong>ファイル変更</strong>をクリックします。</p>
 <p>❗ファイルの個数に関わらず、全体のサイズで見て9MBまで追加できます。</p>
 <figure class="align-default">
 <img alt="ファイル追加/変更" src="../_images/template_addfile.png" />
+</figure>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/add-file-menu.png"><img alt="ファイル追加三点メニュー" src="../_images/add-file-menu.png" style="width: 400px;" /></a>
 </figure>
 </div>
 </section>
@@ -198,18 +203,18 @@
 <figure class="align-default">
 <img alt="フォームデザイナーのメニューの構成：マイファイルで作成する" src="../_images/myfile_create_document4.png" />
 </figure>
-<p><strong>1. メニューバー：</strong> 文書のタイトルと現在のステップを確認することができます。また、次のステップに進むためのボタンと三点メニューが表示されます。
-<strong>テンプレートの設定</strong>の場合、<strong>デザインする、設定する</strong>の2つのステップが表示されます。テンプレート管理リストの画面に戻ったり、入力項目を追加したテンプレートのプレビューができます。 <strong>マイファイルで作成する</strong>の場合、<strong>デザインする、受信先を指定する、オプション</strong>の3つのステップが表示されます。また、デザインを完了して <strong>文書作成をスタート</strong>したり、<strong>下書きとして保存</strong>して文書を下書き保存後することで、Webフォームデザイナーを終了できます。</p>
+<p><strong>① メニューバー：</strong> 文書のタイトルと現在のステップを確認することができます。また、次のステップに進むためのボタンと三点メニューが表示されます。</p>
+<p><strong>テンプレートの設定</strong>の場合、<strong>デザインする、設定する</strong>の2つのステップが表示されます。テンプレート管理リストの画面に戻ったり、入力項目を追加したテンプレートのプレビューができます。 <strong>マイファイルで作成する</strong>の場合、<strong>デザインする、受信先を指定する、オプション</strong>の3つのステップが表示されます。また、デザインを完了して <strong>文書作成をスタート</strong>したり、<strong>下書きとして保存</strong>して文書を下書き保存後することで、Webフォームデザイナーを終了できます。</p>
+<p><strong>マイファイルで文書作成</strong>の場合、 <strong>デザインする、受信先を指定する、オプション</strong>の3段階が表示され、フォームデザインを完了して文書作成を開始するか、下書きとして保存することができます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>メニューバーに表示される各ステップをクリックすると、そのステップの画面の設定画面に移動します。 <strong>設定する</strong>をクリックすると、ワークフロー、権限などを設定できます。テンプレートで作成、またはマイファイルで作成を完了する前に一緒に設定してください。</p>
 </div>
-<p><strong>2. 文書表示領域：</strong> アップロードした文書が表示されます。</p>
-<p><strong>3. 文書の参加者：</strong> 文書作成に参加する参加者を選択後、参加者が入力する入力項目を文書にドラッグ&amp;ドロップして追加します。参加者追加をクリックすることで参加者を追加できます。1つの文書に参加者を最大30人まで追加できます。</p>
-<p><strong>4. 入力項目：</strong> 1行テキスト、複数行テキスト、署名、チェック、選択などの16個の入力項目と、文書ID、文書番号の2つの文書情報があります。</p>
-<p><strong>5. プロパティ：</strong> 署名、1行テキスト、チェック等の入力項目をクリックし追加すると、各入力項目の名前、作成権限など、詳細なプロパティを設定できます。</p>
-<p><strong>6. ファイルタブ：</strong> ファイル名が表示され、ファイルを追加することができるファイル追加ボタン
-、各ファイルの三点メニューからファイル名変更・順序変更・ファイルの削除を行うことができます。</p>
+<p><strong>② 文書表示領域：</strong> アップロードした文書が表示されます。</p>
+<p><strong>③ 文書の参加者：</strong> 文書作成に参加する参加者を選択後、参加者が入力する入力項目を文書にドラッグ&amp;ドロップして追加します。参加者追加をクリックすることで参加者を追加できます。1つの文書に参加者を最大30人まで追加できます。</p>
+<p><strong>④ 入力項目：</strong> 1行テキスト、複数行テキスト、署名、チェック、選択などの16個の入力項目と、文書ID、文書番号の2つの文書情報があります。</p>
+<p><strong>⑤ プロパティ：</strong> 署名、1行テキスト、チェック等の入力項目をクリックし追加すると、各入力項目の名前、作成権限など、詳細なプロパティを設定できます。</p>
+<p><strong>⑥ ファイルタブ：</strong> ファイル名が表示され、ファイルを追加することができるファイル追加ボタン、各ファイルの三点メニューからファイル名変更・順序変更・ファイルの削除を行うことができます。</p>
 </section>
 <section id="components">
 <span id="id5"></span><h2>入力項目の概要<a class="headerlink" href="#components" title="この見出しへのパーマリンク"></a></h2>
@@ -235,6 +240,7 @@
 <li><p><a class="reference external" href="#toggle2">トグル</a><strong>:</strong> 2個以上の値を入力すると、ボタンをクリックするたびに値が切り替わります。</p></li>
 <li><p><a class="reference external" href="#date2">日付</a><strong>:</strong> 特定の日付を入力します。</p></li>
 <li><p><a class="reference external" href="#numeric2">増減</a><strong>:</strong> 増加・減少ボタンを使って数字を入力します。</p></li>
+<li><p><a class="reference external" href="#hyperlink2">ハイパーリンク</a><strong>:</strong> 文書のハイパーリンクを追加します。</p></li>
 <li><p><a class="reference external" href="#label2">ラベル</a><strong>:</strong> 事前に設定した値を文書に表示する場合に使用します。</p></li>
 <li><p><a class="reference external" href="#camera2">写真</a><strong>:</strong> カメラを搭載しているデバイス（スマートフォン、タブレットなど）であればカメラで写真を撮るか、アルバムから写真を選択します。カメラが搭載されていないデバイス（PCなど）では、画像ファイルを選択します。</p></li>
 <li><p><a class="reference external" href="#record2">録音</a><strong>:</strong> 録音機能を搭載しているデバイスの場合に、ボタンをクリックして録音します。</p></li>
@@ -292,8 +298,8 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>登録済みの署名、イニシャル、スタンプがある場合、署名は署名欄に自動的にに入力されます。署名、イニシャル、スタンプが登録されていない場合、署名を入力可能なポップアップ画面が表示されます。
-署名タイプを1つだけ選択した場合、署名欄をクリックすると署名タイプが表示されます。署名タイプを2つ以上選択して署名欄をクリックすると、以下のような選択可能な署名タイプボタンが表示されます。</p>
+<p>登録済みの署名、イニシャル、スタンプがある場合、署名は署名欄に自動的にに入力されます。署名、イニシャル、スタンプが登録されていない場合、署名を入力可能なポップアップ画面が表示されます。</p>
+<p>署名タイプを1つだけ選択した場合、署名欄をクリックすると署名タイプが表示されます。署名タイプを2つ以上選択して署名欄をクリックすると、以下のような選択可能な署名タイプボタンが表示されます。</p>
 <figure class="align-default">
 <img alt="署名タイプ選択" src="../_images/select-signature-type.png" />
 </figure>
@@ -301,6 +307,7 @@
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>署名ではなく、職印や個人の印鑑の使用が必要となる場合があります。eformsignではスタンプの画像を使用して、文書欄にスタンプを押すことができます。スタンプの画像を使用するには、署名ポップアップで <strong>スタンプ</strong> タブをクリックし、スタンプの画像を選択後、 <strong>確認</strong>　ボタンを押します。会社印・法人印などの場合、会社印鑑として登録しておくと、会社印入力項目から安全かつ簡単に使用にすることができます。</p>
+<p>会社法人印鑑など会社印鑑がある場合、 <strong>会社印鑑</strong>として登録しておけば、「会社印鑑」入力項目として使用権限のあるメンバーのみ安全かつ手軽に使用できます。</p>
 </div>
 <p><strong>③ 署名方法</strong></p>
 <p><strong>直接入力のみ許可</strong>にチェックを入れると、タブレットPCなどで署名欄に署名できるようになります。署名欄をクリックすると署名ポップアップが表示され、 <strong>手書き、キーボード、モバイル、eformsignアプリ</strong> タブの中から選択し、署名を入力します。</p>
@@ -332,7 +339,8 @@
 </section>
 <section id="company-stamp2">
 <span id="id11"></span><h4>会社印<a class="headerlink" href="#company-stamp2" title="この見出しへのパーマリンク"></a></h4>
-<p>会社代表の印鑑、社印、法人印など、 <strong>会社管理 &gt; 会社印管理</strong>に登録されている会社印を利用する際に使用します。会社印は <strong>会社管理 &gt; 会社印管理</strong>に登録されている印鑑と使用権限を付与されたメンバーのみ使用可能で、会社印の履歴は <strong>会社印管理</strong>メニューに記録されます。</p>
+<p>会社代表の印鑑、社印、法人印など、 <strong>会社管理 &gt; 会社印管理</strong>に登録されている会社印を利用する際に使用します。</p>
+<p>会社印は <strong>会社管理 &gt; 会社印管理</strong>に登録されている印鑑と使用権限を付与されたメンバーのみ使用可能で、会社印の履歴は <strong>会社印管理</strong>メニューに記録されます。</p>
 <p><strong>入力項目のプロパティ</strong></p>
 <figure class="align-default">
 <img alt="会社印入力項目のプロパティの設定" src="../_images/companystamp-component-properties_web.png" />
@@ -340,6 +348,7 @@
 <p><strong>① 名前</strong></p>
 <p>会社印入力項目の名前を入力します。
 例）法人印の場合、入力項目の名前を「法人印」と設定します。</p>
+<hr class="docutils" />
 </section>
 <section id="text2">
 <span id="id12"></span><h4>1行テキストと複数行テキスト<a class="headerlink" href="#text2" title="この見出しへのパーマリンク"></a></h4>
@@ -360,17 +369,33 @@
 <p><strong>③ テキストタイプ</strong></p>
 <p>テキストの種類をテキスト、パスワードから選択します。</p>
 <ul class="simple">
-<li><p><strong>テキスト:</strong> 一般的なテキストを入力する際に使用します。</p></li>
+<li><p><strong>プレーンテキスト:</strong> 一般的なテキストを入力する際に使用します。</p></li>
 <li><p><strong>パスワード:</strong> 入力した内容が表示されないよう設定します。テキストを入力すると、入力した値がアスタリスク(*)またはパスワード文字 (●)で入力され、入力内容を隠すことができます。入力された内容はPDFでも伏せ字で表示されますが、CSVデータをダウンロードした場合のみ、入力した文字が隠されず表示されます。</p></li>
+<li><p><strong>ユーザー指定:</strong> 入力項目に入力されるテキストのタイプを選択します。</p></li>
 </ul>
-<p><strong>④ 入力可能な最大文字数</strong></p>
-<p>入力可能な最大文字数（空白を含む）を設定できます。1行テキストの場合は100文字、複数行テキストの場合は400文字がデフォルト設定となっています。</p>
-<div class="admonition note">
-<p class="admonition-title">注釈</p>
-<p><strong>入力項目のサイズに合わせて文字数を制限</strong>にチェックを入れると、入力項目のサイズに合わせて文字数が制限されるよう設定されます。
-短いテキストの場合はサイズを小さく、長いテキストの場合は十分に入力できるよう、項目のサイズを調整してください。</p>
+<p><strong>④ 入力ルール設定</strong></p>
+<p>電話番号、生年月日、マイナンバーなど、基本入力ルールタイプの中から選択するか、直接入力を選択してルールを作成することができます。</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/text-component-rule-option.png"><img alt="入力ルール設定" src="../_images/text-component-rule-option.png" style="width: 300px;" /></a>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>入力ルール設定で <strong>直接入力</strong>を選択すると、数字、アルファベットなど、入力する文字の種類と文字数などのルールを設定することができます。
+例）パスポートの旅券番号を入力するには、旅券番号のタイプに応じてルールを次のように設定できます。</p>
+<p>旅券番号は「アルファベット2桁+数字7桁」の組み合わせで構成されているため、アルファベット大文字で始められるように「&gt;LL」、数字のみ入力できる「0」を使用して <strong>&gt;LL0000000</strong>とルールを設定します。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/text-component-rule.png"><img alt="入力ルール設定 - 直接入力" src="../_images/text-component-rule.png" style="width: 300px;" /></a>
+</figure>
 </div>
-<p><strong>⑤ キーパッドタイプ(モバイルにのみ適用)</strong></p>
+</div></blockquote>
+<p><strong>⑤ テキストの調整</strong></p>
+<ul class="simple">
+<li><p><strong>横幅に合わせて文字数制限:</strong> 入力項目のサイズに合わせて文字数を自動的に制限します。短いテキストは項目サイズを小さく、長いテキストを入力する必要がある場合は項目サイズを大きく設定してください。</p></li>
+<li><p><strong>文字の大きさを自動調整:</strong> 入力項目のサイズに合わせて文字サイズを自動的に調整します。（文字サイズの縮小）</p></li>
+<li><p><strong>入力可能な文字数を指定:</strong> 入力項目に入力できる最大文字数を設定します。オプションを選択すると、デフォルトで最大文字数が設定されます。1行テキストは「1000文字」、複数行テキストは「8000文字」まで入力できます。</p></li>
+</ul>
+<p><strong>⑥ キーパッドタイプ(モバイルにのみ適用)</strong></p>
 <p>スマートフォン、タブレットのようなモバイル環境で文書を作成する際に表示する、キーパッドのタイプを設定します。</p>
 <hr class="docutils" />
 </section>
@@ -403,7 +428,8 @@
 <img alt="数字入力項目のプロパティ設定" src="../_images/number_property_web.png" />
 </figure>
 <p><strong>① 名前</strong></p>
-<p>数字入力숫자 입력 항목의 ID를 설정합니다. 예를 들어, 결제 금액이 입력되는 입력 항목의 ID는 ‘결제 금액’으로 설정합니다.</p>
+<p>数字入力項目の名前を入力します。
+例） 決済金額を入力する入力項目名は「決済金額」と設定します。</p>
 <p><strong>② デフォルト値</strong></p>
 <p>初期表示するテキストを設定します。</p>
 <p><strong>③ 負の値の入力許可</strong></p>
@@ -416,7 +442,7 @@
 最大値を設定すると、入力した値が最大値よりも大きい場合は最大値が入力されます。</p>
 </div>
 <p><strong>⑤ 入力可能な小数点桁数</strong></p>
-<p>入力可能な小数点の桁数を設定します。小数点の桁数は0~10まで入力することができます。</p>
+<p>入力可能な小数点の桁数を設定します。小数点の桁数は0～10まで入力することができます。</p>
 <p><strong>⑥ 千単位の区分記号の表示</strong></p>
 <p>オプションにチェックを入れると、入力した値に自動的に千単位区切りのカンマ(,)が表示されます。</p>
 <p><strong>⑦ 接頭辞/接尾辞</strong></p>
@@ -442,10 +468,10 @@
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>入力項目を追加する際(+)ボタンをクリックすることで、登録された名前で項目(アイテム)を追加できます。</p>
-</div>
 <figure class="align-default">
 <img alt="チェック入力項目のプロパティの設定2" src="../_images/check-component-properties-2_web.png" />
 </figure>
+</div>
 <p><strong>② アイテムリスト</strong></p>
 <p>各入力項目に表示されるテキストを入力できます。テキストは文書に表示される文字列で、値はCSVファイルで入力データをダウンロードする際に表示されます。 <strong>マルチ選択の可能</strong>のチェックを外すとアイテムリストの中から１つの項目のみ選択することができます。</p>
 <p><strong>③ 選択スタイル</strong></p>
@@ -462,6 +488,12 @@
 </div>
 <p><strong>④ 非選択スタイル</strong></p>
 <p>選択されていない項目に適用するスタイルを指定できます。チェックボックスは四角形、ラジオボタンは円形のスタイルを指定できます。丸囲みの場合は、非選択項目に何も表示されません。</p>
+<p><strong>⑤ チェックボックスの位置</strong></p>
+<p>チェックボックスの位置を指定します。</p>
+<ul class="simple">
+<li><p>テキストの左側: チェックボックスの位置をテキストの左側に設定します。</p></li>
+<li><p>テキストの右側: チェックボックスの位置をテキストの右側に設定します。</p></li>
+</ul>
 <hr class="docutils" />
 </section>
 <section id="select2">
@@ -485,7 +517,13 @@
 <p><img alt="image7" src="../_images/Radio-component-properties_web-style.png" /></p>
 </div>
 <p><strong>④ 非選択スタイル</strong></p>
-<p>選択されていない入力項目に表示するスタイルを指定します。</p>
+<p>選択されていない入力項目に表示されるスタイルを指定します。</p>
+<p><strong>⑤ ラジオボタンの位置</strong></p>
+<p>ラジオボタンの位置を指定します。</p>
+<ul class="simple">
+<li><p>テキストの左側: ラジオボタンの位置をテキストの左側に設定します。</p></li>
+<li><p>テキストの右側: ラジオボタンの位置をテキストの右側に設定します。</p></li>
+</ul>
 <hr class="docutils" />
 </section>
 <section id="combo2">
@@ -540,13 +578,14 @@
 <img alt="日付入力項目のプロパティの設定" src="../_images/datetime-component-properties_02_web.png" />
 </figure>
 <p><strong>① 名前</strong></p>
-<p>日付入力項目の名前を入力します。例えば、休暇の開始日を選択する入力項目の名前は「休暇の開始日」とします。</p>
+<p>日付入力項目の名前を入力します。
+例）休暇の開始日を選択する入力項目の名前は「休暇の開始日」とします。</p>
 <p><strong>② デフォルト値</strong></p>
 <p>基本表示する日付を設定します。<strong>今日の日付で設定</strong>にチェックを入れると、文書を開いた際に自動的に今日の日付が入力されます。</p>
 <p><strong>③ 書式設定</strong></p>
 <p>日付を表示する書式を指定します。デフォルト設定は、date_yyyy-MM-dd です。</p>
 <ul class="simple">
-<li><p><strong>yyyy：</strong> 年度を表示します。(yyyy年→2023年)</p></li>
+<li><p><strong>yyyy：</strong> 年度を表示します。(西暦：yyyy年→2023年、和暦：ggge年→令和5年)</p></li>
 <li><p><strong>MM：</strong> 月を表示します。大文字で表記する必要があります。(MM月→8月)</p></li>
 <li><p><strong>dd：</strong> 日を表示します。(dd日→10日)</p></li>
 </ul>
@@ -589,8 +628,27 @@
 <p>この入力欄に入力したテキストが文書上に表示されます。</p>
 <hr class="docutils" />
 </section>
+<section id="hyperlink2">
+<span id="id22"></span><h4>ハイパーリンク<a class="headerlink" href="#hyperlink2" title="この見出しへのパーマリンク"></a></h4>
+<p>ハイパーリンクの入力項目を使用するとクリックすると特定のwebページに移動するか、メールアドレスのリンク、電話番号のリンクを作成することができます。</p>
+<p><strong>입력 항목 속성</strong></p>
+<figure class="align-default">
+<img alt="ハイパーリンクの入力項目プロパティ設定하이퍼링크 입력 항목 속성 설정하기" src="../_images/hyperlink_property_web.png" />
+</figure>
+<p><strong>① 表示文字列</strong></p>
+<p>文書に表示する文字を入力します。表示文字列に入力しなかった場合、アドレスに入力したテキストが表示されます。</p>
+<p><strong>② アドレス</strong></p>
+<p>リンクする住所を入力します。webページアドレス、メールアドレス、電話番号を入力し、
+リンクは次のような形式で入力します。</p>
+<ul class="simple">
+<li><p>webページアドレス: <a class="reference external" href="http://www.eformsign.com">http://www.eformsign.com</a> または <a class="reference external" href="https://www.eformsign.com">https://www.eformsign.com</a></p></li>
+<li><p>メールアドレス   : mailto: <a class="reference external" href="mailto:eformsign&#37;&#52;&#48;forcs&#46;com">eformsign<span>&#64;</span>forcs<span>&#46;</span>com</a></p></li>
+<li><p>電話番号         : tel: 000-0000-0000</p></li>
+</ul>
+<hr class="docutils" />
+</section>
 <section id="camera2">
-<span id="id22"></span><h4>写真<a class="headerlink" href="#camera2" title="この見出しへのパーマリンク"></a></h4>
+<span id="id23"></span><h4>写真<a class="headerlink" href="#camera2" title="この見出しへのパーマリンク"></a></h4>
 <p>スマートフォンやタブレットなどのカメラを搭載したデバイスで写真を撮り、文書にアップロードするときに使用します。カメラのないPC環境では、入力項目をクリックすることで表示されるウィンドウから、アップロードする画像ファイルを選択できます。
 選択した画像のサイズが入力欄のサイズより大きい場合、入力欄内に収まるサイズに縮小されてアップロードします。</p>
 <div class="admonition note">
@@ -613,7 +671,7 @@
 <hr class="docutils" />
 </section>
 <section id="record2">
-<span id="id23"></span><h4>録音<a class="headerlink" href="#record2" title="この見出しへのパーマリンク"></a></h4>
+<span id="id24"></span><h4>録音<a class="headerlink" href="#record2" title="この見出しへのパーマリンク"></a></h4>
 <p>ユーザーの録音データを文書に保存する必要がある場合に使用します。録音入力項目を追加すると、ビューアーから録音されたコンテンツを再生したり、新しく録音を行ったりすることができます。</p>
 <p><a class="reference internal" href="../_images/record1.png"><img alt="image12" src="../_images/record1.png" style="width: 400px;" /></a></p>
 <div class="admonition note">
@@ -634,7 +692,7 @@
 <hr class="docutils" />
 </section>
 <section id="attach2">
-<span id="id24"></span><h4>添付<a class="headerlink" href="#attach2" title="この見出しへのパーマリンク"></a></h4>
+<span id="id25"></span><h4>添付<a class="headerlink" href="#attach2" title="この見出しへのパーマリンク"></a></h4>
 <p>文書に添付ファイルを追加する場合に使用します。添付入力項目を使用して文書を添付すると、添付した文書は本来の文書の最後に新規ページとして追加されます。</p>
 <p>添付可能なファイル形式とサイズは次のとおりです。</p>
 <ul class="simple">
@@ -650,7 +708,7 @@
 例）在職証明書を添付する入力項目の名前は「在職証明書」とします。</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>アイコンの表示</strong> にチェックを入れると、添付領域にクリップアイコンが表示されます。</p>
+<p><strong>アイコンの表示</strong>にチェックを入れると、添付領域にクリップアイコンが表示されます。</p>
 <p><img alt="image14" src="../_images/Attachment-component-properties_web_icon.png" /></p>
 </div>
 <hr class="docutils" />
@@ -677,8 +735,8 @@
 </section>
 </section>
 <hr class="docutils" />
-<section id="id25">
-<h2>テンプレートの追加設定<a class="headerlink" href="#id25" title="この見出しへのパーマリンク"></a></h2>
+<section id="id26">
+<h2>テンプレートの追加設定<a class="headerlink" href="#id26" title="この見出しへのパーマリンク"></a></h2>
 <p>文書に入力項目を追加することで、テンプレートのタイトル、文書番号、ワークフローなど、テンプレートから作成された文書の詳細設定を行うことができます。</p>
 <p><strong>デザインする</strong> の画面で、 <strong>設定する</strong> ボタンをクリックすることで、設定画面に移動します。設定画面では、次の5つの設定を行うことで、テンプレートの設定ができます。</p>
 <ul class="simple">
@@ -693,10 +751,9 @@
 </figure>
 <div class="admonition important">
 <p class="admonition-title">重要</p>
-<p>テンプレートから作成した文書を使用して文書を作成するには、テンプレートの保存後に <strong>配布</strong>する必要があります。
-テンプレートを配布せず、保存のみした場合、テンプレート使用権限があるメンバーの <strong>テンプレートで作成する</strong> 画面に表示されません。</p>
 <p><strong>テンプレートの配布とは？</strong></p>
-<p>当該テンプレートで文書を作成できるようにするためには、テンプレートを保存した後、必ず配布(公開)する必要があります。</p>
+<p>当該テンプレートで文書を作成できるようにするためには、テンプレートを保存した後、必ず <strong>配布(公開)</strong>する必要があります。
+テンプレートの配布をすることで、作成者以外のメンバーが当該テンプレートを使用できるようになります。</p>
 <p>テンプレートを配布せずに保存のみした場合、テンプレート使用権限のあるメンバーの <strong>テンプレートで作成する</strong> 画面には表示されません。</p>
 <p>配布していないテンプレートは、以下の画像のようにテンプレートに <strong>配布前</strong>と表示されます。テンプレートを配布するには、テンプレートの詳細メニューをクリックして配布するか、テンプレート設定から保存ボタンをクリック後、配布するか選択できます。</p>
 <figure class="align-default">
@@ -715,7 +772,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="chapter3.html" class="btn btn-neutral float-left" title="文書の新規作成" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="chapter5.html" class="btn btn-neutral float-right" title="フォームビルダーの紹介" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="chapter5.html" class="btn btn-neutral float-right" title="Webフォームデザイナーでテンプレート作成" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

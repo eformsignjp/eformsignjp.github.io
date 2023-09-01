@@ -7,12 +7,12 @@
   <title>基本情報 &mdash; eformsign User Guide 2023.04.07 ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-    <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
@@ -34,7 +34,6 @@
           
           <a href="../index.html">
             
-              <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -72,29 +71,30 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#mysignature">マイ署名の管理</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#registersignature"><strong>サイン/イニシャルを登録する方法</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#registersignature"><strong>サイン/イニシャルの登録方法</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#registerstamp"><strong>スタンプの登録方法</strong></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id21"><strong>スタンプの登録(画像)</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#creatstamp">スタンプの作成</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uploadstampimage">スタンプ画像のアップロード</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#scanstamp"><strong>スタンプのスキャン</strong></a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#company-stamp">会社印管理</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id25"><strong>会社印</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id26"><strong>社印使用履歴</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id26"><strong>会社印</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id27"><strong>社印使用履歴</strong></a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">文書の新規作成</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter4.html">Webフォームデザイナーの紹介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter5.html">フォームビルダーの紹介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter6.html">ウェブフォームデザイナーでテンプレートを作成する</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">Webフォームデザイナーでテンプレート作成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">フォームビルダーの紹介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter7.html">フォームビルダーでテンプレート作成</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter8.html">文書トレイ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter9.html">カスタマイズ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter10.html">外部サービスとの連動</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">外部サービスとの連携</a></li>
 </ul>
 
         </div>
@@ -127,7 +127,7 @@
 <h2>ダッシュボード<a class="headerlink" href="#id2" title="この見出しへのパーマリンク"></a></h2>
 <section id="id3">
 <h3>メニューの構成<a class="headerlink" href="#id3" title="この見出しへのパーマリンク"></a></h3>
-<p>eformsignにログインした後、ダッシュボード画面の左上のメニュー (<img alt="image1" src="../_images/menu_icon.png" />) をクリックすると、次のようなサイドバーメニューが表示されます。</p>
+<p>eformsignにログインした後、ダッシュボード画面の左上のメニュー (<a class="reference internal" href="../_images/menu_icon.png"><img alt="image1" src="../_images/menu_icon.png" style="width: 20px;" /></a>) をクリックすると、次のようなサイドバーメニューが表示されます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>メニューは、ユーザーの権限によって内容が変化します。代表管理者には全てのメニューが表示され、全ての権限を持ちます。
@@ -155,7 +155,8 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </ul>
 </li>
 <li><p><strong>共有文書トレイ:</strong> 所有している文書を他のメンバーに共有することができます。共有文書ボックスへのアクセス権限がある場合、共有された文書を一目で確認できます。</p></li>
-<li><p><strong>文書管理：</strong> このメニューには、文書管理権限がある場合にのみアクセスできます。文書の管理権限を持つテンプレートで作成された全ての文書を確認することができます。ただし、代表管理者の場合は全ての文書を確認・管理することができます。</p></li>
+<li><p><strong>文書管理：</strong> このメニューには、文書管理権限がある場合にのみアクセスできます。文書の管理権限を持つテンプレートで作成された全ての文書
+を確認することができます。ただし、代表管理者の場合は全ての文書を確認・管理することができます。</p></li>
 <li><p><strong>マイ署名：</strong> 自分の署名を登録することで、文書の作成時に使用することができます。</p></li>
 <li><p><strong>テンプレート管理：</strong> このメニューには、テンプレート管理の権限がある場合にのみアクセスできます。テンプレートのリストを確認し、テンプレートの作成と設定ができます。</p></li>
 <li><p><strong>会社管理：</strong> このメニューには、会社の代表管理者か会社管理権限を持つメンバーのみアクセスできます。会社情報の確認・変更ができます。</p>
@@ -179,10 +180,10 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </li>
 <li><p><strong>料金管理：</strong> 料金プラン・リアルタイム利用状況・決済履歴の確認と料金プラン・決済方法を変更することができます。</p>
 <ul>
-<li><p><strong>料金プラン</strong>：使用中の料金プランを確認・変更することができます。</p></li>
-<li><p><strong>リアルタイムの使用履歴</strong>：現在までの利用履歴と残り件数をリアルタイムで確認することができます。</p></li>
-<li><p><strong>決済履歴</strong>：直近1年間の決済履歴を確認することができます。</p></li>
-<li><p><strong>決済手段の設定</strong>：決済時に使用するクレジットカード情報を登録することができます。</p></li>
+<li><p><strong>料金プラン</strong> ：使用中の料金プランを確認・変更することができます。</p></li>
+<li><p><strong>リアルタイムの使用履歴</strong> ：現在までの利用履歴と残り件数をリアルタイムで確認することができます。</p></li>
+<li><p><strong>決済履歴</strong> ：直近1年間の決済履歴を確認することができます。</p></li>
+<li><p><strong>決済手段の設定</strong> ：決済時に使用するクレジットカード情報を登録することができます。</p></li>
 </ul>
 </li>
 <li><p><strong>利用状況：</strong> 週間、月間、年間の利用状況が表示されます。</p></li>
@@ -195,55 +196,53 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/dashboard_main.png"><img alt="ダッシュボード画面" src="../_images/dashboard_main.png" style="width: 700px;" /></a>
 </figure>
-<dl>
-<dt><strong>① テンプレートで作成する</strong></dt><dd><p>保存されたテンプレートを使用して、文書の新規作成ができる <strong>テンプレートで作成する</strong>画面に移動します。</p>
-</dd>
-<dt><strong>② マイファイルで作成する</strong></dt><dd><p>PCに保存されているファイルをそのままアップロードして文書の新規作成ができる<strong>マイファイルで作成する</strong> 画面に移動します。</p>
-</dd>
-<dt><strong>③ お気に入り</strong></dt><dd><p>お気に入りに追加したテンプレートが表示されます。当該テンプレートをクリックすると、テンプレートを使用して文書の作成ができる画面に移動します。テンプレートをお気に入りに追加するためには、追加アイコン (<img alt="image2" src="../_images/favorites-add.PNG" />) をクリックして新規登録します。お気に入りに登録されたテンプレートを削除するためには、編集アイコン (<img alt="image3" src="../_images/favorites-edit.PNG" />) をクリックし、削除します。</p>
+<p><strong>① テンプレートで作成する</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>要処理文書トレイ</strong>: 処理する必要がある文書の件数が表示されます。クリックすると <strong>要処理文書</strong>に移動します。</p></li>
+<li><p><strong>進行中の文書トレイ</strong>: 現在進行中の文書の件数が表示され、クリックすると、進行中の文書のリストが確認できる <strong>進行中の文書</strong>に移動します。</p></li>
+<li><p><strong>完了文書トレイ</strong>: クリックすると、 <strong>完了文書</strong>に移動します。</p></li>
+<li><p><strong>下書きとして保存</strong>: <strong>マイファイルで作成する</strong>メニューから文書を作成中に <strong>文書作成をスタート</strong> をクリックする前に下書き保存した文書の件数が表示され、クリックすると、 <strong>下書きとして保存</strong>に移動します。</p></li>
+</ul>
+</div></blockquote>
+<p><strong>② マイファイルで作成する</strong></p>
+<blockquote>
+<div><p>該当領域にファイルをドラッグ&amp;ドロップすると、すぐに新規文書を作成できる <strong>マイファイルで文書作成</strong> 画面に移動します。
+<strong>マイコンピュータからファイルを選択</strong>をクリックすると、 <strong>マイファイルに文書を作成</strong>するファイルがアップロードできる画面に移動します。</p>
+</div></blockquote>
+<p><strong>③ テンプレートで作成する</strong></p>
+<blockquote>
+<div><p>お気に入りのテンプレート、最近使用したテンプレート、最近アップロードしたテンプレートの順に表示されます。当該テンプレートの文書作成アイコンをクリックすると、すぐに文書を作成することができます。テンプレート全体の表示をクリックすると、テンプレートで文書作成の画面に移動し、全てのテンプレートを確認することができます。</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="../_images/template-create-icon.PNG"><img alt="image2" src="../_images/template-create-icon.PNG" style="width: 20px;" /></a> : 1件の文書を作成します。</p></li>
+<li><p><a class="reference internal" href="../_images/template-bulkcreate-icon.PNG"><img alt="image3" src="../_images/template-bulkcreate-icon.PNG" style="width: 20px;" /></a> : 複数の文書を一度に作成し、送信することができる <strong>一括作成</strong> ページに移動します。</p></li>
+</ul>
+</div></blockquote>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>よく使うテンプレートをお気に入りに追加する方法</strong></p>
-<p>よく使うテンプレートをお気に入りとして追加して文書を作成できます。テンプレートの <strong>お気に入り</strong>への追加は、ダッシュボードから行うことができます。</p>
-<ol class="arabic">
-<li><p>ダッシュボードのお気に入り追加アイコン( <img alt="image4" src="../_images/favorites-add.PNG" />) をクリックします。</p></li>
-<li><p>お気に入りに追加されていないテンプレートのリストがポップアップで表示されます。</p></li>
-<li><p>お気に入りに追加したいテンプレートのチェックボックスをクリックします。</p>
-<p><a class="reference internal" href="../_images/favorites-add-popup2.PNG"><img alt="image5" src="../_images/favorites-add-popup2.PNG" style="width: 400px;" /></a></p>
-</li>
-<li><p><strong>OK</strong>をクリックするとお気に入りに追加されます。</p></li>
+<p>よく使用するテンプレートは、お気に入りに登録しておくとダッシュボードに優先的に表示されます。テンプレートの <strong>お気に入り</strong>は <strong>テンプレートで作成</strong> 画面で行うことができます。</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/template_favorite.png"><img alt="テンプレートのお気に入り" src="../_images/template_favorite.png" style="width: 500px;" /></a>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>テンプレートで文書作成</strong> メニューに移動します。</p></li>
+<li><p>お気に入りに追加するテンプレートの(<a class="reference internal" href="../_images/favorites-icon.PNG"><img alt="image4" src="../_images/favorites-icon.PNG" style="width: 20px;" /></a>)アイコンをクリックすると、お気に入りに追加されます。</p></li>
+<li><p>ダッシュボードからお気に入りしたテンプレートが優先的に表示されていることを確認します。</p></li>
+<li><p>お気に入り(<a class="reference internal" href="../_images/favorites-added-icon.PNG"><img alt="image5" src="../_images/favorites-added-icon.PNG" style="width: 20px;" /></a>)アイコンをもう一度クリックするとお気に入りを解除します。</p></li>
 </ol>
+</div></blockquote>
 </div>
-</dd>
-<dt><strong>④ 要処理文書</strong></dt><dd><p>処理する必要がある文書の件数が表示されます。クリックすると <strong>要処理文書</strong>に移動します。</p>
-</dd>
-<dt><strong>⑤ 進行中の文書</strong></dt><dd><p>現在進行中の文書の件数が表示され、クリックすると、進行中の文書のリストが確認できる <strong>進行中の文書</strong>に移動します。</p>
-</dd>
-<dt><strong>⑥ 完了文書</strong></dt><dd><p>クリックすると、 <strong>完了文書</strong>に移動します。</p>
-</dd>
-<dt><strong>⑦下書きとして保存</strong></dt><dd><p><strong>マイファイルで作成する</strong>メニューから文書を作成中に <strong>文書作成をスタート</strong>をクリックする前に下書き保存した文書の件数が表示され、クリックすると、 <strong>下書きとして保存</strong>に移動します。</p>
-</dd>
-<dt><strong>⑧ 要処理文書</strong></dt><dd><p>処理する必要のある文書の件数と、最新文書リストが3件分表示されます。リスト内の文書名をクリックすると、その文書に移動します。<strong>More</strong>をクリックすると <strong>要処理文書トレイ</strong> に移動します。</p>
-</dd>
-<dt><strong>⑨下書きとして保存</strong></dt><dd><p>下書きとして保存に保存された文書の件数と、最新文書リストが3件分表示されます。リスト内の文書名をクリックすると、その文書に移動します。<strong>More</strong>をクリックすると <strong>下書きとして保存</strong> に移動します。</p>
-</dd>
-<dt><strong>⑩ 進行中の文書</strong></dt><dd><p>現在進行中の文書の件数と、最新文書リストが3件分表示されます。リスト内の文書名をクリックすると、その文書に移動します。
-<strong>More</strong>をクリックすると <strong>進行中の文書トレイ</strong> に移動します。</p>
-</dd>
-<dt><strong>⑪ 完了文書</strong></dt><dd><p>最新の完了文書リストが3件分表示されます。リスト内の文書名をクリックすると、その文書に移動します。<strong>More</strong>をクリックすると <strong>完了文書トレイ</strong> に移動します。</p>
-</dd>
-</dl>
+</div></blockquote>
 </section>
 </section>
 <section id="id5">
 <h2>基本情報の確認及び変更<a class="headerlink" href="#id5" title="この見出しへのパーマリンク"></a></h2>
-<p>eformsignに会員登録する際に入力した個人情報と登録した会社の情報は、サイドバーメニューの右上のアイコン(<img alt="image6" src="../_images/menu-hamberger-icon.png" />) をクリックすることで確認できます。</p>
+<p>eformsignに会員登録する際に入力した個人情報と登録した会社の情報は、サイドバーメニューの右上のアイコン(<a class="reference internal" href="../_images/menu-hamberger-icon.png"><img alt="image6" src="../_images/menu-hamberger-icon.png" style="width: 20px;" /></a>)をクリックすることで確認できます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/menu-personalinfo.png"><img alt="マイ情報確認メニューアイコン" src="../_images/menu-personalinfo.png" style="width: 700px;" /></a>
-</figure>
-<p>サイドバーのメニュー右上のアイコン (<img alt="image7" src="../_images/menu-hamberger-icon.png" />) をクリックすると、サブメニューが次のように表示されます。</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/menu-personalinfo1.png"><img alt="マイ情報の表示および変更メニュー" src="../_images/menu-personalinfo1.png" style="width: 700px;" /></a>
 </figure>
 <ul class="simple">
 <li><p><strong>会社の変更：</strong> 本人が所属している会社が複数登録されている場合、会社の変更をクリックすることで会社の一覧が表示されます。変更する会社をクリックすることで所属会社を変更できます。</p></li>
@@ -276,10 +275,11 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <dt><strong>詳細情報</strong></dt><dd><p>本人が所属している会社の住所、事業所登録番号、ホームページのURL、代表管理者の氏名、メールアドレスを確認することができます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>マイ情報では、会社情報の確認のみできます。会社関連情報の修正は、<strong>会社管理 &gt; 会社情報</strong>メニューから可能です。会社情報の修正は、<strong>代表管理者</strong>または <strong>会社管理</strong>の権限を持っているメンバーのみ可能です。</p>
+<p>マイ情報では、会社情報の確認のみできます。会社関連情報の修正は、<strong>会社管理 &gt; 会社情報</strong> メニューから可能です。会社情報の修正は、<strong>代表管理者</strong> または <strong>会社管理</strong>の権限を持っているメンバーのみ可能です。</p>
 </div>
 </dd>
-<dt><strong>この会社を脱退する</strong></dt><dd><p>所属している会社から退会したい場合は、画面下部の <strong>この会社を脱退する</strong>をクリックします。 <strong>この会社を脱退する</strong>をクリックすることで所属している会社のリストが表示され、そのリストから退会したい会社を選択して退会を行うことができます。</p>
+<dt><strong>この会社を脱退する</strong></dt><dd><p>所属している会社から退会したい場合は、画面下部の <strong>この会社を脱退する</strong>をクリックします。
+<strong>この会社を脱退する</strong>をクリックすることで所属している会社のリストが表示され、そのリストから退会したい会社を選択して退会を行うことができます。</p>
 <div class="admonition important">
 <p class="admonition-title">重要</p>
 <p>一般メンバーが所属会社から退会する場合、個人のアカウントは削除されないため、別の会社への所属や、新たな会社への登録が可能です。</p>
@@ -291,10 +291,10 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </section>
 <section id="id7">
 <h3>会社情報の修正及び追加<a class="headerlink" href="#id7" title="この見出しへのパーマリンク"></a></h3>
-<p><strong>マイ情報</strong> で確認可能な会社情報については、 <strong>会社管理 &gt; 会社情報</strong>で修正できます。</p>
+<p><strong>マイ情報</strong>で確認可能な会社情報については、 <strong>会社管理 &gt; 会社情報</strong>で修正できます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>この作業は <strong>代表管理者</strong>または <strong>会社管理の権限</strong>が必要です。</p>
+<p>この作業は <strong>代表管理者</strong> または <strong>会社管理の権限</strong>が必要です。</p>
 </div>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/managecompany-companyinfo-menu.png"><img alt="会社管理 &gt; 会社情報メニュー" src="../_images/managecompany-companyinfo-menu.png" style="width: 750px;" /></a>
@@ -304,8 +304,8 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <li><p>サイドバーのメニューから <strong>会社管理 &gt; 会社情報</strong>に移動します。</p>
 <p><a class="reference internal" href="../_images/managecompany-companyinfo.png"><img alt="image8" src="../_images/managecompany-companyinfo.png" style="width: 700px;" /></a></p>
 </li>
-<li><p><strong>会社情報 &gt; 基本情報</strong>画面で修正したい情報の <strong>修正</strong>をクリックします。</p></li>
-<li><p>修正が完了したら、 <strong>保存</strong>ボタンをクリックします。</p>
+<li><p><strong>会社情報 &gt; 基本情報</strong> 画面で修正したい情報の <strong>修正</strong>をクリックします。</p></li>
+<li><p>修正が完了したら、 <strong>保存</strong> ボタンをクリックします。</p>
 <p><a class="reference internal" href="../_images/managecompany-companyinfo-edit_1.png"><img alt="image9" src="../_images/managecompany-companyinfo-edit_1.png" style="width: 700px;" /></a></p>
 </li>
 </ol>
@@ -327,26 +327,19 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/managecompany-brand.png"><img alt="会社情報 &gt; ブランドのロゴ、シンボルの登録" src="../_images/managecompany-brand.png" style="width: 750px;" /></a>
 </figure>
-<ol class="arabic">
+<ol class="arabic simple">
 <li><p>サイドバーのメニューから <strong>会社管理 &gt; 会社情報</strong>に移動します。</p></li>
-<li><p><strong>ブランド</strong>タブをクリックします。</p></li>
-<li><p><strong>ブランドイメージ &gt; ロゴ</strong>のロゴ画像をクリックします。</p></li>
+<li><p><strong>ブランド</strong> タブをクリックします。</p></li>
+<li><p><strong>ブランドイメージ &gt; ロゴ</strong> のロゴ画像をクリックします。</p></li>
 <li><p>画像アップロードのポップアップが表示されたら、PCに保存されているロゴの画像ファイルを選択してアップロードします。</p>
 <ul class="simple">
 <li><p>画像サイズ：幅512px、縦128pxを推奨</p></li>
 <li><p>ファイルサイズ：最大300KBまで</p></li>
 <li><p>ファイル形式：PNG、JPG、JPEG、GIF</p></li>
 </ul>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/managecompany-logo-upload.png"><img alt="画像アップロードのポップアップ画面" src="../_images/managecompany-logo-upload.png" style="width: 650px;" /></a>
-</figure>
 </li>
 <li><p>画面右上の保存ボタンをクリックします。</p></li>
-<li><p>ダッシュボードで変更されたロゴを確認します。</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/logo-change.png"><img alt="ロゴが変更されたダッシュボード" src="../_images/logo-change.png" style="width: 750px;" /></a>
-</figure>
-</li>
+<li><p>ダッシュボードで変更されたロゴを確認します。</p></li>
 </ol>
 </section>
 </section>
@@ -358,13 +351,12 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <p>会社の代表者として、eformsignの使用に関わる全ての権限を持ちます。</p>
 </li>
 <li><p><strong>会社管理</strong></p>
-<p><strong>会社管理</strong>メニューにアクセスできます。会社情報、メンバー、グループなどを管理ができ、 <strong>メンバーの招待</strong>と <strong>文書の移管</strong>ができます。</p>
+<p><strong>会社管理</strong> メニューにアクセスできます。会社情報、メンバー、グループなどを管理ができ、 <strong>メンバーの招待</strong> と <strong>文書の移管</strong> ができます。</p>
 </li>
 <li><p><strong>テンプレート管理者</strong></p>
-<p><strong>テンプレート管理</strong>メニューにアクセスできます。フォームビルダーを使用してフォームファイルを作成したり、Webフォームデザイナーでファイルをアップロードして新しいテンプレートを登録したりすることができます。また、テンプレートの修正、配布、削除ができます。</p>
-<ul class="simple">
-<li><p><strong>文書の管理権限</strong></p></li>
-</ul>
+<p><strong>テンプレート管理</strong> メニューにアクセスできます。フォームビルダーを使用してフォームファイルを作成したり、Webフォームデザイナーでファイルをアップロードして新しいテンプレートを登録したりすることができます。また、テンプレートの修正、配布、削除ができます。</p>
+</li>
+<li><p><strong>文書の管理権限</strong></p>
 <p><strong>文書管理</strong> メニューにアクセスすることができます。テンプレート別に作成された文書の閲覧、ダウンロードができます。文書管理権限を持つ文書の閲覧・ダウンロードができるほか、権限範囲によっては文書の無効化、削除ができます。</p>
 </li>
 </ul>
@@ -378,7 +370,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <ul>
 <li><p><strong>テンプレートの使用権限</strong></p>
 <blockquote>
-<div><p>テンプレートを使用して文書を作成できる権限です。権限を持っているメンバーの <strong>テンプレートで文書を作成する</strong>画面にそのテンプレートが表示され、文書を作成できます。</p>
+<div><p>テンプレートを使用して文書を作成できる権限です。権限を持っているメンバーの <strong>テンプレートで文書を作成する</strong> 画面にそのテンプレートが表示され、文書を作成できます。</p>
 </div></blockquote>
 </li>
 <li><p><strong>テンプレートの修正権限</strong></p>
@@ -403,10 +395,9 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </ul>
 <p>代表管理者が退会した場合、会社は削除されます。会社を削除せずに退会するには、他のメンバーに代表管理者の権限を委任してから退会する必要があります。</p>
 <p><strong>代表管理者権限の委任方法</strong></p>
-<blockquote>
-<div><ol class="arabic">
+<ol class="arabic">
 <li><p>サイドバーのメニューから <strong>会社管理 &gt; 会社情報</strong>に移動します。</p></li>
-<li><p><strong>詳細情報</strong>の <strong>修正</strong>ボタンをクリックし、 <strong>代表管理者</strong>の右側にある <strong>権限委任</strong>のリンクをクリックします。</p>
+<li><p><strong>詳細情報</strong>の <strong>修正</strong> ボタンをクリックし、 <strong>代表管理者</strong> の右側にある <strong>権限委任</strong>のリンクをクリックします。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/Admin-auth-change_1.png"><img alt="代表管理者の権限委任の位置" src="../_images/Admin-auth-change_1.png" style="width: 700px;" /></a>
 </figure>
@@ -419,7 +410,6 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <li><p>代表管理者アカウントのパスワードを入力します。</p></li>
 <li><p><strong>確認</strong> ボタンをクリックすると、代表管理者権限が委任されます。</p></li>
 </ol>
-</div></blockquote>
 </section>
 <section id="id11">
 <h3>会社の管理者<a class="headerlink" href="#id11" title="この見出しへのパーマリンク"></a></h3>
@@ -473,7 +463,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <ol class="arabic">
 <li><p>サイドバーのメニューから <strong>会社管理 &gt; メンバー管理</strong>に移動します。</p></li>
 <li><p>メンバーリストから、テンプレート管理の権限を付与するメンバーを選択します。</p></li>
-<li><p>右側の <strong>メンバー情報</strong>詳細画面の下部の <strong>権限</strong>から <strong>テンプレート管理</strong>にチェックを入れます。</p>
+<li><p>右側の <strong>メンバー情報</strong> 詳細画面の下部の <strong>権限</strong>から <strong>テンプレート管理</strong>にチェックを入れます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/template-manage-auth.png"><img alt="テンプレート管理の権限の位置" src="../_images/template-manage-auth.png" style="width: 700px;" /></a>
 </figure>
@@ -606,7 +596,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </div>
 <ol class="arabic">
 <li><p>サイドバーのメニューから <strong>テンプレート管理</strong>に移動します。</p></li>
-<li><p><strong>テンプレートの設定</strong> ボタン ( <img alt="image10" src="../_images/config-icon.PNG" />) をクリックします。</p>
+<li><p><strong>テンプレートの設定</strong> ボタン(<img alt="image10" src="../_images/config-icon.PNG" />)をクリックします。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/template-manage-setting.png"><img alt="テンプレートの設定ボタンの位置" src="../_images/template-manage-setting.png" style="width: 700px;" /></a>
 </figure>
@@ -661,7 +651,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </dd>
 <dt><strong>⑪ メンバーリストをダウンロード</strong></dt><dd><p>会社に所属するメンバーのリストをCSVファイルでダウンロードすることができます。</p>
 </dd>
-<dt><strong>⑫ メンバーの削除</strong></dt><dd><p><strong>ごみ箱</strong>アイコンをクリックすると、メンバーリストの左側のチェックボックスが活性化します。削除するメンバーを選択し、<strong>削除</strong>ボタンをクリックすると、メンバーが削除されます。</p>
+<dt><strong>⑫ メンバーの削除</strong></dt><dd><p><strong>ごみ箱</strong> アイコンをクリックすると、メンバーリストの左側のチェックボックスが活性化します。削除するメンバーを選択し、<strong>削除</strong> ボタンをクリックすると、メンバーが削除されます。</p>
 </dd>
 </dl>
 </section>
@@ -678,18 +668,18 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </dd>
 <dt><strong>③ フィールド値の設定</strong></dt><dd><p>グループに関するフィールド値を設定できます。</p>
 </dd>
-<dt><strong>④ グループの追加</strong></dt><dd><p>グループの追加をクリックすると、<strong>グループの追加</strong>ポップアップウィンドウが表示されます。グループ名とグループの詳細を入力し、メンバーを検索・追加することでグループを作成することができます。</p>
+<dt><strong>④ グループの追加</strong></dt><dd><p>グループの追加をクリックすると、<strong>グループの追加</strong> ポップアップウィンドウが表示されます。グループ名とグループの詳細を入力し、メンバーを検索・追加することでグループを作成することができます。</p>
 </dd>
-<dt><strong>⑤ グループの削除</strong></dt><dd><p><strong>ごみ箱</strong>アイコンをクリックすると、グループリストの左側にあるチェックボックスが活性化します。削除したいグループを選択し、 <strong>削除</strong>ボタンをクリックするとグループが削除されます。</p>
+<dt><strong>⑤ グループの削除</strong></dt><dd><p><strong>ごみ箱</strong> アイコンをクリックすると、グループリストの左側にあるチェックボックスが活性化します。削除したいグループを選択し、 <strong>削除</strong>ボタンをクリックするとグループが削除されます。</p>
 </dd>
 </dl>
 </section>
 </section>
 <section id="mysignature">
 <span id="id18"></span><h2>マイ署名の管理<a class="headerlink" href="#mysignature" title="この見出しへのパーマリンク"></a></h2>
-<p><strong>マイ署名</strong>メニューから <strong>サイン、イニシャル、印鑑・スタンプ</strong>を登録しておくと、文書を作成する際に登録されている署名を簡単に使うことができます。</p>
+<p><strong>マイ署名</strong> メニューから <strong>サイン、イニシャル、印鑑・スタンプ</strong>を登録しておくと、文書を作成する際に登録されている署名を簡単に使うことができます。</p>
 <section id="registersignature">
-<span id="id19"></span><h3><strong>サイン/イニシャルを登録する方法</strong><a class="headerlink" href="#registersignature" title="この見出しへのパーマリンク"></a></h3>
+<span id="id19"></span><h3><strong>サイン/イニシャルの登録方法</strong><a class="headerlink" href="#registersignature" title="この見出しへのパーマリンク"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>作業は <strong>PC、モバイル、アプリケーション</strong>で行うことができます。</p>
@@ -715,7 +705,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <p>モバイル端末のカメラでQRコードを読み取ると、端末上に署名パッド画面が表示されます。署名パッドに署名を描いて送信を押すと、描いた署名が入力されます。</p>
 </li>
 <li><p><strong>eformsignアプリ</strong></p>
-<p>接続したいモバイルデバイスを選択後、<strong>送信</strong>ボタンをクリックすると、選択した端末にインストールされているeformsignアプリで署名をすることができます。</p>
+<p>接続したいモバイルデバイスを選択後、<strong>送信</strong> ボタンをクリックすると、選択した端末にインストールされているeformsignアプリで署名をすることができます。</p>
 </li>
 </ul>
 </li>
@@ -726,7 +716,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <p class="admonition-title">Tip</p>
 <p><strong>署名方式の設定</strong></p>
 <p>電子文書に添付する署名の方式を設定することができます。</p>
-<p><strong>会社管理</strong> &gt; <strong>署名の設定</strong>から手書き、キーボードのうち、文書の署名欄に表示する署名の方式を表示/非表示できます。</p>
+<p><strong>会社管理</strong> &gt; <strong>署名の設定</strong> から手書き、キーボードのうち、文書の署名欄に表示する署名の方式を表示/非表示できます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/signature-method-jp.png"><img alt="署名方式の設定" src="../_images/signature-method-jp.png" style="width: 700px;" /></a>
 </figure>
@@ -734,16 +724,46 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </section>
 <section id="registerstamp">
 <span id="id20"></span><h3><strong>スタンプの登録方法</strong><a class="headerlink" href="#registerstamp" title="この見出しへのパーマリンク"></a></h3>
-<p>署名の代わりに、スタンプを使用する必要がある場合に使用します。
-eformsignではスタンプの画像を登録、または実物の印鑑/スタンプを実物大スキャンして登録後、文書の署名欄に押印することができます。</p>
+<p>文書に直接署名するのではなく、職印や印鑑が必要な場合もあります。eformsignでは、はんこを3つの方法で登録して使用することができます。</p>
+<ol class="arabic simple">
+<li><p>スタンプの作成&lt;chapter2.html#registerstamp&gt;`__</p></li>
+<li><p>スタンプ画像のアップロード&lt;chapter2.html#uploadstampimage&gt;`__</p></li>
+<li><p>実物スタンプスキャン&lt;chapter2.html#scanstamp&gt;`__</p></li>
+</ol>
 <div class="admonition important">
 <p class="admonition-title">重要</p>
 <p><strong>❗マイ署名のスタンプは社印とは別物です。</strong></p>
 <p>会社の法人印鑑など、会社単位で使用する印鑑は`会社印 &lt;chapter2.html#company_stamp&gt;`__に登録し、使用してください。</p>
 <p>会社印として登録すると、メンバー/グループごとに使用権限が付与され、使用履歴などを確認できるようになります。</p>
 </div>
-<section id="id21">
-<h4><strong>スタンプの登録(画像)</strong><a class="headerlink" href="#id21" title="この見出しへのパーマリンク"></a></h4>
+<section id="creatstamp">
+<span id="id21"></span><h4>スタンプの作成<a class="headerlink" href="#creatstamp" title="この見出しへのパーマリンク"></a></h4>
+<p>名前、日付など、印鑑に入れる各情報を入力し、印鑑のデザインを選択してお好きな印鑑をすぐに作成することができます。</p>
+<ol class="arabic">
+<li><p>サイドバーメニューから <strong>マイ署名</strong>に移動します。</p></li>
+<li><p><strong>登録</strong> ボタンをクリックします。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/signature-stamp-register.png"><img alt="スタンプの登録" src="../_images/signature-stamp-register.png" style="width: 700px;" /></a>
+</figure>
+</li>
+<li><p>スタンプに表示する名前を入力します。スタンプのデザインに応じて、日付形式と追加情報（例：会社名）を入力します。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/signature-stamp-create-stamp.png"><img alt="マイ署名 &gt; スタンプの登録" src="../_images/signature-stamp-create-stamp.png" style="width: 400px;" /></a>
+</figure>
+</li>
+<li><p>スタンプの色を選択し、 <strong>適用</strong> ボタンをクリックします。</p></li>
+<li><p>ご希望のスタンプのデザインを選択し、 <strong>保存</strong> ボタンをクリックします。</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>日付が入った印鑑を選択すると、該当印鑑を押す時に日付が「今日の日付」に自動適用されます。</p>
+</div>
+<ol class="arabic simple" start="6">
+<li><p><strong>編集、削除</strong> ボタンで登録された印鑑を編集または削除します。</p></li>
+</ol>
+</section>
+<section id="uploadstampimage">
+<span id="id22"></span><h4>スタンプ画像のアップロード<a class="headerlink" href="#uploadstampimage" title="この見出しへのパーマリンク"></a></h4>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>事前にスタンプの画像を準備する必要があります。</p>
@@ -769,7 +789,7 @@ eformsignではスタンプの画像を登録、または実物の印鑑/スタ�
 </ol>
 </section>
 <section id="scanstamp">
-<span id="id22"></span><h4><strong>スタンプのスキャン</strong><a class="headerlink" href="#scanstamp" title="この見出しへのパーマリンク"></a></h4>
+<span id="id23"></span><h4><strong>スタンプのスキャン</strong><a class="headerlink" href="#scanstamp" title="この見出しへのパーマリンク"></a></h4>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>登録するスタンプとeformsignから提供している <strong>スタンプスキャン用紙</strong>をダウンロード後、印刷して使用します。
@@ -777,7 +797,7 @@ eformsignではスタンプの画像を登録、または実物の印鑑/スタ�
 </div>
 <p><strong>PCでのスタンプスキャン</strong></p>
 <ol class="arabic">
-<li><p><strong>マイ署名</strong>のメニューから <strong>スタンプの登録</strong>ボタンをクリックし、<strong>スタンプのスキャン</strong>タブをクリックします。</p>
+<li><p><strong>マイ署名</strong>のメニューから <strong>スタンプの登録</strong>ボタンをクリックし、<strong>スタンプのスキャン</strong> タブをクリックします。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/signature-stamp-scan-popup.png"><img alt="スタンプの登録ボタン" src="../_images/signature-stamp-scan-popup.png" style="width: 300px;" /></a>
 </figure>
@@ -794,14 +814,14 @@ eformsignではスタンプの画像を登録、または実物の印鑑/スタ�
 </ol>
 <p><strong>モバイルデバイスでのスタンプスキャン</strong></p>
 <ol class="arabic">
-<li><p><strong>マイ署名</strong>メニューから <strong>スタンプの登録</strong>ボタンをタップし、<strong>スタンプのスキャン</strong>タブをタップします。</p>
+<li><p><strong>マイ署名</strong>メニューから <strong>スタンプの登録</strong>ボタンをタップし、<strong>スタンプのスキャン</strong> タブをタップします。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/signature-stamp-scan-popup-mobile.png"><img alt="スタンプスキャンのポップアップ" src="../_images/signature-stamp-scan-popup-mobile.png" style="width: 300px;" /></a>
 </figure>
 </li>
 <li><p><strong>スキャン用紙</strong>をダウンロードして印刷します。</p></li>
 <li><p><strong>スキャン用紙</strong>のスキャン領域の中央に押印します。</p></li>
-<li><p>スタンプポップアップの右下の、<strong>開始</strong>ボタンをタップします。</p></li>
+<li><p>スタンプポップアップの右下の、<strong>開始</strong> ボタンをタップします。</p></li>
 <li><p>起動したカメラ画面でカメラの使用を許可します。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/stamp-scan-mobile-camera.png"><img alt="カメラ使用の許可" src="../_images/stamp-scan-mobile-camera.png" style="width: 300px;" /></a>
@@ -811,7 +831,7 @@ eformsignではスタンプの画像を登録、または実物の印鑑/スタ�
 <li><p>出力されたスタンプ画像を確認して保存すると、スタンプが登録されます。</p></li>
 </ol>
 <section id="caution-scanstamp">
-<span id="id23"></span><h5><strong>スタンプのスキャン時の注意事項</strong><a class="headerlink" href="#caution-scanstamp" title="この見出しへのパーマリンク"></a></h5>
+<span id="id24"></span><h5><strong>スタンプのスキャン時の注意事項</strong><a class="headerlink" href="#caution-scanstamp" title="この見出しへのパーマリンク"></a></h5>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Tip 1. スキャンの画面に移動しない場合</strong></p>
@@ -823,37 +843,35 @@ eformsignではスタンプの画像を登録、または実物の印鑑/スタ�
 <p><strong>2. スキャンの画面が表示されず、作業選択の画面が表示される場合</strong></p>
 <blockquote>
 <div><p>一部のAndroidデバイスではスキャンの画面に移動せず、カメラやアルバムなどの選択画面が表示される場合があります。その場合、以下の手順を行ってください。</p>
-<p>① 選択画面から <strong>カメラ</strong>を選択します。</p>
-<p>② カメラ画面でスタンプスキャン領域が鮮明に映るように撮影します。</p>
-<p>③ 撮影した写真からスタンプが自動的に読み取られます。</p>
+<p>① 選択画面から <strong>カメラ</strong>を選択します。
+② カメラ画面でスタンプスキャン領域が鮮明に映るように撮影します。
+③ 撮影した写真からスタンプが自動的に読み取られます。</p>
 </div></blockquote>
 <p><strong>Tip 2. スタンプが認識されないと表示される場合</strong></p>
 <p>一部モバイルブラウザのカメラでは解像度が低く、スタンプが認識されない場合があります。その場合、以下の手順を行ってください。</p>
-<blockquote>
-<div><figure class="align-default">
+<figure class="align-default">
 <a class="reference internal image-reference" href="../_images/stamp-scan-help.png"><img alt="スタンプスキャンの解決方法" src="../_images/stamp-scan-help.png" style="width: 700px;" /></a>
 </figure>
-</div></blockquote>
 </div>
 </section>
 </section>
 </section>
 </section>
 <section id="company-stamp">
-<span id="id24"></span><h2>会社印管理<a class="headerlink" href="#company-stamp" title="この見出しへのパーマリンク"></a></h2>
+<span id="id25"></span><h2>会社印管理<a class="headerlink" href="#company-stamp" title="この見出しへのパーマリンク"></a></h2>
 <p><strong>会社印管理</strong> メニューでは、社内で使われる法人印鑑、社用印鑑などの会社印を複数登録して管理することができます。
 印鑑ごとにメンバーまたはグループの印鑑の使用権限を付与し、印鑑の使用履歴を確認することができます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>会社印の管理には <strong>代表管理者</strong> または <strong>会社管理者</strong> の権限が必要です。</p>
 </div>
-<section id="id25">
-<h3><strong>会社印</strong><a class="headerlink" href="#id25" title="この見出しへのパーマリンク"></a></h3>
+<section id="id26">
+<h3><strong>会社印</strong><a class="headerlink" href="#id26" title="この見出しへのパーマリンク"></a></h3>
 <p>会社で使われる印鑑を複数登録して管理することができます。印鑑ごとに使用権限を付与することができ、印鑑に対する全ての変更履歴を確認することができます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/menu-company-stamp.PNG"><img alt="会社印管理" src="../_images/menu-company-stamp.PNG" style="width: 700px;" /></a>
 </figure>
-<p>会社印の登録は、 <strong>会社印の登録</strong>ボタンをクリックすることで行います。会社印名、説明、画像のアップロードまたはスタンプのスキャン、会社印の使用権限を設定できます。</p>
+<p>会社印の登録は、 <strong>会社印の登録</strong> ボタンをクリックすることで行います。会社印名、説明、画像のアップロードまたはスタンプのスキャン、会社印の使用権限を設定できます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/company-stamp-register.PNG"><img alt="会社印登録のポップアップ" src="../_images/company-stamp-register.PNG" style="width: 400px;" /></a>
 </figure>
@@ -868,8 +886,8 @@ eformsignではスタンプの画像を登録、または実物の印鑑/スタ�
 <a class="reference internal image-reference" href="../_images/company-stamp-register-history.PNG"><img alt="会社印変更履歴" src="../_images/company-stamp-register-history.PNG" style="width: 700px;" /></a>
 </figure>
 </section>
-<section id="id26">
-<h3><strong>社印使用履歴</strong><a class="headerlink" href="#id26" title="この見出しへのパーマリンク"></a></h3>
+<section id="id27">
+<h3><strong>社印使用履歴</strong><a class="headerlink" href="#id27" title="この見出しへのパーマリンク"></a></h3>
 <p>使用された全ての会社印の履歴を確認することができます。各会社印を使用したメンバー、日付、文書などの情報が表示されます。
 会社印が誰によって、いつ使用されたか確認することができ、会社印の使用履歴はCSVファイルでダウンロードすることができます。</p>
 <figure class="align-default">

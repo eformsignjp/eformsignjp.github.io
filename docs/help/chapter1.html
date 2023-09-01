@@ -7,12 +7,12 @@
   <title>eformsignのご紹介 &mdash; eformsign User Guide 2023.04.07 ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-    <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
@@ -34,7 +34,6 @@
           
           <a href="../index.html">
             
-              <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -53,23 +52,17 @@
 <li class="toctree-l3"><a class="reference internal" href="#id5">最小仕様</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">活用分野</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id7">契約書</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id8">同意書</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id9">申込書（申請書）</a></li>
-</ul>
-</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">基本情報</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">文書の新規作成</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter4.html">Webフォームデザイナーの紹介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter5.html">フォームビルダーの紹介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter6.html">Webフォームデザイナーでテンプレート作成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">Webフォームデザイナーでテンプレート作成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">フォームビルダーの紹介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter7.html">フォームビルダーでテンプレート作成</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter8.html">文書トレイ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter9.html">カスタマイズ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter10.html">外部サービスとの連動</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">外部サービスとの連携</a></li>
 </ul>
 
         </div>
@@ -189,6 +182,9 @@ eformsignの基本用語をご紹介します。</p>
 <li><p><strong>下書きとして保存</strong></p>
 <p><strong>マイファイルで作成する</strong> から <strong>文書作成をスタート</strong> をクリックする前に下書き保存した文書が保存されます。</p>
 </li>
+<li><p><strong>共有文書トレイ</strong></p>
+<p>共有文書トレイを作成することで、社内の他のメンバーに文書を共有することができるほか、他のメンバーが共有した文書を閲覧することができます。</p>
+</li>
 <li><p><strong>ワークフロー</strong></p>
 <p>ワークフローとは、文書の作成から完了までの処理プロセスのことです。
 テンプレート管理者は、各テンプレートのワークフローのステップを設定することができます。
@@ -235,6 +231,10 @@ eformsignの基本用語をご紹介します。</p>
 </div>
 <section id="id3">
 <h3>マイファイルで作成する<a class="headerlink" href="#id3" title="この見出しへのパーマリンク"></a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>1度だけ使用する一時的な文書</strong>を送信する際に便利です。</p>
+</div>
 <p>文書ファイルをeformsignにアップロード後、Webフォームデザイナーでテキスト・署名・コンボ及び日付などの入力コンポーネントを文書に追加して送信できます。</p>
 <p>テンプレートのアップロードをせずとも、自由に文書をアップロードし、送信できます。アップロードされた文書に入力コンポーネントを追加し、ワークフロー設定で受信者を指定後 <strong>文書作成をスタート</strong>ボタンをクリックすることで受信者に送信されます。</p>
 <p>受信者に送信する前に下書き保存をすることも可能です。</p>
@@ -244,16 +244,19 @@ eformsignの基本用語をご紹介します。</p>
 </section>
 <section id="id4">
 <h3>テンプレートで作成する<a class="headerlink" href="#id4" title="この見出しへのパーマリンク"></a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>繰り返し使う文書</strong>はテンプレートとして登録しておくと便利です。</p>
+</div>
+<p>テンプレートを使用して文書を作成する場合、当該文書がテンプレートとして登録されているか、テンプレートとして新しく登録する必要があります。</p>
 <p>テンプレートで文書を作成する場合、文書ファイルをeformsignにアップロード後、Webフォームデザイナーによって作成する方法と、MS Officeファイルからテンプレートを作成してアップロードする、フォームビルダーを活用した方法の２つがあります。</p>
 <p><strong>１．Webフォームデザイナーによる使用方法</strong></p>
 <p>文書ファイルをeformsignにアップロード後、サービス内でテキストや署名、日付などの入力コンポーネントを文書に追加してテンプレートを作成できます。</p>
 <p>アップロードされた文書に入力コンポーネントを追加後、テンプレート管理のメニューから基本設定、ワークフロー設定、通知設定など設定後、配布します。</p>
-<p><strong>テンプレートで作成する</strong>メニューからテンプレートで文書を作成し、受信者に送信します。</p>
-<blockquote>
-<div><figure class="align-default">
+<p><strong>テンプレートで作成する</strong> メニューからテンプレートで文書を作成し、受信者に送信します。</p>
+<figure class="align-default">
 <a class="reference internal image-reference" href="../_images/use_flow_web.png"><img alt="Webフォームデザイナーとeformsignの間の使用プロセス" src="../_images/use_flow_web.png" style="width: 700px;" /></a>
 </figure>
-</div></blockquote>
 <p><strong>２．フォームビルダーによる使用方法</strong></p>
 <p>MS Office(Word、Excel、PowerPoint)で文書を作成する場合や、文書ファイルを開いた後MS Officeのリボンメニュー(OZ in Office)でテキスト・署名及び日付などの入力コンポーネントを文書に追加することでテンプレートを作成します。その後、リボンメニューの実行ボタンをクリックしてサービスにログインし、テンプレートをアップロード後eformsignサイトに移動します。</p>
 <p>eformsignのテンプレート管理メニューでテンプレートがアップロードされたことを確認し、ワークフロー・基本設定及び権限設定などの設定後配布します。</p>
@@ -263,8 +266,8 @@ eformsignの基本用語をご紹介します。</p>
 </figure>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>マイファイルで作成する</strong>と <strong>テンプレートで作成する</strong>の違い!</p>
-<p>最大の違いは <strong>テンプレート</strong>アップロードの有無です。
+<p><strong>マイファイルで作成する</strong>と <strong>テンプレートで作成する</strong> の違い!</p>
+<p>最大の違いは <strong>テンプレート</strong> アップロードの有無です。
 <strong>マイファイルで作成する</strong>は <strong>テンプレートをアップロードせずに</strong>直接文書をアップロードして送信することが可能です。<strong>テンプレートで作成する</strong>は既にアップロードされたテンプレートで文書を送信する場合に使用します。</p>
 <p>送信回数が1回のみの場合、<strong>マイファイルで作成する</strong>での文書の送信を推奨しています。また、類似した文書をよく使用する場合は、文書の書式をテンプレートとしてアップロード後 <strong>テンプレートで作成する</strong>の使用を推奨しています。</p>
 </div>
@@ -272,56 +275,26 @@ eformsignの基本用語をご紹介します。</p>
 <section id="id5">
 <h3>最小仕様<a class="headerlink" href="#id5" title="この見出しへのパーマリンク"></a></h3>
 <p>フォームビルダーとeformsignの最小仕様は次の通りです。</p>
-<ul>
-<li><p><strong>フォームビルダー（OZ in office）</strong></p>
 <ul class="simple">
+<li><p><strong>フォームビルダー（OZ in office）</strong></p>
+<ul>
 <li><p><strong>PC OS：</strong> Windows 7 以降</p></li>
 <li><p><strong>Microsoft Office：</strong> Microsoft Office 2010 以降</p></li>
 </ul>
 </li>
 <li><p><strong>eformsign</strong></p>
-<ul class="simple">
+<ul>
 <li><p><strong>PC OS：</strong> Windows 7 以降、OS X Mavericks 以降</p></li>
 <li><p><strong>ブラウザー：</strong> Internet Explorer 11 以降、Chrome 49
 以降、Safari 9 以降</p></li>
 <li><p><strong>モバイルOS：</strong> iOS 6.1.6 以降、Android 5.0 （Lollipop）以降</p></li>
 </ul>
+</li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>eformsignのモバイルアプリのインストールは必須ではありません。</p>
 </div>
-</li>
-</ul>
-</section>
-</section>
-<section id="id6">
-<h2>活用分野<a class="headerlink" href="#id6" title="この見出しへのパーマリンク"></a></h2>
-<p>eformsignは、様々な分野で多岐に渡り使用できます。主には契約書や同意書、申込書などに活用されています。全ての文書は暗号化（AES-256）され、PDF/A 形式で保存されます。</p>
-<section id="id7">
-<h3>契約書<a class="headerlink" href="#id7" title="この見出しへのパーマリンク"></a></h3>
-<p>電子文書を使用して、労務契約や購入・レンタル契約、代理店契約、保守契約などの様々な契約を締結することができます。
-契約プロセスはすべて記録され、監査証跡証明書などを通じて文書の偽造・改ざんを防止することができ、顧客や契約相手と非対面で数百件の契約を簡単に結ぶことができます。</p>
-<p>契約プロセスは次の通りです。</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/contract_ex1.png"><img alt="電子契約プロセス" src="../_images/contract_ex1.png" style="width: 730px;" /></a>
-</figure>
-</section>
-<section id="id8">
-<h3>同意書<a class="headerlink" href="#id8" title="この見出しへのパーマリンク"></a></h3>
-<p>電子文書を使用して、個人情報取扱同意書や診療同意書、保護者同意書、転貸承諾書などを作成できます。スマートフォン、タブレット、PC
-など、様々なデバイスで作成でき、一括作成機能を使って一度に数百から数千名の同意を得ることができます。</p>
-<p>電子文書を使って同意を得るプロセスは次の通りです。</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/usecase-process.PNG"><img alt="電子同意プロセス" src="../_images/usecase-process.PNG" style="width: 730px;" /></a>
-</figure>
-</section>
-<section id="id9">
-<h3>申込書（申請書）<a class="headerlink" href="#id9" title="この見出しへのパーマリンク"></a></h3>
-<p>電子文書を使用して、加入・参加申込書や見積申込書、医療申込書、購入申込書などを作成できます。社内の複数の部署の決裁や検討などが必要な文書もワークフローの設定により、柔軟に処理でき、顧客が作成した申請書を担当部署に直接配信できます。また、申込などが処理され次第、申請者にその結果を送信することができます。</p>
-<p>申込書を作成するプロセスは次の通りです。</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/application_ex1.png"><img alt="電子申込プロセス" src="../_images/application_ex1.png" style="width: 730px;" /></a>
-</figure>
 </section>
 </section>
 </section>

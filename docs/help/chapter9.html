@@ -7,12 +7,12 @@
   <title>カスタマイズ &mdash; eformsign User Guide 2023.04.07 ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-    <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
@@ -20,7 +20,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="外部サービスとの連動" href="chapter10.html" />
+    <link rel="next" title="外部サービスとの連携" href="chapter10.html" />
     <link rel="prev" title="文書トレイ" href="chapter8.html" /> 
 </head>
 
@@ -34,7 +34,6 @@
           
           <a href="../index.html">
             
-              <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -49,22 +48,19 @@
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">基本情報</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">文書の新規作成</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter4.html">Webフォームデザイナーの紹介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter5.html">フォームビルダーの紹介</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter6.html">Webフォームデザイナーでテンプレート作成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">Webフォームデザイナーでテンプレート作成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">フォームビルダーの紹介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter7.html">フォームビルダーでテンプレート作成</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter8.html">文書トレイ</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">カスタマイズ</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id2">カスタムフィールドの管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#notification-template">通知テンプレートの管理</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id4">基本テンプレートの種類</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#how-to-add-new-notification-template"><strong>新規通知テンプレートの追加方法</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">基本テンプレートの種類</a></li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="chapter10.html">外部サービスとの連動</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">外部サービスとの連携</a></li>
 </ul>
 
         </div>
@@ -103,21 +99,20 @@
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/Customfield.PNG"><img alt="会社管理 &gt; カスタムフィールド管理" src="../_images/Customfield.PNG" style="width: 700px;" /></a>
 </figure>
-<dl class="simple">
+<dl>
 <dt><strong>① カスタムフィールド管理 &gt; 会社</strong></dt><dd><p>会社の代表管理者、代表管理者の電話番号、法人印鑑など、会社に関連するフィールドを追加し、値を設定することができます。</p>
 </dd>
 <dt><strong>② カスタムフィールド管理 &gt; グループ</strong></dt><dd><p>部署名や責任者など、グループに関連するフィールドを追加し、値を設定することができます。</p>
 </dd>
 <dt><strong>③ カスタムフィールド管理 &gt; メンバー</strong></dt><dd><p>役職、メールアドレス、電話番号など、メンバーに関連するフィールドを追加し、値を設定することができます。</p>
 </dd>
-<dt><strong>④ フィールドの追加</strong></dt><dd><p>新しいフィールドを追加します。 <strong>フィールドの追加</strong> ボタンをクリックすることで、カスタムフィールドを追加できるポップアップウィンドウが表示されます。<strong>フィールド名</strong> と <strong>フィールドタイプ</strong> （テキスト / 画像）、 <strong>フィールド値</strong>を入力後、OKをクリックするとフィールドがリストに追加されます。</p>
-</dd>
-</dl>
+<dt><strong>④ フィールドの追加</strong></dt><dd><p>新しいフィールドを追加します。 <strong>フィールドの追加</strong> ボタンをクリックすることで、カスタムフィールドを追加できるポップアップウィンドウが表示されます。<strong>フィールド名</strong> と <strong>フィールドタイプ</strong> （テキスト / 画像）、 <strong>フィールド値</strong>を入力後、OKをクリックするとフィールドがリストに追加されます。フィールドが追加されたことを確認し、 <strong>保存</strong> ボタンを押して保存します。</p>
 <figure class="align-default">
-<img alt="会社管理 &gt; カスタムフィールド管理" src="../_images/customfield-addfield.PNG" />
+<a class="reference internal image-reference" href="../_images/customfield-addfield.PNG"><img alt="会社管理 &gt; カスタムフィールド管理" src="../_images/customfield-addfield.PNG" style="width: 400px;" /></a>
 </figure>
-<dl>
-<dt><strong>⑤ フィールドリスト</strong></dt><dd><p>フィールドのリストにフィールド名とフィールド値を表示します。フィールド削除、フィールド値の編集が可能です。 フィールドを削除するには、フィールドリストの左側にあるアイコン (<img alt="会社管理 &gt; カスタムフィールド管理" src="../_images/customfield-list-delete.png" />）をクリックします。</p>
+</dd>
+<dt><strong>⑤ フィールドリスト</strong></dt><dd><p>フィールドのリストにフィールド名とフィールド値を表示します。フィールド削除、フィールド値の編集が可能です。</p>
+<p>フィールドを削除するには、フィールドリストの左側にあるアイコン (<img alt="会社管理 &gt; カスタムフィールド管理" src="../_images/customfield-list-delete.png" />）をクリックします。</p>
 </dd>
 <dt><strong>⑥ フィールドの編集</strong></dt><dd><p>変更したいフィールドを選択し、修正アイコン(<img alt="image1" src="../_images/customfield_icon.png" />)をクリックすると、カスタムフィールドの修正ポップアップウィンドウが表示され、フィールド名、タイプ、値などを変更することができます。</p>
 <p>フィールドの順序は、順序を変更したいフィールドを選択後、矢印 (<img alt="image2" src="../_images/customfield-list-order.PNG" />) をクリックすることで順序を調整することができます。</p>
@@ -131,7 +126,7 @@
 </section>
 <section id="notification-template">
 <span id="id3"></span><h2>通知テンプレートの管理<a class="headerlink" href="#notification-template" title="この見出しへのパーマリンク"></a></h2>
-<p>文書の依頼時に送信されるメール・SMSのテンプレートは、会社に合わせてカスタマイズできます。</p>
+<p>文書の依頼時に送信されるメール・SMSのテンプレートは、会社に合わせてカスタマイズすることができます。</p>
 <p>通知テンプレートを変更するには、 <strong>会社管理 &gt; 通知テンプレート管理</strong>で設定するか、 <strong>テンプレート管理 &gt; テンプレートの設定 &gt; 通知の設定</strong>で行うことができます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/notification-template-manage.png"><img alt="会社管理 &gt; 通知テンプレート管理" src="../_images/notification-template-manage.png" style="width: 700px;" /></a>
@@ -149,21 +144,19 @@
 <p class="admonition-title">Tip</p>
 <p>デフォルトの設定では、eformsignのロゴがヘッダーになっています。 <strong>会社管理 &gt; 会社情報 &gt;</strong> <a class="reference external" href="chapter2.html#brand">ブランド</a> で会社のロゴを登録すると、メールテンプレートに会社のロゴが適用されます。</p>
 </div>
-<section id="how-to-add-new-notification-template">
-<span id="id5"></span><h4><strong>新規通知テンプレートの追加方法</strong><a class="headerlink" href="#how-to-add-new-notification-template" title="この見出しへのパーマリンク"></a></h4>
-<p>デフォルトのメール/SMSテンプレート意外にも、新規通知テンプレートを作成・追加することができます。</p>
+<p id="how-to-add-new-notification-template"><strong>新規通知テンプレートの追加方法</strong></p>
+<p>デフォルトのメール/SMSテンプレート以外にも、新規通知テンプレートを作成・追加することができます。</p>
 <ol class="arabic">
 <li><p>サイドバーのメニューで <strong>会社管理 &gt; 通知テンプレート管理</strong>をクリックします。</p></li>
-<li><p><strong>通知テンプレートの管理</strong>画面の右上にある <strong>通知テンプレートの追加</strong>ボタンをクリックします。</p></li>
+<li><p><strong>通知テンプレートの管理</strong> 画面の右上にある <strong>通知テンプレートの追加</strong> ボタンをクリックします。</p></li>
 <li><p><strong>テンプレート名</strong>を設定し、該当する <strong>タイプ</strong>を選択します。</p>
 <p><a class="reference internal" href="../_images/notification-template-new.PNG"><img alt="image3" src="../_images/notification-template-new.PNG" style="width: 700px;" /></a></p>
 </li>
 <li><p>メールのタイトルとSMSの送信内容を入力します。
 <strong>SMSメッセージ</strong>は、SMS送信時に送られるメッセージとして、通知本文を閲覧できるURLと一緒に送信されます。</p></li>
 <li><p>本文を編集します。</p></li>
-<li><p><strong>保存</strong>ボタンをクリックし、テンプレートを追加します。</p></li>
+<li><p><strong>保存</strong> ボタンをクリックし、テンプレートを追加します。</p></li>
 </ol>
-</section>
 </section>
 </section>
 </section>
@@ -173,7 +166,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="chapter8.html" class="btn btn-neutral float-left" title="文書トレイ" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="chapter10.html" class="btn btn-neutral float-right" title="外部サービスとの連動" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="chapter10.html" class="btn btn-neutral float-right" title="外部サービスとの連携" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
