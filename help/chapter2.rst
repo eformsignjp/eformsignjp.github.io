@@ -801,19 +801,19 @@ eformsignでは各メンバーに権限を付与することができます。�
 
 文書に直接署名するのではなく、職印や印鑑が必要な場合もあります。eformsignでは、はんこを3つの方法で登録して使用することができます。
 
-1. スタンプの作成<chapter2.html#registerstamp>`__\
-2. スタンプ画像のアップロード<chapter2.html#uploadstampimage>`__\
-3. 実物スタンプスキャン<chapter2.html#scanstamp>`__\
+1. `スタンプの作成 <chapter2.html#createstamp>`__\
+2. `スタンプ画像のアップロード <chapter2.html#uploadstampimage>`__\
+3. `実物スタンプスキャン <chapter2.html#scanstamp>`__\
 
 .. important::
 
    **❗マイ署名のスタンプは社印とは別物です。** 
 
-   会社の法人印鑑など、会社単位で使用する印鑑は`会社印 <chapter2.html#company_stamp>`__\ に登録し、使用してください。 
+   会社の法人印鑑など、会社単位で使用する印鑑は `会社印 <chapter2.html#company_stamp>`__\ に登録し、使用してください。 
 
    会社印として登録すると、メンバー/グループごとに使用権限が付与され、使用履歴などを確認できるようになります。  
 
-.. _creatstamp:
+.. _createstamp:
 
 スタンプの作成
 -----------------------------
