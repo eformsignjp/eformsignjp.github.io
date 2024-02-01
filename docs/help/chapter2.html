@@ -59,7 +59,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#permissions">権限の区分</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id10">代表管理者</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id11">会社の管理者</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">会社管理者</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id12">テンプレート管理者</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id13">文書管理者</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#permissionsfortemplate">各テンプレートの権限</a></li>
@@ -196,7 +196,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/dashboard_main.png"><img alt="ダッシュボード画面" src="../_images/dashboard_main.png" style="width: 700px;" /></a>
 </figure>
-<p><strong>① テンプレートで作成する</strong></p>
+<p><strong>① 各文書トレイにアクセス</strong></p>
 <blockquote>
 <div><ul class="simple">
 <li><p><strong>要処理文書トレイ</strong>: 処理する必要がある文書の件数が表示されます。クリックすると <strong>要処理文書</strong>に移動します。</p></li>
@@ -350,14 +350,14 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <li><p><strong>代表管理者</strong></p>
 <p>会社の代表者として、eformsignの使用に関わる全ての権限を持ちます。</p>
 </li>
-<li><p><strong>会社管理</strong></p>
+<li><p><strong>会社管理者</strong></p>
 <p><strong>会社管理</strong> メニューにアクセスできます。会社情報、メンバー、グループなどを管理ができ、 <strong>メンバーの招待</strong> と <strong>文書の移管</strong> ができます。</p>
 </li>
 <li><p><strong>テンプレート管理者</strong></p>
 <p><strong>テンプレート管理</strong> メニューにアクセスできます。フォームビルダーを使用してフォームファイルを作成したり、Webフォームデザイナーでファイルをアップロードして新しいテンプレートを登録したりすることができます。また、テンプレートの修正、配布、削除ができます。</p>
 </li>
-<li><p><strong>文書の管理権限</strong></p>
-<p><strong>文書管理</strong> メニューにアクセスすることができます。テンプレート別に作成された文書の閲覧、ダウンロードができます。文書管理権限を持つ文書の閲覧・ダウンロードができるほか、権限範囲によっては文書の無効化、削除ができます。</p>
+<li><p><strong>文書管理者</strong></p>
+<p><strong>文書管理</strong> メニューにアクセスすることができます。テンプレートごとの作成された文書の閲覧、ダウンロードができます。文書管理権限を持つ文書の閲覧・ダウンロードができるほか、権限範囲によっては文書の無効化、削除ができます。</p>
 </li>
 </ul>
 <div class="admonition note">
@@ -365,7 +365,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <p>管理者権限は、 <strong>会社管理&gt;権限管理</strong> メニューから <strong>代表管理者</strong>のみ設定できます。</p>
 </div>
 <ul>
-<li><p><strong>テンプレート管理</strong></p>
+<li><p><strong>テンプレートごとの権限</strong></p>
 <p>テンプレートごとにメンバーまたはグループに対し、次のような権限を付与できます。</p>
 <ul>
 <li><p><strong>テンプレートの使用権限</strong></p>
@@ -393,7 +393,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <li><p>各メンバーに権限を付与することができます。</p></li>
 <li><p>代表管理者の変更が必要な場合は、他のメンバーに権限を委任できます。</p></li>
 </ul>
-<p>代表管理者が退会した場合、会社は削除されます。会社を削除せずに退会するには、他のメンバーに代表管理者の権限を委任してから退会する必要があります。</p>
+<p>❗代表管理者が退会した場合、会社は削除されます。会社を削除せずに退会するには、他のメンバーに代表管理者の権限を委任してから退会する必要があります。</p>
 <p><strong>代表管理者権限の委任方法</strong></p>
 <ol class="arabic">
 <li><p>サイドバーのメニューから <strong>会社管理 &gt; 会社情報</strong>に移動します。</p></li>
@@ -412,7 +412,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </ol>
 </section>
 <section id="id11">
-<h3>会社の管理者<a class="headerlink" href="#id11" title="この見出しへのパーマリンク"></a></h3>
+<h3>会社管理者<a class="headerlink" href="#id11" title="この見出しへのパーマリンク"></a></h3>
 <p>会社管理者は <strong>会社管理</strong> メニューにアクセスできる権限を持ち、会社やメンバー、グループに関する情報を確認、修正、削除することができます。</p>
 <p>会社管理者権限は <strong>メンバー管理</strong> または <strong>権限管理</strong> メニューから設定できます。</p>
 <p><strong>会社管理者の設定方法(会社管理 &gt; メンバー管理)</strong></p>
@@ -536,22 +536,47 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <li><p><strong>文書の条件を選択:</strong>  文書作成者と文書のタイプを選択すると、選択した作成者が作成した文書に対する管理権限が付与されます。
 例） '人事部'で作成した'雇用契約書'に対する文書管理者を設定する場合、作成者に'人事部'、文書のタイプにテンプレートリストの'雇用契約書'を選択します。</p>
 <blockquote>
-<div><ul class="simple">
-<li><dl class="simple">
+<div><ul>
+<li><dl>
 <dt><strong>作成者</strong></dt><dd><p>文書を作成した作成者をすべてのメンバー、グループ、各メンバーの中から選択します。</p>
+<blockquote>
+<div><ul>
+<li><dl>
+<dt><strong>詳細条件の設定:</strong> 作成者情報(ID、メールアドレス、氏名など)をもとにキーワードを設定後、そのキーワードと完全一致/部分一致する条件を設定します。設定した条件によって、キーワードと完全一致/部分一致する文書が当該文書管理者の文書管理メニューに表示されます。</dt><dd><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/document-manager-setting-popup-document-creator.png"><img alt="権限管理 &gt; 文書管理者ポップアップ &gt; 作成者 &gt; 詳細条件" src="../_images/document-manager-setting-popup-document-creator.png" style="width: 400px;" /></a>
+</figure>
 </dd>
 </dl>
 </li>
-<li><dl class="simple">
+</ul>
+</div></blockquote>
+</dd>
+</dl>
+</li>
+<li><dl>
 <dt><strong>文書のタイプ</strong></dt><dd><ul>
 <li><p><strong>すべての文書:</strong> 選択した作成者が作成した全ての文書を管理します。</p></li>
 <li><p><strong>テンプレートで作成されたすべての文書:</strong> 選択した作成者が作成した文書のうち、テンプレートから作成した全ての文書を管理します。</p></li>
 <li><p><strong>マイファイルで作成されたすべての文書:</strong> 選択した作成者が <strong>マイファイルで作成する</strong> メニューから作成した全ての文書を管理します。</p></li>
-<li><p><strong>テンプレートリスト:</strong> 選択した作成者が当該テンプレートで作成した文書を管理します。</p></li>
+<li><dl>
+<dt><strong>テンプレートリスト:</strong> 選択した作成者が当該テンプレートで作成した文書を管理します。</dt><dd><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/document-manager-setting-popup-document-type-templete.png"><img alt="権限管理 &gt; 文書管理者ポップアップ &gt; 文書タイプ" src="../_images/document-manager-setting-popup-document-type-templete.png" style="width: 400px;" /></a>
+</figure>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><strong>詳細条件の設定:</strong> 文書の種類を選択後、文書に入力された内容をもとにキーワード/範囲/期間を設定します。フィールド名に入力項目IDを入力し、キーワード（完全一致/部分一致）、範囲または期間を設定します。条件に該当する文書が、文書管理者の文書管理メニューに表示されます。</dt><dd><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/document-manager-setting-popup-document-type.png"><img alt="権限管理 &gt; 文書管理者ポップアップ &gt; 文書タイプ &gt; 詳細条件" src="../_images/document-manager-setting-popup-document-type.png" style="width: 400px;" /></a>
+</figure>
+</dd>
+</dl>
+</li>
 </ul>
 </dd>
 </dl>
 </li>
+<li><p>📣 詳細条件は複数設定することができ、 <strong>OR条件</strong> が適用されます。また、 <strong>一括作成文書管理</strong> には適用されません。</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -752,15 +777,26 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </figure>
 </li>
 <li><p>スタンプの色を選択し、 <strong>適用</strong> ボタンをクリックします。</p></li>
-<li><p>ご希望のスタンプのデザインを選択し、 <strong>保存</strong> ボタンをクリックします。</p></li>
+<li><p>お好みのスタンプのデザインを選択し、 <strong>保存</strong> ボタンをクリックします。</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>日付が入った印鑑を選択すると、該当印鑑を押す時に日付が「今日の日付」に自動適用されます。</p>
+<p>日付が入ったスタンプを選択すると、当該スタンプ印鑑を押す際に「今日の日付」が自動的に適用されます。</p>
 </div>
 <ol class="arabic simple" start="6">
-<li><p><strong>編集、削除</strong> ボタンで登録された印鑑を編集または削除します。</p></li>
+<li><p><strong>編集、削除</strong> ボタンを押すと登録された印鑑を編集または削除します。</p></li>
 </ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>スタンプ作成機能の無効化について</p>
+<p><strong>スタンプ作成</strong> の有効/無効を切り替えるには、以下のメニューから設定します。</p>
+<dl>
+<dt><strong>会社管理 &gt; 署名の設定</strong></dt><dd><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/signature-stamp-limit-create-stamp.png"><img alt="会社管理 &gt; 署名の設定" src="../_images/signature-stamp-limit-create-stamp.png" style="width: 400px;" /></a>
+</figure>
+</dd>
+</dl>
+</div>
 </section>
 <section id="uploadstampimage">
 <span id="id22"></span><h4>スタンプ画像のアップロード<a class="headerlink" href="#uploadstampimage" title="この見出しへのパーマリンク"></a></h4>
