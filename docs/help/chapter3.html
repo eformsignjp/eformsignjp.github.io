@@ -102,7 +102,7 @@ PCに保存されているファイルをそのままアップロードして電
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>テンプレートの作成は、 <strong>代表管理者</strong> / <strong>テンプレート管理者</strong> の権限を持つメンバーのみ可能です。また、アップロードされたテンプレートはそのテンプレートの権限設定で <strong>使用権限</strong>を付与されたメンバーの <strong>テンプレートで作成する</strong>の画面に表示されます。</p>
+<p>テンプレートの作成は、 <strong>代表管理者</strong> / <strong>テンプレート管理者</strong> の権限を持つメンバーのみ可能です。また、アップロードされたテンプレートはそのテンプレートの権限設定で <strong>使用権限</strong>を付与されたメンバーの <strong>テンプレートで作成する</strong> の画面に表示されます。</p>
 <p>テンプレートはWebフォームデザイナーとフォームビルダーを使用して作成することができます。
 詳しくは <a class="reference external" href="chapter5.html#template_wd">Web フォームデザイナー</a>と <a class="reference external" href="chapter7.html#template_fb">フォームビルダー</a>をご参照ください。</p>
 </div>
@@ -151,18 +151,14 @@ PCに保存されているファイルをそのままアップロードして電
 <p><strong>ファイルの追加</strong></p>
 <p>複数のファイルを1つの文書にまとめて送信したい場合、ファイルを追加して1つの文書にまとめることができます。
 また、入力項目を維持したまま原本ファイルの変更、追加したファイルの順序変更・削除をすることもできます。</p>
-<blockquote>
-<div><figure class="align-default">
+<figure class="align-default">
 <a class="reference internal image-reference" href="../_images/add-file.png"><img alt="ファイルの追加" src="../_images/add-file.png" style="width: 700px;" /></a>
 </figure>
-</div></blockquote>
 <p><strong>ファイルの変更、削除、移動</strong></p>
 <p>アップロードしたファイルを修正するには、ファイルを修正後、下段の「もっと見る」アイコンをクリックし、「ファイル変更」を選択して修正したファイルをアップロードします。既に追加されている入力項目は全て維持されたまま原本ファイルだけが変更されます。各ファイルに詳しく見るメニュー(⋮)からファイル名の変更、ファイルの変更、ファイルの削除、前後に移動ができます。</p>
-<blockquote>
-<div><figure class="align-default">
+<figure class="align-default">
 <a class="reference internal image-reference" href="../_images/add-file-menu.png"><img alt="ファイル追加：詳しく見るメニュー" src="../_images/add-file-menu.png" style="width: 400px;" /></a>
 </figure>
-</div></blockquote>
 </div>
 </li>
 <li><p>入力項目を追加後、<strong>受信先を指定する</strong> で文書を送信する受信者をステップごとに設定し、 <strong>受信先のオプション</strong>を設定します。</p>
@@ -248,12 +244,7 @@ PCに保存されているファイルをそのままアップロードして電
 <li><p><strong>受信者がメンバーである場合</strong></p>
 <p><a class="reference internal" href="../_images/newformmyfile-recipientoption-member.png"><img alt="image12" src="../_images/newformmyfile-recipientoption-member.png" style="width: 700px;" /></a></p>
 <ul>
-<li><p><strong>文書送信手段の選択:</strong> メールとSMSの中から1つを選択または全て選択することができます。メンバーを選択すると、保存されているメールアドレスと携帯電話番号が自動入力されます。</p>
-<div class="admonition caution">
-<p class="admonition-title">注意</p>
-<p>SMSは追加料金が発生します。</p>
-</div>
-</li>
+<li><p><strong>文書送信手段の選択:</strong> メールとSMSの中から1つを選択または全て選択することができます。メンバーを選択すると、保存されているメールアドレスと携帯電話番号が自動入力されます。</p></li>
 <li><p><strong>通知:</strong> <strong>通知メッセージの編集</strong>をクリックすると、文書を送信する際に送られる通知メール・SMSの内容を編集できます。</p></li>
 <li><p><strong>文書の送信期限の設定:</strong> 受信者が文書を送信できる期限を設定できます。提出期限が過ぎると文書の検討と作成ができなくなります。</p>
 <div class="admonition tip">
@@ -261,35 +252,53 @@ PCに保存されているファイルをそのままアップロードして電
 <p>文書の送信期限を無期限にするには、 <strong>文書の送信期限をO日O時間</strong>と設定します。</p>
 </div>
 </li>
+<li><p><strong>文書差戻し制限：</strong> 受信者が文書を差戻せないように設定します。オプションにチェックを入れると、当該受信者の文書の画面に**差戻し**ボタンが表示されなくなります。</p></li>
 </ul>
 </li>
-<li><p><strong>受信者がメンバーではない場合</strong></p>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>💡 <strong>対面署名機能の活用</strong></p>
+<p>署名者と対面して、一つのデバイス(タブレットPC、スマホなど)で文書に署名する場合は、対面署名機能をご活用ください。
+対面署名機能を使用することで、各対面署名者に関する情報が文書履歴および監査証跡証明書に記録され、文書が完了すると、対面署名者に完了文書が自動的に送信されます。</p>
+<p>対面署名者に設定する受信者段階で <strong>対面署名</strong>を選択します。
+該当ステップは <strong>対面署名者</strong>, 直前のステップは <strong>対面署名進行者</strong>になります。対面署名者は、文書署名前にメールアドレス認証などの本人確認を行うように設定することもできます。</p>
+<ul class="simple">
+<li><p><strong>対面署名進行者:</strong> 対面署名を開始および完了することができ、参加者の場合は署名もできます。メンバーのみ設定可能で、閲覧者は対面署名の進行者になることはできません。</p></li>
+<li><p><strong>対面署名者：</strong> 署名する人としてワークフロー受信者タイプのうち、参加者のみを設定することができます。</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/inperson-signing-wf.png"><img alt="対面署名設定" src="../_images/inperson-signing-wf.png" style="width: 700px;" /></a>
+</figure>
+<p>✅ 対面署名設定時の詳細な文書の作成方法は <a class="reference external" href="https://www.eformsign.com/jp/blog/announcement-2022311/">こちら</a>をご参照ください。</p>
+</div>
+<ul>
+<li><p><strong>受信者がメンバー以外の場合</strong></p>
 <p>入力した情報がメンバーの情報と一致しない場合、外部受信者として次の項目について詳細オプションを設定する必要があります。</p>
 <ul>
 <li><p><strong>文書送信手段の選択:</strong> メールまたはSMSから選択します。SMSを選択した場合は送信先の携帯電話番号を入力する必要があります。</p>
-<div class="admonition caution">
-<p class="admonition-title">注意</p>
-<p>SMSは追加料金が発生します。</p>
-</div>
 </li>
 <li><p><strong>通知:</strong> <strong>通知メッセージの編集</strong>をクリックすることで、文書の送信時に送られるメール・SMSメッセージを編集することができます。また、SMSの送信方法を設定できます。</p></li>
 <li><p><strong>文書の送信期限の設定:</strong> 受信者が文書を送信できる期限を設定できます。提出期限が過ぎると文書の検討と作成ができなくなります。外部受信者の場合、最大50日まで設定できます。</p></li>
 <li><p><strong>文書の閲覧前に本人確認する:</strong> 文書の閲覧前に受信者が本人確認をし、本人確認完了に文書を閲覧できるよう設定します。アクセスコード認証と認証番号認証の2種類の認証があり、組み合わせることで二段階認証の認証が可能です。</p>
-<ul>
-<li><p><strong>文書のアクセスコード:</strong> 文書の閲覧時に入力するアクセスコードを設定します。アクセスコード設定は <strong>送信者が直接入力、受信者の氏名、文書に入力された内容</strong> の中から選択できます。また、 <strong>アクセスコードのヒント</strong>を設定しておくことで、入力時にヒントを表示することができます。</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>送信者が直接入力:</strong> 閲覧時に必要なアクセスコードを入力します。アクセスコードのヒントには受信者が分かりやすい文章を入力しておくことをお勧めします。</p></li>
-<li><p><strong>受信者の氏名:</strong> 受信欄に入力した氏名をアクセスコードとします。</p></li>
-<li><p><strong>文書に入力された内容:</strong> 文書内の入力項目を選択し、選択した項目に入力された値をアクセスコードとします。</p></li>
-</ul>
-</div></blockquote>
-</li>
+<ul class="simple">
+<li><p><strong>文書のアクセスコード:</strong> 文書の閲覧時に入力するアクセスコードを設定します。アクセスコード設定は <strong>送信者が直接入力、受信者の氏名、文書に入力された内容</strong> の中から選択できます。また、 <strong>アクセスコードのヒント</strong>を設定しておくことで、入力時にヒントを表示することができます。</p></li>
 </ul>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/doc-password-setting.png"><img alt="文書のアクセスコード設定" src="../_images/doc-password-setting.png" style="width: 400px;" /></a>
 </figure>
-<ul class="simple">
+<ul>
+<li><p><strong>送信者が直接入力:</strong> 閲覧時に必要なアクセスコードを入力します。アクセスコードのヒントには受信者が分かりやすい文章を入力しておくことをお勧めします。</p></li>
+<li><p><strong>受信者の氏名:</strong> 受信欄に入力した氏名をアクセスコードとします。</p></li>
+<li><p><strong>文書に入力された内容:</strong> 文書内の入力項目を選択し、選択した項目に入力された値をアクセスコードとします。</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>送信者が直接入力:</strong> 設定の時点でパスワードと、パスワードのヒントを入力します。パスワードのヒントはパスワード要求時に表示されます。</p></li>
+<li><p><strong>受信者の氏名:</strong> 受信者が受信者情報に入力した氏名をパスワードとして入力するよう設定します。</p></li>
+<li><p><strong>文書に入力された内容:</strong> 文書内の入力項目を選択して、その入力項目に入力された内容をパスワードとして設定します。</p></li>
+</ul>
+</div></blockquote>
+</li>
 <li><p><strong>メールやSMSで認証番号を送信:</strong> 受信者のメールアドレスまたは電話番号宛てに6桁の認証番号を送信します。受信者は認証番号を入力後、文書の閲覧が可能となります。</p></li>
 </ul>
 <figure class="align-default">
@@ -304,6 +313,7 @@ PCに保存されているファイルをそのままアップロードして電
 <p>❗SMSで認証番号を送信する場合、1件あたり10円の追加料金が発生します。</p>
 </div>
 </li>
+<li><p><strong>文書差戻し制限：</strong> 受信者が文書を差戻せないように設定します。オプションにチェックを入れると、当該受信者の文書の画面に**差戻し**ボタンが表示されなくなります。</p></li>
 </ul>
 </li>
 </ul>
@@ -331,7 +341,7 @@ PCに保存されているファイルをそのままアップロードして電
 <li><p>各ファイルのサブメニューからファイル名の変更、ファイルの変更、ファイルの削除、前/後ろへの移動ができます。</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/add-file.png"><img alt="ファイル追加" src="../_images/add-file.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/add-file.png"><img alt="ファイルの追加" src="../_images/add-file.png" style="width: 700px;" /></a>
 </figure>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/add-file-menu.png"><img alt="ファイル追加：詳しく見るメニュー" src="../_images/add-file-menu.png" style="width: 400px;" /></a>
