@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'eformsign User Guide'
-copyright = '2023, FORCS CO., LTD. All rights reserved.'
+copyright = '2024, FORCS CO., LTD. All rights reserved.'
 author = 'FORCS'
 
 # The short X.Y version
@@ -85,9 +85,10 @@ html_theme = 'sphinx_rtd_theme'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+# NotUseStaticPath
+#html_static_path = ['_static']
 
-html_favicon = 'C:\docbook\eformsignjp.github.io\images\\favicon.ico'
+html_favicon = 'C:\eformsign_manual\eformsignjp.github.io\images\\favicon.ico'
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -178,4 +179,4 @@ html_theme_options = {
     'logo_only': True,
     # ...
 }
-html_logo = "C:\docbook\eformsignjp.github.io\images\\forcs_b.png"
+html_logo = "C:\eformsign_manual\eformsignjp.github.io\images\\forcs_b.png"
