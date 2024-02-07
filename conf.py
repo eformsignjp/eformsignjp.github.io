@@ -24,9 +24,9 @@ copyright = '2024, FORCS CO., LTD. All rights reserved.'
 author = 'FORCS'
 
 # The short X.Y version
-version = ''
+version = 'version 10.2024.0125.200'
 # The full version, including alpha/beta/rc tags
-release = '2023.04.07'
+release = '2024.01.31'
 
 
 # -- General configuration ---------------------------------------------------

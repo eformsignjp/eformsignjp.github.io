@@ -297,7 +297,7 @@ eformsignでは、下記の入力項目を使用できます。
 
    .. figure:: resources/Signature-component-properties_web_date.png
       :alt: 署名日
-      :width: 700px
+      :width: 200px
 
 
    **② 署名者:** 署名者の情報が自動的に入力されます。署名入力項目をクリックすると表示される人型アイコンをクリックすることで、ID、名前、部門、役職、携帯電話、固定電話のうち、署名者の情報として表示される情報を指定できます。

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>文書の新規作成 &mdash; eformsign User Guide 2023.04.07 ドキュメント</title>
+  <title>文書の新規作成 &mdash; eformsign User Guide 2024.01.31 ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -37,6 +37,9 @@
             
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
+              <div class="version">
+                version 10.2024.0125.200
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -261,13 +264,13 @@ PCに保存されているファイルをそのままアップロードして電
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>💡 <strong>対面署名機能の活用</strong></p>
-<p>署名者と対面して、一つのデバイス(タブレットPC、スマホなど)で文書に署名する場合は、対面署名機能をご活用ください。
-対面署名機能を使用することで、各対面署名者に関する情報が文書履歴および監査証跡証明書に記録され、文書が完了すると、対面署名者に完了文書が自動的に送信されます。</p>
-<p>対面署名者に設定する受信者段階で <strong>対面署名</strong>を選択します。
-該当ステップは <strong>対面署名者</strong>, 直前のステップは <strong>対面署名進行者</strong>になります。対面署名者は、文書署名前にメールアドレス認証などの本人確認を行うように設定することもできます。</p>
+<p>署名者と対面して、一つのデバイス(タブレットPCやスマホなど)で文書に署名を行うには、対面署名機能をご活用ください。
+対面署名機能を使用することで、各対面署名者に関する情報が文書履歴と監査証跡証明書に記録され、文書が完了すると、対面署名者に完了文書が自動的に送信されるように設定することができます。</p>
+<p>対面署名者に設定する受信者ステップで <strong>対面署名</strong>を選択します。
+当該ステップ <strong>対面署名者</strong>、直前のステップは <strong>立会人</strong>になります。対面署名者は、文書署名前に本人確認を行うように設定することもできます。</p>
 <ul class="simple">
-<li><p><strong>対面署名進行者:</strong> 対面署名を開始および完了することができ、参加者の場合は署名もできます。メンバーのみ設定可能で、閲覧者は対面署名の進行者になることはできません。</p></li>
-<li><p><strong>対面署名者：</strong> 署名する人としてワークフロー受信者タイプのうち、参加者のみを設定することができます。</p></li>
+<li><p><strong>立会人:</strong> 対面署名を開始・完了することができ、参加者であれば署名も行うことができます。メンバーのみ <strong>立会人</strong> になることができますが、閲覧者が <strong>立会人</strong> になることはできません。</p></li>
+<li><p><strong>対面署名者：</strong> 対面署名を行います。ワークフロー受信者タイプのうち、参加者のみが <strong>対面署名者</strong> になることができます。</p></li>
 </ul>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/inperson-signing-wf.png"><img alt="対面署名設定" src="../_images/inperson-signing-wf.png" style="width: 700px;" /></a>
@@ -433,7 +436,7 @@ PCに保存されているファイルをそのままアップロードして電
 <p>文書の作成は、テンプレート管理の権限を持つメンバーが <strong>テンプレートの設定 &gt; 権限の設定</strong>から <strong>テンプレートの使用権限</strong>(=文書の作成権限) を付与したグループ/メンバーのみ可能です。テンプレートの使用権限を付与されたグループ/メンバーの <strong>テンプレートで作成する</strong>リストでのみ、そのテンプレートが表示され、作成することができます。</p>
 </div>
 <ol class="arabic">
-<li><p>サイドバーから <strong>文書新規作成</strong> ** &gt; テンプレートで作成する** に移動するか、ダッシュボードの当該テンプレートの文書作成アイコン(<a class="reference internal" href="../_images/create-icon2.png"><img alt="image2" src="../_images/create-icon2.png" style="width: 20px;" /></a>)をクリックします。</p>
+<li><p>サイドバーから <strong>文書新規作成 &gt; テンプレートで作成する</strong> に移動するか、ダッシュボードの当該テンプレートの文書作成アイコン(<a class="reference internal" href="../_images/create-icon2.png"><img alt="image2" src="../_images/create-icon2.png" style="width: 20px;" /></a>)をクリックします。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/startfromtemplate.png"><img alt="テンプレートで作成する" src="../_images/startfromtemplate.png" style="width: 700px;" /></a>
 </figure>
@@ -448,7 +451,7 @@ PCに保存されているファイルをそのままアップロードして電
 </div>
 <div class="admonition important">
 <p class="admonition-title">重要</p>
-<p>テンプレートで作成する途中で <strong>下書き保存</strong> ボタンをクリックして下書き保存した文書は、 <strong>下書きとして保存</strong>トレイではなく、 <strong>要処理文書</strong>で確認することができます。</p>
+<p>❗テンプレートで作成する途中で <strong>下書き保存</strong> ボタンをクリックして下書き保存した文書は、 <strong>下書きとして保存</strong>トレイではなく、 <strong>要処理文書</strong>で確認することができます。</p>
 <p>下書き保存した文書の作成を続けたい場合は <strong>要処理文書</strong> のリストから下書き保存した文書の <strong>編集</strong> をクリックして進めることができます。</p>
 </div>
 </li>
@@ -477,7 +480,7 @@ PCに保存されているファイルをそのままアップロードして電
 </div>
 <p><strong>一括作成する</strong></p>
 <ol class="arabic simple">
-<li><p>サイドバーから <strong>新規文書の文書作成</strong> ** &gt; テンプレートで文書作成** メニューに移動するか、ダッシュボードで当該テンプレートの一括作成アイコン(<a class="reference internal" href="../_images/bulksend-icon-dashboard.png"><img alt="image1" src="../_images/bulksend-icon-dashboard.png" style="width: 30px;" /></a>)をクリックします。</p></li>
+<li><p>サイドバーから <strong>新規文書の文書作成 &gt; テンプレートで文書作成</strong> メニューに移動するか、ダッシュボードで当該テンプレートの一括作成アイコン(<a class="reference internal" href="../_images/bulksend-icon-dashboard.png"><img alt="image1" src="../_images/bulksend-icon-dashboard.png" style="width: 30px;" /></a>)をクリックします。</p></li>
 </ol>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/bulk-creation-icon.png"><img alt="一括作成アイコン" src="../_images/bulk-creation-icon.png" style="width: 200px;" /></a>

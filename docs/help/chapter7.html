@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>フォームビルダーでテンプレート作成 &mdash; eformsign User Guide 2023.04.07 ドキュメント</title>
+  <title>フォームビルダーでテンプレート作成 &mdash; eformsign User Guide 2024.01.31 ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -37,6 +37,9 @@
             
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
+              <div class="version">
+                version 10.2024.0125.200
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -57,7 +60,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#id3"><strong>フォームビルダーでテンプレートを作成する方法</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#workflow-fb">ワークフロー概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#workflow-fb-overview">ワークフロー概要</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#template-setting-fb">テンプレートの設定</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#general-fb">全般</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id7"><strong>テンプレートの基本設定</strong></a></li>
@@ -67,17 +70,17 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#auth-fb">権限の設定</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id16">ワークフローの設定</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id18"><strong>ワークフローのステップの追加方法</strong></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id19"><strong>ワークフローステップごとの詳細設定</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#workflow-fb">ワークフローの設定</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id17"><strong>ワークフローのステップの追加方法</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id18"><strong>ワークフローステップごとの詳細設定</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#field-fb">フィールドの設定</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#noti-fb">通知設定</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id23">テンプレートの個別操作メニュー</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id24">テンプレートの検索</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id22">テンプレートの個別操作メニュー</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id23">テンプレートの検索</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter8.html">文書トレイ</a></li>
@@ -165,8 +168,8 @@
 </ul>
 </section>
 </section>
-<section id="workflow-fb">
-<span id="id4"></span><h2>ワークフロー概要<a class="headerlink" href="#workflow-fb" title="この見出しへのパーマリンク"></a></h2>
+<section id="workflow-fb-overview">
+<span id="id4"></span><h2>ワークフロー概要<a class="headerlink" href="#workflow-fb-overview" title="この見出しへのパーマリンク"></a></h2>
 <p><strong>ワークフロー</strong>とは、文章の作成から完了までの、文書のリクエストと処理プロセスです。</p>
 <p>ワークフローは、テンプレート管理者が各テンプレートに対し <strong>テンプレートの設定</strong> &gt; <strong>ワークフローの設定</strong>から設定を行えます。</p>
 <p>ワークフローは、<strong>開始 - 完了</strong>が基本ステップです。また、以下のように任意の受信者のタイプを追加してワークフローを作成することもできます。</p>
@@ -175,7 +178,7 @@
 </figure>
 <ul>
 <li><p><strong>受信者</strong></p>
-<p>文書の検討後に承認/返戻、もしくは文書の入力項目に入力/署名します。</p>
+<p>文書の検討後に承認/差戻し、もしくは文書の入力項目に入力/署名します。</p>
 </li>
 <li><p><strong>閲覧者</strong></p>
 <p>文書の閲覧のみ行うことができます。</p>
@@ -427,10 +430,10 @@
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/doc-list-docnumber1.PNG"><img alt="文書トレイ - 文書リスト" src="../_images/doc-list-docnumber1.PNG" style="width: 700px;" /></a>
 </figure>
-<figure class="align-default" id="id25">
+<figure class="align-default" id="id24">
 <a class="reference internal image-reference" href="../_images/doc-list-docnumber2.png"><img alt="文書トレイ - 文書リスト - 文書番号の確認" src="../_images/doc-list-docnumber2.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">文書番号は文書リストが確認できる文書トレイ（進行中の文書、要処理文書、完了文書）および文書管理メニュー（要文書管理権限）で確認することができます。</span><a class="headerlink" href="#id25" title="この画像へのパーマリンク"></a></p>
+<p><span class="caption-text">文書番号は文書リストが確認できる文書トレイ（進行中の文書、要処理文書、完了文書）および文書管理メニュー（要文書管理権限）で確認することができます。</span><a class="headerlink" href="#id24" title="この画像へのパーマリンク"></a></p>
 <div class="legend">
 <ol class="arabic">
 <li><p>サイドバーメニューの <strong>文書トレイ</strong> または <strong>文書管理</strong> メニューに移動します。</p></li>
@@ -473,14 +476,14 @@
 <p>文書管理権限は <strong>会社管理 &gt; 権限管理 &gt; 文書管理者</strong>で設定することができます。詳細な内容は <a class="reference external" href="chapter2.html#permissions">権限の区分</a>をご参照ください。</p>
 <hr class="docutils" />
 </section>
-<section id="id16">
-<span id="id17"></span><h3>ワークフローの設定<a class="headerlink" href="#id16" title="この見出しへのパーマリンク"></a></h3>
+<section id="workflow-fb">
+<span id="id16"></span><h3>ワークフローの設定<a class="headerlink" href="#workflow-fb" title="この見出しへのパーマリンク"></a></h3>
 <p><strong>テンプレートの設定</strong> 画面で <strong>ワークフローの設定</strong> タブをクリックして、そのテンプレートのワークフローを作成・変更できます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/workflow-setting_new.PNG"><img alt="テンプレートの設定 &gt; ワークフローの設定" src="../_images/workflow-setting_new.PNG" style="width: 500px;" /></a>
 </figure>
-<section id="id18">
-<h4><strong>ワークフローのステップの追加方法</strong><a class="headerlink" href="#id18" title="この見出しへのパーマリンク"></a></h4>
+<section id="id17">
+<h4><strong>ワークフローのステップの追加方法</strong><a class="headerlink" href="#id17" title="この見出しへのパーマリンク"></a></h4>
 <ol class="arabic">
 <li><p><strong>ワークフローの設定</strong> タブをクリックして移動します。</p></li>
 <li><p>開始と完了の間のステップ追加(<a class="reference internal" href="../_images/workflow-addstep-plus-button.png"><img alt="image9" src="../_images/workflow-addstep-plus-button.png" style="width: 30px;" /></a>) ボタンをクリックします。</p></li>
@@ -524,8 +527,8 @@
 </li>
 </ol>
 </section>
-<section id="id19">
-<h4><strong>ワークフローステップごとの詳細設定</strong><a class="headerlink" href="#id19" title="この見出しへのパーマリンク"></a></h4>
+<section id="id18">
+<h4><strong>ワークフローステップごとの詳細設定</strong><a class="headerlink" href="#id18" title="この見出しへのパーマリンク"></a></h4>
 <p>ステップをクリックすることで、各ワークフローステップの詳細プロパティを設定することができます。</p>
 <ul class="simple">
 <li><p><strong>属性</strong>では、ステップ名と状態の設定以外にも、ステップごとに詳細な設定をすることができます。</p></li>
@@ -630,7 +633,7 @@
 </ul>
 </div>
 <section id="hide">
-<span id="id20"></span><h5><strong>文書内の一部のファイルを非表示にする方法</strong><a class="headerlink" href="#hide" title="この見出しへのパーマリンク"></a></h5>
+<span id="id19"></span><h5><strong>文書内の一部のファイルを非表示にする方法</strong><a class="headerlink" href="#hide" title="この見出しへのパーマリンク"></a></h5>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>文書の一部を非表示にする</strong></p>
@@ -698,7 +701,7 @@
 </section>
 </section>
 <section id="field-fb">
-<span id="id21"></span><h3>フィールドの設定<a class="headerlink" href="#field-fb" title="この見出しへのパーマリンク"></a></h3>
+<span id="id20"></span><h3>フィールドの設定<a class="headerlink" href="#field-fb" title="この見出しへのパーマリンク"></a></h3>
 <p><strong>フィールドの設定</strong>では、文書リストとCSVにデータをダウンロードした時に表示されるコンポーネントの列の表示可否と順序を設定できます。また、テンプレートに入るフィールドの初期値または自動入力値を設定できます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/template-field-setting.png"><img alt="テンプレートの設定 &gt; フィールドの設定" src="../_images/template-field-setting.png" style="width: 700px;" /></a>
@@ -721,10 +724,10 @@
 <hr class="docutils" />
 </section>
 <section id="noti-fb">
-<span id="id22"></span><h3>通知設定<a class="headerlink" href="#noti-fb" title="この見出しへのパーマリンク"></a></h3>
+<span id="id21"></span><h3>通知設定<a class="headerlink" href="#noti-fb" title="この見出しへのパーマリンク"></a></h3>
 <p>テンプレートで作成された文書ステータスの通知や依頼を受信する受信者の設定や通知内容の確認、編集ができます。</p>
 <p><strong>ステータス通知の設定</strong></p>
-<p>当該テンプレートで作成した文書のステータスに関する通知の受信者設定、通知メッセージのプレビュー（文書の検討および作成/文書の返戻/文書の無効化/文書の修正）、通知の編集（文書の完了）を行えます。</p>
+<p>当該テンプレートで作成した文書のステータスに関する通知の受信者設定、通知メッセージのプレビュー（文書の検討および作成/文書の差戻し/文書の無効化/文書の修正）、通知の編集（文書の完了）を行えます。</p>
 <figure class="align-default">
 <img alt="通知チャンネルの設定" src="../_images/template-setting-notification-channel.png" />
 </figure>
@@ -772,8 +775,8 @@
 </ul>
 </section>
 </section>
-<section id="id23">
-<h2>テンプレートの個別操作メニュー<a class="headerlink" href="#id23" title="この見出しへのパーマリンク"></a></h2>
+<section id="id22">
+<h2>テンプレートの個別操作メニュー<a class="headerlink" href="#id22" title="この見出しへのパーマリンク"></a></h2>
 <p><strong>テンプレート管理</strong> 画面で、テンプレート名の右側にあるメニューアイコン (<a class="reference internal" href="../_images/template-hamburgericon.png"><img alt="image24" src="../_images/template-hamburgericon.png" style="width: 20px;" /></a>) をクリックすると、各テンプレートのメニューが表示されます。</p>
 <p><a class="reference internal" href="../_images/template-manage-menu.png"><img alt="image25" src="../_images/template-manage-menu.png" style="width: 700px;" /></a></p>
 <ul>
@@ -786,8 +789,8 @@
 </li>
 </ul>
 </section>
-<section id="id24">
-<h2>テンプレートの検索<a class="headerlink" href="#id24" title="この見出しへのパーマリンク"></a></h2>
+<section id="id23">
+<h2>テンプレートの検索<a class="headerlink" href="#id23" title="この見出しへのパーマリンク"></a></h2>
 <p><strong>テンプレート管理</strong> 画面では、テンプレートをカテゴリでフィルタ、検索、ソートすることができます。</p>
 <p><a class="reference internal" href="../_images/template-manage-search.png"><img alt="image28" src="../_images/template-manage-search.png" style="width: 700px;" /></a></p>
 <dl>

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>eformsignのご紹介 &mdash; eformsign User Guide 2023.04.07 ドキュメント</title>
+  <title>eformsignのご紹介 &mdash; eformsign User Guide 2024.01.31 ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -37,6 +37,9 @@
             
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
+              <div class="version">
+                version 10.2024.0125.200
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -192,8 +195,8 @@ eformsignの基本用語をご紹介します。</p>
 テンプレート管理者は、各テンプレートのワークフローのステップを設定することができます。
 ワークフローは <strong>開始 — 完了</strong>がデフォルトで設定されており、次の <strong>受信者のタイプ</strong>を追加することができます。</p>
 <ul class="simple">
-<li><p><strong>検討者:</strong> 文書を検討後、承認または返戻します。</p></li>
-<li><p><strong>参加者:</strong> 文書の入力欄に作成または署名します。</p></li>
+<li><p><strong>検討者:</strong> 文書を検討後、承認または差し戻します。</p></li>
+<li><p><strong>参加者:</strong> 文書の入力欄に入力または署名します。</p></li>
 <li><p><strong>閲覧者:</strong> 文書の閲覧のみできます。</p></li>
 </ul>
 <figure class="align-default">
@@ -205,21 +208,21 @@ eformsignの基本用語をご紹介します。</p>
 <p>CCに設定された文書は、文書の進行状態に応じて、CCに設定されたユーザーの <strong>進行中の文書トレイ</strong> または <strong>完了文書トレイ</strong>に表示されます。</p>
 </li>
 <li><p><strong>代表管理者</strong></p>
-<p>会社の代表者として、eformsignの全ての機能を制御する権限を持ちます。</p>
+<p>会社の代表者として、eformsignの使用に関する全ての権限を持ちます。</p>
 </li>
-<li><p><strong>会社管理の権限</strong></p>
-<p>会社の管理権限がある場合、会社管理メニューにアクセスできます。会社・グループ及びメンバーなどの管理を行うことができます。</p>
+<li><p><strong>会社管理者</strong></p>
+<p>会社管理メニューにアクセスできるほか、会社、グループ、メンバーの管理を行うことができます。</p>
 </li>
-<li><p><strong>テンプレートの管理権限</strong></p>
-<p>テンプレートの管理権限がある場合、テンプレート管理メニューにアクセスできます。テンプレートの作成・変更・配布及び削除を行うことができます。</p>
+<li><p><strong>テンプレート管理者</strong></p>
+<p>テンプレート管理メニューにアクセスできるほか、テンプレートの作成、変更、配布、削除を行うことができます。</p>
 </li>
-<li><p><strong>テンプレートの使用権限</strong></p>
-<p>テンプレートを使用する際の、使用権限を設定できます。「テンプレートで文書を作成」画面でそのテンプレートを使用して文書を作成することが出来ます。</p>
+<li><p><strong>文書管理者</strong></p>
+<p>文書管理メニューと一括作成文書管理メニューにアクセスすることができます。権限を付与された文書の閲覧・無効化、文書をシステムから永久に削除することができます。文書管理者はテンプレートか文書ごとに指定することができます。</p>
 </li>
-<li><p><strong>テンプレートの修正権限</strong></p>
-<p>テンプレートの修正権限を設定できます。テンプレートの修正権限がある場合テンプレート管理メニューでそのテンプレートの設定を修正することが出来ます。</p>
+<li><p><strong>テンプレート使用権限</strong></p>
+<p>各テンプレートのテンプレート使用権限を各メンバーに付与することができます。</p>
 </li>
-<li><p><strong>文書の管理権限</strong></p>
+<li><p><strong>テンプレート修正権限</strong></p>
 <p>文書の管理権限がある場合、文書管理メニューにアクセスすることができます。権限があるテンプレートで作成された文書を閲覧して、完了文書に対するキャンセル依頼を承認または文書をシステムで永久削除することができます。文書の管理権限はテンプレートごとに設定することができます。</p>
 </li>
 </ul>
