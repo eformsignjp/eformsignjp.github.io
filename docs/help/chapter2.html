@@ -66,7 +66,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#id10">代表管理者</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id11">会社管理者</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id12">テンプレート管理者</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id13">文書管理者</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#docmanager-permissions">文書管理者</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#permissionsfortemplate">各テンプレートの権限</a></li>
 </ul>
 </li>
@@ -162,6 +162,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <li><p><strong>共有文書トレイ:</strong> 所有している文書を他のメンバーに共有することができます。共有文書ボックスへのアクセス権限がある場合、共有された文書を一目で確認できます。</p></li>
 <li><p><strong>文書管理：</strong> このメニューには、文書管理権限がある場合にのみアクセスできます。文書の管理権限を持つテンプレートで作成された全ての文書
 を確認することができます。ただし、代表管理者の場合は全ての文書を確認・管理することができます。</p></li>
+<li><p><strong>一括作成文書管理；</strong> 文書管理者権限があるユーザーのみアクセスできるメニューです。文書管理権限があるテンプレートで一括作成された文書を照会することができます。ただし、代表管理者の場合、すべての文書を照会及び管理することができます。</p></li>
 <li><p><strong>マイ署名：</strong> 自分の署名を登録することで、文書の作成時に使用することができます。</p></li>
 <li><p><strong>テンプレート管理：</strong> このメニューには、テンプレート管理の権限がある場合にのみアクセスできます。テンプレートのリストを確認し、テンプレートの作成と設定ができます。</p></li>
 <li><p><strong>会社管理：</strong> このメニューには、会社の代表管理者か会社管理権限を持つメンバーのみアクセスできます。会社情報の確認・変更ができます。</p>
@@ -381,7 +382,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <li><p><strong>テンプレートの修正権限</strong></p>
 <blockquote>
 <div><p>テンプレートを修正できる権限です。
-❗テンプレート修正権限は、<strong>テンプレート管理者権限があるメンバーのみ指定</strong>できます。</p>
+❗テンプレート修正権限は、<strong>テンプレート管理者であるメンバーのみ</strong>持つことができます。</p>
 </div></blockquote>
 </li>
 </ul>
@@ -507,8 +508,8 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <p><strong>テンプレート管理詳細</strong> ポップアップでは、そのテンプレート管理者は持つテンプレートをリスト形式で確認することができ、テンプレート名にマウスオーバーすると <strong>所有者変更</strong> ボタンが表示され、クリックすると所有者を他のメンバーに変更することができる設定画面が表示されます。</p>
 </div>
 </section>
-<section id="id13">
-<h3>文書管理者<a class="headerlink" href="#id13" title="この見出しへのパーマリンク"></a></h3>
+<section id="docmanager-permissions">
+<span id="id13"></span><h3>文書管理者<a class="headerlink" href="#docmanager-permissions" title="この見出しへのパーマリンク"></a></h3>
 <p>文書管理者は、 <strong>文書管理</strong> メニューにアクセスすることができます。文書管理者権限を持つテンプレートで作成された文書を閲覧・ダウンロードすることができるほか、管理範囲によっては文書を無効化・削除することができます。</p>
 <p><strong>文書管理者権限の設定方法</strong></p>
 <ol class="arabic">
@@ -542,40 +543,39 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 例） '人事部'で作成した'雇用契約書'に対する文書管理者を設定する場合、作成者に'人事部'、文書のタイプにテンプレートリストの'雇用契約書'を選択します。</p>
 <blockquote>
 <div><ul>
-<li><dl>
-<dt><strong>作成者</strong></dt><dd><p>文書を作成した作成者をすべてのメンバー、グループ、各メンバーの中から選択します。</p>
+<li><p><strong>作成者</strong></p>
 <blockquote>
-<div><ul>
-<li><dl>
-<dt><strong>詳細条件の設定:</strong> 作成者情報(ID、メールアドレス、氏名など)をもとにキーワードを設定後、そのキーワードと完全一致/部分一致する条件を設定します。設定した条件によって、キーワードと完全一致/部分一致する文書が当該文書管理者の文書管理メニューに表示されます。</dt><dd><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/document-manager-setting-popup-document-creator.png"><img alt="権限管理 &gt; 文書管理者ポップアップ &gt; 作成者 &gt; 詳細条件" src="../_images/document-manager-setting-popup-document-creator.png" style="width: 400px;" /></a>
-</figure>
-</dd>
-</dl>
-</li>
+<div><p>文書を作成した作成者をすべてのメンバー、グループ、各メンバーの中から選択します。</p>
+<blockquote>
+<div><blockquote>
+<div><ul class="simple">
+<li><p><strong>詳細条件の設定:</strong> 作成者情報(ID、メールアドレス、氏名など)をもとにキーワードを設定後、そのキーワードと完全一致/部分一致する条件を設定します。設定した条件によって、キーワードと完全一致/部分一致する文書が当該文書管理者の文書管理メニューに表示されます。</p></li>
 </ul>
 </div></blockquote>
-</dd>
-</dl>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/document-manager-setting-popup-document-creator.png"><img alt="権限管理 &gt; 文書管理者ポップアップ &gt; 作成者 &gt; 詳細条件" src="../_images/document-manager-setting-popup-document-creator.png" style="width: 400px;" /></a>
+</figure>
+</div></blockquote>
+</div></blockquote>
 </li>
 <li><dl>
 <dt><strong>文書のタイプ</strong></dt><dd><ul>
 <li><p><strong>すべての文書:</strong> 選択した作成者が作成した全ての文書を管理します。</p></li>
 <li><p><strong>テンプレートで作成されたすべての文書:</strong> 選択した作成者が作成した文書のうち、テンプレートから作成した全ての文書を管理します。</p></li>
 <li><p><strong>マイファイルで作成されたすべての文書:</strong> 選択した作成者が <strong>マイファイルで作成する</strong> メニューから作成した全ての文書を管理します。</p></li>
-<li><dl>
-<dt><strong>テンプレートリスト:</strong> 選択した作成者が当該テンプレートで作成した文書を管理します。</dt><dd><figure class="align-default">
+<li><p><strong>テンプレートリスト:</strong> 選択した作成者が当該テンプレートで作成した文書を管理します。</p>
+<blockquote>
+<div><figure class="align-default">
 <a class="reference internal image-reference" href="../_images/document-manager-setting-popup-document-type-templete.png"><img alt="権限管理 &gt; 文書管理者ポップアップ &gt; 文書タイプ" src="../_images/document-manager-setting-popup-document-type-templete.png" style="width: 400px;" /></a>
 </figure>
-</dd>
-</dl>
+</div></blockquote>
 </li>
-<li><dl>
-<dt><strong>詳細条件の設定:</strong> 文書の種類を選択後、文書に入力された内容をもとにキーワード/範囲/期間を設定します。フィールド名に入力項目IDを入力し、キーワード（完全一致/部分一致）、範囲または期間を設定します。条件に該当する文書が、文書管理者の文書管理メニューに表示されます。</dt><dd><figure class="align-default">
+<li><p><strong>詳細条件の設定:</strong> 文書の種類を選択後、文書に入力された内容をもとにキーワード/範囲/期間を設定します。フィールド名に入力項目IDを入力し、キーワード（完全一致/部分一致）、範囲または期間を設定します。条件に該当する文書が、文書管理者の文書管理メニューに表示されます。</p>
+<blockquote>
+<div><figure class="align-default">
 <a class="reference internal image-reference" href="../_images/document-manager-setting-popup-document-type.png"><img alt="権限管理 &gt; 文書管理者ポップアップ &gt; 文書タイプ &gt; 詳細条件" src="../_images/document-manager-setting-popup-document-type.png" style="width: 400px;" /></a>
 </figure>
-</dd>
-</dl>
+</div></blockquote>
 </li>
 </ul>
 </dd>
@@ -717,9 +717,8 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/menu-mysignature.png"><img alt="マイ署名の管理画面" src="../_images/menu-mysignature.png" style="width: 700px;" /></a>
 </figure>
-<p><a class="reference internal" href="../_images/mysignature.PNG"><img alt="image11" src="../_images/mysignature.PNG" style="width: 700px;" /></a></p>
 <ol class="arabic">
-<li><p>サイドバーのメニューから <strong>マイ署名</strong>に移動します。</p></li>
+<li><p>サイドバーのメニューから <strong>マイ署名</strong> に移動します。</p></li>
 <li><p>登録ボタンをクリックします。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/mysignature-register.png"><img alt="署名の登録画面" src="../_images/mysignature-register.png" style="width: 700px;" /></a>
@@ -795,12 +794,10 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <p class="admonition-title">Tip</p>
 <p>スタンプ作成機能の無効化について</p>
 <p><strong>スタンプ作成</strong> の有効/無効を切り替えるには、以下のメニューから設定します。</p>
-<dl>
-<dt><strong>会社管理 &gt; 署名の設定</strong></dt><dd><figure class="align-default">
+<p><strong>会社管理 &gt; 署名の設定</strong></p>
+<figure class="align-default">
 <a class="reference internal image-reference" href="../_images/signature-stamp-limit-create-stamp.png"><img alt="会社管理 &gt; 署名の設定" src="../_images/signature-stamp-limit-create-stamp.png" style="width: 400px;" /></a>
 </figure>
-</dd>
-</dl>
 </div>
 </section>
 <section id="uploadstampimage">
