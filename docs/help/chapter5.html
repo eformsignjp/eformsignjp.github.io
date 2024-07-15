@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Webフォームデザイナーでテンプレート作成 &mdash; eformsign User Guide 2024.01.31 ドキュメント</title>
+  <title>Webフォームデザイナーでテンプレート作成 &mdash; eformsign User Guide 2024.07.09 ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -38,7 +38,7 @@
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                version 10.2024.0125.200
+                version 10.2024.0425.206
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -78,7 +78,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#id22">個別テンプレートメニュー</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id23">テンプレート検索</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id23">テンプレート検索とテンプレート表示形式の設定</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter6.html">フォームビルダーの紹介</a></li>
@@ -197,7 +197,7 @@
 <section id="workflow">
 <span id="id3"></span><h2>ワークフローの概要<a class="headerlink" href="#workflow" title="この見出しへのパーマリンク"></a></h2>
 <p><strong>ワークフロー</strong>とは、文書を作成してから完了するまでの文書の依頼・処理プロセスです。
-ワークフローは、テンプレート管理者がテンプレートごとに**テンプレートの設定** &gt; <strong>ワークフローの設定</strong>から設定することができます。</p>
+ワークフローは、テンプレート管理者がテンプレートごとに <strong>テンプレートの設定</strong> &gt; <strong>ワークフローの設定</strong>から設定することができます。</p>
 <p>ワークフローは、<strong>開始 - 完了</strong>が基本ステップです。また、以下のように <strong>受信者のタイプ</strong>を選択し、文書に合わせたワークフローを作成することができます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/workflow_new.png"><img alt="ワークフローステップ" src="../_images/workflow_new.png" style="width: 500px;" /></a>
@@ -266,6 +266,20 @@
 <p><img alt="image1" src="../_images/template-setting-general-doc-numering.png" /></p>
 </dd>
 <dt><strong>⑨ 文書の送信時に表示されるポップアップ画面を省略する</strong></dt><dd><p>文書を少しでも早く作成・送信する必要がある場合に使用します。この項目にチェックを入れない状態で文書を送信した場合、<strong>確認メッセージの入力</strong> ポップアップウィンドウが表示されます。 <strong>文書の送信時に表示されるポップアップ画面を省略する</strong>にチェックを入れると <strong>メッセージを入力</strong> ポップアップウィンドウは表示されず、次のステップに進みます。</p>
+</dd>
+<dt><strong>➉ 文書の保管期間の設定</strong></dt><dd><p>テンプレートで作成された文書の保存期間を設定します。
+設定していない場合、 会社の設定が適用されます。</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p><strong>最短1日～最長15年</strong>まで設定することができます。</p>
+<p><strong>単位ごとの最大設定期間</strong></p>
+<ul class="simple">
+<li><p>15年</p></li>
+<li><p>180ヶ月</p></li>
+<li><p>5,475日</p></li>
+</ul>
+<p>💡会社全体の文書に対する保管期間設定の方法は <a class="reference external" href="chapter2.html#retention">会社設定_文書の保管期間の設定</a>からご確認ください。</p>
+</div>
 </dd>
 </dl>
 <hr class="docutils" />
@@ -522,7 +536,7 @@
 <li><p>開始と完了の間のステップを追加（<a class="reference internal" href="../_images/workflow-addstep-plus-button.png"><img alt="image8" src="../_images/workflow-addstep-plus-button.png" style="width: 20px;" /></a>）ボタンをクリックします。</p></li>
 <li><p><strong>受信先タイプを選択する</strong>で追加する <strong>受信先タイプ</strong>を選択します。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/workflow-steps-wd.PNG"><img alt="템플릿 설정 &gt; 워크플로우 설정" src="../_images/workflow-steps-wd.PNG" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/workflow-steps-wd.PNG"><img alt="テンプレート設定 &gt; ワークフローの設定" src="../_images/workflow-steps-wd.PNG" style="width: 600px;" /></a>
 </figure>
 </li>
 </ol>
@@ -585,11 +599,23 @@
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/workflow-step-start-property.png"><img alt="ワークフローの設定 &gt; 開始ステップ" src="../_images/workflow-step-start-property.png" style="width: 700px;" /></a>
 </figure>
-<ul>
-<li><p><strong>文書生成数の制限</strong>： チェックを入れることで、テンプレートで作成可能な最大文書数を設定します。</p></li>
+<ul class="simple">
+<li><p><strong>文書生成数の制限</strong>： テンプレートで作成可能な最大文書数を設定します。</p></li>
 <li><p><strong>URLでの文書作成を許可する</strong>： メンバー以外の外部ユーザーに文書作成を依頼する際に使用します。eformsignにログインしなくても文書を作成できる、公開リンクを生成します。</p></li>
+<li><p><strong>文書作成者の情報入力</strong>: リンクから文書に入力を行う前に、文書作成者の氏名、メールアドレスなどの情報を入力するよう設定します。</p></li>
+<li><p><strong>文書の二重送信防止</strong>: 同じ作成者が文書を重複して送信できないよう設定します。</p></li>
+<li><p><strong>文書作成前の本人確認設定</strong>: リンクから文書を作成する前に、作成者の本人確認を行った後、文書を作成するよう設定します。</p>
+<ul>
+<li><p><strong>メールやSMSで認証番号を送信</strong>: 作成者のメール/携帯電話番号に6桁の認証コードを送信します。認証コードを認証ウィンドウに入力後、文書を閲覧することができます。</p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>文書作成者の情報入力オプション</strong> と <strong>本人確認設定オプション</strong> の両方を選択した場合、作成者は本人情報を入力して本人確認後、文書の作成を開始することができます。これらの情報は監査証跡証明書に残ります。</p>
+</div>
+<ul>
 <li><p><strong>アクセス許可ドメイン/IP</strong>： 特定のドメインまたはIPからのみ文書を作成できるように設定します。</p></li>
-<li><p><strong>文書の重複転送を防止する</strong>： 選択したフィールドの重複の有無をチェックし、文書を重複して送信することを防ぎます。</p></li>
 <li><p><strong>ボットによる文書の自動生成防止</strong>: URLで文書を生成し、提出時に自動登録防止(reCAPTCHA)チェックを行うことにより、悪質なボットが文書を繰り返し生成することを防止します。</p>
 <blockquote>
 <div><div class="admonition note">
@@ -678,7 +704,7 @@
 </div>
 </li>
 <li><p><strong>文書の非表示設定:</strong> 2つ以上のファイルで構成された文書の場合、ファイル単位で一部を非表示に設定することができます。本設定は外部受信者がワークフローに設定されている場合にのみ表示され、外部受信者にのみ適用されます。</p></li>
-<li><p>文書差戻し制限：<strong>受信者が文書を差し戻せないように設定します。オプションにチェックを入れると、その受信者の文書作成画面に **差戻し</strong> ボタンが表示されなくなります。</p></li>
+<li><p><strong>文書差戻し制限：</strong> 受信者が文書を差し戻せないように設定します。オプションにチェックを入れると、その受信者の文書作成画面に <strong>差戻し</strong> ボタンが表示されなくなります。</p></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -692,7 +718,7 @@
 <li><p><strong>対面署名者：</strong> 対面署名を行います。ワークフロー受信者タイプのうち、参加者のみが <strong>対面署名者</strong> になることができます。</p>
 <blockquote>
 <div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/inperson-signing-wf.png"><img alt="대면 서명 설정" src="../_images/inperson-signing-wf.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/inperson-signing-wf.png"><img alt="対面署名設定" src="../_images/inperson-signing-wf.png" style="width: 700px;" /></a>
 </figure>
 </div></blockquote>
 </li>
@@ -739,11 +765,11 @@
 </div></blockquote>
 </li>
 <li><p><strong>文書の送信期限</strong>： 受信者が文書を受信した後、次のステップの受信者に文書を送信するまでの期限を設定します。文書の送信期限を設定する必要が無い場合は、0日0時間と入力してください。(受信者が内部メンバーの場合。外部受信者の場合最大50日まで設定可能)</p></li>
-<li><p>文書差戻し制限：<strong>受信者が文書を差し戻せないように設定します。オプションにチェックを入れると、その受信者の文書作成画面に **差戻し</strong> ボタンが表示されなくなります。</p></li>
+<li><p><strong>文書差戻し制限：</strong> 受信者が文書を差し戻せないように設定します。オプションにチェックを入れると、その受信者の文書作成画面に <strong>差戻し</strong> ボタンが表示されなくなります。</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>各受信者ステップの詳細プロパティは、 <strong>内部メンバー受信者</strong>と <strong>外部受信者</strong>によって異なります。ステップの受信者をメンバーではなく、 <strong>外部受信者に指定</strong>する場合は、 <strong>受信者情報自動設定オプション</strong>と <strong>文書閲覧前に本人確認する</strong>オプションを追加で設定することができます。</p>
+<p>各受信者ステップの詳細プロパティは、 <strong>内部メンバー受信者</strong>と <strong>外部受信者</strong>によって異なります。ステップの受信者をメンバーではなく、 <strong>外部受信者に指定</strong> する場合は、 <strong>受信者情報自動設定オプション</strong>と <strong>文書閲覧前に本人確認する</strong>オプションを追加で設定することができます。</p>
 <p>❗内部メンバーの場合、氏名、メールアドレスなど、eformsignに保存された情報で文書が送信されるように設定されます。eformsignにログインした後、依頼された文書を作成することができるため、ログイン段階で本人確認が行われたと見なして該当オプションを設定しません。</p>
 <ul>
 <li><p><strong>受信者情報の自動設定</strong>：受信者に文書作成を依頼する際、文書に入力した情報を基に受信者の氏名・連絡先を自動的に設定します。</p></li>
@@ -818,7 +844,7 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>各受信者ステップの詳細プロパティは、 <strong>内部メンバー受信者</strong>と <strong>外部受信者</strong>によって異なります。ステップの受信者をメンバーではなく、<strong>外部受信者に指定 **する場合は、 **受信者情報自動設定オプション</strong>と <strong>文書閲覧前に本人確認する</strong>オプションを追加で設定することができます。</p>
+<p>各受信者ステップの詳細プロパティは、 <strong>内部メンバー受信者</strong>と <strong>外部受信者</strong>によって異なります。ステップの受信者をメンバーではなく、 <strong>外部受信者に指定</strong>する場合は、 <strong>受信者情報自動設定オプション</strong>と <strong>文書閲覧前に本人確認する</strong>オプションを追加で設定することができます。</p>
 <p>❗内部メンバーの場合、氏名、メールアドレスなど、eformsignに保存された情報で文書が送信されるように設定されます。eformsignにログインした後、依頼された文書を作成することができるため、ログイン段階で本人確認が行われたと見なして該当オプションを設定しません。</p>
 <ul>
 <li><p><strong>受信者情報の自動設定</strong>：受信者に文書作成を依頼する際、文書に入力した情報を基に受信者の氏名・連絡先を自動的に設定します。</p></li>
@@ -945,12 +971,13 @@
 </div>
 <p><strong>文書の完了通知の編集</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/template-setting-notification-editl.png"><img alt="通知内容の編集" src="../_images/template-setting-notification-editl.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/template-setting-notification-editl.png"><img alt="通知内容の編集" src="../_images/template-setting-notification-editl.png" style="width: 400px;" /></a>
 </figure>
 <ul class="simple">
 <li><p><strong>通知テンプレートの選択:</strong> 通知テンプレートはデフォルトのテンプレートとして設定されていますが、別途作成した通知テンプレートがあれば変更できます。新規通知テンプレートを追加する方法は <a class="reference external" href="chapter9.html#notification-template">通知テンプレート管理</a>をご参照ください。</p></li>
 <li><p><strong>メールのタイトル:</strong> 文書の完了時に送信されるメールのタイトルを設定します。</p></li>
 <li><p><strong>SMSメッセージ:</strong> 文書完了通知をSMSで送信する際に、SMSで送信するメッセージを設定します。設定したメッセージと一緒に、文書を確認できるリンクが送信されます。</p></li>
+<li><p><strong>本文の編集:</strong> 通知メッセージの内容を編集することができます。</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -961,7 +988,7 @@
 <blockquote>
 <div><ul class="simple">
 <li><p><strong>文書閲覧リンク:</strong> 完了文書がリンク(ボタン)の形式でメール/SMSで送信されます。リンク(ボタン)をクリックすると文書閲覧ページが開きます。 ビューアから完了文書を閲覧・ダウンロードできます。</p></li>
-<li><p><strong>ファイル添付:</strong> 完了文書がメールにPDFファイルとして添付されて送信されます。 ただし、文書のファイルサイズが10MBを超えるか、SMS通知の場合は**ダウンロードリンク**方式で送信されます。</p></li>
+<li><p><strong>ファイル添付:</strong> 完了文書がメールにPDFファイルとして添付されて送信されます。 ただし、文書のファイルサイズが10MBを超えるか、SMS通知の場合は <strong>ダウンロードリンク</strong> 方式で送信されます。</p></li>
 </ul>
 <div class="admonition caution">
 <p class="admonition-title">注意</p>
@@ -969,7 +996,6 @@
 </div>
 </div></blockquote>
 </li>
-<li><p><strong>本文の編集:</strong> 通知メッセージの本文を編集することができます。</p></li>
 </ul>
 </section>
 </section>
@@ -998,16 +1024,34 @@
 </ul>
 </section>
 <section id="id23">
-<h2>テンプレート検索<a class="headerlink" href="#id23" title="この見出しへのパーマリンク"></a></h2>
+<h2>テンプレート検索とテンプレート表示形式の設定<a class="headerlink" href="#id23" title="この見出しへのパーマリンク"></a></h2>
 <p><strong>テンプレート管理</strong>　画面では、テンプレートをカテゴリでフィルタ、検索、ソートすることができます。</p>
 <p><a class="reference internal" href="../_images/template-manage-search.png"><img alt="image27" src="../_images/template-manage-search.png" style="width: 700px;" /></a></p>
 <dl>
 <dt><strong>①　テンプレート検索</strong></dt><dd><p>クリックすると、テンプレートのステータス、カテゴリでテンプレートをフィルタできます。 <strong>×</strong> をクリックすると、全てのカテゴリを表示します。</p>
 <p>カテゴリの作成は、 <strong>テンプレートの設定&gt;全般</strong>から行うことができます。</p>
 </dd>
-<dt><strong>②　テンプレート検索</strong></dt><dd><p>テンプレート名やカテゴリー名などの検索キーワードを入力することで、テンプレートを検索することができます。</p>
+<dt><strong>②　テンプレート検索</strong></dt><dd><p>検索キーワードを入力することで、テンプレートを検索することができます。</p>
 </dd>
 <dt><strong>③　ソート</strong></dt><dd><p>テンプレートをテンプレート名またはカテゴリで昇順、降順に並び替えます。</p>
+</dd>
+<dt><strong>④ 表示形式の設定</strong></dt><dd><p>テンプレート管理画面の表示形式形式をサムネイル形式/リスト形式から選択することができます。</p>
+<ul>
+<li><p>サムネイル形式: テンプレートのサムネイルを表示し、テンプレートの概要を画像形式で確認することができます。</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/template-lists-thumnail.png"><img alt="テンプレートの表示形式-サムネイル" src="../_images/template-lists-thumnail.png" style="width: 600px;" /></a>
+</figure>
+</div></blockquote>
+</li>
+<li><p>リスト形式: テンプレートをリスト形式で一覧表示します。</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/template-lists.png"><img alt="テンプレートの表示形式-リスト" src="../_images/template-lists.png" style="width: 600px;" /></a>
+</figure>
+</div></blockquote>
+</li>
+</ul>
 </dd>
 </dl>
 </section>

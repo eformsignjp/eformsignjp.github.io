@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>文書トレイ &mdash; eformsign User Guide 2024.01.31 ドキュメント</title>
+  <title>文書トレイ &mdash; eformsign User Guide 2024.07.09 ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -38,7 +38,7 @@
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                version 10.2024.0125.200
+                version 10.2024.0425.206
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -72,11 +72,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#id11">データファイルのダウンロード</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#set-reminder">リマインダーの設定</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#document-delete">文書の削除</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#document-column">文書トレイのカラムの設定</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#drafts">下書きとして保存</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mydocuments">マイ文書トレイ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bulksend-documents">一括作成文書トレイ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#shared-documents">共有文書トレイ</a></li>
 </ul>
@@ -227,8 +228,8 @@
 <h4><strong>キーワード・フィルター検索</strong><a class="headerlink" href="#id7" title="この見出しへのパーマリンク"></a></h4>
 <p>キーワード検索に加え、詳細検索を行うことでタイトルと内容の組み合わせによる検索、数字や日付の範囲を指定した検索、カスタムフィルターによる検索など、さまざまな検索方法を備えています。また、カスタムフィルターを設定することで、文書のフィールドの入力値を詳細検索することも可能なほか、数字の範囲や日付の期間を設定して検索することもできます。</p>
 <p>使用可能なフィルターの種類は以下の通りです。また、カスタムフィルターは、完了文書と文書管理でのみ使用できます。</p>
-<table class="docutils align-default" id="id17">
-<caption><span class="caption-text"><strong>フィルターの種類一覧</strong></span><a class="headerlink" href="#id17" title="このテーブルへのパーマリンク"></a></caption>
+<table class="docutils align-default" id="id18">
+<caption><span class="caption-text"><strong>フィルターの種類一覧</strong></span><a class="headerlink" href="#id18" title="このテーブルへのパーマリンク"></a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>要処理文書</p></th>
 <th class="head"><p>進行中の文書</p></th>
@@ -390,10 +391,10 @@
 <p>編集、検討する、再要請、プレビュー、修正、無効化、共有、完了文書送信予約、ダウンロードができます。</p>
 </li>
 <li><p><strong>進行中の文書トレイ</strong></p>
-<p>再要請、プレビュー、修正、無効化、共有、完了文書送信予約、ダウンロードができます。</p>
+<p>再依頼、プレビュー、修正、無効化、共有、完了文書送信予約、ダウンロードができます。</p>
 </li>
 <li><p><strong>完了文書トレイ</strong></p>
-<p>プレビュー、共有、完了文書の送信、ダウンロードを行うことができます。</p>
+<p>プレビュー、共有、完了文書の送信、新規文書の作成、リマインダー設定、ダウンロードを行うことができます。</p>
 </li>
 <li><p><strong>文書管理</strong></p>
 <p>プレビュー、無効化、完了文書の送信、永久削除、ダウンロードのほか、文書の削除を行うことができます。文書は、 <strong>文書管理</strong>でのみ削除することができます。</p>
@@ -474,13 +475,39 @@
 <li><p>ダウンロードする文書をリストから選択し、 <strong>文書ダウンロード</strong> または <strong>データファイル作成</strong>をクリックします。</p></li>
 </ol>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/bulksend_download.png"><img alt="데이터파일 생성 목록 팝업" src="../_images/bulksend_download.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/bulksend_download.png"><img alt="CSVファイルの出力リストポップアップ" src="../_images/bulksend_download.png" style="width: 700px;" /></a>
 </figure>
 </div>
 </section>
 </section>
+<section id="set-reminder">
+<span id="id12"></span><h3>リマインダーの設定<a class="headerlink" href="#set-reminder" title="この見出しへのパーマリンク"></a></h3>
+<p>完了文書トレイでは、文書のリマインダーを設定することができます。例として更新契約を行う場合、更新日が来たことを知らせるリマインダーを設定することができます。</p>
+<ol class="arabic">
+<li><p>完了文書トレイに移動します。</p></li>
+<li><p>リマインダーを設定する文書の下にあるリマインダー設定ボタンをクリックします。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/set_reminder.png"><img alt="完了文書トレイ-リマインダー設定" src="../_images/set_reminder.png" style="width: 600px;" /></a>
+</figure>
+</li>
+<li><p>リマインダー通知設定ポップアップで、通知日、メッセージ、受信者を設定します。受信者にはグループ/メンバーのみ選択できます。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/set_reminder_popup.png"><img alt="リマインダー設定のポップアップ" src="../_images/set_reminder_popup.png" style="width: 500px;" /></a>
+</figure>
+</li>
+<li><p>保存ボタンをクリックすると、リマインダー設定が保存されます。</p></li>
+<li><p>リマインダーに設定した時間に、受信者のメールにリマインダーが届きます。</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>リマインダーが設定されている場合、文書の下のボタン名が <strong>リマインダーの変更</strong>となり、 <strong>リマインダーの変更</strong>をクリックすると設定を変更することができます。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/edit_reminder.png"><img alt="リマインダーの修正" src="../_images/edit_reminder.png" style="width: 400px;" /></a>
+</figure>
+</div>
+</section>
 <section id="document-delete">
-<span id="id12"></span><h3>文書の削除<a class="headerlink" href="#document-delete" title="この見出しへのパーマリンク"></a></h3>
+<span id="id13"></span><h3>文書の削除<a class="headerlink" href="#document-delete" title="この見出しへのパーマリンク"></a></h3>
 <p>eformsignでは、指定された管理者のみ文書を削除することができます。</p>
 <ol class="arabic simple">
 <li><p>文書トレイのリストの右上にある削除（<img alt="image13" src="../_images/delete_icon1.png" />）アイコンをクリックします。</p></li>
@@ -489,7 +516,7 @@
 </ol>
 </section>
 <section id="document-column">
-<span id="id13"></span><h3>文書トレイのカラムの設定<a class="headerlink" href="#document-column" title="この見出しへのパーマリンク"></a></h3>
+<span id="id14"></span><h3>文書トレイのカラムの設定<a class="headerlink" href="#document-column" title="この見出しへのパーマリンク"></a></h3>
 <p>文書トレイの右上にあるアイコンのうち、カラム(<a class="reference internal" href="../_images/column_icon.png"><img alt="image4" src="../_images/column_icon.png" style="width: 35px;" /></a>)アイコンをクリックすることで、リストに表示する項目を選択することができます。</p>
 <blockquote>
 <div><figure class="align-default">
@@ -499,17 +526,17 @@
 <hr class="docutils" />
 </section>
 </section>
-<section id="drafts">
-<span id="id14"></span><h2>下書きとして保存<a class="headerlink" href="#drafts" title="この見出しへのパーマリンク"></a></h2>
-<p><strong>下書きとして保存</strong>には <strong>マイファイルで作成する</strong> で文書を送信する前に <strong>下書きとして保存</strong>をクリックすることで、下書き保存した文書が保存されます。
-<strong>下書きとして保存</strong>に保存されたファイルはいつでも作成を継続したり、文書を削除することもできます。</p>
+<section id="mydocuments">
+<span id="id15"></span><h2>マイ文書トレイ<a class="headerlink" href="#mydocuments" title="この見出しへのパーマリンク"></a></h2>
+<p><strong>マイ文書トレイ</strong> には、[マイファイルで文書作成] の過程で [文書作成をスタート] の前に [保存] をクリックして保存した文書が保存されます。</p>
+<p><strong>マイファイルで文書作成</strong>から作成した文書を保存しておけば、毎回新規作成せずとも、テンプレートのように使うことができます。</p>
 <ol class="arabic">
 <li><p>サイドバーのメニューから <strong>下書きとして保存</strong>をクリックして移動します。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/draftbox-menu.png"><img alt="下書きとして保存メニュー" src="../_images/draftbox-menu.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/draftbox-menu.png"><img alt="マイ文書トレイメニュー" src="../_images/draftbox-menu.png" style="width: 700px;" /></a>
 </figure>
 </li>
-<li><p>下書き保存された文書のリストから、任意の文書の <strong>継続する</strong> ボタンをクリックします。</p>
+<li><p>保存された文書のリストから、任意の文書の <strong>開く</strong> ボタンをクリックします。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/draftbox-documentlist.png"><img alt="下書きとして保存" src="../_images/draftbox-documentlist.png" style="width: 700px;" /></a>
 </figure>
@@ -523,7 +550,7 @@
 <hr class="docutils" />
 </section>
 <section id="bulksend-documents">
-<span id="id15"></span><h2>一括作成文書トレイ<a class="headerlink" href="#bulksend-documents" title="この見出しへのパーマリンク"></a></h2>
+<span id="id16"></span><h2>一括作成文書トレイ<a class="headerlink" href="#bulksend-documents" title="この見出しへのパーマリンク"></a></h2>
 <p>一括作成文書トレイでは、一括作成で送信した文書を確認することができます。一括作成した文書の進行状況を確認し、予約送信の変更、キャンセルまたは再依頼ができます。</p>
 <figure class="align-default">
 <img alt="一括作成文書" src="../_images/bulksend-documents.png" />
@@ -555,7 +582,7 @@
 <hr class="docutils" />
 </section>
 <section id="shared-documents">
-<span id="id16"></span><h2>共有文書トレイ<a class="headerlink" href="#shared-documents" title="この見出しへのパーマリンク"></a></h2>
+<span id="id17"></span><h2>共有文書トレイ<a class="headerlink" href="#shared-documents" title="この見出しへのパーマリンク"></a></h2>
 <p>共有文書トレイでは、共有文書トレイを作成し、自分が所有している文書を他のメンバーと共有したり、他のメンバーが自分に共有した文書を確認することができます。</p>
 <figure class="align-default">
 <img alt="共有文書トレイ" src="../_images/shared-documents-box.png" />
@@ -619,7 +646,7 @@
 <p><strong>共有文章トレイに文書を追加</strong></p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>作成された文書は、要処理文書トレイ、進行中の文書トレイ、完了文書トレイ**で共有できます。</p>
+<p>作成された文書は、 <strong>要処理文書トレイ、進行中の文書トレイ、完了文書トレイ</strong>で共有できます。</p>
 </div>
 <ol class="arabic">
 <li><p>任意の文書トレイに移動します。</p></li>
