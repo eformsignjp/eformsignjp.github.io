@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>フォームビルダーでテンプレート作成 &mdash; eformsign User Guide 2024.07.09 ドキュメント</title>
+  <title>フォームビルダーでテンプレート作成 &mdash; eformsign User Guide 2024.07.26 ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -79,8 +79,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#noti-fb">通知設定</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id22">テンプレートの個別操作メニュー</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id23">テンプレート検索とテンプレート表示形式の設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id26">テンプレートの個別操作メニュー</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id27">テンプレート検索とテンプレート表示形式の設定</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter8.html">文書トレイ</a></li>
@@ -207,7 +207,7 @@
 </figure>
 <section id="id7">
 <h4><strong>テンプレートの基本設定</strong><a class="headerlink" href="#id7" title="この見出しへのパーマリンク"></a></h4>
-<p>テンプレート名、カテゴリー、有効期限など、テンプレートに関する基本情報を設定します。</p>
+<p>テンプレート名、カテゴリ、有効期限など、テンプレートに関する基本情報を設定します。</p>
 <dl>
 <dt><strong>① フォームファイル</strong></dt><dd><p><strong>フォームビルダー</strong>を使用してWord/PowerPoint/Excelからeformsignにアップロードしたファイルのファイル名です。フォームファイルの名前を変更するには、アップロード元のWord/PowerPoint/Excelファイルのファイル名を変更後、フォームを再度アップロードする必要があります。</p>
 </dd>
@@ -223,9 +223,9 @@
 <img alt="テンプレートの略称" src="../_images/template-short-name.png" />
 </figure>
 </dd>
-<dt><strong>④ カテゴリ</strong></dt><dd><p>テンプレートを種類ごとに分ける際に使用します。 <strong>テンプレート管理</strong> 画面のテンプレートや、 <strong>文書トレイ</strong>、 <strong>文書管理</strong> メニューの文書をカテゴリー名でフィルタリングすることができます。既存のカテゴリから選択、または新規カテゴリ作成をすることができます。</p>
+<dt><strong>④ カテゴリ</strong></dt><dd><p>テンプレートを種類ごとに分ける際に使用します。 <strong>テンプレート管理</strong> 画面のテンプレートや、 <strong>文書トレイ</strong>、 <strong>文書管理</strong> メニューの文書をカテゴリ名でフィルタリングすることができます。既存のカテゴリから選択、または新規カテゴリ作成をすることができます。</p>
 <p>区切り文字（ <strong>/</strong> ）を使用すると、多階層カテゴリを設定することができます。
-例) カテゴリーを <strong>人事チーム/休暇関連</strong>と設定すると、第一階層のカテゴリ <strong>人事チーム</strong> 内に第二層カテゴリの <strong>休暇関連</strong> カテゴリーが生成されます。</p>
+例) カテゴリを <strong>人事チーム/休暇関連</strong>と設定すると、第一階層のカテゴリ <strong>人事チーム</strong> 内に第二層カテゴリの <strong>休暇関連</strong> カテゴリが生成されます。</p>
 </dd>
 <dt><strong>⑤ 説明</strong></dt><dd><p>テンプレートに関する説明文を入力します。この説明文は、リストと、 <strong>テンプレートで作成する</strong> を開く際に表示されます。</p>
 </dd>
@@ -247,6 +247,20 @@
 </dd>
 <dt><strong>⑩ 文書の送信時に表示されるポップアップ画面を省略する</strong></dt><dd><p>文書を素早く作成して送信する場合に使用します。この項目にチェックを入れない状態で文書を送信した場合、 <strong>確認メッセージを入力する</strong> ポップアップウィンドウが表示されます。 <strong>文書の送信時に表示されるポップアップ画面を省略する</strong>にチェックを入れると、 <strong>メッセージを入力する</strong> ポップアップウィンドウは表示されず、次のステップに進みます。</p>
 </dd>
+<dt><strong>⑪ 文書の保管期間の設定</strong></dt><dd><p>テンプレートで作成された文書の保存期間を設定します。
+設定しない場合は、会社の設定が適用されます。</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p><strong>最短1日から最長15年</strong>の間で設定することができます。</p>
+<p><strong>単位ごとの設定可能な期間</strong></p>
+<ul class="simple">
+<li><p>15年</p></li>
+<li><p>180ヶ月</p></li>
+<li><p>5,475日</p></li>
+</ul>
+<p>💡会社全体の文書に対する保管期間の設定方法は <a class="reference external" href="chapter2.html#retention">会社設定_文書の保管期間の設定</a>からご確認ください。</p>
+</div>
+</dd>
 </dl>
 <hr class="docutils" />
 </section>
@@ -258,9 +272,9 @@
 <a class="reference internal image-reference" href="../_images/document-list.png"><img alt="文書管理 &gt; 文書リスト" src="../_images/document-list.png" style="width: 700px;" /></a>
 </figure>
 <section id="id10">
-<h5><strong>文書タイトルの自動生成ルールを設定する方法</strong><a class="headerlink" href="#id10" title="この見出しへのパーマリンク"></a></h5>
+<h5><strong>文書タイトルの自動生成ルールの設定方法</strong><a class="headerlink" href="#id10" title="この見出しへのパーマリンク"></a></h5>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/template-setting-general-doc-numering_rule.png"><img alt="テンプレート設定 &gt; 文書タイトルの自動生成ルールの設定" src="../_images/template-setting-general-doc-numering_rule.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/template-setting-general-doc-numering_rule.png"><img alt="テンプレート設定 &gt; 文書タイトルの自動生成ルールの設定" src="../_images/template-setting-general-doc-numering_rule.png" style="width: 400px;" /></a>
 </figure>
 <ol class="arabic simple">
 <li><p>サイドバーのメニューで <strong>テンプレート管理</strong>に移動します。</p></li>
@@ -272,7 +286,7 @@
 <section id="id11">
 <h5><strong>予約語の追加方法</strong><a class="headerlink" href="#id11" title="この見出しへのパーマリンク"></a></h5>
 <figure class="align-default">
-<img alt="予約語を使用した文書タイトルの自動生成ルール設定" src="../_images/template-setting-general-doc-numering_rule_reserved.png" />
+<a class="reference internal image-reference" href="../_images/template-setting-general-doc-numering_rule_reserved.png"><img alt="予約語を使用した文書タイトルの自動生成ルール設定" src="../_images/template-setting-general-doc-numering_rule_reserved.png" style="width: 400px;" /></a>
 </figure>
 <ul>
 <li><p><strong>文書入力項目</strong>: 文書に入力した内容を文書タイトルに追加します。</p>
@@ -356,13 +370,15 @@
 テンプレートごとに文書番号自動生成の有無を設定でき、4つある文書番号形式の中から1つを選んで設定することができます。また、文書番号は文書コンポーネントを使用して文書に入力することができるほか、文書リストからの表示、文書番号での文書検索が可能です。</p>
 <section id="id13">
 <h5><strong>文書番号の生成方法</strong><a class="headerlink" href="#id13" title="この見出しへのパーマリンク"></a></h5>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/template-setting-general-doc-numering1.png"><img alt="文書番号の設定" src="../_images/template-setting-general-doc-numering1.png" style="width: 600px;" /></a>
-</figure>
 <ol class="arabic">
 <li><p>サイドバーのメニューから <strong>テンプレート管理</strong>に移動します。</p></li>
 <li><p>テンプレートの <strong>設定</strong> アイコン(<img alt="image5" src="../_images/config-icon.PNG" />)をクリックして <strong>テンプレートの設定</strong> 画面に移動します。</p></li>
 <li><p><strong>全般</strong> 画面上の <strong>文書番号の自動付与</strong>にチェックを入れます。</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/template-setting-general-doc-numering1.png"><img alt="文書番号の設定" src="../_images/template-setting-general-doc-numering1.png" style="width: 600px;" /></a>
+</figure>
+</div></blockquote>
 <p>▪  <strong>文書番号の自動付与ルールの選択</strong></p>
 <blockquote>
 <div><figure class="align-default">
@@ -419,7 +435,8 @@
 <p>文書番号は、文書コンポーネントを利用することで文書内に入力したり、文書リストから確認することができます。</p>
 <p><strong>文書内に文書番号を表示</strong></p>
 <p>文書番号は <strong>フォームビルダー</strong>の文書コンポーネントを使用することで、文書内に入力することができます。</p>
-<ol class="arabic simple">
+<blockquote>
+<div><ol class="arabic simple">
 <li><p>Word/Excel/PowerPointのテンプレートファイルを開きます。</p></li>
 <li><p>文書番号を入れる箇所に文書コンポーネントを追加します。</p></li>
 <li><p><strong>アップロード</strong> ボタンをクリックして、文書をeformsignにアップロードします。</p></li>
@@ -427,26 +444,19 @@
 <li><p>文書番号の自動付与ルールを選択します。</p></li>
 <li><p><strong>保存</strong> ボタンをクリックして設定を保存します。</p></li>
 </ol>
-<p><strong>文書リストで文書番号を確認する</strong></p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/doc-list-docnumber1.PNG"><img alt="文書トレイ - 文書リスト" src="../_images/doc-list-docnumber1.PNG" style="width: 700px;" /></a>
-</figure>
-<figure class="align-default" id="id24">
-<a class="reference internal image-reference" href="../_images/doc-list-docnumber2.png"><img alt="文書トレイ - 文書リスト - 文書番号の確認" src="../_images/doc-list-docnumber2.png" style="width: 700px;" /></a>
-<figcaption>
-<p><span class="caption-text">文書番号は文書リストが確認できる文書トレイ（進行中の文書、要処理文書、完了文書）および文書管理メニュー（要文書管理権限）で確認することができます。</span><a class="headerlink" href="#id24" title="この画像へのパーマリンク"></a></p>
-<div class="legend">
+</div></blockquote>
+<p><strong>文書リストからの文書番号の確認方法</strong></p>
+<blockquote>
+<div><p>文書番号は文書リストが確認できる文書トレイ（進行中の文書、要処理文書、完了文書）および文書管理メニュー（要文書管理権限）で確認することができます。</p>
 <ol class="arabic">
 <li><p>サイドバーメニューの <strong>文書トレイ</strong> または <strong>文書管理</strong> メニューに移動します。</p></li>
 <li><p>右上の <strong>カラム設定</strong> アイコンをクリックします。</p></li>
-<li><p>カラムリストの <strong>文書番号</strong>にチェックを入れます。</p>
+<li><p>カラムリストの <strong>文書番号</strong>にチェックを入れます。</p></li>
+<li><p>文書リストに <strong>文書番号</strong> カラムが追加されていることを確認します。</p>
 <p><img alt="image6" src="../_images/columnlist-docnum.png" /></p>
 </li>
-<li><p>文書リストに <strong>文書番号</strong> カラムが追加されていることを確認します。</p></li>
 </ol>
-</div>
-</figcaption>
-</figure>
+</div></blockquote>
 <p><strong>文書番号で文書を検索する</strong></p>
 <blockquote>
 <div><p><a class="reference internal" href="../_images/doc-number-search.png"><img alt="image7" src="../_images/doc-number-search.png" style="width: 600px;" /></a></p>
@@ -536,8 +546,10 @@
 <li><p><strong>項目の管理</strong>では、ワークフローの各ステップで受信者がコンポーネント(入力項目)に入力できるよう許可する <strong>編集許可</strong> 項目と、入力が必須となる <strong>必須入力</strong> 項目を設定することができます。</p></li>
 </ul>
 <p><a class="reference internal" href="../_images/template-setting-FB-workflow-field-control.png"><img alt="image12" src="../_images/template-setting-FB-workflow-field-control.png" style="width: 700px;" /></a></p>
-<p><strong>開始：文書作成を始めるステップです。</strong></p>
 <hr class="docutils" />
+<section id="workflow-fb-start">
+<span id="id19"></span><h5>開始<a class="headerlink" href="#workflow-fb-start" title="この見出しへのパーマリンク"></a></h5>
+<p><strong>：文書作成を始めるステップです。</strong></p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/workflow-step-start-property-fb.png"><img alt="ワークフローの設定 &gt; 開始ステッププロパティ" src="../_images/workflow-step-start-property-fb.png" style="width: 700px;" /></a>
 </figure>
@@ -558,7 +570,7 @@
 <p><strong>文書作成者の情報入力オプション</strong> と <strong>本人確認設定オプション</strong> の両方を選択した場合、作成者は本人情報を入力して本人確認後、文書の作成を開始することができます。これらの情報は監査証跡証明書に残ります。</p>
 </div>
 <ul>
-<li><p><strong>アクセス許可ドメイン・IP</strong>:　特定のドメイン/IPからのみ文書を作成できるように設定します。</p></li>
+<li><p><strong>アクセス許可ドメイン・IP</strong>:　特定のドメイン/IPアドレスからのみ文書を作成できるように設定します。</p></li>
 <li><p><strong>ボットによる文書の自動生成防止</strong>: URLで文書を生成し、提出時に自動登録防止(reCAPTCHA)チェックを行うことにより、悪質なボットが文書を繰り返し生成することを防止します。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -567,6 +579,7 @@
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/URL-option-recaptcha.png"><img alt="reCAPTCHA" src="../_images/URL-option-recaptcha.png" style="width: 250px;" /></a>
 </figure>
+<p>❗本オプションをONにしない場合、文書生成URLからボットによって文書が大量に作成される可能性があります。この場合、文書作成による料金が高額に発生する可能性があります。</p>
 </div>
 </li>
 </ul>
@@ -581,8 +594,11 @@
 <a class="reference internal image-reference" href="../_images/workflow-step-start-QRcode.png"><img alt="ワークフローの設定 &gt; QRコードの作成" src="../_images/workflow-step-start-QRcode.png" style="width: 400px;" /></a>
 </figure>
 </div>
-<p><strong>受信者：文書の入力項目に作成、署名などの文書に参加する受信者のステップです。</strong></p>
 <hr class="docutils" />
+</section>
+<section id="workflow-signer">
+<span id="id20"></span><h5>受信者<a class="headerlink" href="#workflow-signer" title="この見出しへのパーマリンク"></a></h5>
+<p><strong>文書の入力項目に作成、署名などの文書に参加する受信者のステップです。</strong></p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>受信者段階別の詳細プロパティは、 <strong>内部メンバー受信者</strong>と <strong>外部受信者</strong>によって異なります。ステップ受信者を内部メンバーではない <strong>外部受信者に指定</strong>する場合は <strong>受信者情報の自動設定</strong>と <strong>文書閲覧前に本人確認する</strong>オプションを追加で設定することができます。</p>
@@ -621,14 +637,14 @@
 </ul>
 </div></blockquote>
 </li>
-<li><p><strong>メールやSMSで認証番号を送信</strong> ：受信者のメールアドレス/携帯電話番号宛てに6桁の認証番号を送信します。受信者は認証番号を認証ウィンドウに入力後、文書を閲覧することができます。</p>
+<li><p><strong>メールやSMSで認証番号を送信:</strong> 受信者のメールアドレス/携帯電話番号宛てに6桁の認証番号を送信します。受信者は認証番号を認証ウィンドウに入力後、文書を閲覧することができます。</p>
 <blockquote>
 <div><figure class="align-default">
 <a class="reference internal image-reference" href="../_images/additional-verification.png"><img alt="メール/SMS認証" src="../_images/additional-verification.png" style="width: 400px;" /></a>
 </figure>
 </div></blockquote>
 </li>
-<li><p><strong>メール/SMS認証</strong> ：受信者のメールアドレスに6桁の認証番号が送信されます。送信された認証番号を本人確認ウィンドウに入力することで認証が完了します。</p></li>
+<li><p><strong>メール/SMS認証:</strong> ：受信者のメールアドレスに6桁の認証番号が送信されます。送信された認証番号を本人確認ウィンドウに入力することで認証が完了します。</p></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -640,7 +656,32 @@
 </div>
 </li>
 <li><p><strong>文書の非表示設定:</strong> 2つ以上のファイルで構成された文書の場合、ファイル単位で一部を非表示に設定することができます。本設定は外部受信者がワークフローに設定されている場合にのみ表示され、外部受信者にのみ適用されます。</p></li>
+<li><p><strong>認証書による電子署名:</strong> 事業者署名型(立会人)電子署名を行うよう設定します。第三者機関が発行した電子署名により署名者の本人性の担保と、誰が、いつ署名を行ったか記録します。署名された情報は完了文書をAdobe Acrobat Readerで開くことでご確認いただけます。</p></li>
+<li><p><strong>文書差戻し制限:</strong> 受信者が文書を差戻しできないように設定します。オプションにチェックを入れると、設定された受信者の文書画面には <strong>差戻し</strong> ボタンが表示されません。</p></li>
 </ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>💡 <strong>対面署名の使い方</strong></p>
+<p>署名者と対面してタブレットやスマホなど、一つのデバイスで文書に署名を行う場合は、対面署名機能が便利です。
+対面署名機能を使用すると、各署名者に関する情報が文書履歴と監査証跡証明書に記録され、文書が完了すると、署名者に完了文書が自動的に送信されます。</p>
+<p>対面署名を使うには、対面署名者に設定する受信者ステップで <strong>対面署名</strong> を選択します。
+このステップは <strong>対面署名者</strong> 、直前のステップは <strong>立会人</strong> になります。対面署名者は、文書に署名する前に本人確認を行うように設定することもできます。</p>
+<ul class="simple">
+<li><p><strong>立会人:</strong> 対面署名の開始・完了と、署名を行うことができます。メンバーのみ設定することができ、閲覧者が立会人になることはできません。</p></li>
+<li><p><strong>対面署名者:</strong> 署名を行います。閲覧者が対面署名者になることはできません。</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/inperson-signing-fb.png"><img alt="対面署名設定" src="../_images/inperson-signing-fb.png" style="width: 700px;" /></a>
+</figure>
+<dl class="simple">
+<dt><strong>❗注意事項</strong></dt><dd><ul class="simple">
+<li><p><strong>開始</strong> ステップに <strong>対面署名</strong>が設定された場合、 <strong>一括署名</strong>を行うことはできません。</p></li>
+<li><p><strong>同時送信(送信順序の結合)</strong>が設定されたワークフローのステップは <strong>対面署名</strong>を設定することはできず、 <strong>対面署名</strong>が設定されたステップの前後に <strong>同時送信(送信順序の結合)</strong> を設定することはできません。</p></li>
+</ul>
+</dd>
+</dl>
+<p>✅ 対面署名の設定を行った場合の文書への記入方法は <a class="reference external" href="https://www.eformsign.com/jp/blog/announcement-202311/">こちら</a>をご参照ください。</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p><strong>受信者の設定</strong></p>
@@ -655,8 +696,9 @@
 <li><p><strong>前の受信者</strong> : 開始ステップを含む前のステップの受信者が文書を処理するように設定します。当該ステップより前のステップから選択できます。</p></li>
 </ul>
 </div>
+</section>
 <section id="hide">
-<span id="id19"></span><h5><strong>文書内の一部のファイルを非表示にする方法</strong><a class="headerlink" href="#hide" title="この見出しへのパーマリンク"></a></h5>
+<span id="id21"></span><h5><strong>文書内の一部のファイルを非表示にする方法</strong><a class="headerlink" href="#hide" title="この見出しへのパーマリンク"></a></h5>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>文書の一部を非表示にする</strong></p>
@@ -680,8 +722,11 @@
 </ol>
 <p><a class="reference internal" href="../_images/template-fb-setting-workflow-outsider-1.png"><img alt="image19" src="../_images/template-fb-setting-workflow-outsider-1.png" style="width: 700px;" /></a></p>
 </div>
-<p><strong>閲覧者: 文書文書の閲覧のみ可能な受信者ステップです。</strong></p>
 <hr class="docutils" />
+</section>
+<section id="workflow-fb-needtoview">
+<span id="id22"></span><h5>閲覧者<a class="headerlink" href="#workflow-fb-needtoview" title="この見出しへのパーマリンク"></a></h5>
+<p><strong>文書の閲覧のみ可能な受信者ステップです。</strong></p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/workflow-needtoview-properties.png"><img alt="ワークフローの設定 &gt; 閲覧者ステッププロパティ" src="../_images/workflow-needtoview-properties.png" style="width: 700px;" /></a>
 </figure>
@@ -704,8 +749,11 @@
 </figure>
 </li>
 </ul>
-<p><strong>完了: 文書が全てのワークフローのステップを経て、完了するステップです。</strong></p>
 <hr class="docutils" />
+</section>
+<section id="workflow-fb-complete">
+<span id="id23"></span><h5>完了<a class="headerlink" href="#workflow-fb-complete" title="この見出しへのパーマリンク"></a></h5>
+<p><strong>完了: 文書が全てのワークフローのステップを経て、完了するステップです。</strong></p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/workflow-completed-fb.png"><img alt="ワークフローの設定-完了" src="../_images/workflow-completed-fb.png" style="width: 700px;" /></a>
 </figure>
@@ -724,7 +772,7 @@
 </section>
 </section>
 <section id="field-fb">
-<span id="id20"></span><h3>フィールドの設定<a class="headerlink" href="#field-fb" title="この見出しへのパーマリンク"></a></h3>
+<span id="id24"></span><h3>フィールドの設定<a class="headerlink" href="#field-fb" title="この見出しへのパーマリンク"></a></h3>
 <p><strong>フィールドの設定</strong>では、文書リストとCSVにデータをダウンロードした時に表示されるコンポーネントの列の表示可否と順序を設定できます。また、テンプレートに入るフィールドの初期値または自動入力値を設定できます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/template-field-setting.png"><img alt="テンプレートの設定 &gt; フィールドの設定" src="../_images/template-field-setting.png" style="width: 700px;" /></a>
@@ -747,7 +795,7 @@
 <hr class="docutils" />
 </section>
 <section id="noti-fb">
-<span id="id21"></span><h3>通知設定<a class="headerlink" href="#noti-fb" title="この見出しへのパーマリンク"></a></h3>
+<span id="id25"></span><h3>通知設定<a class="headerlink" href="#noti-fb" title="この見出しへのパーマリンク"></a></h3>
 <p>テンプレートで作成された文書ステータスの通知や依頼を受信する受信者の設定や通知内容の確認、編集ができます。</p>
 <p><strong>ステータス通知の設定</strong></p>
 <p>当該テンプレートで作成した文書のステータスに関する通知の受信者設定、通知メッセージのプレビュー（文書の検討および作成/文書の差戻し/文書の無効化/文書の修正）、通知の編集（文書の完了）を行えます。</p>
@@ -798,8 +846,8 @@
 </ul>
 </section>
 </section>
-<section id="id22">
-<h2>テンプレートの個別操作メニュー<a class="headerlink" href="#id22" title="この見出しへのパーマリンク"></a></h2>
+<section id="id26">
+<h2>テンプレートの個別操作メニュー<a class="headerlink" href="#id26" title="この見出しへのパーマリンク"></a></h2>
 <p><strong>テンプレート管理</strong> 画面で、テンプレート名の右側にあるメニューアイコン (<a class="reference internal" href="../_images/template-hamburgericon.png"><img alt="image24" src="../_images/template-hamburgericon.png" style="width: 20px;" /></a>) をクリックすると、各テンプレートのメニューが表示されます。</p>
 <p><a class="reference internal" href="../_images/template-manage-menu.png"><img alt="image25" src="../_images/template-manage-menu.png" style="width: 700px;" /></a></p>
 <ul>
@@ -812,13 +860,13 @@
 </li>
 </ul>
 </section>
-<section id="id23">
-<h2>テンプレート検索とテンプレート表示形式の設定<a class="headerlink" href="#id23" title="この見出しへのパーマリンク"></a></h2>
+<section id="id27">
+<h2>テンプレート検索とテンプレート表示形式の設定<a class="headerlink" href="#id27" title="この見出しへのパーマリンク"></a></h2>
 <p><strong>テンプレート管理</strong> 画面では、テンプレートをカテゴリでフィルタ、検索、ソートすることができます。</p>
 <p><img alt="image27" src="../_images/document-manager-setting.PNG" /></p>
 <dl>
-<dt><strong>① テンプレートの照会</strong></dt><dd><p>クリックすると、テンプレートの状態やカテゴリーでテンプレートをフィルタできます。 <strong>X</strong> をクリックすると、全てのカテゴリを表示します。</p>
-<p>カテゴリーの作成は <strong>テンプレート設定 &gt; 全般</strong>から行うことができます。</p>
+<dt><strong>① テンプレートの照会</strong></dt><dd><p>クリックすると、テンプレートの状態やカテゴリでテンプレートをフィルタできます。 <strong>X</strong> をクリックすると、全てのカテゴリを表示します。</p>
+<p>カテゴリの作成は <strong>テンプレート設定 &gt; 全般</strong>から行うことができます。</p>
 </dd>
 <dt><strong>② テンプレートの検索</strong></dt><dd><p>検索キーワードを入力することで、テンプレートを検索できます。</p>
 </dd>

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>フォームビルダーの紹介 &mdash; eformsign User Guide 2024.07.09 ドキュメント</title>
+  <title>フォームビルダーの紹介 &mdash; eformsign User Guide 2024.07.26 ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -184,7 +184,7 @@
 <h4>入力コンポーネント<a class="headerlink" href="#id6" title="この見出しへのパーマリンク"></a></h4>
 <ul class="simple">
 <li><p><a class="reference external" href="#signature">署名</a><strong>:</strong> 署名を入力します。</p></li>
-<li><p><a class="reference external" href="#companystamp">社印</a><strong>:</strong> 登録されている社印を入力します。</p></li>
+<li><p><a class="reference external" href="#companystamp">会社印</a><strong>:</strong> 登録されている社印を入力します。</p></li>
 <li><p><a class="reference external" href="#text">1行テキスト</a><strong>:</strong> 1、2単語程度の短いテキストを入力します。</p></li>
 <li><p><a class="reference external" href="#handwriting">手書き</a><strong>:</strong> 下書きとなるテキストを入力します。入力した文字をなぞり書きすることができます。</p></li>
 <li><p><a class="reference external" href="#text">複数行テキスト</a><strong>:</strong> 複数行の長いテキストを入力します。</p></li>
@@ -391,18 +391,38 @@
 </dd>
 </dl>
 <p><strong>② テキストタイプ</strong></p>
-<p>テキストタイプをテキスト、パスワードから選択します。</p>
+<p>テキストタイプをテキスト、パスワード、ユーザー指定から選択します。</p>
 <ul class="simple">
-<li><p><strong>テキスト:</strong> 一般的なテキストを入力する際に使用します。</p></li>
-<li><p><strong>パスワード:</strong> 入力した内容が表示されないよう設定します。テキスト入力時、入力した内容がアスタリスク(*)またはパスワード文字（●）で表示され、入力内容を隠すことができます。入力された内容はPDFではパスワード文字で表示され、CSVデータをダウンロードしたときにのみ確認することができます。</p></li>
+<li><p><strong>プレーンテキスト:</strong> 入力規則を設定しない場合、こちらを選択します。</p></li>
+<li><p><strong>パスワード:</strong> 入力したテキストが「*」または「●」の代替文字に置き換えて表示されます。出力するPDF上でも値は代替文字で表示され、CSVデータで出力した場合にのみ値が表示されます。</p></li>
 </ul>
 <p><strong>③ テキストの調整</strong></p>
-<ul class="simple">
+<ul>
 <li><p><strong>横幅に合わせて文字数制限</strong> 入力項目のサイズに合わせて文字数が制限されるよう設定できます。短いテキストを入力する場合は項目のサイズを小さく、長いテキストを入力する場合は項目のサイズを大きく設定してください。</p></li>
-<li><p><strong>入力可能な文字数を指定:</strong> 入力可能な最大文字数(空白を含む)を設定します。1行テキストの場合「1～1000文字」、複数行テキストの場合「1～8000文字」に設定できます。</p></li>
+<li><p><strong>入力可能な文字数を指定:</strong> 入力可能な最大文字数(空白を含む)を設定します。1行テキストの場合「1～1000文字」、複数行テキストの場合「1～8000文字」に設定できます。</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/text-component-rule-option.png"><img alt="入力ルール設定" src="../_images/text-component-rule-option.png" style="width: 300px;" /></a>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>入力ルール設定で <strong>直接入力</strong>を選択すると、数字、アルファベットなどの入力する文字の種類や文字数などのルールを設定することができます。</p>
+<p>例）パスポートの旅券番号の場合 'アルファベット2桁 + 数字7桁' の組み合わせで構成されるので、アルファベットの大文字で始まるように'&gt;LL'、数字だけを入力できる'0'を使用して <strong>&gt;LL0000000</strong>とルールを設定します。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/text-component-rule.png"><img alt="入力ルール設定- 直接入力" src="../_images/text-component-rule.png" style="width: 300px;" /></a>
+</figure>
+</div>
+</div></blockquote>
+</li>
 </ul>
 <p><strong>④ 入力可能な最大文字数</strong></p>
-<p>入力可能な最大文字数（空白を含む）を設定できます。デフォルトは「0」が設定されており、この場合文字数に制限はありません。</p>
+<ul class="simple">
+<li><p><strong>横幅に合わせて文字数制限:</strong> 入力項目の大きさに合わせて文字数を自動的に制限します。短いテキストの場合は項目の大きさを小さく、長いテキストの場合は項目の大きさを大きく設定してください。</p></li>
+<li><p><strong>文字の大きさを自動調整:</strong> 入力項目の大きさに合わせて文字の大きさを自動的に調整します。(文字サイズの縮小)</p></li>
+<li><p><strong>入力可能な文字数を指定:</strong> 入力項目に入力できる最大文字数を設定します。オプション選択時の最大文字数が自動的に設定されます。1行テキストは「1～1000文字」、複数行テキストは「1～8000文字」に設定できます。</p></li>
+</ul>
+<p><strong>⑤ キーパッドタイプ(モバイルにのみ適用)</strong></p>
+<p>スマートフォン、タブレットのようなモバイル環境で文書を作成する際、表示されるキーパッドのタイプを選択します。</p>
 </section>
 <section id="handwriting">
 <span id="id15"></span><h4>手書き<a class="headerlink" href="#handwriting" title="この見出しへのパーマリンク"></a></h4>
@@ -501,9 +521,15 @@
 <p><strong>② 選択スタイル</strong></p>
 <p>チェックコンポーネントはプロパティからスタイルを設定できます。チェックを選択した場合、チェックボックスがデフォルト設定となります。これ以外にもラジオ、丸囲みを表示するよう設定できます。</p>
 <p>以下は、チェック/ラジオ/丸囲みを選択した場合の、各チェックボックスの表示例です。</p>
+<p><a class="reference internal" href="../_images/check-component-style-settings.png"><img alt="image19" src="../_images/check-component-style-settings.png" style="width: 700px;" /></a></p>
 <p><strong>③ 非選択スタイル</strong></p>
 <p>選択されていない項目に表示されるスタイルを指定することができます。チェックボックスは四角形、ラジオボタンは円形、丸囲みは何も表示されません。</p>
-<p><a class="reference internal" href="../_images/check-component-style-settings.png"><img alt="image19" src="../_images/check-component-style-settings.png" style="width: 700px;" /></a></p>
+<p><strong>④ チェックボックスの位置</strong></p>
+<p>チェックボックスの位置を指定します。</p>
+<ul class="simple">
+<li><p>テキストの左側: チェックボックスの位置をテキストの左側に設定します。</p></li>
+<li><p>テキストの右側: チェックボックスの位置をテキストの右側に設定します。</p></li>
+</ul>
 </section>
 <section id="select">
 <span id="id19"></span><h4>選択<a class="headerlink" href="#select" title="この見出しへのパーマリンク"></a></h4>
@@ -532,6 +558,12 @@
 <p><strong>マルチ選択の可能</strong>にチェックを入れると、複数の項目を選択できます。複数の項目が選択されている場合、データを保存する際に、選択した複数の項目がコンマ（ , ）で区切られて保存されます。</p>
 <p><strong>⑤ 未選択可能</strong></p>
 <p><strong>未選択可能</strong>にチェックを入れると、選択した項目をもう一度クリックすることで選択解除できるようになります。</p>
+<p><strong>⑥ ラジオボタンの位置</strong></p>
+<p>ラジオボタンの位置を指定します。</p>
+<ul class="simple">
+<li><p>テキストの左側: ラジオボタンの位置をテキストの左側に設定します。</p></li>
+<li><p>テキストの右側: ラジオボタンの位置をテキストの右側に設定します。</p></li>
+</ul>
 </section>
 <section id="combo">
 <span id="id20"></span><h4>リスト選択<a class="headerlink" href="#combo" title="この見出しへのパーマリンク"></a></h4>
@@ -832,11 +864,8 @@ PCのキーボード環境では、入力欄に任意の数字を直接入力で
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/ozinword-menu-file.png"><img alt="実行する" src="../_images/ozinword-menu-file.png" style="width: 700px;" /></a>
 </figure>
-<p><a class="reference internal" href="../_images/form_upload_login.png"><img alt="image40" src="../_images/form_upload_login.png" style="width: 700px;" /></a></p>
 </li>
-<li><p>ログインすると、電子文書形式に変換された文書のプレビューが表示されます。</p>
-<p><a class="reference internal" href="../_images/upload_preview.png"><img alt="image41" src="../_images/upload_preview.png" style="width: 700px;" /></a></p>
-</li>
+<li><p>ログインすると、電子文書形式に変換された文書のプレビューが表示されます。</p></li>
 <li><p>プレビュー画面で <strong>フォームファイルのアップロード</strong>をクリックするか、リボンメニューの <strong>アップロード</strong>(<img alt="image42" src="../_images/upload_button.png" />) アイコンをクリックすることで、テンプレートの一覧と <strong>テンプレートの新規作成</strong> ができる画面が表示されます。</p>
 <p><a class="reference internal" href="../_images/upload_list.png"><img alt="image43" src="../_images/upload_list.png" style="width: 700px;" /></a></p>
 </li>

@@ -26,7 +26,7 @@ author = 'FORCS'
 # The short X.Y version
 version = 'version 10.2024.0425.206'
 # The full version, including alpha/beta/rc tags
-release = '2024.07.09'
+release = '2024.07.26'
 
 
 # -- General configuration ---------------------------------------------------

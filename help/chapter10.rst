@@ -118,7 +118,3 @@ eformsignで作成した文書の完了後に、外部クラウドストレー�
 .. figure:: resources/analytic_8.png
    :alt: データ連携の設定画面
    :width: 750px
-
-
-.. |image1| image:: resources/connect_3.png
-   :width: 450px
