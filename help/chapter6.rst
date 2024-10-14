@@ -1,59 +1,61 @@
 .. _formbuilder:
 
-==========================
-フォームビルダーの紹介
-==========================
+======================================
+eformsign for Microsoft Officeのご紹介
+======================================
 
 
-フォームビルダー(Microsoft Officeアドイン)とは、Excel、Word、PowerPointなどのMicrosoft Office製品で作成した文書を、入力機能を備えた電子文書に変換するフォームエディターです。フォームビルダーを使用することで、現在使用中のExcel、Word、PowerPointで作成した文書 (契約書、申込書、同意書、稟議書など) を簡単に電子文書に変換することができます。
+eformsign for Microsoft Office(Microsoft Officeアドイン)とは、Excel、Word、PowerPointなどのMicrosoft Office製品で作成した文書を、入力機能を備えた電子文書に変換するフォームエディターです。eformsign for Microsoft Officeを使用することで、現在使用中のExcel、Word、PowerPointで作成した文書 (契約書、申込書、同意書、稟議書など) を簡単に電子文書に変換することができます。
 
-フォームビルダーはExcel、Word、PowerPointなどのMicrosoft Office製品のリボンメニューにアドインとして追加して使用します。電子署名、チェックボックス、テキストボックス、カメラ、録音など、様々な入力機能を備えています。
+eformsign for Microsoft OfficeはExcel、Word、PowerPointなどのMicrosoft Office製品のリボンメニューにアドインとして追加して使用します。電子署名、チェックボックス、テキストボックス、カメラ、録音など、様々な入力機能を備えています。
 
-フォームビルダーを利用して電子文書を作成するプロセスは次の通りです。
+eformsign for Microsoft Officeを利用して電子文書を作成するプロセスは次の通りです。
 
 .. figure:: resources/ozinoffice-flow_1.png
-   :alt: OZ in Officeの使用プロセス
+   :alt: eformsign for Microsoft Officeの使用プロセス
    :width: 750px
 
 
-------------------------------------------------------
-フォームビルダーのダウンロード及びインストール手順
-------------------------------------------------------
+--------------------------------------------------------------------
+eformsign for Microsoft Officeのダウンロード及びインストール手順
+--------------------------------------------------------------------
 
 1. eformsignにログイン後、ダッシュボード画面の左上にあるメニューアイコン (|image1|) をクリックすると、サイドバーメニューが表示されます。サイドバーメニューの一番下にある **フォームビルダーをダウンロード** ボタンをクリックします。
 
    .. figure:: resources/formbuilder_download.png
-      :alt: ダッシュボード　フォームビルダーダウンロード
+      :alt: ダッシュボード フォームビルダー ダウンロード
       :width: 700px
 
 2. 以下のような、eformsignフォームビルダーのダウンロードページが表示されます。ページ下部の **フォームビルダーのダウンロード** ボタンをクリックします。
 
    |image3|
 
-3. ダウンロードしたフォームビルダーの実行ファイルをクリックすると、以下のようなインストール画面が表示されます。オプションから **すべて（C）**\ を選択し、 **次へ（N） >** ボタンをクリックします。
+3. ダウンロードしたeformsign for Microsoft Officeの実行ファイルをクリックすると、以下のような使用許諾契約画面が表示されます。eformsignの利用約款とプライバシーポリシーを確認後、 **インストール**\ をクリックします。
 
-   |image4|
+   .. figure:: resources/eformsignforMSOffice1.png
+      :alt: eformsign for MS Office 実行ファイル
+      :width: 500px
 
-4. インストールを続行すると、以下のような画面が表示されます。
+4. インストールが完了したら、 **完了** ボタンをクリックして、インストール画面を閉じます。
 
-   |image5|
+   .. figure:: resources/eformsignforMSOffice2.png
+      :alt: eformsign for MS Office 実行ファイル2
+      :width: 300px
 
-5. インストールが完了したら、 **完了** ボタンをクリックして、インストール画面を閉じます。
+5. Officeソフト(Word、Excel、PowerPoint) を実行して、eformsign for Microsoft Officeが正しくインストールされていることを確認します。以下のように **eformsign**\ と表示されていることを確認します。
 
-   |image6|
-
-6. Microsoft Office製品(Word、Excel、PowerPoint) を実行して、フォームビルダーが正しくインストールされていることを確認します。次のように **OZ in Word/Excel/PowerPoint**\ が表示されていることを確認します。
-
-   |image7|
+   .. figure:: resources/eformsignforMSOffice-menu.png
+      :alt: eformsign for MS Office 実行ファイル3
+      :width: 700px
 
 ---------------------------------
-フォームビルダーのメニューの構成
+メニューの構成
 ---------------------------------
 
-フォームビルダーのインストール後、Excel、 Word、PowerPoint を実行すると、リボンメニューにOZ in Excel、OZ in Word、OZ in PowerPointタブが追加されていることが確認できます。
+eformsign for Microsoft Officeのインストール後、Excel、 Word、PowerPoint を実行すると、リボンメニューに **eformsign** タブが追加されていることが確認できます。
 
-.. figure:: resources/formbuilder-ozinword-menu.png
-   :alt: Microsoft OfficeのOZ in Office リボンメニュー
+.. figure:: resources/eformsignforMSOffice-menu1.png
+   :alt: Microsoft Officeのeformsign リボンメニュー
    :width: 700px
 
 
@@ -72,7 +74,7 @@
 
 **⑦ ウィンドウ：** コンポーネントのプロパティタブを開くか、コンポーネントを選択します。
 
-**⑧ ヘルプ：** フォームビルダーのバージョンの確認と、アップデートを行います。
+**⑧ ヘルプ：** eformsign for Microsoft Officeのバージョンの確認と、最新版がある場合、アップデートを行います。
 
 
 -----------------------
@@ -84,7 +86,7 @@
 コンポーネントのタイプ
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-eformsignは、次のコンポーネントをサポートしています。
+eformsignでは、以下のコンポーネントを使用することができます。
 
 .. figure:: resources/components-in-word.png
    :alt: コンポーネントの種類
@@ -160,7 +162,7 @@ eformsignは、次のコンポーネントをサポートしています。
 -  **Excelからコンポーネントを追加**
 
 
-	1. Excelを開き、 **OZ in Excel** リボンメニューに移動します。
+	1. Excelを開き、 **eformsign** リボンメニューに移動します。
 
 	   |image8|
 
@@ -184,7 +186,7 @@ eformsignは、次のコンポーネントをサポートしています。
 
 	   |image11|
 
-	2. **OZ in Word** または **OZ in PowerPoint** のリボンメニューから、追加するコンポーネントをクリックします。
+	2. **eformsign** リボンメニューから、追加するコンポーネントをクリックします。
 
 	   |image12|
 
@@ -196,7 +198,7 @@ eformsignは、次のコンポーネントをサポートしています。
 	**方法 2：コンポーネントを選択して配置する**
 
 
-	1. WordまたはPowerPointを開き、 **OZ in Word** または **OZ in PowerPoint** のリボンメニューに移動します。
+	1. WordまたはPowerPointを開き、 **eformsign** リボンメニューに移動します。
 
 	2. **入力項目** アイコンをクリックして、表示されるドロップダウンリストから追加するコンポーネントを選択します。
 
@@ -209,15 +211,15 @@ eformsignは、次のコンポーネントをサポートしています。
 コンポーネントの削除方法
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-削除するコンポーネントを選択し、 **OZ in Office** メニューの **削除**\ （|image16|）アイコンをクリックします。コンポーネントを複数選択して削除することもできます。
+削除するコンポーネントを選択し、 **eformsign** メニューの **削除**\ （|image16|）アイコンをクリックします。コンポーネントを複数選択して削除することもできます。
 
 
 各コンポーネントの使用方法
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-eformsignはMicrosoft Officeの **OZ in Office** リボンメニューでは、チェックボックス、リスト選択、テキスト、署名など、様々なコンポーネントをサポートしています。
+Office製品の **eformsign** リボンメニューでは、チェックボックス、リスト選択、テキスト、署名など、様々なコンポーネントに対応しています。
 
-**OZ in Office**\ の全てのコンポーネントは、共通プロパティと固有プロパティを持ちます。 **OZコンポーネントの属性** ウィンドウから、共通プロパティと固有プロパティを表示することができます。共通プロパティには、名前とツールヒントの内容があり、各プロパティの機能は次のとおりです。
+**eformsign**\ の全てのコンポーネントは、共通プロパティと固有プロパティを持ちます。 **OZコンポーネントの属性** ウィンドウから、共通プロパティと固有プロパティを表示することができます。共通プロパティには、名前とツールヒントの内容があり、各プロパティの機能は次のとおりです。
 
 -  **名前：**  各コンポーネントを識別するための固有の名前です。ワークフローまたはフィールドの設定ステップで必須入力または修正制限がかかっている場合、コンポーネントの名前で確認・指定ができます。CSV形式で入力データを抽出して確認する場合もコンポーネントの 名前で区別することができます。
 
@@ -225,7 +227,7 @@ eformsignはMicrosoft Officeの **OZ in Office** リボンメニューでは、�
 
 .. note::
 
-   OZコンポーネントの属性ウィンドウは、コンポーネントが適用された箇所を選択後、OZ in Officeメニューの **プロパティ** アイコン(|image17|)をクリックすると表示されます。
+   コンポーネントの属性ウィンドウは、コンポーネントが適用された箇所を選択後、eformsignメニューの **プロパティ** アイコン(|image17|)をクリックすると表示されます。
 
 .. note::
 
@@ -882,7 +884,7 @@ PCのキーボード環境では、入力欄に任意の数字を直接入力で
    :alt: 録音コンポーネント
 
 
-OZ in Officeに録音コンポーネントを追加することで、以下のようにビューアーから録音したコンテンツを再生したり、新しく録音を行ったりすることができます。
+録音コンポーネントを追加することで、以下のようにビューアーから録音したコンテンツの再生、新規録音を行うことができます。
 
 |image32|
 
@@ -1092,7 +1094,7 @@ OZ in Officeに録音コンポーネントを追加することで、以下の�
 フォームファイルのアップロード
 -----------------------------------
 
-OZ in Officeから文書にコンポーネントを追加し、編集が完了したファイルは次の手順でアップロードします。
+Office製品から文書にコンポーネントを追加し、編集が完了したファイルは次の手順でアップロードします。
 
 1. リボンメニューのファイルグループにある **実行**\ (|image39|)アイコンをクリックすると、次のようなログインポップアップ画面が表示されます。
 
@@ -1154,7 +1156,7 @@ OZ in Officeから文書にコンポーネントを追加し、編集が完了�
 
 .. note::
 
-   テンプレートの詳細な説明については、`フォームビルダー <chapter7.html#template_fb>`__\ をご参照ください。
+   テンプレートの詳細な説明については、`eformsign for Microsoft Officeのご紹介 <chapter7.html#template_fb>`__\ をご参照ください。
 
 
 
@@ -1195,7 +1197,7 @@ OZ in Officeから文書にコンポーネントを追加し、編集が完了�
 .. |image27| image:: resources/toggle.png
 .. |image28| image:: resources/form-builder-components_signature.png
 .. |image29| image:: resources/signature.png
-   :width: 300px
+   :width: 650px
 .. |image30| image:: resources/form-builder-components_camera.png
 .. |image31| image:: resources/camera1.png
 .. |image32| image:: resources/record1.png

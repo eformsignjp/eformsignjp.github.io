@@ -5,7 +5,7 @@ Webフォームデザイナーのご紹介
 ==============================
 
 
-**Webフォームデザイナー**\ は、既存の文書ファイルをeformsignサービスにアップロードし、電子文書化できるエディターです。
+**Webフォームデザイナー**\ は、既存の文書ファイルをeformsignサービスにアップロードし、電子文書化できるWebエディターです。
 
 **マイファイルで作成する** または **テンプレート管理** メニューから文書ファイルをアップロードするとWebフォームデザイナーが起動します。eformsignで使える様々な入力項目から任意の入力項目を選択して、文書上にドラッグアンドドロップし、各入力項目のプロパティを設定することで、電子フォームを簡単に作成することができます。
 
@@ -16,7 +16,7 @@ Webフォームデザイナーのご紹介
 
 .. note::
 
-   Microsoft Office製品から電子文書を作成できる、Microsoft Officeアドイン機能（OZ in Office フォームビルダー）も提供しております。フォームビルダーに関する情報は、`フォームビルダー <chapter5.html#formbuilder>`__\ をご参照ください。
+   Microsoft Office製品から電子文書を作成できる、Microsoft Officeアドイン（eformsign for Microsoft Office）も提供しております。eformsign for Microsoft Officeに関する情報は、`eformsign for Microsoft Officeのご紹介 <chapter6.html#formbuilder>`__\ をご参照ください。
 
 -------------------------
 ファイルのアップロード

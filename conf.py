@@ -24,7 +24,7 @@ copyright = '2024, FORCS CO., LTD. All rights reserved.'
 author = 'FORCS'
 
 # The short X.Y version
-version = 'version 10.2024.0425.206'
+version = 'version 10.2024.0627.205'
 # The full version, including alpha/beta/rc tags
 release = '2024.07.26'
 
@@ -155,7 +155,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'eformsignuserguide', 'eformsign User Guide Documentation',
+    (master_doc, 'eformsignuserguide', 'eformsign«æ?«¶?«Þ«Ë«å«¢«ë',
      [author], 1)
 ]
 
@@ -166,7 +166,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'eformsignUserGuide', 'eformsign User Guide Documentation',
+    (master_doc, 'eformsignUserGuide', 'eformsign«æ?«¶?«Þ«Ë«å«¢«ë',
      author, 'eformsignUserGuide', 'One line description of project.',
      'Miscellaneous'),
 ]
@@ -190,7 +190,7 @@ epub_title = project
 epub_exclude_files = ['search.html']
 
 html_theme_options = {
-    'logo_only': True,
+    'logo_only': True, 
     'titles_only': False
 }
 html_logo = "C:\eformsign_manual\eformsignjp.github.io\images\\forcs_b.png"
