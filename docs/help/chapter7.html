@@ -4,9 +4,10 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Office製品からeformsignのテンプレートを作成 &mdash; eformsign User Guide 2024.07.26 ドキュメント</title>
+  <title>Office製品からeformsignのテンプレートを作成 &mdash; eformsign User Guide 2024.10.25 ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
@@ -18,6 +19,7 @@
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
+        <script src="../_static/code-tabs.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
@@ -38,7 +40,7 @@
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                version 10.2024.0627.205
+                version 10.2024.1010.205
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -80,7 +82,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#id24">テンプレートの個別操作メニュー</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id25">テンプレート検索とテンプレート表示形式の設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id25">テンプレートの検索ソート</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter8.html">文書トレイ</a></li>
@@ -140,10 +142,10 @@
 <ol class="arabic simple">
 <li><p>Word/Excel/PowerPointファイルを開きます。</p></li>
 <li><p><strong>eformsign</strong> のメニューに移動します。</p></li>
-<li><p>コンポーネントを追加する箇所を選択します。</p></li>
-<li><p>コンポーネントのタイプを選択します。</p></li>
-<li><p>追加したコンポーネントのサイズと位置を調整します。</p></li>
-<li><p><strong>実行</strong> ボタンをクリックして、コンポーネントの動作を確認します。</p></li>
+<li><p>入力項目を追加する箇所を選択します。</p></li>
+<li><p>入力項目のタイプを選択します。</p></li>
+<li><p>追加した入力項目のサイズと位置を調整します。</p></li>
+<li><p><strong>実行</strong> ボタンをクリックして、入力項目の動作を確認します。</p></li>
 <li><p><strong>アップロード</strong> ボタンをクリックして、テンプレートをアップロードします。</p></li>
 <li><p>新しいテンプレートを選択し、テンプレートの詳細設定を行います。</p></li>
 </ol>
@@ -174,7 +176,7 @@
 <p>ワークフローは、テンプレート管理者が各テンプレートに対し <strong>テンプレートの設定</strong> &gt; <strong>ワークフローの設定</strong>から設定を行えます。</p>
 <p>ワークフローは、<strong>開始 - 完了</strong>が基本ステップです。また、以下のように任意の受信者のタイプを追加してワークフローを作成することもできます。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/workflow_new.png"><img alt="ワークフローのステップ" src="../_images/workflow_new.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/workflow_new_fb.png"><img alt="ワークフローのステップ" src="../_images/workflow_new_fb.png" style="width: 500px;" /></a>
 </figure>
 <ul>
 <li><p><strong>受信者</strong></p>
@@ -195,7 +197,7 @@
 <p><strong>テンプレート設定画面への移動方法</strong></p>
 <ol class="arabic simple">
 <li><p>サイドバーのメニューから <strong>テンプレート管理</strong>に移動します。</p></li>
-<li><p>テンプレート名、もしくは設定アイコン(<a class="reference internal" href="../_images/config-icon.PNG"><img alt="image1" src="../_images/config-icon.PNG" style="width: 20px;" /></a>)をクリックします。</p></li>
+<li><p>テンプレート名または設定ボタンをクリックします。</p></li>
 </ol>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/template-settings.png"><img alt="テンプレート管理 &gt; 設定" src="../_images/template-settings.png" style="width: 700px;" /></a>
@@ -290,7 +292,7 @@
 </figure>
 <ul>
 <li><p><strong>文書入力項目</strong>: 文書に入力した内容を文書タイトルに追加します。</p>
-<p><strong>ルールの追加</strong> ボタンをクリック後、<strong>文書の入力コンポーネント</strong>をクリックするとテンプレートのコンポーネントIDのリストが表示されます。選択されたコンポーネント内の情報が文書のタイトルに追加されます。</p>
+<p><strong>ルールの追加</strong> ボタンをクリック後、<strong>文書内の入力項目</strong>をクリックするとテンプレートの入力項目のリストが表示されます。選択された入力項目内の情報が文書のタイトルに追加されます。</p>
 </li>
 <li><p><strong>基本情報</strong>: 文書に関連する情報をタイトルに追加します。</p>
 <p><strong>基本情報</strong>をクリックすると以下の項目から、文書のタイトルに表示する情報を設定できます。</p>
@@ -367,7 +369,7 @@
 <section id="docnumber-fb">
 <span id="id10"></span><h4>全般 &gt; 文書番号の自動付与<a class="headerlink" href="#docnumber-fb" title="この見出しへのパーマリンク"></a></h4>
 <p>作成する文書にテンプレートごとの文書番号を連番で付与できます。
-テンプレートごとに文書番号自動生成の有無を設定でき、4つある文書番号形式の中から1つを選んで設定することができます。また、文書番号は文書コンポーネントを使用して文書に入力することができるほか、文書リストからの表示、文書番号での文書検索が可能です。</p>
+テンプレートごとに文書番号自動生成の有無を設定でき、4つある文書番号形式の中から1つを選んで設定することができます。また、文書番号は文書入力項目を使用して文書に入力することができるほか、文書リストからの表示、文書番号での文書検索が可能です。</p>
 <section id="id11">
 <h5><strong>文書番号の生成方法</strong><a class="headerlink" href="#id11" title="この見出しへのパーマリンク"></a></h5>
 <ol class="arabic">
@@ -432,12 +434,12 @@
 </section>
 <section id="id12">
 <h5><strong>文書番号の確認方法</strong><a class="headerlink" href="#id12" title="この見出しへのパーマリンク"></a></h5>
-<p>文書番号は、文書コンポーネントを利用することで文書内に入力したり、文書リストから確認することができます。</p>
+<p>文書番号は、文書入力項目を利用することで文書内に入力したり、文書リストから確認することができます。</p>
 <p><strong>文書内に文書番号を表示</strong></p>
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>Word/Excel/PowerPointのテンプレートファイルを開きます。</p></li>
-<li><p>文書番号を入れる箇所に文書コンポーネントを追加します。</p></li>
+<li><p>文書番号を入れる箇所に文書入力項目を追加します。</p></li>
 <li><p><strong>アップロード</strong> ボタンをクリックして、文書をeformsignにアップロードします。</p></li>
 <li><p><strong>テンプレート設定 &gt; 全般</strong>から <strong>文書番号の自動付与</strong>にチェックを入れます。</p></li>
 <li><p>文書番号の自動付与ルールを選択します。</p></li>
@@ -447,14 +449,15 @@
 <p><strong>文書リストからの文書番号の確認方法</strong></p>
 <blockquote>
 <div><p>文書番号は文書リストが確認できる文書トレイ（進行中の文書、要処理文書、完了文書）および文書管理メニュー（要文書管理権限）で確認することができます。</p>
-<ol class="arabic">
+<ol class="arabic simple">
 <li><p>サイドバーメニューの <strong>文書トレイ</strong> または <strong>文書管理</strong> メニューに移動します。</p></li>
 <li><p>右上の <strong>カラム設定</strong> アイコンをクリックします。</p></li>
 <li><p>カラムリストの <strong>文書番号</strong>にチェックを入れます。</p></li>
-<li><p>文書リストに <strong>文書番号</strong> カラムが追加されていることを確認します。</p>
-<p><img alt="image6" src="../_images/columnlist-docnum.png" /></p>
-</li>
+<li><p>文書リストに <strong>文書番号</strong> カラムが追加されていることを確認します。</p></li>
 </ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/doc-list-docnumber1.PNG"><img alt="文書トレイ - 文書リスト" src="../_images/doc-list-docnumber1.PNG" style="width: 700px;" /></a>
+</figure>
 </div></blockquote>
 <p><strong>文書番号で文書を検索する</strong></p>
 <blockquote>
@@ -507,11 +510,11 @@
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>ワークフローの結合 - 同時送信</strong></p>
-<p>ワークフローを追加すると、通常は設定された手順に従って各ステップの受信者に文書が送信されます。
-複数のステップのワークフローをマージした場合、マージされたワークフローのステップの受信者に文書を同時に送信することができます。</p>
+<p><strong>受信者ステップの結合 - 同時送信ワークフロー</strong></p>
+<p>受信者ステップを追加すると、通常は設定された手順に従って各ステップの受信者に文書が送信されます。
+複数のステップのワークフローを結合した場合、結合されたワークフローのステップの受信者に文書を同時に送信することができます。</p>
 <ol class="arabic simple">
-<li><p><strong>テンプレート管理</strong> 画面からテンプレート設定アイコン(歯車)をクリックします。</p></li>
+<li><p><strong>テンプレート管理</strong> 画面からテンプレートの <strong>設定</strong> をクリックします。</p></li>
 <li><p>画面上部から <strong>設定する</strong>をクリック後、 <strong>ワークフローの設定</strong> をクリックします。</p></li>
 <li><p>結合するワークフローステップのうち、 <strong>下にあるワークフローをクリック</strong>するとワークフローの左側に <strong>送信順序を結合</strong> アイコン(<a class="reference internal" href="../_images/workflow_merge_icon.png"><img alt="image8" src="../_images/workflow_merge_icon.png" style="width: 30px;" /></a>)が表示されます。</p></li>
 <li><p>そのアイコン(<a class="reference internal" href="../_images/workflow_merge_icon.png"><img alt="image8" src="../_images/workflow_merge_icon.png" style="width: 30px;" /></a>)をクリックすると、下段と上段のワークフローが結合されます。</p></li>
@@ -521,8 +524,8 @@
 </figure>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p><strong>結合したワークフローの分割</strong></p>
-<p>結合したワークフローをクリックすると、アイコンが表示されます。分割するワークフローのステップをクリック後、送信順序を分割アイコン(<a class="reference internal" href="../_images/workflow_unmerge_icon.png"><img alt="image10" src="../_images/workflow_unmerge_icon.png" style="width: 30px;" /></a>)をクリックすると結合したワークフローが分割されます。</p>
+<p><strong>結合されたワークフローの分割</strong></p>
+<p>結合されたワークフローをクリックすると、アイコンが表示されます。分割するワークフローのステップをクリック後、送信順序を分割アイコン(<a class="reference internal" href="../_images/workflow_unmerge_icon.png"><img alt="image10" src="../_images/workflow_unmerge_icon.png" style="width: 30px;" /></a>)をクリックすると結合したワークフローが分割されます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/workflow_split_fb.png"><img alt="テンプレートの設定 &gt; ワークフローの設定 &gt; 分割" src="../_images/workflow_split_fb.png" style="width: 500px;" /></a>
 </figure>
@@ -542,7 +545,7 @@
 <p>ステップをクリックすることで、各ワークフローステップの詳細プロパティを設定することができます。</p>
 <ul class="simple">
 <li><p><strong>属性</strong>では、ステップ名と状態の設定以外にも、ステップごとに詳細な設定をすることができます。</p></li>
-<li><p><strong>項目の管理</strong>では、ワークフローの各ステップで受信者がコンポーネント(入力項目)に入力できるよう許可する <strong>編集許可</strong> 項目と、入力が必須となる <strong>必須入力</strong> 項目を設定することができます。</p></li>
+<li><p><strong>項目の管理</strong>では、ワークフローの各ステップで受信者が入力項目に入力できるよう許可する <strong>編集許可</strong> 項目と、入力が必須となる <strong>必須入力</strong> 項目を設定することができます。</p></li>
 </ul>
 <p><a class="reference internal" href="../_images/template-setting-FB-workflow-field-control.png"><img alt="image12" src="../_images/template-setting-FB-workflow-field-control.png" style="width: 700px;" /></a></p>
 <hr class="docutils" />
@@ -674,8 +677,8 @@
 </figure>
 <dl class="simple">
 <dt><strong>❗注意事項</strong></dt><dd><ul class="simple">
-<li><p><strong>開始</strong> ステップに <strong>対面署名</strong>が設定された場合、 <strong>一括署名</strong>を行うことはできません。</p></li>
-<li><p><strong>同時送信(送信順序の結合)</strong>が設定されたワークフローのステップは <strong>対面署名</strong>を設定することはできず、 <strong>対面署名</strong>が設定されたステップの前後に <strong>同時送信(送信順序の結合)</strong> を設定することはできません。</p></li>
+<li><p><strong>開始</strong> ステップに <strong>対面署名</strong>が設定されている場合、 <strong>一括作成</strong>を行うことはできません。</p></li>
+<li><p><strong>同時送信ワークフロー(送信順序の結合)</strong>が設定されたワークフローステップでは <strong>対面署名</strong>の設定を行うことができず、 <strong>対面署名</strong>が設定されたステップの前後では <strong>同時送信(送信順序の結合)</strong>の設定を行うことはできません。</p></li>
 </ul>
 </dd>
 </dl>
@@ -707,7 +710,7 @@
 <p><strong>設定方法</strong></p>
 <ol class="arabic simple">
 <li><p>ダッシュボード <strong>メニュー &gt; テンプレート管理</strong>に移動します。</p></li>
-<li><p>テンプレートの <strong>設定アイコン（⚙）</strong>をクリックしてテンプレート設定画面に移動します。</p></li>
+<li><p>テンプレート名か右側の設定ボタンをクリックして、テンプレート設定画面に移動します。</p></li>
 <li><p><strong>ワークフローの設定</strong> タブに移動します。</p></li>
 <li><p><strong>受信者</strong> ステップを追加します。</p></li>
 <li><p>右側のプロパティの下部にある <strong>文書の非表示設定</strong>にチェックを入れます。</p></li>
@@ -772,7 +775,7 @@
 </section>
 <section id="field-fb">
 <span id="id22"></span><h3>フィールドの設定<a class="headerlink" href="#field-fb" title="この見出しへのパーマリンク"></a></h3>
-<p><strong>フィールドの設定</strong>では、文書リストとCSVにデータをダウンロードした時に表示されるコンポーネントの列の表示可否と順序を設定できます。また、テンプレートに入るフィールドの初期値または自動入力値を設定できます。</p>
+<p><strong>フィールドの設定</strong>では、文書リストとCSVにデータをダウンロードした時に表示される入力項目の列の表示可否と順序を設定できます。また、テンプレートに入るフィールドの初期値または自動入力値を設定できます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/template-field-setting.png"><img alt="テンプレートの設定 &gt; フィールドの設定" src="../_images/template-field-setting.png" style="width: 700px;" /></a>
 </figure>
@@ -857,12 +860,19 @@
 <li><p><strong>所有者を変更</strong> ：テンプレートの所有者を変更できます。デフォルトでは、テンプレートの所有者はテンプレートを作成した人になります。所有者を変更して他のメンバーに所有者を変更することもできます。テンプレートの所有者は、テンプレートの管理権限を持つメンバーの中から選択できます。</p>
 <p><img alt="image26" src="../_images/template-owner-change.PNG" /></p>
 </li>
+<li><p><strong>文書番号の設定を変更</strong>: テンプレート設定から設定した文書番号の設定を変更することができます。設定済みのテンプレートの文書番号を再設定することができます。</p>
+<div class="admonition caution">
+<p class="admonition-title">注意</p>
+<p>同じ文書番号の文書が複数生成される可能性があるため、よく確認した上で変更してください。</p>
+</div>
+<p><a class="reference internal" href="../_images/template-manage-menu-wfd-numbersetting.png"><img alt="image27" src="../_images/template-manage-menu-wfd-numbersetting.png" style="width: 500px;" /></a></p>
+</li>
 </ul>
 </section>
 <section id="id25">
-<h2>テンプレート検索とテンプレート表示形式の設定<a class="headerlink" href="#id25" title="この見出しへのパーマリンク"></a></h2>
+<h2>テンプレートの検索ソート<a class="headerlink" href="#id25" title="この見出しへのパーマリンク"></a></h2>
 <p><strong>テンプレート管理</strong> 画面では、テンプレートをカテゴリでフィルタ、検索、ソートすることができます。</p>
-<p><img alt="image27" src="../_images/document-manager-setting.PNG" /></p>
+<p><a class="reference internal" href="../_images/template-manage-menu-wfd-numbersetting.png"><img alt="image27" src="../_images/template-manage-menu-wfd-numbersetting.png" style="width: 500px;" /></a></p>
 <dl>
 <dt><strong>① テンプレートの照会</strong></dt><dd><p>クリックすると、テンプレートの状態やカテゴリでテンプレートをフィルタできます。 <strong>X</strong> をクリックすると、全てのカテゴリを表示します。</p>
 <p>カテゴリの作成は <strong>テンプレート設定 &gt; 全般</strong>から行うことができます。</p>
@@ -870,24 +880,6 @@
 <dt><strong>② テンプレートの検索</strong></dt><dd><p>検索キーワードを入力することで、テンプレートを検索できます。</p>
 </dd>
 <dt><strong>③ ソート</strong></dt><dd><p>テンプレートをテンプレート名またはカテゴリで昇順、降順に並び替えます。</p>
-</dd>
-<dt><strong>④ 表示形式の設定</strong></dt><dd><p>テンプレート管理画面の表示形式形式をサムネイル形式/リスト形式から選択することができます。</p>
-<ul>
-<li><p>サムネイル形式: テンプレートのサムネイルを表示し、テンプレートの概要を画像形式で確認することができます。</p>
-<blockquote>
-<div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/template-lists-thumnail.png"><img alt="テンプレートの表示形式-サムネイル" src="../_images/template-lists-thumnail.png" style="width: 600px;" /></a>
-</figure>
-</div></blockquote>
-</li>
-<li><p>リスト形式: テンプレートをリスト形式で一覧表示します。</p>
-<blockquote>
-<div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/template-lists.png"><img alt="テンプレートの表示形式-リスト" src="../_images/template-lists.png" style="width: 600px;" /></a>
-</figure>
-</div></blockquote>
-</li>
-</ul>
 </dd>
 </dl>
 </section>

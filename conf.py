@@ -24,9 +24,9 @@ copyright = '2024, FORCS CO., LTD. All rights reserved.'
 author = 'FORCS'
 
 # The short X.Y version
-version = 'version 10.2024.0627.205'
+version = 'version 10.2024.1010.205'
 # The full version, including alpha/beta/rc tags
-release = '2024.07.26'
+release = '2024.10.25'
 
 
 # -- General configuration ---------------------------------------------------
@@ -39,6 +39,10 @@ release = '2024.07.26'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+#'sphinxcontrib.redoc',
+    'sphinx_code_tabs',
+    'sphinx_rtd_theme',
+    'sphinx.ext.todo', 'sphinx.ext.mathjax', #'sphinxcontrib.fulltoc'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -113,6 +117,13 @@ html_favicon = 'C:\eformsign_manual\eformsignjp.github.io\images\\favicon.ico'
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
+html_sidebars = {
+    '**': [
+        'globaltoc.html',
+        'localtoc.html',
+        'searchbox.html',
+    ]
+}
 
 
 # -- Options for HTMLHelp output ---------------------------------------------
@@ -123,6 +134,31 @@ htmlhelp_basename = 'eformsignUserGuidedoc'
 
 # -- Options for LaTeX output ------------------------------------------------
 
+latex_engine = 'pdflatex'
+
+latex_engine = 'xelatex'
+latex_use_xindy = False
+
+latex_elements = {
+    'papersize': 'a4paper',
+    'pointsize': '10pt',
+    'classoptions': ',oneside',
+    'babel': '',
+    'inputenc': '',
+    'utf8extra': '',
+    'fontenc': '',
+    'fontpkg': '',
+    'geometry': '',
+    'fncychap': '',
+    'preamble': r'''
+        \usepackage{kotex}
+        \usepackage{float}
+        \floatplacement{figure}{H}
+        ''',
+}
+
+
+latex_engine = 'xelatex'
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
@@ -149,13 +185,16 @@ latex_documents = [
      'FORCS', 'manual'),
 ]
 
+latex_additional_files = [
+    'kotex.sty',
+]
 
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'eformsignuserguide', 'eformsign«æ?«¶?«Þ«Ë«å«¢«ë',
+    (master_doc, 'eformsignuserguide', 'eformsign+f?+6?+^+K+e+"+k',
      [author], 1)
 ]
 
@@ -166,7 +205,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'eformsignUserGuide', 'eformsign«æ?«¶?«Þ«Ë«å«¢«ë',
+    (master_doc, 'eformsignUserGuide', 'eformsign+f?+6?+^+K+e+"+k',
      author, 'eformsignUserGuide', 'One line description of project.',
      'Miscellaneous'),
 ]

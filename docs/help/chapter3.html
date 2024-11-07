@@ -4,9 +4,10 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>文書の新規作成 &mdash; eformsign User Guide 2024.07.26 ドキュメント</title>
+  <title>文書の新規作成 &mdash; eformsign User Guide 2024.10.25 ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
@@ -18,6 +19,7 @@
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
+        <script src="../_static/code-tabs.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
@@ -38,7 +40,7 @@
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                version 10.2024.0627.205
+                version 10.2024.1010.205
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -196,6 +198,28 @@ PCに保存されているファイルをそのままアップロードして電
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
+<p><strong>受信者ステップの結合 - 同時送信ワークフロー</strong></p>
+<p>受信者ステップを追加すると、通常は設定された手順に従って各ステップの受信者に文書が送信されます。
+複数のステップのワークフローを結合した場合、結合されたワークフローのステップの受信者に文書を同時に送信することができます。</p>
+<ol class="arabic">
+<li><p>結合する受信者ステップのうち、 <strong>下側の受信者をクリック</strong>すると左側に <strong>送信順序を結合</strong> アイコン(<a class="reference internal" href="../_images/workflow_merge_icon.png"><img alt="image17" src="../_images/workflow_merge_icon.png" style="width: 30px;" /></a>)が表示されます。</p></li>
+<li><p><strong>送信順序を結合</strong> アイコン(<a class="reference internal" href="../_images/workflow_merge_icon.png"><img alt="image17" src="../_images/workflow_merge_icon.png" style="width: 30px;" /></a>)をクリックすると、下側と上側のステップが結合されます。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/merge_steps.png"><img alt="受信先を指定する &gt; 結合" src="../_images/merge_steps.png" style="width: 500px;" /></a>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p><strong>結合されたワークフローの分割</strong></p>
+<p>結合されたワークフローをクリックすると、アイコンが表示されます。分割するワークフローのステップをクリック後、送信順序を分割アイコン(<a class="reference internal" href="../_images/workflow_unmerge_icon.png"><img alt="image18" src="../_images/workflow_unmerge_icon.png" style="width: 30px;" /></a>)をクリックすると結合したワークフローが分割されます。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/split_steps.png"><img alt="受信先を指定する &gt; 分割" src="../_images/split_steps.png" style="width: 500px;" /></a>
+</figure>
+</div>
+</li>
+</ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p><strong>CC(参照者)の追加</strong></p>
 <p>文書の送信時にCC(参照者)を追加することができます。CCに追加されたユーザーは文書の進行状態をモニタリングすることができ、文書が送信・完了するとCCに追加されたユーザーに通知を送ります。</p>
 <p>❗CCには <strong>グループ/メンバーのみ指定</strong>できます。外部受信者はCCに指定することができません。</p>
@@ -204,8 +228,10 @@ PCに保存されているファイルをそのままアップロードして電
 </figure>
 </div>
 </li>
-<li><p><strong>オプション</strong>をクリックして文書のタイトル、完了文書に対するタイムスタンプの付与などを設定します。</p>
-<p><a class="reference internal" href="../_images/newfrommyfile-option.png"><img alt="image7" src="../_images/newfrommyfile-option.png" style="width: 700px;" /></a></p>
+<li><p><strong>オプション</strong>をクリックして文書の受信者の設定と、完了文書に対するタイムスタンプの付与などを設定します。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/newfrommyfile-option.png"><img alt="オプション設定" src="../_images/newfrommyfile-option.png" style="width: 700px;" /></a>
+</figure>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>💡 <strong>タイムスタンプとは？</strong></p>
@@ -219,13 +245,22 @@ PCに保存されているファイルをそのままアップロードして電
 </div>
 </li>
 <li><p>全ての設定完了後、 <strong>文書作成をスタート</strong>をクリックします。</p>
-<div class="admonition caution">
-<p class="admonition-title">注意</p>
-<p><strong>文書作成をスタート</strong>をクリックした時点から課金の対象として集計されます。</p>
-</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/newfrommyfile-option.png"><img alt="オプション設定" src="../_images/newfrommyfile-option.png" style="width: 700px;" /></a>
+</figure>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p><strong>下書きとして保存</strong> ボタンを押すと、要処理文書に格納されます。</p>
+<ul>
+<li><p>アップロードしたファイル名が自動的に文書のタイトルに設定され、画面左上から変更することができます。</p>
+<blockquote>
+<div><figure class="align-default">
+<a class="reference internal image-reference" href="../_images/newfrommyfile-edit-title.png"><img alt="CC追加" src="../_images/newfrommyfile-edit-title.png" style="width: 500px;" /></a>
+</figure>
+</div></blockquote>
+</li>
+<li><p><strong>下書きとして保存</strong> をクリックすると下書きとして保存され、要処理文書トレイで確認することができます。</p></li>
+<li><p><strong>文書作成をスタート</strong>をクリックした時点で課金対象の文書数にカウントされます。</p></li>
+</ul>
 </div>
 </li>
 <li><p>文書を確認し、 <strong>送信</strong> をクリックすると、受信先に文書が送信されます。</p>
@@ -375,12 +410,11 @@ PCに保存されているファイルをそのままアップロードして電
 </section>
 <section id="option">
 <span id="id5"></span><h3><strong>オプション設定</strong><a class="headerlink" href="#option" title="この見出しへのパーマリンク"></a></h3>
-<p>最後のステップであるオプション設定では、文書タイトルの作成、通知の設定・編集をすることができます。また、タイムスタンプの付与も可能です。</p>
+<p>最後のステップであるオプション設定では、文書の通知設定・編集を行うことができます。また、タイムスタンプの付与も可能です。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/newfrommyfile-option.png"><img alt="オプション設定の画面" src="../_images/newfrommyfile-option.png" style="width: 700px;" /></a>
 </figure>
 <ul>
-<li><p><strong>文書のタイトル</strong>: 文書のタイトルを設定します。設定した文書のタイトルで文書を送信・文書トレイに保管します。</p></li>
 <li><p><strong>通知の設定:</strong> 文書の進行状態と文書の完了に関する通知を受け取る受信者の設定、通知メッセージのプレビュー・編集ができます。</p>
 <blockquote>
 <div><p><strong>文書の完了通知の編集</strong></p>
@@ -539,7 +573,7 @@ PCに保存されているファイルをそのままアップロードして電
 <p>テンプレートの入力項目のうち、一部だけ <strong>一括作成</strong> 画面に表示されない場合、以下の2つの項目を確認してください。</p>
 <ol class="arabic simple">
 <li><p>一括作成で入力できない入力項目: カメラ、録音、グループ化された入力項目は一括作成で入力できません。</p></li>
-<li><p>作成ステップでアクセス許可された入力項目の確認: <strong>テンプレート管理 &gt; テンプレートの設定(⚙) &gt; ワークフローの設定 &gt;</strong> そのワークフローステップで、アクセスが許可された入力項目のみ表示されます。</p></li>
+<li><p>作成ステップでアクセス許可された入力項目の確認: <strong>テンプレート管理 &gt; テンプレートの設定 &gt; ワークフローの設定 &gt;</strong> ワークフローステップ内で、アクセスが許可された入力項目のみ表示されます。</p></li>
 </ol>
 </div>
 </section>

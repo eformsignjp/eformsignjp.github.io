@@ -4,9 +4,10 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Webフォームデザイナーのご紹介 &mdash; eformsign User Guide 2024.07.26 ドキュメント</title>
+  <title>Webフォームデザイナーのご紹介 &mdash; eformsign User Guide 2024.10.25 ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
@@ -18,6 +19,7 @@
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
+        <script src="../_static/code-tabs.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
@@ -38,7 +40,7 @@
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                version 10.2024.0627.205
+                version 10.2024.1010.205
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -291,7 +293,7 @@
 <p><img alt="image4" src="../_images/signature.png" /></p>
 <p><strong>入力項目のプロパティ</strong></p>
 <figure class="align-default">
-<img alt="署名入力項目のプロパティの設定" src="../_images/Signature-component-properties_web.png" />
+<a class="reference internal image-reference" href="../_images/Signature-component-properties_web.png"><img alt="署名入力項目のプロパティの設定" src="../_images/Signature-component-properties_web.png" style="width: 200px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
 <p>署名入力項目の名前を入力します。
@@ -389,7 +391,7 @@
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>入力ルール設定で <strong>直接入力</strong>を選択すると、数字、アルファベットなど、入力する文字の種類と文字数などのルールを設定することができます。
-例）パスポートの旅券番号を入力するには、旅券番号のタイプに応じてルールを次のように設定できます。</p>
+例）パスポートの旅券番号を入力するには、次のようにルールを設定することができます。</p>
 <p>旅券番号は「アルファベット2桁+数字7桁」の組み合わせで構成されているため、アルファベット大文字で始められるように「&gt;LL」、数字のみ入力できる「0」を使用して <strong>&gt;LL0000000</strong>とルールを設定します。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/text-component-rule.png"><img alt="入力ルール設定 - 直接入力" src="../_images/text-component-rule.png" style="width: 300px;" /></a>
@@ -415,7 +417,7 @@
 </figure>
 <p><strong>入力項目のプロパティ</strong></p>
 <figure class="align-default">
-<img alt="手書き入力項目のプロパティの設定" src="../_images/handwriting-component-properties_web.png" />
+<a class="reference internal image-reference" href="../_images/handwriting-component-properties_web.png"><img alt="手書き入力項目のプロパティの設定" src="../_images/handwriting-component-properties_web.png" style="width: 250px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
 <p>手書き入力項目の名前を入力します。</p>
@@ -467,7 +469,7 @@
 </div>
 <p><strong>入力項目のプロパティ</strong></p>
 <figure class="align-default">
-<img alt="チェック入力項目のプロパティの設定" src="../_images/check-component-properties-1_web.png" />
+<a class="reference internal image-reference" href="../_images/check-component-properties-1_web.png"><img alt="チェック入力項目のプロパティの設定" src="../_images/check-component-properties-1_web.png" style="width: 250px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
 <p>チェック入力項目の選択項目は選択グループごとに名前を付ける必要があります。
@@ -508,7 +510,7 @@
 <p>ラジオ入力項目は、複数項目の中から1つの項目を選択する場合に使用します。</p>
 <p><strong>入力項目のプロパティ</strong></p>
 <figure class="align-default">
-<img alt="ラジオ入力項目のプロパティの設定" src="../_images/Radio-component-properties_web.png" />
+<a class="reference internal image-reference" href="../_images/Radio-component-properties_web.png"><img alt="ラジオ入力項目のプロパティの設定" src="../_images/Radio-component-properties_web.png" style="width: 250px;" /></a>
 </figure>
 <p><strong>① 名前</strong></p>
 <p>ラジオ入力項目の選択項目は、選択グループごとに名前を付ける必要があります。</p>
@@ -593,10 +595,10 @@
 <p>日付を表示する書式を指定します。デフォルト設定は、date_yyyy-MM-dd です。</p>
 <ul class="simple">
 <li><p><strong>yyyy：</strong> 年度を表示します。(西暦：yyyy年→2023年、和暦：ggge年→令和5年)</p></li>
-<li><p><strong>MM：</strong> 月を表示します。大文字で表記する必要があります。(MM月→8月)</p></li>
-<li><p><strong>dd：</strong> 日を表示します。(dd日→10日)</p></li>
+<li><p><strong>MM：</strong> 月を表示します。大文字で表記する必要があります。(MM月→08月、M月→8月)</p></li>
+<li><p><strong>dd：</strong> 日を表示します。(dd日→09日、d日→9日)</p></li>
 </ul>
-<p>「2020年 2月 5日」と表示するには、書式設定に「yyyy年 MM月 dd日」と入力します。</p>
+<p>「2023年 08月 09日」と表示するには、書式設定に「yyyy年 MM月 dd日」と入力します。</p>
 <p><strong>④ 入力可能な最小/最大日付</strong></p>
 <p>日付の選択時に選択可能な最小日付と最大日付を指定して、入力可能な日付の範囲を設定します。</p>
 <hr class="docutils" />

@@ -4,9 +4,10 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Webフォームデザイナーでテンプレート作成 &mdash; eformsign User Guide 2024.07.26 ドキュメント</title>
+  <title>Webフォームデザイナーでテンプレート作成 &mdash; eformsign User Guide 2024.10.25 ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
@@ -18,6 +19,7 @@
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
+        <script src="../_static/code-tabs.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
@@ -38,7 +40,7 @@
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                version 10.2024.0627.205
+                version 10.2024.1010.205
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -78,7 +80,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#id22">個別テンプレートメニュー</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id23">テンプレート検索とテンプレート表示形式の設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id23">テンプレートの検索と設定</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter6.html">eformsign for Microsoft Officeのご紹介</a></li>
@@ -140,14 +142,18 @@
 <p>アップロード可能なファイルサイズは最大9MBです。ファイルを複数追加する場合、全てのファイルサイズの合計が9MBを超えないようにしてください。</p>
 </div>
 <ol class="arabic">
-<li><p>テンプレートにする文書ファイルを直接ドラッグ&amp;ドロップするか、<strong>PCからファイルを選択</strong>をクリックし、ファイルを選択してアップロードします。</p>
+<li><p><strong>テンプレート管理</strong> 画面から <strong>新規テンプレートで作成</strong>をクリックします。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/template-manage-upload.png"><img alt="テンプレート管理&gt;ファイルアップロード（1）" src="../_images/template-manage-upload.png" style="width: 700px;" /></a>
 </figure>
+</li>
+<li><p>新規テンプレートで作成した文書ファイルをドラック＆ドロップするか、 <strong>PCからファイルを選択</strong> をクリックしてテンプレートの元となるファイルをアップロードします。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/template-manage-upload-popup.png"><img alt="テンプレート管理&gt;ファイルアップロード（2）" src="../_images/template-manage-upload-popup.png" style="width: 400px;" /></a>
 </figure>
 </li>
+</ol>
+<ol class="arabic" start="2">
 <li><p>文書に合わせて文書参加者を追加し、役割を設定します。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/wfd-participants.png"><img alt="文書参加者の追加方法" src="../_images/wfd-participants.png" style="width: 400px;" /></a>
@@ -310,7 +316,7 @@
 <ul>
 <li><p><strong>文書入力項目</strong>： 入力欄に入力された内容を文書タイトルに追加します。</p>
 <blockquote>
-<div><p><strong>ルール追加</strong> ボタンをクリック後、 <strong>文書の入力項目</strong>をクリックするとテンプレートの入力項目IDのリストが表示されます。選択された入力項目内の情報が文書のタイトルに追加されます。</p>
+<div><p><strong>ルール追加</strong> ボタンをクリック後、 <strong>文書内の入力項目</strong>をクリックするとテンプレートの入力項目IDのリストが表示されます。選択された入力項目内の情報が文書のタイトルに追加されます。</p>
 </div></blockquote>
 </li>
 <li><p><strong>基本情報</strong>： 文書に関する情報をタイトルに追加します。</p>
@@ -565,7 +571,7 @@
 <p>ワークフローを追加すると、通常は設定された手順に従って各ステップの受信者に文書が送信されます。
 複数のステップのワークフローをマージした場合、マージされたワークフローのステップの受信者に文書を同時に送信することができます。</p>
 <ol class="arabic">
-<li><p><strong>テンプレート管理</strong> 画面からテンプレート設定アイコン(歯車)をクリックします。</p></li>
+<li><p><strong>テンプレート管理</strong> 画面から、テンプレートの <strong>設定</strong> をクリックします。</p></li>
 <li><p>画面上部から <strong>設定する</strong>をクリック後、 <strong>ワークフローの設定</strong> をクリックします。</p></li>
 <li><p>結合するワークフローステップのうち、 <strong>下にあるワークフローをクリック</strong>するとワークフローの左側に <strong>送信順序を結合</strong> アイコン(<a class="reference internal" href="../_images/workflow_merge_icon.png"><img alt="image7" src="../_images/workflow_merge_icon.png" style="width: 30px;" /></a>)が表示されます。</p></li>
 <li><p>そのアイコン(<a class="reference internal" href="../_images/workflow_merge_icon.png"><img alt="image7" src="../_images/workflow_merge_icon.png" style="width: 30px;" /></a>)をクリックすると、下段と上段のワークフローが結合されます。</p>
@@ -719,7 +725,7 @@
 <li><p><strong>対面署名者：</strong> 対面署名を行います。ワークフロー受信者タイプのうち、参加者のみが <strong>対面署名者</strong> になることができます。</p>
 <blockquote>
 <div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/inperson-signing-wf.png"><img alt="対面署名設定" src="../_images/inperson-signing-wf.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/inperson-signing-template.png"><img alt="対面署名設定" src="../_images/inperson-signing-template.png" style="width: 700px;" /></a>
 </figure>
 </div></blockquote>
 </li>
@@ -728,7 +734,7 @@
 <blockquote>
 <div><ul class="simple">
 <li><p><strong>開始</strong> ステップに <strong>対面署名</strong>が設定されている場合、 <strong>一括作成</strong>を行うことはできません。</p></li>
-<li><p><strong>同時送信(送信順序の結合)</strong>が設定されたワークフローステップでは <strong>対面署名</strong>の設定を行うことができず、 <strong>対面署名</strong>が設定されたステップの前後では <strong>同時送信(送信順序の結合)</strong>の設定を行うことはできません。</p></li>
+<li><p><strong>同時送信ワークフロー(送信順序の結合)</strong>が設定されたワークフローステップでは <strong>対面署名</strong>の設定を行うことができず、 <strong>対面署名</strong>が設定されたステップの前後では <strong>同時送信(送信順序の結合)</strong>の設定を行うことはできません。</p></li>
 </ul>
 </div></blockquote>
 <p>✅ 対面署名設定時の詳細な文書の作成方法は <a class="reference external" href="https://www.eformsign.com/jp/blog/announcement-2022311/">こちら</a>をご参照ください。</p>
@@ -893,7 +899,7 @@
 <p><strong>設定方法</strong></p>
 <ol class="arabic simple">
 <li><p>ダッシュボード画面から <strong>メニュー &gt; テンプレート管理</strong>に移動します。</p></li>
-<li><p>テンプレートの <strong>設定アイコン(⚙)</strong>をクリックしてテンプレート設定画面に移動します。</p></li>
+<li><p>テンプレート名か右側の設定ボタンをクリックして、テンプレート設定画面に移動します。</p></li>
 <li><p><strong>ワークフロー設定</strong> タブに移動します。</p></li>
 <li><p><strong>受信者</strong> ステップを追加します。</p></li>
 <li><p>右側のプロパティ画面下側の <strong>文書の非表示設定</strong>にチェックを入れます。</p></li>
@@ -979,13 +985,13 @@
 <li><p><strong>通知テンプレートの選択:</strong> 通知テンプレートはデフォルトのテンプレートとして設定されていますが、別途作成した通知テンプレートがあれば変更できます。新規通知テンプレートを追加する方法は <a class="reference external" href="chapter9.html#notification-template">通知テンプレート管理</a>をご参照ください。</p></li>
 <li><p><strong>メールのタイトル:</strong> 文書の完了時に送信されるメールのタイトルを設定します。</p></li>
 <li><p><strong>SMSメッセージ:</strong> 文書完了通知をSMSで送信する際に、SMSで送信するメッセージを設定します。設定したメッセージと一緒に、文書を確認できるリンクが送信されます。</p></li>
-<li><p><strong>本文の編集:</strong> 通知メッセージの内容を編集することができます。</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>メッセージの長さは最大65バイト(全角文字32文字、半角65文字)までです。</p>
+<p>SMSメッセージの長さは最大65バイト(全角文字32文字、半角65文字)までです。</p>
 </div>
 <ul>
+<li><p><strong>本文の編集:</strong> 通知メッセージの内容を編集することができます。</p></li>
 <li><p><strong>添付ファイルと添付方法:</strong> 完了通知と一緒に送信するファイルの選択と、その添付方法を選択します。</p>
 <blockquote>
 <div><ul class="simple">
@@ -1003,7 +1009,7 @@
 </section>
 <section id="id22">
 <h2>個別テンプレートメニュー<a class="headerlink" href="#id22" title="この見出しへのパーマリンク"></a></h2>
-<p><strong>テンプレート管理</strong> 画面で、テンプレート名の右側にあるメニューアイコンをクリックすると、各テンプレートのメニューが表示されます。</p>
+<p><strong>テンプレート管理</strong> 画面で、テンプレート名の右側にある3点アイコン(⋯)をクリックすると、各テンプレートのメニューが表示されます。</p>
 <p><a class="reference internal" href="../_images/template-manage-menu-wfd.png"><img alt="image23" src="../_images/template-manage-menu-wfd.png" style="width: 500px;" /></a></p>
 <ul>
 <li><p><strong>複製</strong>： テンプレートを複製します。テンプレートの文書ファイルとテンプレートの設定を複製します。詳細設定の変更、保存が可能です。</p></li>
@@ -1026,8 +1032,8 @@
 </ul>
 </section>
 <section id="id23">
-<h2>テンプレート検索とテンプレート表示形式の設定<a class="headerlink" href="#id23" title="この見出しへのパーマリンク"></a></h2>
-<p><strong>テンプレート管理</strong>　画面では、テンプレートをカテゴリでフィルタ、検索、ソートすることができます。</p>
+<h2>テンプレートの検索と設定<a class="headerlink" href="#id23" title="この見出しへのパーマリンク"></a></h2>
+<p><strong>テンプレート管理</strong> 画面では、テンプレートをカテゴリでフィルタ、検索、ソートすることができます。</p>
 <p><a class="reference internal" href="../_images/template-manage-search.png"><img alt="image27" src="../_images/template-manage-search.png" style="width: 700px;" /></a></p>
 <dl>
 <dt><strong>①　テンプレート検索</strong></dt><dd><p>クリックすると、テンプレートのステータス、カテゴリでテンプレートをフィルタできます。 <strong>×</strong> をクリックすると、全てのカテゴリを表示します。</p>
@@ -1036,24 +1042,6 @@
 <dt><strong>②　テンプレート検索</strong></dt><dd><p>検索キーワードを入力することで、テンプレートを検索することができます。</p>
 </dd>
 <dt><strong>③　ソート</strong></dt><dd><p>テンプレートをテンプレート名またはカテゴリで昇順、降順に並び替えます。</p>
-</dd>
-<dt><strong>④ 表示形式の設定</strong></dt><dd><p>テンプレート管理画面の表示形式形式をサムネイル形式/リスト形式から選択することができます。</p>
-<ul>
-<li><p>サムネイル形式: テンプレートのサムネイルを表示し、テンプレートの概要を画像形式で確認することができます。</p>
-<blockquote>
-<div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/template-lists-thumnail.png"><img alt="テンプレートの表示形式-サムネイル" src="../_images/template-lists-thumnail.png" style="width: 600px;" /></a>
-</figure>
-</div></blockquote>
-</li>
-<li><p>リスト形式: テンプレートをリスト形式で一覧表示します。</p>
-<blockquote>
-<div><figure class="align-default">
-<a class="reference internal image-reference" href="../_images/template-lists.png"><img alt="テンプレートの表示形式-リスト" src="../_images/template-lists.png" style="width: 600px;" /></a>
-</figure>
-</div></blockquote>
-</li>
-</ul>
 </dd>
 </dl>
 </section>

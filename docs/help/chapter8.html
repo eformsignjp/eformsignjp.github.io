@@ -4,9 +4,10 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>文書トレイ &mdash; eformsign User Guide 2024.07.26 ドキュメント</title>
+  <title>文書トレイ &mdash; eformsign User Guide 2024.10.25 ドキュメント</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/code-tabs.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
@@ -18,6 +19,7 @@
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/translations.js"></script>
+        <script src="../_static/code-tabs.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
@@ -38,7 +40,7 @@
               <img src="../_static/forcs_b.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                version 10.2024.0627.205
+                version 10.2024.1010.205
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -117,6 +119,9 @@
 <h2>文書トレイ<a class="headerlink" href="#id2" title="この見出しへのパーマリンク"></a></h2>
 <p>作成した文書はその状態により、3つの文書トレイに分けて保存されます。</p>
 <p>文書トレイでは各文書の状態と履歴、詳細情報を確認・管理することできるほか、文書の処理・再送信・完了文書の送信なども行うことができます。文書作成中に一時保存した文書は、 <strong>要処理文書</strong> に表示され、リストから文書を選択し、送信することができます。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/document_inbox.png"><img alt="文書トレイメニュー" src="../_images/document_inbox.png" style="width: 700px;" /></a>
+</figure>
 <ul class="simple">
 <li><p><strong>要処理文書：</strong> 一時保存した文書、処理が必要な文書（他のメンバーが作成を依頼した文書）、または外部受信者に送信した文書のうち、未処理の文書のリストを確認できます。</p></li>
 <li><p><strong>進行中の文書：</strong> 作成または処理した文書のうち、完了していない文書のリストを確認できます。</p></li>
@@ -138,9 +143,12 @@
 <li><p><strong>文書管理：</strong> 文書管理の権限を持つメンバーのみアクセス可能なメニューです。文書管理の権限を持つ場合、管理権限を持つテンプレートで作成された全ての文書を照会することができます。</p></li>
 <li><p><strong>一括作成文書管理:</strong> 文書管理者権限を持つメンバーのみアクセス可能なメニューです。文書管理権限を持つテンプレートで一括作成された文書を照会することができます。</p></li>
 </ul>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/document_inbox.png"><img alt="文書トレイメニュー" src="../_images/document_inbox.png" style="width: 700px;" /></a>
-</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>他のメンバーが送信した文書に対して受信者が文書の処理を行っていない場合、文書管理者が代わりに文書の <strong>再依頼</strong>を行うことができます。
+- 再依頼を行うことができる文書は <strong>文書管理</strong>と <strong>一括作成文書の管理 &gt; 詳細を表示</strong>に <strong>再依頼</strong> ボタンが表示されます。
+- 一括作成文書トレイと一括作成文書の管理で一括で文書を再依頼する際には、依頼メッセージの編集と送信期限の修正を行うことができます。</p>
+</div>
 </section>
 <section id="id3">
 <h2>文書トレイの構成<a class="headerlink" href="#id3" title="この見出しへのパーマリンク"></a></h2>
@@ -176,7 +184,7 @@
 <li><p>共有 (<a class="reference internal" href="../_images/share_icon.png"><img alt="image1" src="../_images/share_icon.png" style="width: 25px;" /></a>): アイコンをクリックし文書を選択すろと、共有文書トレイに文書を共有することができます。</p></li>
 <li><p>文書トレイのカラム (<a class="reference internal" href="../_images/column_icon.png"><img alt="image4" src="../_images/column_icon.png" style="width: 35px;" /></a>): 文書トレイのカラムの種類が表示され、文書リストにどんな項目を表示するか選択することができます。</p></li>
 </ul>
-<p>-文書のダウンロード (<a class="reference internal" href="../_images/download_icon.png"><img alt="image5" src="../_images/download_icon.png" style="width: 60px;" /></a>): 文書をPDFファイルまたはデータファイル(CSV)形式でダウンロードすることができます。また、データファイルの生成リストを確認することができます。</p>
+<p>-文書のダウンロード (<a class="reference internal" href="../_images/download_icon.png"><img alt="image5" src="../_images/download_icon.png" style="width: 40px;" /></a>): 文書をPDFファイルまたはデータファイル(CSV)形式でダウンロードすることができます。また、データファイルの生成リストを確認することができます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p><strong>文書の削除方法</strong></p>

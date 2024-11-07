@@ -36,7 +36,7 @@ eformsignで作成した文書の完了後に、外部クラウドストレー�
    デフォルトのパスには、eformsignのサブフォルダーとして会社名が入ります。
    保存パス設定ポップアップで **新しいフォルダー** ボタンをクリックすることで、新規フォルダーを作成し、保存パスを変更することもできます。
 
-   .. figure:: resources/analytic_8.png
+   .. figure:: resources/connect_3.png
       :alt: 保存パス設定
       :width: 400px
 
@@ -117,4 +117,4 @@ eformsignで作成した文書の完了後に、外部クラウドストレー�
 
 .. figure:: resources/analytic_8.png
    :alt: データ連携の設定画面
-   :width: 750px
+   :width: 800px

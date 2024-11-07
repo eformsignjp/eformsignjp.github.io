@@ -13,6 +13,10 @@
 
 文書トレイでは各文書の状態と履歴、詳細情報を確認・管理することできるほか、文書の処理・再送信・完了文書の送信なども行うことができます。文書作成中に一時保存した文書は、 **要処理文書** に表示され、リストから文書を選択し、送信することができます。
 
+.. figure:: resources/document_inbox.png
+   :alt: 文書トレイメニュー
+   :width: 700px
+
 
 -  **要処理文書：** 一時保存した文書、処理が必要な文書（他のメンバーが作成を依頼した文書）、または外部受信者に送信した文書のうち、未処理の文書のリストを確認できます。
 
@@ -42,9 +46,12 @@
 -  **一括作成文書管理:** 文書管理者権限を持つメンバーのみアクセス可能なメニューです。文書管理権限を持つテンプレートで一括作成された文書を照会することができます。
 
 
-.. figure:: resources/document_inbox.png
-   :alt: 文書トレイメニュー
-   :width: 700px
+.. tip::
+
+   他のメンバーが送信した文書に対して受信者が文書の処理を行っていない場合、文書管理者が代わりに文書の **再依頼**\ を行うことができます。
+   - 再依頼を行うことができる文書は **文書管理**\ と **一括作成文書の管理 > 詳細を表示**\ に **再依頼** ボタンが表示されます。
+   - 一括作成文書トレイと一括作成文書の管理で一括で文書を再依頼する際には、依頼メッセージの編集と送信期限の修正を行うことができます。
+
 
 
 
@@ -467,6 +474,7 @@ eformsignでは、指定された管理者のみ文書を削除することが�
 
 **マイファイルで文書作成**\ から作成した文書を保存しておけば、毎回新規作成せずとも、テンプレートのように使うことができます。
 
+
 1. サイドバーのメニューから **下書きとして保存**\ をクリックして移動します。
 
    .. figure:: resources/draftbox-menu.png
@@ -675,7 +683,6 @@ eformsignでは、指定された管理者のみ文書を削除することが�
 
 
 
-
 .. |image1| image:: resources/share_icon.png
    :width: 25px
 .. |image2| image:: resources/menu_icon_2.png
@@ -685,7 +692,7 @@ eformsignでは、指定された管理者のみ文書を削除することが�
 .. |image4| image:: resources/column_icon.png
    :width: 35px
 .. |image5| image:: resources/download_icon.png
-   :width: 60px
+   :width: 40px
 .. |image6| image:: resources/actionrequiredbox-status-search.png
    :width: 700px
 .. |image7| image:: resources/inprocessbox-status-search.png

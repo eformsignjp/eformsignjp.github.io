@@ -3,7 +3,7 @@ eformsignのご紹介
 ==================
 
 
-eformsign(イーフォームサイン)は、時間や場所を問わず電子文書を作成・送信することができ、保存された情報を社内システムや外部クラウドストレージと連携することができるクラウド型電子契約サービスです。
+**eformsign(イーフォームサイン)** は、時間や場所を問わず電子文書を作成・送信することができ、保存された情報を社内システムや外部クラウドストレージと連携することができるクラウド型電子契約サービスです。
 
 📁 **eformsignのサービス紹介資料** `はこちら <https://drive.google.com/file/d/1Zf1qyAS8ty9GLgJwXvYhsKPMIBUJhbFI/view?usp=sharing>`__\
 
@@ -120,6 +120,7 @@ eformsignとeformsign for Microsoft Office(Office用eformsignアドイン)の最
    -  **ブラウザー：** Microsoft Edge 79 以上、Chrome 49 以上、Safari 9 以上
 
    -  **モバイルOS：** iOS 6.1.6 以上、Android 5.0 （Lollipop）以上
+
 
 -  **eformsign for Microsoft Office**
 
