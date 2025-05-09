@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'eformsign User Guide'
-copyright = '2024, FORCS CO., LTD. All rights reserved.'
+copyright = '2025, FORCS CO., LTD. All rights reserved.'
 author = 'FORCS'
 
 # The short X.Y version
-version = 'version 10.2024.1010.205'
+version = 'version 10.2025.0312.203'
 # The full version, including alpha/beta/rc tags
-release = '2024.10.25'
+release = '2025.03.26'
 
 
 # -- General configuration ---------------------------------------------------
@@ -78,7 +78,11 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+# html_theme = 'sphinx_rtd_theme'
+
+import sphinx_rtd_theme
+
+html_theme = 'piccolo_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -86,19 +90,30 @@ html_theme = 'sphinx_rtd_theme'
 #
 # html_theme_options = {}
 
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
+html_css_files = ['custom.css']
+
+# html_theme_options = {
+#     'logo_only': False,
+#     'display_version': True,
+#     'prev_next_buttons_location': 'bottom',
+#     'style_external_links': False,
+#     'vcs_pageview_mode': '',
+#     'style_nav_header_background': 'white',
+#     # Toc options
+#     'collapse_navigation': True,
+#     'sticky_navigation': True,
+#     'navigation_depth': 4,
+#     'includehidden': True,
+#     'titles_only': False
+# }
+
 html_theme_options = {
-    'logo_only': False,
-    'display_version': True,
-    'prev_next_buttons_location': 'bottom',
-    'style_external_links': False,
-    'vcs_pageview_mode': '',
-    'style_nav_header_background': 'white',
-    # Toc options
-    'collapse_navigation': True,
-    'sticky_navigation': True,
-    'navigation_depth': 4,
-    'includehidden': True,
-    'titles_only': False
+    "navbar_fixed_top": True,
+    "show_sidebar": True,
+#    "globaltoc_depth": 2,  # 최대 2depth까지 표시
+#    "globaltoc_includehidden": True,
 }
 
 
@@ -107,7 +122,9 @@ html_theme_options = {
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['docs/_static']
 
-html_favicon = 'C:\eformsign_manual\eformsignjp.github.io\images\\favicon.ico'
+#html_favicon = 'C:\eformsign_manual\eformsignjp.github.io\images\\favicon.ico'
+html_favicon = '/Users/jihoshin/Desktop/project/eformsign_manual/eformsignjp/eformsignjp.github.io/images/favicon.ico'
+
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
 #
@@ -117,13 +134,13 @@ html_favicon = 'C:\eformsign_manual\eformsignjp.github.io\images\\favicon.ico'
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
-html_sidebars = {
-    '**': [
-        'globaltoc.html',
-        'localtoc.html',
-        'searchbox.html',
-    ]
-}
+# html_sidebars = {
+#     '**': [
+#         'globaltoc.html',
+#         'localtoc.html',
+#         'searchbox.html',
+#     ]
+# }
 
 
 # -- Options for HTMLHelp output ---------------------------------------------
@@ -232,4 +249,5 @@ html_theme_options = {
     'logo_only': True, 
     'titles_only': False
 }
-html_logo = "C:\eformsign_manual\eformsignjp.github.io\images\\forcs_b.png"
+#html_logo = "C:\eformsign_manual\eformsignjp.github.io\images\\forcs_b.png"
+html_logo = "/Users/jihoshin/Desktop/project/eformsign_manual/eformsignjp/eformsignjp.github.io/images/forcs_b.png"
