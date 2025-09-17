@@ -1153,6 +1153,8 @@ Office製品から文書に入力項目を追加し、編集が完了したフ�
       :alt: テンプレートの5つの設定項目
       :width: 750px
 
+   ✅ テンプレートの配布については `テンプレートの配布 <chapter7.html#publish-template>`__\ をご参照ください。
+
 .. note::
 
    テンプレートの詳細な説明については、`eformsign for Microsoft Officeのご紹介 <chapter7.html#template_fb>`__\ をご参照ください。

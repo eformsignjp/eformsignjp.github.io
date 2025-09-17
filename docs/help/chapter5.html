@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/code-tabs.css?v=1bc26e2f" />
     <script src="../_static/jquery.js?v=5d32c60e"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../_static/documentation_options.js?v=9bf6b730"></script>
+    <script src="../_static/documentation_options.js?v=cdfbc7db"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/translations.js?v=8bd571c8"></script>
@@ -150,7 +150,7 @@
 <span id="id1"></span><h1>ウェブフォームデザイナーでテンプレート作成<a class="headerlink" href="#template-wd" title="Link to this heading"></a></h1>
 <section id="id2">
 <h2>テンプレートの概要<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
-<p><strong>テンプレート</strong>とは、eformsignで使用する <strong>電子文書の書式</strong>です。使用中の紙で作成した契約書、申請書、同意書などの基本的な文書書式を電子文書形式に変換したものを <strong>テンプレート</strong>と呼びます。テンプレートは、eformsignサービス内の <strong>テンプレート管理</strong> メニューまたは <strong>Office製品</strong>から作成し、アップロードすることができます。</p>
+<p><strong>テンプレート</strong>とは、eformsignで繰り返し使用する文書を事前に保存しておいた、再使用可能な書式です。これまで紙で作成していた契約書、申込書、同意書など、頻繁に使用する文書の雛形をテンプレートとして事前に登録しておいた後、文書を簡単に作成することができます。テンプレートは、eformsignサービス内の <strong>テンプレート管理</strong> メニューまたは <strong>Office製品</strong>から作成し、アップロードすることができます。</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>❗テンプレートを使用するメリット</strong></p>
@@ -170,7 +170,7 @@
 <p>使用中の文書ファイルをウェブフォームデザイナーにアップロードし、簡単にテンプレートを作成することができます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>アップロード可能なファイル形式は、pdf、hwp、doc、docx、xls、xlsx、ppt、pptx、odt、jpg、png、gif、tiffです。</p>
+<p>アップロード可能なファイル形式は、pdf、doc、docx、xls、xlsx、ppt、pptx、odt、jpg、png、gif、tiffです。</p>
 <p>アップロード可能なファイルサイズは最大9MBです。ファイルを複数追加する場合、全てのファイルサイズの合計が9MBを超えないようにしてください。</p>
 </div>
 <ol class="arabic">
@@ -182,7 +182,7 @@
 </li>
 <li><p>新規テンプレートで作成した文書ファイルをドラック＆ドロップするか、 <strong>PCからファイルを選択</strong> をクリックしてテンプレートの元となるファイルをアップロードします。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/template-manage-upload-popup.png"><img alt="テンプレート管理&gt;ファイルアップロード（2）" src="../_images/template-manage-upload-popup.png" style="width: 400px;" />
+<a class="reference internal image-reference" href="../_images/template-manage-upload-popup.PNG"><img alt="テンプレート管理&gt;ファイルアップロード（2）" src="../_images/template-manage-upload-popup.PNG" style="width: 400px;" />
 </a>
 </figure>
 </li>
@@ -529,7 +529,7 @@
 <span id="id11"></span><h3>権限の設定<a class="headerlink" href="#auth-wd" title="Link to this heading"></a></h3>
 <p>権限の設定画面では、テンプレートの使用権限、テンプレートの修正権限、文書の管理権限を設定できます。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/template-setting-auth-new.PNG"><img alt="テンプレートの設定 &gt; 権限設定" src="../_images/template-setting-auth-new.PNG" style="width: 700px;" />
+<a class="reference internal image-reference" href="../_images/template-setting-auth-new1.PNG"><img alt="テンプレートの設定 &gt; 権限設定" src="../_images/template-setting-auth-new1.PNG" style="width: 700px;" />
 </a>
 </figure>
 <ul>
@@ -622,7 +622,7 @@
 <span id="id15"></span><h5>開始<a class="headerlink" href="#workflow-start" title="Link to this heading"></a></h5>
 <p><strong>文書を作成を始めるためのステップです。</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/workflow-step-start-property.png"><img alt="ワークフローの設定 &gt; 開始ステップ" src="../_images/workflow-step-start-property.png" style="width: 700px;" />
+<a class="reference internal image-reference" href="../_images/workflow-step-start-property1.png"><img alt="ワークフローの設定 &gt; 開始ステップ" src="../_images/workflow-step-start-property1.png" style="width: 700px;" />
 </a>
 </figure>
 <ul>
@@ -718,9 +718,14 @@
 </figure>
 <ul>
 <li><p><strong>通知</strong>：受信者に文書作成を依頼した際に、通知を送信する方法を設定します。通知内容を編集することもできます。</p>
-<ul class="simple">
+<ul>
+<li><p><strong>通知内容の編集：</strong> 各ステップで受信者に送信する文書の通知内容を編集することができます。通知言語（英語、韓国語）も追加して、言語によるメッセージを修正、設定することができます。追加された言語オプションは文書送信ポップアップの言語選択オプションに表示されます。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/workflow-notification-lang.png"><img alt="通知言語設定1" src="../_images/workflow-notification-lang.png" style="width: 400px;" />
+</a>
+</figure>
+</li>
 <li><p><strong>通知方法の選択：</strong> デフォルト設定では、通知は電子メールでのみ送信されます。 <strong>SMSで送信</strong>を選択すると、<strong>SMS</strong>でも送信できます。</p></li>
-<li><p><strong>通知内容の編集：</strong> 各ステップで受信者に送信する文書の通知内容を編集することができます。</p></li>
 </ul>
 </li>
 <li><p><strong>文書の送信期限</strong>：受信者が文書を受信後、次のステップの受信者に文書を送信するまでの期限を設定します。</p>
@@ -754,17 +759,19 @@
 </figure>
 </div></blockquote>
 <ul>
-<li><p><strong>文書の閲覧前に本人確認:</strong> 受信者が文書の閲覧前に受信者が本人確認をし、本人確認完了に文書を閲覧できるよう設定します。受信者のメールアドレスまたは電話番号宛てに6桁の認証番号を送信します。受信者は認証番号を入力後、文書の閲覧が可能となります。</p>
+<li><p><strong>文書の閲覧前に本人確認:</strong> 受信者が文書の閲覧前に受信者が本人確認をし、本人確認完了に文書を閲覧できるよう設定します。</p>
+<ul class="simple">
+<li><p><strong>メールやSMSで認証:</strong> 受信者のメールアドレスまたは電話番号宛てに6桁の認証番号を送信します。受信者は認証番号を入力後、文書の閲覧が可能となります。</p></li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>文書が完了後に文書を閲覧する時にも設定した認証を行うためには <strong>完了文書の閲覧時にも認証を行う</strong>をチェックしてください。</p>
 </div>
 </li>
-<li><p><strong>文書の送信前に本人確認：</strong> 受信者が文書の送信前に受信者が本人確認をし、本人確認完了に文書を閲覧できるよう設定します。受信者のメールアドレスまたは電話番号宛てに6桁の認証番号を送信します。受信者は認証番号を入力後、文書の閲覧が可能となります。</p>
-<div class="admonition caution">
-<p class="admonition-title">注意</p>
-<p>❗SMS認証を行う場合、追加料金が発生します。</p>
-</div>
+<li><p><strong>文書の送信前に本人確認：</strong> 受信者が文書の送信前に受信者が本人確認をし、本人確認完了に文書を閲覧できるよう設定します。</p>
+<ul class="simple">
+<li><p><strong>メールやSMSで認証:</strong> 受信者のメールアドレスまたは電話番号宛てに6桁の認証番号を送信します。受信者は認証番号を入力後、文書の閲覧が可能となります。</p></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -780,11 +787,7 @@
 <p>❗文書の送信前に本人確認と中腹して設定できません。</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>事業者向け電子署名を付与することで、書類の完全性を保証します。電子署名が適用された文書は、PDFファイルとしてダウンロードした後、Adobe Acrobat Readerで開いて電子署名の詳細を確認できます。</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">注釈</p>
-<p>❗証明書ベースの電子署名には追加費用が発生します。</p>
+<p>事業者向け電子署名を付与することで、書類の完全性を保証します。電子署名が適用された文書は、PDFファイルとしてダウンロードした後、Adobe Acrobat Readerで開いて電子署名の詳細を確認できます。❗証明書ベースの電子署名には追加費用が発生します。</p>
 </div>
 </li>
 </ul>
@@ -844,9 +847,14 @@
 <ul>
 <li><p><strong>ステップ名</strong>： ステップの名前を設定することができます。</p></li>
 <li><p><strong>通知</strong>： 受信者に文書作成を依頼する際の、通知を送信する方法を設定します。また、通知内容を編集することが可能です。</p>
-<ul class="simple">
-<li><p>通知方法の選択： デフォルト設定では、通知は電子メールでのみ送信されます。 <strong>SMSで送信</strong> を選択すると、<strong>SMS</strong>でも送信できます。</p></li>
-<li><p>通知内容の編集： 各ステップで受信者に送信される文書要請の通知内容を編集することが可能です。</p></li>
+<ul>
+<li><p><strong>通知内容の編集：</strong> 各ステップで受信者に送信する文書の通知内容を編集することができます。通知言語（英語、韓国語）も追加して、言語によるメッセージを修正、設定することができます。追加された言語オプションは文書送信ポップアップの言語選択オプションに表示されます。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/workflow-notification-lang1.png"><img alt="通知言語設定2" src="../_images/workflow-notification-lang1.png" style="width: 400px;" />
+</a>
+</figure>
+</li>
+<li><p><strong>通知方法の選択：</strong> デフォルト設定では、通知は電子メールでのみ送信されます。 <strong>SMSで送信</strong> を選択すると、<strong>SMS</strong>でも送信できます。</p></li>
 </ul>
 </li>
 <li><p><strong>文書の送信期限</strong>： 受信者が文書を受信した後、次のステップの受信者に文書を送信するまでの期限を設定します。文書の送信期限を設定する必要が無い場合は、0日0時間と入力してください。(受信者が内部メンバーの場合。外部受信者の場合最大50日まで設定可能)</p></li>
@@ -874,13 +882,19 @@
 </figure>
 </div></blockquote>
 <ul>
-<li><p><strong>文書の閲覧前に本人確認:</strong> 受信者が文書の閲覧前に受信者が本人確認をし、本人確認完了に文書を閲覧できるよう設定します。受信者のメールアドレスまたは電話番号宛てに6桁の認証番号を送信します。受信者は認証番号を入力後、文書の閲覧が可能となります。</p>
+<li><p><strong>文書の閲覧前に本人確認:</strong> 受信者が文書の閲覧前に受信者が本人確認をし、本人確認完了に文書を閲覧できるよう設定します。</p>
+<ul class="simple">
+<li><p><strong>メールやSMSで認証:</strong> 受信者のメールアドレスまたは電話番号宛てに6桁の認証番号を送信します。受信者は認証番号を入力後、文書の閲覧が可能となります。</p></li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>文書が完了後に文書を閲覧する時にも設定した認証を行うためには <strong>完了文書の閲覧時にも認証を行う</strong>をチェックしてください。</p>
 </div>
 </li>
-<li><p><strong>文書の送信前に本人確認：</strong> 受信者が文書の送信前に受信者が本人確認をし、本人確認完了に文書を閲覧できるよう設定します。受信者のメールアドレスまたは電話番号宛てに6桁の認証番号を送信します。受信者は認証番号を入力後、文書の閲覧が可能となります。</p>
+<li><p><strong>文書の送信前に本人確認：</strong> 受信者が文書の送信前に受信者が本人確認をし、本人確認完了に文書を閲覧できるよう設定します。</p>
+<ul class="simple">
+<li><p><strong>メールやSMSで認証:</strong> 受信者のメールアドレスまたは電話番号宛てに6桁の認証番号を送信します。受信者は認証番号を入力後、文書の閲覧が可能となります。</p></li>
+</ul>
 <div class="admonition caution">
 <p class="admonition-title">注意</p>
 <p>❗SMS認証を行う場合、追加料金が発生します。</p>
@@ -897,14 +911,10 @@
 </div></blockquote>
 <ul>
 <li><p><strong>事業者署名型(立会人型)電子署名を適用する：</strong> 当該ステップの受信者が文書を作成した後、事業者署名型の電子署名を追加するように設定します。</p>
-<p>❗文書の送信前に本人確認と中腹して設定できません。</p>
+<p>❗文書の送信前に本人確認と重複して設定できません。</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>事業者向け電子署名を付与することで、書類の完全性を保証します。電子署名が適用された文書は、PDFファイルとしてダウンロードした後、Adobe Acrobat Readerで開いて電子署名の詳細を確認できます。</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">注釈</p>
-<p>❗証明書ベースの電子署名には追加費用が発生します。</p>
+<p>事業者向け電子署名を付与することで、書類の完全性を保証します。電子署名が適用された文書は、PDFファイルとしてダウンロードした後、Adobe Acrobat Readerで開いて電子署名の詳細を確認できます。❗証明書ベースの電子署名には追加費用が発生します。</p>
 </div>
 </li>
 </ul>
@@ -923,9 +933,14 @@
 <ul>
 <li><p><strong>ステップ名</strong>： ステップの名前を設定することができます。</p></li>
 <li><p><strong>通知</strong>： 受信者に文書作成を依頼する際の、通知を送信する方法を設定します。また、通知内容を編集することが可能です。</p>
-<ul class="simple">
-<li><p>通知方法の選択： デフォルト設定では、通知は電子メールでのみ送信されます。 <strong>SMSで送信</strong> を選択すると、<strong>SMS</strong>でも送信できます。</p></li>
-<li><p>通知内容の編集： 各ステップで受信者に送信される文書要請の通知内容を編集することが可能です。</p></li>
+<ul>
+<li><p><strong>通知内容の編集：</strong> 各ステップで受信者に送信する文書の通知内容を編集することができます。通知言語（英語、韓国語）も追加して、言語によるメッセージを修正、設定することができます。追加された言語オプションは文書送信ポップアップの言語選択オプションに表示されます。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/workflow-notification-lang2.png"><img alt="通知言語設定3" src="../_images/workflow-notification-lang2.png" style="width: 400px;" />
+</a>
+</figure>
+</li>
+<li><p><strong>通知方法の選択：</strong> デフォルト設定では、通知は電子メールでのみ送信されます。 <strong>SMSで送信</strong> を選択すると、<strong>SMS</strong>でも送信できます。</p></li>
 </ul>
 </li>
 <li><p><strong>文書の送信期限</strong>： 受信者が文書を受信した後、次のステップの受信者に文書を送信するまでの期限を設定します。文書の送信期限を設定する必要が無い場合は、0日0時間と入力してください。(受信者が内部メンバーの場合。外部受信者の場合最大50日まで設定可能)</p></li>
@@ -1013,14 +1028,9 @@
 <span id="id20"></span><h5>完了<a class="headerlink" href="#workflow-complete" title="Link to this heading"></a></h5>
 <p><strong>文書が全てのワークフローステップを経て、完了するステップです。</strong></p>
 <p><a class="reference internal" href="../_images/workflow-step-complete-property.png"><img alt="image18" src="../_images/workflow-step-complete-property.png" style="width: 700px;" /></a></p>
-<ul>
+<ul class="simple">
 <li><p><strong>別のクラウドストレージに完了文書を保存する</strong>：完了文書を、代表管理者/会社管理者が設定した外部クラウドストレージに保存されるように設定します。</p></li>
-<li><p><strong>完了文書にタイムスタンプを付与する</strong>：完了文書が以降変更されていないことを証明する、タイムスタンプを文書に適用するように設定します。</p>
-<div class="admonition caution">
-<p class="admonition-title">注意</p>
-<p>❗この機能は追加料金が発生します。</p>
-</div>
-</li>
+<li><p><strong>完了文書にタイムスタンプを付与する</strong>：完了文書が以降変更されていないことを証明する、タイムスタンプを文書に適用するように設定します。❗この機能は追加料金が発生します。</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -1076,11 +1086,12 @@
 </div>
 <p><strong>文書の完了通知の編集</strong></p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/template-setting-notification-editl.png"><img alt="通知内容の編集" src="../_images/template-setting-notification-editl.png" style="width: 600px;" />
+<a class="reference internal image-reference" href="../_images/template-setting-notification-editl1.png"><img alt="通知内容の編集" src="../_images/template-setting-notification-editl1.png" style="width: 500px;" />
 </a>
 </figure>
 <ul class="simple">
 <li><p><strong>通知テンプレートの選択:</strong> 通知テンプレートはデフォルトのテンプレートとして設定されていますが、別途作成した通知テンプレートがあれば変更できます。新規通知テンプレートを追加する方法は <a class="reference external" href="chapter9.html#notification-template">通知テンプレート管理</a>をご参照ください。</p></li>
+<li><p><strong>言語選択:</strong> 文書完了時に送信される通知メールの言語を選択すると、当該言語でメールタイトル、SMSメッセージ、本文内容などが表示され、修正することができます。</p></li>
 <li><p><strong>メールのタイトル:</strong> 文書の完了時に送信されるメールのタイトルを設定します。</p></li>
 <li><p><strong>SMSメッセージ:</strong> 文書完了通知をSMSで送信する際に、SMSで送信するメッセージを設定します。設定したメッセージと一緒に、文書を確認できるリンクが送信されます。</p></li>
 </ul>
@@ -1103,8 +1114,8 @@
 </ul>
 </section>
 </section>
-<section id="id23">
-<h2>テンプレート配布<a class="headerlink" href="#id23" title="Link to this heading"></a></h2>
+<section id="publish-template">
+<span id="id23"></span><h2>テンプレート配布<a class="headerlink" href="#publish-template" title="Link to this heading"></a></h2>
 <p>当該テンプレートで文書を作成できるようにするためには、テンプレートを保存した後、必ず <strong>配布(公開)</strong>する必要があります。
 テンプレートの配布をすることで、作成者以外のメンバーが当該テンプレートを使用できるようになります。</p>
 <p>テンプレートを配布せずに保存のみした場合、テンプレート使用権限のあるメンバーの <strong>テンプレートで作成する</strong> 画面には表示されません。</p>
@@ -1114,12 +1125,12 @@
 <a class="reference internal image-reference" href="../_images/template_publish.png"><img alt="テンプレートの5つの設定項目" src="../_images/template_publish.png" style="width: 750px;" />
 </a>
 </figure>
+</div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>テンプレートの配布は <strong>テンプレート管理者</strong>のみできます。
 テンプレート管理者の権限がないメンバーがテンプレートを作成するかテンプレートを他のメンバーと使用する場合、テンプレート管理者への配布要請が必要です。テンプレート管理者が直接テンプレートを作成し配布する場合はテンプレート配布のポップアップのテンプレート管理者リストから自分のアカウントを選択することで即時配布できます。</p>
 </div>
-</div></blockquote>
 <section id="id24">
 <h3>テンプレート配布の要請方法<a class="headerlink" href="#id24" title="Link to this heading"></a></h3>
 <ol class="arabic">
@@ -1154,7 +1165,7 @@
 </li>
 <li><p><strong>テンプレートの配布</strong> ポップアップから <strong>“テンプレートの変更内容を全て確認しました。”</strong>にチェックし <strong>配布</strong> ボタンをクリックします。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/publish-popup2.png"><img alt="テンプレートの配布ポップアップ" src="../_images/publish-popup2.png" style="width: 3500px;" />
+<a class="reference internal image-reference" href="../_images/publish-popup2.png"><img alt="テンプレートの配布ポップアップ" src="../_images/publish-popup2.png" style="width: 350px;" />
 </a>
 </figure>
 </li>
@@ -1291,7 +1302,7 @@
 <li><a class="reference internal" href="#noti-wd">通知設定</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id23">テンプレート配布</a><ul>
+<li><a class="reference internal" href="#publish-template">テンプレート配布</a><ul>
 <li><a class="reference internal" href="#id24">テンプレート配布の要請方法</a></li>
 <li><a class="reference internal" href="#id25">テンプレート配布方法(テンプレート管理者)</a></li>
 </ul>
@@ -1328,7 +1339,7 @@
 
     <div class="footer" role="contentinfo">
     &#169; 著作権 2025, FORCS CO., LTD. All rights reserved..
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     </div>
 
 <p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>

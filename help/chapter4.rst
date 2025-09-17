@@ -27,17 +27,17 @@
 
 1. サイドバーメニューまたはダッシュボードの **マイファイルで作成する** をクリックします。
 
-   .. figure:: resources/myfile_create_document.png
+   .. figure:: resources/newfrommyfile-menu1.png
       :alt: マイファイルで作成するメニュー
       :width: 700px
 
 2. 画面上にファイルをドラッグ＆ドロップするか、 **PCからファイルを選択**\ をクリックして、コンピュータ内からアップロードしたいファイルを選択します。
 
-   .. figure:: resources/newfrommyfile-uploadfile.png
+   .. figure:: resources/newfrommyfile-uploadfile1.png
       :alt: ファイルの追加
       :width: 500px
 
-3. 文書作成に参加する参加者とその役割を追加・設定します。設定後、文書に入力項目を追加するウェブフォームデザイナー画面が表示されます。
+3. 文書作成に参加する参加者とその役割を追加・設定します。設定後、デザインする画面が表示され、文書に入力項目を追加することができます。
 
    .. figure:: resources/myfile_create_document_addparticipants.png
       :alt: 参加者追加画面
@@ -72,11 +72,11 @@
 
 2. テンプレート管理画面でファイルをドラッグ＆ドロップするか、画面右上の **新規テンプレート作成**\ をクリックして、コンピュータ内からアップロードするファイルを選択します。
 
-   .. figure:: resources/template-manage-upload.png
+   .. figure:: resources/template-manage-upload-popup.png
       :alt: テンプレート管理
-      :width: 700px
+      :width: 500px
 
-3. 文書作成に参加する参加者と役割を追加・設定します。設定後、文書に入力項目を追加するウェブフォームデザイナー画面が表示されます。
+3. 文書作成に参加する参加者と役割を追加・設定します。設定後、**デザインする** 画面が表示されます。
 
    .. figure:: resources/web-form_3.png
       :alt: ウェブフォームデザイナーの画面
@@ -117,7 +117,7 @@
 
 .. note::
 
-   メニューバーに表示される各ステップをクリックすると、そのステップの画面の設定画面に移動します。 **設定する**\ をクリックすると、ワークフロー、権限などを設定できます。テンプレートで作成、またはマイファイルで作成を完了する前に一緒に設定してください。
+   メニューバーに表示される各ステップをクリックすると、そのステップの画面の設定画面に移動します。 **設定する**\ をクリックすると、ワークフロー、権限などを設定できます。
 
 **② 文書表示領域：** アップロードした文書が表示されます。
 
@@ -981,7 +981,7 @@ PCのキーボード環境では、入力欄に任意の数字を直接入力で
 - **通知の設定：** 作成する文書に対するステータス通知の受信者の設定と、最終完了通知メッセージを編集します。
 
 
-.. figure:: resources/component_web_2.png
+.. figure:: resources/template_settings.png
    :alt: テンプレートの5つの設定項目
    :width: 750px
 
@@ -1000,6 +1000,8 @@ PCのキーボード環境では、入力欄に任意の数字を直接入力で
    .. figure:: resources/template_publish.png
       :alt: テンプレートの5つの設定項目
       :width: 750px
+
+      ✅ テンプレートの配布については、`テンプレートの配布 <chapter5.html#publish-template>`__\ をご参照ください。
 
 
 .. note::

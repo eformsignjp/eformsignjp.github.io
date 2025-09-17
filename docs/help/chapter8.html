@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/code-tabs.css?v=1bc26e2f" />
     <script src="../_static/jquery.js?v=5d32c60e"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../_static/documentation_options.js?v=9bf6b730"></script>
+    <script src="../_static/documentation_options.js?v=cdfbc7db"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/translations.js?v=8bd571c8"></script>
@@ -522,18 +522,17 @@
 <li><p><strong>完了文書トレイ/文書管理</strong> メニューからCSVファイルに出力(<a class="reference internal" href="../_images/csv_download_icon.png"><img alt="image14" src="../_images/csv_download_icon.png" style="width: 25px;" /></a>)アイコンをクリックします。</p></li>
 <li><p>文書リストの左側に表示されているチェックボックスを選択して、ダウンロードする文書を選択します。</p></li>
 <li><p><strong>CSVファイルに出力</strong> ボタンをクリックします。</p></li>
-<li><p><strong>CSVファイルに出力</strong> ポップアップでカラム及び範囲などを選択し、ファイル名とパスワードを入力します。</p></li>
+<li><p><strong>CSVファイルに出力</strong> ポップアップで基本項目と入力項目を選択し、ファイル名とパスワードを入力します。</p>
+<ul class="simple">
+<li><p><strong>基本項目:</strong> 文書タイトル、文書ID、文書番号、ステップ、作成者など文書に関する基本情報を選択します。</p></li>
+<li><p><strong>入力項目:</strong> 選択した文書に含まれた全ての入力項目のリスト(最大512項目)が表示されます。データを抽出する入力項目を選択するか、入力された全てのデータをダウンロードするには全て選択を選択します。</p></li>
+</ul>
+</li>
 </ol>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/cvs_file_popup.png"><img alt="データファイル生成ポップアップ" src="../_images/cvs_file_popup.png" style="width: 400px;" />
 </a>
 </figure>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>💡 <strong>文書内に入力されたデータの抽出方法</strong></p>
-<p>文書内に入力されたデータを抽出するには左上のテンプレートまたは文書ごとにフィルターを選択した後、 <strong>CSVファイルに出力</strong>をクリックします。
-カラム選択時、全て選択した後にダウンロードすると、入力されたデータをダウンロードできます。</p>
-</div>
 <ol class="arabic" start="5">
 <li><p><strong>ファイル出力</strong> ボタンをクリックします。</p></li>
 <li><p><strong>ダウンロードファイルリスト</strong> ポップアップで左下の更新をクリックすると、 <strong>ダウンロード</strong> ボタンが活性化されます。 <strong>ダウンロード</strong>をクリックすると、ファイルをダウンロードできます。
@@ -618,20 +617,20 @@
 <hr class="docutils" />
 </section>
 </section>
-<section id="mydocuments">
-<span id="id17"></span><h2>マイ文書トレイ<a class="headerlink" href="#mydocuments" title="Link to this heading"></a></h2>
-<p><strong>マイ文書トレイ</strong> には、[マイファイルで文書作成] の過程で [文書作成をスタート] の前に [保存] をクリックして保存した文書が保存されます。</p>
-<p><strong>マイファイルで文書作成</strong>から作成した文書を保存しておけば、毎回新規作成せずとも、テンプレートのように使うことができます。</p>
+<section id="myfiles">
+<span id="id17"></span><h2>マイファイルトレイ<a class="headerlink" href="#myfiles" title="Link to this heading"></a></h2>
+<p><strong>マイファイルトレイ</strong> には、 <strong>マイファイルで作成する</strong> の過程で <strong>文書作成をスタート</strong> の前に <strong>マイファイルトレイに保存</strong> をクリックして保存した文書が保存されます。</p>
+<p><strong>マイファイルで作成する</strong>から作成した文書を保存しておけば、毎回新規作成せずとも、テンプレートのように使うことができます。</p>
 <ol class="arabic">
-<li><p>サイドバーのメニューから <strong>下書きとして保存</strong>をクリックして移動します。</p>
+<li><p>サイドバーのメニューから <strong>マイファイルトレイ</strong>をクリックして移動します。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/draftbox-menu.png"><img alt="マイ文書トレイメニュー" src="../_images/draftbox-menu.png" style="width: 700px;" />
+<a class="reference internal image-reference" href="../_images/myfile-menu.png"><img alt="マイファイルトレイメニュー" src="../_images/myfile-menu.png" style="width: 700px;" />
 </a>
 </figure>
 </li>
-<li><p>保存された文書のリストから、任意の文書の <strong>開く</strong> ボタンをクリックします。</p>
+<li><p>保存されたファイルのリストから、任意のファイルの <strong>開く</strong> ボタンをクリックします。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/draftbox-documentlist.png"><img alt="下書きとして保存" src="../_images/draftbox-documentlist.png" style="width: 700px;" />
+<a class="reference internal image-reference" href="../_images/myfile-documentlist.png"><img alt="マイファイルトレイ" src="../_images/myfile-documentlist.png" style="width: 700px;" />
 </a>
 </figure>
 </li>
@@ -639,7 +638,7 @@
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>マイファイルで作成する</strong>をクリックすると、文書ファイルの選択ポップアップが表示され <strong>PCからファイルを選択</strong>または <strong>最近使った文書</strong>から選択することができます。この時、最近使った文書には <strong>マイ文書トレイ</strong>内の文書が最新順で表示されます。</p>
+<p><strong>マイファイルで作成する</strong>をクリックすると、文書ファイルの選択ポップアップが表示され <strong>PCからファイルを選択</strong>または <strong>最近使ったファイル</strong>を選択することができます。この時、最近使った文書には <strong>マイファイルトレイ</strong>内のファイルが最新順で表示されます。</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -854,7 +853,7 @@
 <li><a class="reference internal" href="#document-column">文書トレイのカラムの設定</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#mydocuments">マイ文書トレイ</a></li>
+<li><a class="reference internal" href="#myfiles">マイファイルトレイ</a></li>
 <li><a class="reference internal" href="#bulksend-documents">一括作成文書トレイ</a></li>
 <li><a class="reference internal" href="#shared-documents">共有文書トレイ</a></li>
 <li><a class="reference internal" href="#trash">ゴミ箱</a></li>
@@ -888,7 +887,7 @@
 
     <div class="footer" role="contentinfo">
     &#169; 著作権 2025, FORCS CO., LTD. All rights reserved..
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     </div>
 
 <p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
