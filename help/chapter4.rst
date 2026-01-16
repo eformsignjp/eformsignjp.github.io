@@ -96,7 +96,7 @@
 
 2. テンプレート管理画面でファイルをドラッグ＆ドロップするか、画面右上の **新規テンプレート作成**\ をクリックして、コンピュータ内からアップロードするファイルを選択します。
 
-   .. figure:: resources/template-manage-upload-popup1.png
+   .. figure:: resources/template-manage-upload-popup2.png
       :alt: テンプレート管理
       :width: 500px
 
