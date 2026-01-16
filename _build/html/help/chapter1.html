@@ -9,16 +9,16 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
     <link rel="stylesheet" type="text/css" href="../_static/code-tabs.css?v=1bc26e2f" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=870bc763" />
     <script src="../_static/jquery.js?v=5d32c60e"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../_static/documentation_options.js?v=9bf6b730"></script>
+    <script src="../_static/documentation_options.js?v=cdfbc7db"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/translations.js?v=8bd571c8"></script>
     <script src="../_static/code-tabs.js?v=c983d12e"></script>
     <script src="../_static/js/theme.js"></script>
     <script src="../_static/js/petite-vue.js"></script>
-    <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="基本情報" href="chapter2.html" />
@@ -36,7 +36,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage"><img src="../_static/forcs_b.png"/></a></h1>
+        <h1><a href="../index.html" title="Go to homepage">eformsign User Guide 2025.03.26 ドキュメント</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -148,12 +148,11 @@
             
   <section id="eformsign">
 <h1>eformsignのご紹介<a class="headerlink" href="#eformsign" title="Link to this heading"></a></h1>
-<p><strong>eformsign(イーフォームサイン)</strong> は、時間や場所を問わず電子文書を作成・送信することができ、保存された情報を社内システムや外部クラウドストレージと連携することができるクラウド型電子契約サービスです。</p>
+<p><strong>eformsign(イーフォームサイン)</strong> は、時間や場所を問わず電子文書を作成・送信することができ、保存された情報を社内システムや外部クラウドストレージと連携することができる <strong>クラウド型電子契約サービス</strong>です。</p>
 <p>📁 <strong>eformsignのサービス紹介資料</strong> <a class="reference external" href="https://drive.google.com/file/d/1Zf1qyAS8ty9GLgJwXvYhsKPMIBUJhbFI/view?usp=sharing">はこちら</a></p>
 <section id="id1">
 <h2>基本用語<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
-<p>eformsignの使用にあたり必須となる、
-eformsignの基本用語をご紹介します。</p>
+<p>eformsignの使用にあたり必須となる、eformsignの基本用語をご紹介します。</p>
 <ul>
 <li><p><strong>ダッシュボード</strong></p>
 <p>ダッシュボードとは、eformsignにログインした際に最初に表示されるサービスのトップ画面です。
@@ -169,7 +168,7 @@ eformsignの基本用語をご紹介します。</p>
 申請書や同意書のような繰り返し使用する文書を予めeformsign上に登録しておくことで、すぐに作成を開始できます。</p>
 <p>テンプレートはPCに保存されているファイルをeformsignにそのままアップロードするか、
 Office用eformsignアドイン(eformsign for Microsoft Office)をインストールしてOfficeソフトからアップロードすることができます。</p>
-<p>❗頻繁に使用する文書はテンプレートで登録すると簡単に作成できます。</p>
+<p>❗頻繁に使用する文書はテンプレートとして登録しておくと、簡単に文書を作成できます。</p>
 </li>
 <li><p><strong>文書</strong></p>
 <p>文書とは、テンプレートから作成・送信する電子文書、または使用中のファイルをアップロードして作成・送信する電子文書のことです。文書は <strong>マイファイルで作成する</strong> または <strong>テンプレートで作成する</strong> メニューから作成・送信することができます。このように作成された文書を基準として、eformsign内での使用文書件数を集計しています。</p>
@@ -184,8 +183,8 @@ Office用eformsignアドイン(eformsign for Microsoft Office)をインストー
 <li><p><strong>一括作成文書:</strong> 本人が一括作成して送信した文書のステータスを確認することができます。</p></li>
 </ul>
 </li>
-<li><p><strong>マイ文書トレイ</strong></p>
-<p><strong>マイファイルで作成する</strong> から <strong>文書作成をスタート</strong> をクリックする前に保存した文書が表示されます。 <strong>マイファイルで作成</strong> した文書を保存しておけば、テンプレートのように同様の設定で文書を作成することもできます。</p>
+<li><p><strong>マイファイルトレイ</strong></p>
+<p><strong>マイファイルで作成する</strong> から <strong>文書作成をスタート</strong> をクリックする前に**マイファイルトレイに保存**した文書が表示されます。 <strong>マイファイルで作成</strong> した文書を保存しておけば、テンプレートのように同様の設定で文書を作成することもできます。</p>
 </li>
 <li><p><strong>共有文書トレイ</strong></p>
 <p>共有文書トレイを作成することで、社内の他のメンバーに文書を共有することができるほか、他のメンバーが共有した文書を閲覧することができます。</p>
@@ -313,7 +312,7 @@ Office用eformsignアドイン(eformsign for Microsoft Office)をインストー
 
     <div class="footer" role="contentinfo">
     &#169; 著作権 2025, FORCS CO., LTD. All rights reserved..
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     </div>
 
 <p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>

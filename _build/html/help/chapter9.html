@@ -9,16 +9,16 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
     <link rel="stylesheet" type="text/css" href="../_static/code-tabs.css?v=1bc26e2f" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=870bc763" />
     <script src="../_static/jquery.js?v=5d32c60e"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../_static/documentation_options.js?v=9bf6b730"></script>
+    <script src="../_static/documentation_options.js?v=cdfbc7db"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/translations.js?v=8bd571c8"></script>
     <script src="../_static/code-tabs.js?v=c983d12e"></script>
     <script src="../_static/js/theme.js"></script>
     <script src="../_static/js/petite-vue.js"></script>
-    <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="外部サービスとの連携" href="chapter10.html" />
@@ -36,7 +36,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage"><img src="../_static/forcs_b.png"/></a></h1>
+        <h1><a href="../index.html" title="Go to homepage">eformsign User Guide 2025.03.26 ドキュメント</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -198,10 +198,14 @@
 <section id="id4">
 <h3>デフォルトテンプレートのタイプ<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
 <ul class="simple">
-<li><p>文書の完了通知</p></li>
-<li><p>文書の差し戻しによる修正依頼</p></li>
-<li><p>文書の状態通知</p></li>
-<li><p>文書の検討・署名の依頼</p></li>
+<li><p><strong>文書伝送の通知:</strong> 完了文書の伝送を設定した際、文書が完了すると受信者に送信される通知です。</p></li>
+<li><p><strong>文書の閲覧依頼:</strong> 文書の閲覧者に対して送信される、閲覧依頼通知です。</p></li>
+<li><p><strong>文書のCC通知（完了）:</strong> 文書にCCが設定されている場合、当該文書が完了されるとCCの宛先に送信される通知です。</p></li>
+<li><p><strong>文書のCC通知:</strong> 文書にCCが設定されている場合、対象者が指定された時点でCCの宛先に送信される通知です。</p></li>
+<li><p><strong>検討/署名の依頼:</strong> 文書の参加者および検討者に送信される通知です。</p></li>
+<li><p><strong>文書の完了:</strong> 文書の完了通知の受信者として設定された対象者に文書が完了された時に送信される通知です。</p></li>
+<li><p><strong>文書の差戻しによる修正依頼:</strong> 受信者が文書を返戻した場合、返戻し対象に送信される通知です。</p></li>
+<li><p><strong>状態通知:</strong> 文書状態通知の受信者として設定された対象者に対して、文書の状態に応じて送信される通知です。</p></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -212,12 +216,21 @@
 <ol class="arabic">
 <li><p>サイドバーのメニューで <strong>会社管理 &gt; 通知テンプレート管理</strong>をクリックします。</p></li>
 <li><p><strong>通知テンプレートの管理</strong> 画面の右上にある <strong>通知テンプレートの追加</strong> ボタンをクリックします。</p></li>
-<li><p><strong>テンプレート名</strong>を設定し、該当する <strong>タイプ</strong>を選択します。</p>
-<p><a class="reference internal" href="../_images/notification-template-new.PNG"><img alt="image3" src="../_images/notification-template-new.PNG" style="width: 700px;" /></a></p>
+<li><p>以下項目を入力および設定します。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/notification-template-new.PNG"><img alt="会社管理 &gt; 通知テンプレート管理 &gt; 通知テンプレートの追加" src="../_images/notification-template-new.PNG" style="width: 700px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>テンプレート名:</strong> 通知テンプレートを区別することができる名前を入力</p></li>
+<li><p><strong>タイプ:</strong> 追加する通知テンプレートが該当するタイプを選択(例. 文書の閲覧依頼、検討/署名の依頼など)</p></li>
+<li><p><strong>通知言語:</strong> 通知テンプレートを3つの言語で設定および管理、各言語タブを選択した後、言語別の内容を編集します。</p></li>
+<li><p><strong>メールのタイトル:</strong> 受信者に送信されるメールのタイトルを入力します。</p></li>
+<li><p><strong>SMS:</strong> SMSで通知する際に送信されるメッセージを入力します。(<a href="#id5"><span class="problematic" id="id6">*</span></a>SMSメッセージは本文に移動できるリンクと共に送信)</p></li>
+<li><p><strong>本文の編集:</strong> メール通知時の本文およびSMS送信時にリンクで送信される本文の内容</p></li>
+<li><p><strong>グループ説明:</strong> テンプレートの利用目的および得意事項などの説明を入力します。</p></li>
+</ul>
 </li>
-<li><p>メールのタイトルとSMSの送信内容を入力します。
-<strong>SMSメッセージ</strong>は、SMS送信時に送られるメッセージとして、通知本文を閲覧できるURLと一緒に送信されます。</p></li>
-<li><p>本文を編集します。</p></li>
 <li><p><strong>保存</strong> ボタンをクリックし、テンプレートを追加します。</p></li>
 </ol>
 </section>
@@ -274,7 +287,7 @@
 
     <div class="footer" role="contentinfo">
     &#169; 著作権 2025, FORCS CO., LTD. All rights reserved..
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     </div>
 
 <p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
