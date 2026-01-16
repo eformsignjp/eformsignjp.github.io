@@ -1758,13 +1758,13 @@ IP接続制限設定
 
 .. |image1| image:: resources/menu_icon.png
    :width: 20px
-.. |image2| image:: resources/template-create-icon.png
+.. |image2| image:: resources/template-create-icon0.png
    :width: 20px
-.. |image3| image:: resources/template-bulkcreate-icon.png
+.. |image3| image:: resources/template-bulkcreate-icon0.png
    :width: 20px
-.. |image4| image:: resources/favorites-icon.png
+.. |image4| image:: resources/favorites-icon0.png
    :width: 20px
-.. |image5| image:: resources/favorites-added-icon.png
+.. |image5| image:: resources/favorites-added-icon0.png
    :width: 20px
 .. |image6| image:: resources/menu-hamberger-icon.png
    :width: 20px
