@@ -53,7 +53,7 @@
 2. 新規テンプレートで作成した文書ファイルをドラック＆ドロップするか、 **PCからファイルを選択** をクリックしてテンプレートの元となるファイルをアップロードします。
 
 
-   .. figure:: resources/template-manage-upload-popup.png
+   .. figure:: resources/template-manage-upload-popup0.png
       :alt: テンプレート管理>ファイルアップロード（2）
       :width: 400px
 
