@@ -9,16 +9,16 @@
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
     <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
     <link rel="stylesheet" type="text/css" href="_static/code-tabs.css?v=1bc26e2f" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=870bc763" />
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="_static/documentation_options.js?v=9bf6b730"></script>
+    <script src="_static/documentation_options.js?v=cdfbc7db"></script>
     <script src="_static/doctools.js?v=888ff710"></script>
     <script src="_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="_static/translations.js?v=8bd571c8"></script>
     <script src="_static/code-tabs.js?v=c983d12e"></script>
     <script src="_static/js/theme.js"></script>
     <script src="_static/js/petite-vue.js"></script>
-    <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
     <link rel="next" title="eformsignのご紹介" href="help/chapter1.html" /> 
@@ -35,7 +35,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="#" title="Go to homepage"><img src="_static/forcs_b.png"/></a></h1>
+        <h1><a href="#" title="Go to homepage">eformsign User Guide 2025.03.26 ドキュメント</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -157,10 +157,13 @@
 <li class="toctree-l1"><a class="reference internal" href="help/chapter2.html">基本情報</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter2.html#id2">ダッシュボード</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter2.html#id5">基本情報の確認及び変更</a></li>
-<li class="toctree-l2"><a class="reference internal" href="help/chapter2.html#permissions">権限の区分</a></li>
-<li class="toctree-l2"><a class="reference internal" href="help/chapter2.html#manage-members-groups">メンバー及びグループの管理</a></li>
-<li class="toctree-l2"><a class="reference internal" href="help/chapter2.html#mysignature">マイ署名の管理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help/chapter2.html#permissions">メンバー及びグループの管理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help/chapter2.html#mysignature">権限の区分</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help/chapter2.html#manage-members-groups">アドレス帳</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help/chapter2.html#managesharedcontacts">業務連絡先の管理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help/chapter2.html#id26">マイ署名の管理</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter2.html#company-stamp">会社印管理</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help/chapter2.html#additional-features-settings">付加機能の設定</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter2.html#security-settings">セキュリティ設定</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter2.html#retention">文書の保管期間の設定</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter2.html#activity-log">操作履歴管理</a></li>
@@ -183,7 +186,7 @@
 <li class="toctree-l2"><a class="reference internal" href="help/chapter5.html#id2">テンプレートの概要</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter5.html#workflow">ワークフローの概要</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter5.html#template-setting">テンプレートの設定</a></li>
-<li class="toctree-l2"><a class="reference internal" href="help/chapter5.html#id23">テンプレート配布</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help/chapter5.html#publish-template">テンプレート配布</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter5.html#id26">個別テンプレートメニュー</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter5.html#id27">テンプレートの検索とソート</a></li>
 </ul>
@@ -200,7 +203,7 @@
 <li class="toctree-l2"><a class="reference internal" href="help/chapter7.html#id1">テンプレートの概要</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter7.html#workflow-fb-overview">ワークフロー概要</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter7.html#template-setting-fb">テンプレートの設定</a></li>
-<li class="toctree-l2"><a class="reference internal" href="help/chapter7.html#id24">テンプレート配布</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help/chapter7.html#publish-template">テンプレート配布</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter7.html#id27">テンプレートの個別操作メニュー</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter7.html#id28">テンプレートの検索ソート</a></li>
 </ul>
@@ -208,7 +211,7 @@
 <li class="toctree-l1"><a class="reference internal" href="help/chapter8.html">文書トレイ</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter8.html#id2">文書トレイ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter8.html#id3">文書トレイの構成</a></li>
-<li class="toctree-l2"><a class="reference internal" href="help/chapter8.html#mydocuments">マイ文書トレイ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help/chapter8.html#myfiles">マイファイルトレイ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter8.html#bulksend-documents">一括作成文書トレイ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter8.html#shared-documents">共有文書トレイ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help/chapter8.html#trash">ゴミ箱</a></li>
@@ -254,7 +257,7 @@
 
     <div class="footer" role="contentinfo">
     &#169; 著作権 2025, FORCS CO., LTD. All rights reserved..
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     </div>
 
 <p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>

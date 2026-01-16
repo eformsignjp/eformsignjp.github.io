@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
     <link rel="stylesheet" type="text/css" href="../_static/code-tabs.css?v=1bc26e2f" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=870bc763" />
     <script src="../_static/jquery.js?v=5d32c60e"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
     <script src="../_static/documentation_options.js?v=cdfbc7db"></script>
@@ -18,7 +19,6 @@
     <script src="../_static/code-tabs.js?v=c983d12e"></script>
     <script src="../_static/js/theme.js"></script>
     <script src="../_static/js/petite-vue.js"></script>
-    <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="ウェブフォームデザイナーのご紹介" href="chapter4.html" />
@@ -36,7 +36,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage"><img src="../_static/forcs_b.png"/></a></h1>
+        <h1><a href="../index.html" title="Go to homepage">eformsign User Guide 2025.03.26 ドキュメント</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -186,9 +186,39 @@
 </ul>
 </div>
 </li>
+<li><p><strong>AIアシスタント</strong> 機能を使用する場合、分析タイプを選択を選択した後、 <strong>AI分析</strong>をクリックします。</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/AI-assistant-popup_JP.png"><img alt="AI アシスタント ポップアップ" src="../_images/AI-assistant-popup_JP.png" style="width: 400px;" />
+</a>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>💡 <strong>AIアシスタント</strong>を使用すると, AIが文書を自動的に分析し、入力項目の位置や種類を自動で設定・配置します。</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>基本分析:</strong> 文書内の入力項目の位置や種類を分析し、自動で配置します。</p></li>
+<li><p><strong>高度な分析:</strong> 基本分析に加え、参加者や入力権限などの入力項目の属性やワークフローまで自動で設定します。</p></li>
+</ul>
+<p>AIアシスタントはいつでも左上のアイコンをクリックしてご利用いただけます。</p>
+</div></blockquote>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/AI-assistant-icon_jp.png"><img alt="AI アシスタント アイコン" src="../_images/AI-assistant-icon_jp.png" style="width: 500px;" />
+</a>
+</figure>
+<p><strong>※ 注意事項</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>文書の構成やサイズによって分析にかかる時間は異なり、高度な分析の場合は多少お時間がかかることがあります。</p></li>
+<li><p>高度な分析を選択しても、ファイルが20ページ以上の場合は基本分析が実行されます。</p></li>
+<li><p>AI分析の結果は必ずしも完全ではないため、追加された入力項目は必ずご確認ください。</p></li>
+</ul>
+</div></blockquote>
+</div>
+<ol class="arabic" start="4">
 <li><p>文書の作成に参加する <strong>参加者</strong>を追加し、役割を設定します。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/newfrommyfile-participants-popup.png"><img alt="ファイルの追加" src="../_images/newfrommyfile-participants-popup.png" style="width: 400px;" />
+<a class="reference internal image-reference" href="../_images/newfrommyfile-participants-popup_jp.png"><img alt="ファイルの追加" src="../_images/newfrommyfile-participants-popup_jp.png" style="width: 400px;" />
 </a>
 </figure>
 <div class="admonition note">
@@ -202,6 +232,8 @@
 <a class="reference internal image-reference" href="../_images/newfrommyfile-formdesign.png"><img alt="ファイル追加" src="../_images/newfrommyfile-formdesign.png" style="width: 700px;" />
 </a>
 </figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p><strong>追加した入力項目のタイプを変更する方法</strong></p>
 <ol class="arabic simple">
 <li><p>当該入力項目を右クリックします。</p></li>
@@ -212,6 +244,7 @@
 <a class="reference internal image-reference" href="../_images/change-field-type.png"><img alt="入力項目タイプ変更" src="../_images/change-field-type.png" style="width: 300px;" />
 </a>
 </figure>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>原本ファイルの追加や修正はできますか？</strong></p>
@@ -272,7 +305,7 @@
 </ul>
 <p>❗テンプレートとして保存をクリックして、「テンプレートの作成」画面に移動すると、以前の画面（マイファイルで文書を作成する）に戻ることはできません。</p>
 </div>
-<ol class="arabic simple" start="7">
+<ol class="arabic simple" start="8">
 <li><p>全ての設定完了後、 <strong>文書作成をスタート</strong>をクリックします。</p></li>
 </ol>
 <figure class="align-default">
@@ -294,10 +327,8 @@
 <li><p><strong>文書作成をスタート</strong>をクリックした時点で課金対象の文書数にカウントされます。</p></li>
 </ul>
 </div>
-<ol class="arabic" start="8">
-<li><p>文書を確認し、 <strong>送信</strong> をクリックすると、受信先に文書が送信されます。</p>
-<p><a class="reference internal" href="../_images/newfrommyfile-startfromnow-send.png"><img alt="image11" src="../_images/newfrommyfile-startfromnow-send.png" style="width: 700px;" /></a></p>
-</li>
+<ol class="arabic simple" start="9">
+<li><p>文書を確認し、 <strong>送信</strong> をクリックすると、受信先に文書が送信されます。</p></li>
 </ol>
 <section id="recipient-settings">
 <span id="id3"></span><h3>受信先を指定する<a class="headerlink" href="#recipient-settings" title="Link to this heading"></a></h3>
@@ -384,10 +415,9 @@
 <ul class="simple">
 <li><p><strong>CC(参照者)の追加</strong></p></li>
 </ul>
-<p>文書の送信時にCC(参照者)を追加することができます。CCに追加されたユーザーは文書の進行状態をモニタリングすることができ、文書が送信・完了するとCCに追加されたユーザーに通知を送ります。</p>
-<p>❗CCには <strong>グループ/メンバーのみ指定</strong>できます。外部受信者はCCに指定することができません。</p>
+<p>文書送信時に、CC(参照者)を追加することができます。　参照者は文書の進行状況をモニタリングでき、文書が送信・完了した際に、CC(参照者)として追加されたユーザーへ通知が送信されます。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/add-cc.png"><img alt="CCの追加" src="../_images/add-cc.png" style="width: 500px;" />
+<a class="reference internal image-reference" href="../_images/add-cc_new.png"><img alt="CCの追加" src="../_images/add-cc_new.png" style="width: 500px;" />
 </a>
 </figure>
 </li>
@@ -624,11 +654,10 @@
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>CC(参照者)の追加方法</strong></p>
-<p>文書の送信時にCC(参照者)を追加するにはポップアップウィンドウで <strong>CCの追加</strong>をクリックします。CCの追加ポップアップから文書を参照するメンバー/グループを選択します。</p>
-<p>CCに追加されたユーザーは文書の進行状況をモニタリングすることができ、文書の送信・完了時に通知を受け取ることができます。
-❗CCには <strong>グループ/メンバーのみ指定</strong>できます。外部受信者はCCに指定することができません。</p>
+<p>文書送信時にCC(参照者)を追加するにはポップアップウィンドウで <strong>CCの追加</strong>をクリックします。CCの追加ポップアップから文書を参照するメンバー/グループを選択するか、参照者情報を入力します。</p>
+<p>参照者は文書の進行状況をモニタリングでき、文書の送信・完了した際に、参照者に通知が送信されます。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/add-cc-template.png"><img alt="オプション設定画面" src="../_images/add-cc-template.png" style="width: 400px;" />
+<a class="reference internal image-reference" href="../_images/add-cc_new.png"><img alt="オプション設定画面" src="../_images/add-cc_new.png" style="width: 400px;" />
 </a>
 </figure>
 </div>
