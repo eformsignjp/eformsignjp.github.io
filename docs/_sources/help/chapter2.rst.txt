@@ -235,7 +235,7 @@ eformsignに登録されている個人アカウント情報を確認できま�
 
 自分が所属している会社の情報を確認できます。 
 
-.. figure:: resources/myinfo-companyinfos.png
+.. figure:: resources/myinfo-companyinfo0.png
    :alt: マイ情報 > 会社情報画面
    :width: 730px
 
