@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>基本情報 &#8212; eformsign User Guide 2025.03.26 ドキュメント</title>
+    <title>基本情報 &#8212; eformsign User Guide 2026.11.27 ドキュメント</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
-    <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=c100a21a" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=e1da74b8" />
     <link rel="stylesheet" type="text/css" href="../_static/code-tabs.css?v=1bc26e2f" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=870bc763" />
     <script src="../_static/jquery.js?v=5d32c60e"></script>
@@ -19,6 +19,7 @@
     <script src="../_static/code-tabs.js?v=c983d12e"></script>
     <script src="../_static/js/theme.js"></script>
     <script src="../_static/js/petite-vue.js"></script>
+    <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="文書の新規作成" href="chapter3.html" />
@@ -36,7 +37,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage">eformsign User Guide 2025.03.26 ドキュメント</a></h1>
+        <h1><a href="../index.html" title="Go to homepage"><img src="../_static/eformsign_logo_userguide.png"/></a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -202,7 +203,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <li><p><strong>付加機能の設定：</strong> 会社全体および全てのメンバーに適用される付加機能の利用可否を設定することができます。</p>
 <ul>
 <li><p><strong>有料オプションの設定：</strong> 本人確認やタイムスタンプなど追加費用が発生するオプションの利用可否を設定できます。</p></li>
-<li><p><strong>署名方式の設定：</strong> 署名時に、署名の入力方式を制限または許可することができます。（テキスト署名およびスタンプ作成による署名入力方式）</p></li>
+<li><p><strong>署名入力タイプ：</strong> 署名時に、署名の入力方式を制限または許可することができます。（キーボード署名およびスタンプの作成）</p></li>
 <li><p><strong>コメントおよびメモ：</strong> 文書作成時に、ペンまたは蛍光ペンで表示できるコメント機能およびメモ機能の利用可否を設定できます。</p></li>
 </ul>
 </li>
@@ -227,7 +228,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <li><p><strong>料金プラン</strong> ：使用中の料金プランを確認・変更することができます。</p></li>
 <li><p><strong>リアルタイムの使用履歴</strong> ：現在までの利用履歴と残り件数をリアルタイムで確認することができます。</p></li>
 <li><p><strong>決済履歴</strong> ：直近1年間の決済履歴を確認することができます。</p></li>
-<li><p><strong>決済手段の設定</strong> ：決済時に使用するクレジットカード情報を登録することができます。</p></li>
+<li><p><strong>決済手段の設定</strong> ：サブスクリプション型料金プランの定期決済に使用するクレジットカード情報を登録することができます。</p></li>
 </ul>
 </li>
 <li><p><strong>利用状況：</strong> 週間、月間、年間、メンバーごとの利用状況を確認することができます。</p></li>
@@ -430,9 +431,9 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </dd>
 <dt><strong>③ 招待メンバー</strong></dt><dd><p>招待したメンバーの一覧と情報を確認することができます。</p>
 </dd>
-<dt><strong>④ メンバーリスト</strong></dt><dd><p>リスト内のメンバーをクリックすることで、右側の <strong>メンバー情報</strong>タブから情報を確認、修正、削除することができます。</p>
+<dt><strong>④ メンバーリスト</strong></dt><dd><p>メンバーの一覧と情報を確認することができます。メンバー情報を修正するには、メンバーの <strong>もっと見る</strong>( ••• ) ボタンをクリックします。</p>
 </dd>
-<dt><strong>⑤ メンバー情報の修正</strong></dt><dd><p>メンバー情報の確認と修正や、メンバーの状態の変更、会社管理とテンプレート管理の権限の付与ができます。</p>
+<dt><strong>⑤ メンバー情報の修正</strong></dt><dd><p>メンバー情報の確認と修正や、所属グループの編集、メンバーの状態の変更、会社管理とテンプレート管理の権限の付与ができます。</p>
 </dd>
 <dt><strong>⑥ フィールド値設定</strong></dt><dd><p>メンバーに関するフィールド値を設定することができます。</p>
 </dd>
@@ -453,19 +454,64 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </dd>
 <dt><strong>⑫ メンバーの削除</strong></dt><dd><p><strong>ごみ箱</strong> アイコンをクリックすると、メンバーリストの左側のチェックボックスが活性化します。削除するメンバーを選択し、<strong>削除</strong> ボタンをクリックすると、メンバーが削除されます。</p>
 </dd>
+<dt><strong>⑬ 詳細検索</strong></dt><dd><p>検索欄の横にある <strong>詳細</strong> ボタンをクリックし、検索する項目を選択してキーワードを入力すると、メンバーを検索することができます。</p>
+</dd>
+<dt><strong>⑭ カラム設定</strong></dt><dd><p>メンバーリストの右上にあるカラム設定アイコンをクリックし、リストに表示する項目を選択することができます。</p>
+<ul class="simple">
+<li><p>選択可能な項目：部門、役職、ID、メール、モバイル、電話、所属グループ、権限</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/manage-member-column.png"><img alt="メンバー管理 &gt; カラム設定" src="../_images/manage-member-column.png" style="width: 100px;" />
+</a>
+</figure>
+</dd>
 </dl>
+<section id="member-group-edit">
+<span id="id11"></span><h4>メンバーの所属グループを編集する<a class="headerlink" href="#member-group-edit" title="Link to this heading"></a></h4>
+<p><strong>メンバー情報の修正</strong> ポップアップで、メンバーの所属グループを確認・編集することができます。</p>
+<ol class="arabic">
+<li><p><strong>会社管理 &gt; メンバー管理</strong> メニューに移動します。</p></li>
+<li><p>所属グループを編集するメンバーの <strong>もっと見る</strong>(<strong>•••</strong>) ボタンをクリックし、 <strong>メンバー情報の修正</strong>をクリックします。</p></li>
+<li><p>メンバー情報の修正ポップアップの所属グループで、 <strong>グループを追加</strong>をクリックします。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/member-edit-group-add.png"><img alt="メンバー情報の修正-グループを追加" src="../_images/member-edit-group-add.png" style="width: 500px;" />
+</a>
+</figure>
+</li>
+<li><p>グループを追加ポップアップでグループ名を検索して選択し、 <strong>OK</strong>をクリックします。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/member-group-add-popup.png"><img alt="グループを追加ポップアップ" src="../_images/member-group-add-popup.png" style="width: 500px;" />
+</a>
+</figure>
+</li>
+<li><p>所属グループのリストに追加されたグループを確認し、 <strong>保存</strong>をクリックします。グループから除外するには、グループ名の右にある <strong>X</strong> アイコンをクリックし、 <strong>保存</strong>をクリックします。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/member-edit-group-save.png"><img alt="メンバー情報の修正-保存" src="../_images/member-edit-group-save.png" style="width: 500px;" />
+</a>
+</figure>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>招待を拒否したメンバー、または招待の有効期限が切れたメンバーは、所属グループの解除のみ可能です。</p>
+</div>
 </section>
-<section id="id11">
-<h3>グループ管理<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+</section>
+<section id="id12">
+<h3>グループ管理<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
 <p>グループ管理メニューでは、グループの作成、グループ情報の確認/変更/削除ができます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/manage-group.png"><img alt="企業管理 &gt; グループ管理" src="../_images/manage-group.png" style="width: 700px;" />
 </a>
 </figure>
-<dl class="simple">
+<dl>
 <dt><strong>① グループ情報</strong></dt><dd><p>グループリストから情報を確認したいグループをクリックすると、右側のグループ情報タブからグループ名とグループの詳細を確認・修正することができます。</p>
 </dd>
 <dt><strong>② メンバーリスト</strong></dt><dd><p>グループに所属しているメンバーのリストを表示し、メンバーを追加または削除することができます。</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>メンバーの所属グループは、 <strong>会社管理 &gt; メンバー管理 &gt; メンバー情報の修正</strong>からも編集できます。</p>
+</div>
 </dd>
 <dt><strong>③ フィールド値の設定</strong></dt><dd><p>グループに関するフィールド値を設定できます。</p>
 </dd>
@@ -477,7 +523,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </section>
 </section>
 <section id="mysignature">
-<span id="id12"></span><h2>権限の区分<a class="headerlink" href="#mysignature" title="Link to this heading"></a></h2>
+<span id="id13"></span><h2>権限の区分<a class="headerlink" href="#mysignature" title="Link to this heading"></a></h2>
 <p>eformsignでは各メンバーに権限を付与することができます。テンプレートごとの権限を含む、全5種類の権限を管理することができます。各ユーザーの権限は、次のように区分されます。</p>
 <ul>
 <li><p><strong>代表管理者</strong></p>
@@ -510,14 +556,14 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <li><p><strong>テンプレートの修正権限</strong></p>
 <div class="line-block">
 <div class="line">テンプレートを修正できる権限です。</div>
-<div class="line">❗テンプレート修正権限は、<strong>テンプレート管理者であるメンバーのみ</strong>付与できます。</div>
+<div class="line">❗テンプレート修正権限は、<strong>テンプレートの作成権限があるメンバーのみ</strong>付与できます。</div>
 </div>
 </li>
 </ul>
 </li>
 </ul>
-<section id="id13">
-<h3>代表管理者<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
+<section id="id14">
+<h3>代表管理者<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
 <p>会員登録時に会社を新規登録したユーザーが自動的に代表管理者となります。eformsignの使用に関する全ての権限を持つ最高管理者です。</p>
 <p><strong>代表管理者は、</strong></p>
 <ul class="simple">
@@ -552,8 +598,8 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <li><p><strong>確認</strong> ボタンをクリックすると、代表管理者が変更されます。</p></li>
 </ol>
 </section>
-<section id="id14">
-<h3>会社管理者<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
+<section id="id15">
+<h3>会社管理者<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
 <p>会社管理者は <strong>会社管理</strong> メニューにアクセスできる権限を持ち、会社やメンバー、グループに関する情報を確認、修正、削除することができます。</p>
 <p>会社管理者権限は <strong>メンバー管理</strong> または <strong>権限管理</strong> メニューから設定できます。</p>
 <p><strong>会社管理者の設定方法(会社管理 &gt; メンバー管理)</strong></p>
@@ -601,8 +647,8 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <p>会社管理者権限を削除するには、右上のゴミ箱アイコンをクリックし、権限を削除するメンバーを選択後 <strong>削除</strong> ボタンをクリックします。</p>
 </div>
 </section>
-<section id="id15">
-<h3>テンプレート管理者<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+<section id="id16">
+<h3>テンプレート管理者<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
 <p>テンプレート管理者は <strong>テンプレート管理</strong> メニューへのアクセス権限を持っており、テンプレートの登録、修正、配布、削除ができます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -665,7 +711,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </div>
 </section>
 <section id="docmanager-permissions">
-<span id="id16"></span><h3>文書管理者<a class="headerlink" href="#docmanager-permissions" title="Link to this heading"></a></h3>
+<span id="id17"></span><h3>文書管理者<a class="headerlink" href="#docmanager-permissions" title="Link to this heading"></a></h3>
 <p>文書管理者は、 <strong>文書管理</strong> メニューにアクセスすることができます。文書管理者権限を持つテンプレートで作成された文書を閲覧・ダウンロードすることができるほか、管理範囲によっては文書を無効化・削除することができます。</p>
 <p><strong>文書管理者権限の設定方法</strong></p>
 <ol class="arabic">
@@ -770,7 +816,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </ol>
 </section>
 <section id="permissionsforcreatingtemplate">
-<span id="id17"></span><h3>テンプレートの作成権限<a class="headerlink" href="#permissionsforcreatingtemplate" title="Link to this heading"></a></h3>
+<span id="id18"></span><h3>テンプレートの作成権限<a class="headerlink" href="#permissionsforcreatingtemplate" title="Link to this heading"></a></h3>
 <p>テンプレートの作成権限を持つメンバーは <strong>テンプレート管理</strong> メニューにアクセスでき、テンプレートを作成できます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -802,7 +848,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </ol>
 </section>
 <section id="permissionsfortemplate">
-<span id="id18"></span><h3>各テンプレートの権限<a class="headerlink" href="#permissionsfortemplate" title="Link to this heading"></a></h3>
+<span id="id19"></span><h3>各テンプレートの権限<a class="headerlink" href="#permissionsfortemplate" title="Link to this heading"></a></h3>
 <p>各テンプレートを使って文書の作成ができる <strong>テンプレートの使用権限</strong>と、各テンプレートを修正できる <strong>修正権限</strong>があります。</p>
 <ul class="simple">
 <li><p><strong>テンプレートの使用権限：</strong>この権限が付与されたメンバーは <strong>文書の新規作成 &gt; テンプレートで文書作成する</strong>  メニュー画面から、権限を持つテンプレートを使用して文書を作成できます。</p></li>
@@ -810,7 +856,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </ul>
 <div class="admonition caution">
 <p class="admonition-title">注意</p>
-<p>テンプレートの修正権限は <strong>テンプレート管理者</strong> にのみ付与することができます。</p>
+<p>テンプレートの修正権限は <strong>テンプレートの作成権限</strong>があるメンバーにのみ付与することができます。</p>
 </div>
 <p><strong>権限の付与方法</strong></p>
 <div class="admonition note">
@@ -837,15 +883,15 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </section>
 </section>
 <section id="manage-members-groups">
-<span id="id19"></span><h2>アドレス帳<a class="headerlink" href="#manage-members-groups" title="Link to this heading"></a></h2>
+<span id="id20"></span><h2>アドレス帳<a class="headerlink" href="#manage-members-groups" title="Link to this heading"></a></h2>
 <p><strong>アドレス帳</strong> メニュー外部受信者の連絡先を直接登録・管理でき、また管理者が登録した会社の連絡先を確認できます。
 登録されたアドレス帳は文書送信時に一覧から簡単に選択できます。</p>
 <ul class="simple">
 <li><p><strong>マイ連絡先:</strong> マイ連絡先のメニューから直接登録したもの、または文書送信ポップアップで登録した外部受信者の連絡先です。</p></li>
 <li><p><strong>業務連絡先:</strong> 代表管理者または会社管理者が登録し、すべてのメンバーに共有されたアドレス帳です。</p></li>
 </ul>
-<section id="id20">
-<h3>マイ連絡先<a class="headerlink" href="#id20" title="Link to this heading"></a></h3>
+<section id="id21">
+<h3>マイ連絡先<a class="headerlink" href="#id21" title="Link to this heading"></a></h3>
 <p>よく使用する外部受信者の連絡先を、直接登録・管理できます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/mycontacts_jp.png"><img alt="マイ連絡先" src="../_images/mycontacts_jp.png" style="width: 700px;" />
@@ -872,8 +918,8 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <p class="admonition-title">Tip</p>
 <p>文書送信時、送信ポップアップで連絡先に登録されていない新しい外部受信者の情報を入力すると、その連絡先はマイ連絡先に自動登録されます。</p>
 </div>
-<section id="id21">
-<h4>連絡先を一括登録する方法<a class="headerlink" href="#id21" title="Link to this heading"></a></h4>
+<section id="id22">
+<h4>連絡先を一括登録する方法<a class="headerlink" href="#id22" title="Link to this heading"></a></h4>
 <p>連絡先は、Excelファイルを使用して最大1,000件まで一度に登録できます。</p>
 <ol class="arabic simple">
 <li><p><strong>連絡先の一括登録</strong> ボタンをクリックします。</p></li>
@@ -907,8 +953,8 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </div>
 </section>
 </section>
-<section id="id22">
-<h3>業務連絡先<a class="headerlink" href="#id22" title="Link to this heading"></a></h3>
+<section id="id23">
+<h3>業務連絡先<a class="headerlink" href="#id23" title="Link to this heading"></a></h3>
 <p>管理者が登録し、会社全体に共有されている外部受信者の連絡先を確認し、Excelファイルとしてダウンロードできます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -921,15 +967,15 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </section>
 </section>
 <section id="managesharedcontacts">
-<span id="id23"></span><h2>業務連絡先の管理<a class="headerlink" href="#managesharedcontacts" title="Link to this heading"></a></h2>
+<span id="id24"></span><h2>業務連絡先の管理<a class="headerlink" href="#managesharedcontacts" title="Link to this heading"></a></h2>
 <p>会社全体のメンバーと共有できる共用連絡先を登録・管理できます。
 登録された連絡先はすべてのメンバーに自動的に共有され、 <strong>アドレス帳 &gt; 業務連絡先</strong> メニューに表示されます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/company-shared-contacts_jp.png"><img alt="業務連絡先" src="../_images/company-shared-contacts_jp.png" style="width: 700px;" />
 </a>
 </figure>
-<section id="id24">
-<h3>業務連絡先の登録方法<a class="headerlink" href="#id24" title="Link to this heading"></a></h3>
+<section id="id25">
+<h3>業務連絡先の登録方法<a class="headerlink" href="#id25" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p><strong>連絡先の登録</strong> ボタンをクリックします。</p></li>
 <li><p>連絡先の情報を入力した後、 <strong>登録</strong> ボタンをクリックします。</p></li>
@@ -942,8 +988,8 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <li><p>登録された連絡先はすべてのメンバーの <strong>連絡先 &gt; 業務連絡先</strong> メニューから確認できます。</p></li>
 </ol>
 </section>
-<section id="id25">
-<h3>業務連絡先の一括登録方法<a class="headerlink" href="#id25" title="Link to this heading"></a></h3>
+<section id="id26">
+<h3>業務連絡先の一括登録方法<a class="headerlink" href="#id26" title="Link to this heading"></a></h3>
 <p>連絡先は、Excelファイルを使用して最大1,000件まで一度に登録できます。</p>
 <ol class="arabic simple">
 <li><p><strong>連絡先の一括登録</strong> ボタンをクリックします。</p></li>
@@ -977,11 +1023,11 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </div>
 </section>
 </section>
-<section id="id26">
-<span id="id27"></span><h2>マイ署名の管理<a class="headerlink" href="#id26" title="Link to this heading"></a></h2>
+<section id="id27">
+<span id="id28"></span><h2>マイ署名の管理<a class="headerlink" href="#id27" title="Link to this heading"></a></h2>
 <p><strong>マイ署名</strong> メニューから <strong>サイン、イニシャル、印鑑・スタンプ</strong>を登録しておくと、文書を作成する際に登録されている署名を簡単に使うことができます。</p>
 <section id="registersignature">
-<span id="id28"></span><h3><strong>サイン/イニシャルの登録方法</strong><a class="headerlink" href="#registersignature" title="Link to this heading"></a></h3>
+<span id="id29"></span><h3><strong>サイン/イニシャルの登録方法</strong><a class="headerlink" href="#registersignature" title="Link to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>作業は <strong>PC、モバイル、アプリケーション</strong>で行うことができます。</p>
@@ -1019,7 +1065,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <p class="admonition-title">Tip</p>
 <p><strong>署名方式の設定</strong></p>
 <p>電子文書に添付する署名の方式を設定することができます。</p>
-<p><strong>会社管理</strong> &gt; <strong>署名の設定</strong> から手書き、キーボードのうち、文書の署名欄に表示する署名の方式を表示/非表示できます。</p>
+<p><strong>会社管理</strong> &gt; <strong>付加機能設定 &gt; 署名入力タイプ</strong>の <strong>署名方式の設定</strong>から、文書の署名欄で使用する <strong>キーボード署名</strong>と <strong>スタンプの作成</strong>を無効化できます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/signature-method-jp.png"><img alt="署名方式の設定" src="../_images/signature-method-jp.png" style="width: 700px;" />
 </a>
@@ -1027,7 +1073,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </div>
 </section>
 <section id="registerstamp">
-<span id="id29"></span><h3><strong>スタンプの登録方法</strong><a class="headerlink" href="#registerstamp" title="Link to this heading"></a></h3>
+<span id="id30"></span><h3><strong>スタンプの登録方法</strong><a class="headerlink" href="#registerstamp" title="Link to this heading"></a></h3>
 <p>文書に直接署名するのではなく、職印や印鑑が必要な場合もあります。eformsignでは、はんこを3つの方法で登録して使用することができます。</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="chapter2.html#createstamp">スタンプの作成</a></p></li>
@@ -1041,7 +1087,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <p>会社印として登録すると、メンバー/グループごとに使用権限が付与され、使用履歴などを確認できるようになります。</p>
 </div>
 <section id="createstamp">
-<span id="id30"></span><h4>スタンプの作成<a class="headerlink" href="#createstamp" title="Link to this heading"></a></h4>
+<span id="id31"></span><h4>スタンプの作成<a class="headerlink" href="#createstamp" title="Link to this heading"></a></h4>
 <p>名前、日付など、印鑑に入れる各情報を入力し、印鑑のデザインを選択してお好きな印鑑をすぐに作成することができます。</p>
 <ol class="arabic">
 <li><p>サイドバーメニューから <strong>マイ署名</strong>に移動します。</p></li>
@@ -1069,16 +1115,16 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>スタンプ作成機能の無効化について</strong></p>
-<p>署名欄への入力時に <strong>スタンプ作成</strong>を非表示にするには、<strong>会社管理 &gt; 署名の設定</strong>から <strong>スタンプ作成の無効化</strong> にチェックを入れます。</p>
+<p><strong>スタンプの作成機能の無効化について</strong></p>
+<p>署名欄への入力時に <strong>スタンプの作成</strong>を非表示にするには、 <strong>会社管理 &gt; 付加機能設定 &gt; 署名入力タイプ</strong>から <strong>スタンプの作成の無効化</strong>をオンにします。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/signature-stamp-limit-create-stamp.png"><img alt="会社管理 &gt; 署名の設定" src="../_images/signature-stamp-limit-create-stamp.png" style="width: 700px;" />
+<a class="reference internal image-reference" href="../_images/signature-stamp-limit-create-stamp.png"><img alt="会社管理 &gt; 付加機能設定 &gt; 署名入力タイプ" src="../_images/signature-stamp-limit-create-stamp.png" style="width: 700px;" />
 </a>
 </figure>
 </div>
 </section>
 <section id="uploadstampimage">
-<span id="id31"></span><h4>スタンプ画像のアップロード<a class="headerlink" href="#uploadstampimage" title="Link to this heading"></a></h4>
+<span id="id32"></span><h4>スタンプ画像のアップロード<a class="headerlink" href="#uploadstampimage" title="Link to this heading"></a></h4>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>事前にスタンプの画像を準備する必要があります。</p>
@@ -1106,7 +1152,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </ol>
 </section>
 <section id="scanstamp">
-<span id="id32"></span><h4><strong>スタンプのスキャン</strong><a class="headerlink" href="#scanstamp" title="Link to this heading"></a></h4>
+<span id="id33"></span><h4><strong>スタンプのスキャン</strong><a class="headerlink" href="#scanstamp" title="Link to this heading"></a></h4>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>登録するスタンプとeformsignから提供している <strong>スタンプスキャン用紙</strong>をダウンロード後、印刷して使用します。
@@ -1151,8 +1197,9 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <li><p>カメラ画面にスキャン領域を写すと、スタンプが自動的に読み取られます。</p></li>
 <li><p>出力されたスタンプ画像を確認して保存すると、スタンプが登録されます。</p></li>
 </ol>
+</section>
 <section id="caution-scanstamp">
-<span id="id33"></span><h5><strong>スタンプのスキャン時の注意事項</strong><a class="headerlink" href="#caution-scanstamp" title="Link to this heading"></a></h5>
+<span id="id34"></span><h4><strong>スタンプのスキャン時の注意事項</strong><a class="headerlink" href="#caution-scanstamp" title="Link to this heading"></a></h4>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Tip 1. スキャンの画面に移動しない場合</strong></p>
@@ -1178,17 +1225,16 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </section>
 </section>
 </section>
-</section>
 <section id="company-stamp">
-<span id="id34"></span><h2>会社印管理<a class="headerlink" href="#company-stamp" title="Link to this heading"></a></h2>
+<span id="id35"></span><h2>会社印管理<a class="headerlink" href="#company-stamp" title="Link to this heading"></a></h2>
 <p><strong>会社印管理</strong> メニューでは、社内で使われる法人印鑑、社用印鑑などの会社印を複数登録して管理することができます。
 印鑑ごとにメンバーまたはグループの印鑑の使用権限を付与し、印鑑の使用履歴を確認することができます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>会社印の管理には <strong>代表管理者</strong> または <strong>会社管理者</strong> の権限が必要です。</p>
 </div>
-<section id="id35">
-<h3><strong>会社印</strong><a class="headerlink" href="#id35" title="Link to this heading"></a></h3>
+<section id="id36">
+<h3><strong>会社印</strong><a class="headerlink" href="#id36" title="Link to this heading"></a></h3>
 <p>会社で使われる印鑑を複数登録して管理することができます。印鑑ごとに使用権限を付与することができ、印鑑に対する全ての変更履歴を確認することができます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/menu-company-stamp.PNG"><img alt="会社印管理" src="../_images/menu-company-stamp.PNG" style="width: 700px;" />
@@ -1248,8 +1294,8 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </a>
 </figure>
 </section>
-<section id="id36">
-<h3><strong>社印使用履歴</strong><a class="headerlink" href="#id36" title="Link to this heading"></a></h3>
+<section id="id37">
+<h3><strong>社印使用履歴</strong><a class="headerlink" href="#id37" title="Link to this heading"></a></h3>
 <p>使用された全ての会社印の履歴を確認することができます。各会社印を使用したメンバー、日付、文書などの情報が表示されます。
 会社印が誰によって、いつ使用されたか確認することができ、会社印の使用履歴はCSVファイルでダウンロードすることができます。</p>
 <figure class="align-default">
@@ -1259,7 +1305,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </section>
 </section>
 <section id="additional-features-settings">
-<span id="id37"></span><h2>付加機能の設定<a class="headerlink" href="#additional-features-settings" title="Link to this heading"></a></h2>
+<span id="id38"></span><h2>付加機能の設定<a class="headerlink" href="#additional-features-settings" title="Link to this heading"></a></h2>
 <p>付加機能設定では、会社全体に適用される付加機能の利用可否を管理できます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -1268,15 +1314,15 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <p>付加機能設定メニューは、以下の構成となっています。</p>
 <ul class="simple">
 <li><p>有料オプション</p></li>
-<li><p>署名入力方式</p></li>
+<li><p>署名入力タイプ</p></li>
 <li><p>コメントおよびメモ</p></li>
 </ul>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/additional-features-settings_jp.png"><img alt="付加機能設定" src="../_images/additional-features-settings_jp.png" style="width: 700px;" />
 </a>
 </figure>
-<section id="id38">
-<h3>有料オプション<a class="headerlink" href="#id38" title="Link to this heading"></a></h3>
+<section id="id39">
+<h3>有料オプション<a class="headerlink" href="#id39" title="Link to this heading"></a></h3>
 <p>本人確認、タイムスタンプなど追加費用が発生するオプションの利用可否を設定できます。
 初期設定ではすべてのオプションが利用可能ですが、オプション制限を有効（ON）にすると、会社全体およびすべてのメンバーに即時適用され、該当機能は利用できなくなります。</p>
 <figure class="align-default">
@@ -1311,9 +1357,9 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 また、すでに進行中の文書および新たに作成される文書の双方に適用されます。</p>
 </div>
 </section>
-<section id="id39">
-<h3>署名入力方式<a class="headerlink" href="#id39" title="Link to this heading"></a></h3>
-<p>署名入力項目に署名する際の <strong>キーボード署名の無効化</strong>と <strong>スタンプの作成</strong>の利用可否を設定できます。</p>
+<section id="id40">
+<h3>署名入力タイプ<a class="headerlink" href="#id40" title="Link to this heading"></a></h3>
+<p><strong>署名方式の設定</strong>で、署名入力項目に署名する際の <strong>キーボード署名</strong>と <strong>スタンプの作成</strong>の利用可否を設定できます。</p>
 <ul class="simple">
 <li><p><strong>キーボード署名の無効化:</strong> 書体を選択して署名を生成する機能を制限します。</p></li>
 <li><p><strong>スタンプの作成の無効化:</strong> テキストを入力し、スタンプのスタイルを選択して、該当テキストを使用したスタンプを自動生成する機能を制限します。</p></li>
@@ -1323,12 +1369,12 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <p><strong>スタンプの作成の無効化</strong>を有効(ON)にした場合, <strong>会社印</strong> 入力項目を使用する場合も同様に機能が制限されます。</p>
 </div>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/signature-types-settings_jp.png"><img alt="署名入力方式" src="../_images/signature-types-settings_jp.png" style="width: 700px;" />
+<a class="reference internal image-reference" href="../_images/signature-types-settings_jp.png"><img alt="署名入力タイプ" src="../_images/signature-types-settings_jp.png" style="width: 700px;" />
 </a>
 </figure>
 </section>
-<section id="id40">
-<h3>コメントおよびメモ<a class="headerlink" href="#id40" title="Link to this heading"></a></h3>
+<section id="id41">
+<h3>コメントおよびメモ<a class="headerlink" href="#id41" title="Link to this heading"></a></h3>
 <p>文書作成時に、ペン/蛍光ペンで表示できる注釈機能およびメモ機能の利用可否を設定できます。</p>
 <ul class="simple">
 <li><p><strong>コメント機能許可:</strong> 文書にペンや蛍光ペンで表示できる注釈機能の使用を許可します。</p></li>
@@ -1347,7 +1393,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </section>
 </section>
 <section id="watermark-settings">
-<span id="id41"></span><h2>ウォーターマーク管理<a class="headerlink" href="#watermark-settings" title="Link to this heading"></a></h2>
+<span id="id42"></span><h2>ウォーターマーク管理<a class="headerlink" href="#watermark-settings" title="Link to this heading"></a></h2>
 <p>文書に表示するウォーターマークを登録・管理することができます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -1360,8 +1406,8 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <a class="reference internal image-reference" href="../_images/manage-watermarks_jp.png"><img alt="ウォーターマーク管理" src="../_images/manage-watermarks_jp.png" style="width: 700px;" />
 </a>
 </figure>
-<section id="id42">
-<h3>ウォーターマーク登録<a class="headerlink" href="#id42" title="Link to this heading"></a></h3>
+<section id="id43">
+<h3>ウォーターマーク登録<a class="headerlink" href="#id43" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p><strong>ウォーターマーク登録</strong> ボタンをクリックします。</p></li>
 </ol>
@@ -1373,7 +1419,7 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 <li><p>ウォーターマーク名とウォーターマークテキストを入力します。</p>
 <ul class="simple">
 <li><p>ウォーターマーク名: 一覧に表示される名前</p></li>
-<li><p>ウォーターマークテキスト: ウォーターマークで文書に表示されるテキスト(<a href="#id43"><span class="problematic" id="id44">*</span></a>予約語活用Tipご参考)</p></li>
+<li><p>ウォーターマークテキスト: ウォーターマークで文書に表示されるテキスト(<a href="#id44"><span class="problematic" id="id45">*</span></a>予約語活用Tipご参考)</p></li>
 </ul>
 </li>
 <li><p>テキストのフォント、サイズ、色、回転、透明度などの詳細な属性を設定します。</p></li>
@@ -1408,8 +1454,8 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </ul>
 </div>
 </section>
-<section id="id45">
-<h3>表示順序の変更<a class="headerlink" href="#id45" title="Link to this heading"></a></h3>
+<section id="id46">
+<h3>表示順序の変更<a class="headerlink" href="#id46" title="Link to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>💡 <strong>表示順序とは?</strong></p>
@@ -1421,8 +1467,8 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </a>
 </figure>
 </section>
-<section id="id46">
-<h3>ウォーターマークのプレビュー<a class="headerlink" href="#id46" title="Link to this heading"></a></h3>
+<section id="id47">
+<h3>ウォーターマークのプレビュー<a class="headerlink" href="#id47" title="Link to this heading"></a></h3>
 <p>適用時点に応じて表示されるウォーターマークをプレビューできます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/preview-watermark_jp.png"><img alt="ウォーターマークのプレビュー" src="../_images/preview-watermark_jp.png" style="width: 400px;" />
@@ -1431,17 +1477,17 @@ PCに保存されている文書ファイルまたはeformsignにアップロー
 </section>
 </section>
 <section id="security-settings">
-<span id="id47"></span><h2>セキュリティ設定<a class="headerlink" href="#security-settings" title="Link to this heading"></a></h2>
+<span id="id48"></span><h2>セキュリティ設定<a class="headerlink" href="#security-settings" title="Link to this heading"></a></h2>
 <p>セキュリティ上の観点から、権限ごとに特定のIPアドレスからのみログインできるように設定することができます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>セキュリティ設定は <strong>代表管理者</strong> のみ行うことができます。</p>
 </div>
-<section id="id48">
-<h3>ログイン設定<a class="headerlink" href="#id48" title="Link to this heading"></a></h3>
-<p>eformsignアカウントのログイン時の二段階認証、重複ログインの防止、非アクティブユーザーのアクセス制限の設定を行うことができます。</p>
 <section id="id49">
-<h4>ログインの二段階認証<a class="headerlink" href="#id49" title="Link to this heading"></a></h4>
+<h3>ログイン設定<a class="headerlink" href="#id49" title="Link to this heading"></a></h3>
+<p>eformsignアカウントのログイン時の二段階認証、重複ログインの防止、非アクティブユーザーのアクセス制限の設定を行うことができます。</p>
+<section id="id50">
+<h4>ログインの二段階認証<a class="headerlink" href="#id50" title="Link to this heading"></a></h4>
 <p>アカウント保護の観点から、ログイン時の二段階認証を行うよう設定することができます。</p>
 <ol class="arabic simple">
 <li><p><strong>会社管理 &gt; セキュリティ設定</strong> メニューに移動します。</p></li>
@@ -1506,8 +1552,8 @@ Google Authenticatorを使用するには事前の設定が必要で、 <strong>
 </div>
 </section>
 </section>
-<section id="id50">
-<h4>重複ログインの防止<a class="headerlink" href="#id50" title="Link to this heading"></a></h4>
+<section id="id51">
+<h4>重複ログインの防止<a class="headerlink" href="#id51" title="Link to this heading"></a></h4>
 <p>アカウント保護の観点から、1つのアカウントに重複してログインできないよう設定します。また、ログインセッションの時間を設定することができ、一定時間操作が無いと自動的にログアウトするよう設定することができます。</p>
 <ol class="arabic">
 <li><p><strong>会社管理 &gt; セキュリティ設定</strong> メニューに移動します。</p></li>
@@ -1522,8 +1568,8 @@ Google Authenticatorを使用するには事前の設定が必要で、 <strong>
 <li><p>重複ログインの防止設定が完了すると、最後にログインした端末・ブラウザのログインのみ維持され、それ以外の端末からは自動でログアウトされます。</p></li>
 </ol>
 </section>
-<section id="id51">
-<h4>非アクティブユーザーのアクセス制限<a class="headerlink" href="#id51" title="Link to this heading"></a></h4>
+<section id="id52">
+<h4>非アクティブユーザーのアクセス制限<a class="headerlink" href="#id52" title="Link to this heading"></a></h4>
 <p>一定期間eformsignサービスにログインしていないアカウントのアクセスを制限する設定を行います。</p>
 <ol class="arabic">
 <li><p><strong>会社管理&gt; セキュリティ設定</strong> メニューに移動します。</p></li>
@@ -1546,8 +1592,8 @@ Google Authenticatorを使用するには事前の設定が必要で、 <strong>
 </figure>
 </div>
 </section>
-<section id="id52">
-<h4>ログインなしで文書リンクにアクセスを許可<a class="headerlink" href="#id52" title="Link to this heading"></a></h4>
+<section id="id53">
+<h4>ログインなしで文書リンクにアクセスを許可<a class="headerlink" href="#id53" title="Link to this heading"></a></h4>
 <p>eformsignメンバーが文書のリクエストを受け取った際、文書のリンクをクリックするだけで、ログインせずに閲覧・処理できるように設定できます。</p>
 <blockquote>
 <div><figure class="align-default">
@@ -1567,8 +1613,8 @@ Google Authenticatorを使用するには事前の設定が必要で、 <strong>
 <section id="ip">
 <h3>IP接続制限設定<a class="headerlink" href="#ip" title="Link to this heading"></a></h3>
 <p>アカウント保護の観点から、権限ごとに特定のIPアドスレからのみログインできるよう設定することができます。</p>
-<section id="id53">
-<h4><strong>権限ごとの接続許可IPアドレスの設定方法</strong><a class="headerlink" href="#id53" title="Link to this heading"></a></h4>
+<section id="id54">
+<h4><strong>権限ごとの接続許可IPアドレスの設定方法</strong><a class="headerlink" href="#id54" title="Link to this heading"></a></h4>
 <ol class="arabic simple">
 <li><p><strong>会社管理 &gt; セキュリティ設定</strong> メニューに移動します。</p></li>
 </ol>
@@ -1597,7 +1643,7 @@ Google Authenticatorを使用するには事前の設定が必要で、 <strong>
 </section>
 </section>
 <section id="retention">
-<span id="id54"></span><h2>文書の保管期間の設定<a class="headerlink" href="#retention" title="Link to this heading"></a></h2>
+<span id="id55"></span><h2>文書の保管期間の設定<a class="headerlink" href="#retention" title="Link to this heading"></a></h2>
 <p>文書の保管期間を設定することができます。</p>
 <p>文書の保管期間は、会社全体またはテンプレートごとに設定することができ、設定された保管期間が過ぎると、その文書は文書トレイから削除されます。</p>
 <div class="admonition note">
@@ -1648,46 +1694,46 @@ Google Authenticatorを使用するには事前の設定が必要で、 <strong>
 </div>
 </section>
 <section id="activity-log">
-<span id="id55"></span><h2>操作履歴管理<a class="headerlink" href="#activity-log" title="Link to this heading"></a></h2>
+<span id="id56"></span><h2>操作履歴管理<a class="headerlink" href="#activity-log" title="Link to this heading"></a></h2>
 <p><strong>会社管理 &gt; 操作履歴管理</strong> メニューでは、eformsignユーザーのサービスへのアクセス履歴、情報修正履歴、ダウンロード履歴など、ユーザーの操作に関する履歴を確認・ダウンロードすることができます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p><strong>操作履歴管理</strong> メニューは <strong>代表管理者</strong>のみ閲覧・設定することができます。</p>
 </div>
-<section id="id56">
-<h3>アクセス履歴<a class="headerlink" href="#id56" title="Link to this heading"></a></h3>
+<section id="id57">
+<h3>アクセス履歴<a class="headerlink" href="#id57" title="Link to this heading"></a></h3>
 <p>会社に所属するメンバーのeformsignへのログイン/ログアウト、サービス利用制限の解除など、サービスへのアクセスに関する操作履歴を確認することができます。直近2年間の履歴データが保存され、一度に3ヶ月まで表示することができます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/login-history.png"><img alt="アクセス履歴" src="../_images/login-history.png" style="width: 700px;" />
 </a>
 </figure>
 </section>
-<section id="id57">
-<h3>情報修正履歴<a class="headerlink" href="#id57" title="Link to this heading"></a></h3>
+<section id="id58">
+<h3>情報修正履歴<a class="headerlink" href="#id58" title="Link to this heading"></a></h3>
 <p>会社に所属するメンバーのユーザー情報の修正に関する操作履歴を確認することができます。直近2年間の履歴データが保存され、一度に3ヶ月まで表示することができます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/profile-revision-history.png"><img alt="情報修正履歴" src="../_images/profile-revision-history.png" style="width: 700px;" />
 </a>
 </figure>
 </section>
-<section id="id58">
-<h3>ダウンロード履歴<a class="headerlink" href="#id58" title="Link to this heading"></a></h3>
+<section id="id59">
+<h3>ダウンロード履歴<a class="headerlink" href="#id59" title="Link to this heading"></a></h3>
 <p>会社に所属するメンバーの文書トレイ、メンバー管理、会社印管理、利用状況、操作履歴管理メニューからダウンロードした履歴を確認することができます。直近2年間の履歴データが保存され、一度に3ヶ月まで表示することができます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/download-history.png"><img alt="ダウンロード履歴" src="../_images/download-history.png" style="width: 700px;" />
 </a>
 </figure>
 </section>
-<section id="id59">
-<h3>文書履歴<a class="headerlink" href="#id59" title="Link to this heading"></a></h3>
+<section id="id60">
+<h3>文書履歴<a class="headerlink" href="#id60" title="Link to this heading"></a></h3>
 <p>文書の作成、閲覧、削除など、文書に関する操作履歴を確認することができます。メンバーだけでなく、文書に関わる外部受信者のログインも記録されます。直近2年間の履歴データが保存され、一度に3ヶ月まで表示することができます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/document-history.png"><img alt="文書履歴" src="../_images/document-history.png" style="width: 700px;" />
 </a>
 </figure>
 </section>
-<section id="id60">
-<h3>権限管理履歴<a class="headerlink" href="#id60" title="Link to this heading"></a></h3>
+<section id="id61">
+<h3>権限管理履歴<a class="headerlink" href="#id61" title="Link to this heading"></a></h3>
 <p>メンバーの権限変更など、権限に関する管理メニューでの操作に関する履歴を確認することができます。直近2年間の履歴データが保存され、一度に3ヶ月まで表示することができます。</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/permission-management-history.png"><img alt="文書の保管期間の設定" src="../_images/permission-management-history.png" style="width: 700px;" />
@@ -1724,86 +1770,87 @@ Google Authenticatorを使用するには事前の設定が必要で、 <strong>
 </ul>
 </li>
 <li><a class="reference internal" href="#permissions">メンバー及びグループの管理</a><ul>
-<li><a class="reference internal" href="#id10">メンバー管理</a></li>
-<li><a class="reference internal" href="#id11">グループ管理</a></li>
+<li><a class="reference internal" href="#id10">メンバー管理</a><ul>
+<li><a class="reference internal" href="#member-group-edit">メンバーの所属グループを編集する</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id12">グループ管理</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#mysignature">権限の区分</a><ul>
-<li><a class="reference internal" href="#id13">代表管理者</a></li>
-<li><a class="reference internal" href="#id14">会社管理者</a></li>
-<li><a class="reference internal" href="#id15">テンプレート管理者</a></li>
+<li><a class="reference internal" href="#id14">代表管理者</a></li>
+<li><a class="reference internal" href="#id15">会社管理者</a></li>
+<li><a class="reference internal" href="#id16">テンプレート管理者</a></li>
 <li><a class="reference internal" href="#docmanager-permissions">文書管理者</a></li>
 <li><a class="reference internal" href="#permissionsforcreatingtemplate">テンプレートの作成権限</a></li>
 <li><a class="reference internal" href="#permissionsfortemplate">各テンプレートの権限</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#manage-members-groups">アドレス帳</a><ul>
-<li><a class="reference internal" href="#id20">マイ連絡先</a><ul>
-<li><a class="reference internal" href="#id21">連絡先を一括登録する方法</a></li>
+<li><a class="reference internal" href="#id21">マイ連絡先</a><ul>
+<li><a class="reference internal" href="#id22">連絡先を一括登録する方法</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id22">業務連絡先</a></li>
+<li><a class="reference internal" href="#id23">業務連絡先</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#managesharedcontacts">業務連絡先の管理</a><ul>
-<li><a class="reference internal" href="#id24">業務連絡先の登録方法</a></li>
-<li><a class="reference internal" href="#id25">業務連絡先の一括登録方法</a></li>
+<li><a class="reference internal" href="#id25">業務連絡先の登録方法</a></li>
+<li><a class="reference internal" href="#id26">業務連絡先の一括登録方法</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id26">マイ署名の管理</a><ul>
+<li><a class="reference internal" href="#id27">マイ署名の管理</a><ul>
 <li><a class="reference internal" href="#registersignature"><strong>サイン/イニシャルの登録方法</strong></a></li>
 <li><a class="reference internal" href="#registerstamp"><strong>スタンプの登録方法</strong></a><ul>
 <li><a class="reference internal" href="#createstamp">スタンプの作成</a></li>
 <li><a class="reference internal" href="#uploadstampimage">スタンプ画像のアップロード</a></li>
-<li><a class="reference internal" href="#scanstamp"><strong>スタンプのスキャン</strong></a><ul>
+<li><a class="reference internal" href="#scanstamp"><strong>スタンプのスキャン</strong></a></li>
 <li><a class="reference internal" href="#caution-scanstamp"><strong>スタンプのスキャン時の注意事項</strong></a></li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-</li>
 <li><a class="reference internal" href="#company-stamp">会社印管理</a><ul>
-<li><a class="reference internal" href="#id35"><strong>会社印</strong></a></li>
-<li><a class="reference internal" href="#id36"><strong>社印使用履歴</strong></a></li>
+<li><a class="reference internal" href="#id36"><strong>会社印</strong></a></li>
+<li><a class="reference internal" href="#id37"><strong>社印使用履歴</strong></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#additional-features-settings">付加機能の設定</a><ul>
-<li><a class="reference internal" href="#id38">有料オプション</a></li>
-<li><a class="reference internal" href="#id39">署名入力方式</a></li>
-<li><a class="reference internal" href="#id40">コメントおよびメモ</a></li>
+<li><a class="reference internal" href="#id39">有料オプション</a></li>
+<li><a class="reference internal" href="#id40">署名入力タイプ</a></li>
+<li><a class="reference internal" href="#id41">コメントおよびメモ</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#watermark-settings">ウォーターマーク管理</a><ul>
-<li><a class="reference internal" href="#id42">ウォーターマーク登録</a></li>
-<li><a class="reference internal" href="#id45">表示順序の変更</a></li>
-<li><a class="reference internal" href="#id46">ウォーターマークのプレビュー</a></li>
+<li><a class="reference internal" href="#id43">ウォーターマーク登録</a></li>
+<li><a class="reference internal" href="#id46">表示順序の変更</a></li>
+<li><a class="reference internal" href="#id47">ウォーターマークのプレビュー</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#security-settings">セキュリティ設定</a><ul>
-<li><a class="reference internal" href="#id48">ログイン設定</a><ul>
-<li><a class="reference internal" href="#id49">ログインの二段階認証</a><ul>
+<li><a class="reference internal" href="#id49">ログイン設定</a><ul>
+<li><a class="reference internal" href="#id50">ログインの二段階認証</a><ul>
 <li><a class="reference internal" href="#google-authenticator"><strong>Google Authenticatorの初回設定</strong></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id50">重複ログインの防止</a></li>
-<li><a class="reference internal" href="#id51">非アクティブユーザーのアクセス制限</a></li>
-<li><a class="reference internal" href="#id52">ログインなしで文書リンクにアクセスを許可</a></li>
+<li><a class="reference internal" href="#id51">重複ログインの防止</a></li>
+<li><a class="reference internal" href="#id52">非アクティブユーザーのアクセス制限</a></li>
+<li><a class="reference internal" href="#id53">ログインなしで文書リンクにアクセスを許可</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#ip">IP接続制限設定</a><ul>
-<li><a class="reference internal" href="#id53"><strong>権限ごとの接続許可IPアドレスの設定方法</strong></a></li>
+<li><a class="reference internal" href="#id54"><strong>権限ごとの接続許可IPアドレスの設定方法</strong></a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><a class="reference internal" href="#retention">文書の保管期間の設定</a></li>
 <li><a class="reference internal" href="#activity-log">操作履歴管理</a><ul>
-<li><a class="reference internal" href="#id56">アクセス履歴</a></li>
-<li><a class="reference internal" href="#id57">情報修正履歴</a></li>
-<li><a class="reference internal" href="#id58">ダウンロード履歴</a></li>
-<li><a class="reference internal" href="#id59">文書履歴</a></li>
-<li><a class="reference internal" href="#id60">権限管理履歴</a></li>
+<li><a class="reference internal" href="#id57">アクセス履歴</a></li>
+<li><a class="reference internal" href="#id58">情報修正履歴</a></li>
+<li><a class="reference internal" href="#id59">ダウンロード履歴</a></li>
+<li><a class="reference internal" href="#id60">文書履歴</a></li>
+<li><a class="reference internal" href="#id61">権限管理履歴</a></li>
 </ul>
 </li>
 </ul>
@@ -1835,8 +1882,8 @@ Google Authenticatorを使用するには事前の設定が必要で、 <strong>
 
 
     <div class="footer" role="contentinfo">
-    &#169; 著作権 2025, FORCS CO., LTD. All rights reserved..
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    &#169; 著作権 2026, FORCS CO., LTD. All rights reserved..
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
     </div>
 
 <p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>

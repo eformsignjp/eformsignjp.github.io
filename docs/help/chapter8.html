@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>文書トレイ &#8212; eformsign User Guide 2025.03.26 ドキュメント</title>
+    <title>文書トレイ &#8212; eformsign User Guide 2026.11.27 ドキュメント</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
-    <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=e1da74b8" />
     <link rel="stylesheet" type="text/css" href="../_static/code-tabs.css?v=1bc26e2f" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=870bc763" />
     <script src="../_static/jquery.js?v=5d32c60e"></script>
@@ -19,6 +19,7 @@
     <script src="../_static/code-tabs.js?v=c983d12e"></script>
     <script src="../_static/js/theme.js"></script>
     <script src="../_static/js/petite-vue.js"></script>
+    <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
     <link rel="next" title="カスタマイズ" href="chapter9.html" />
@@ -36,7 +37,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage">eformsign User Guide 2025.03.26 ドキュメント</a></h1>
+        <h1><a href="../index.html" title="Go to homepage"><img src="../_static/eformsign_logo_userguide.png"/></a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -281,8 +282,8 @@
 <h4><strong>キーワード・フィルター検索</strong><a class="headerlink" href="#id7" title="Link to this heading"></a></h4>
 <p>キーワード検索に加え、詳細検索を行うことでタイトルと内容の組み合わせによる検索、数字や日付の範囲を指定した検索、カスタムフィルターによる検索など、さまざまな検索方法を備えています。また、カスタムフィルターを設定することで、文書のフィールドの入力値を詳細検索することも可能なほか、数字の範囲や日付の期間を設定して検索することもできます。</p>
 <p>使用可能なフィルターの種類は以下の通りです。また、カスタムフィルターは、完了文書と文書管理でのみ使用できます。</p>
-<table class="docutils align-default" id="id21">
-<caption><span class="caption-text"><strong>フィルターの種類一覧</strong></span><a class="headerlink" href="#id21" title="Link to this table"></a></caption>
+<table class="docutils align-default" id="id22">
+<caption><span class="caption-text"><strong>フィルターの種類一覧</strong></span><a class="headerlink" href="#id22" title="Link to this table"></a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>要処理文書</p></th>
 <th class="head"><p>進行中の文書</p></th>
@@ -604,8 +605,46 @@
 </figure>
 </div>
 </section>
+<section id="reminder-list">
+<span id="id15"></span><h3>リマインダーリスト<a class="headerlink" href="#reminder-list" title="Link to this heading"></a></h3>
+<p>完了文書トレイで設定したすべてのリマインダーを <strong>リマインダーリスト</strong>で一度に確認し、通知の状態に応じて修正、削除、再登録することができます。</p>
+<ol class="arabic">
+<li><p>完了文書トレイに移動します。</p></li>
+<li><p>画面右上のリマインダーリスト（<a class="reference internal" href="../_images/reminder_list_icon.png"><img alt="image21" src="../_images/reminder_list_icon.png" style="width: 25px;" /></a>）アイコンをクリックします。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/completed_reminder_list.png"><img alt="完了文書トレイ-リマインダーリスト" src="../_images/completed_reminder_list.png" style="width: 600px;" />
+</a>
+</figure>
+</li>
+<li><p>リマインダーリストのポップアップで、通知の状態（通知予定または通知完了）と期間を選択します。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/reminder_list_status.png"><img alt="リマインダーリスト-通知の状態" src="../_images/reminder_list_status.png" style="width: 500px;" />
+</a>
+</figure>
+</li>
+<li><p>通知予定のリマインダーは、 <strong>修正</strong>をクリックして設定内容を変更するか、 <strong>削除</strong>をクリックしてリマインダーを削除することができます。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/reminder_list_scheduled.png"><img alt="リマインダーリスト-通知予定" src="../_images/reminder_list_scheduled.png" style="width: 500px;" />
+</a>
+</figure>
+</li>
+<li><p>通知完了のリマインダーは、 <strong>再登録</strong>をクリックして同じ文書にリマインダーを再設定することができます。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/reminder_list_done.png"><img alt="リマインダーリスト-通知完了" src="../_images/reminder_list_done.png" style="width: 500px;" />
+</a>
+</figure>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<ul class="simple">
+<li><p>リストではリマインダーごとの通知日時、通知先、直近の設定日を確認できます。通知日まで30日以内のリマインダーには残りの日数（例：1日残り）が、繰り返し通知を設定したリマインダーには進行状況（例：5回中、2回目の通知が完了）が表示されます。</p></li>
+<li><p>同じ文書に通知予定のリマインダーがある場合は、再登録できません。</p></li>
+</ul>
+</div>
+</section>
 <section id="document-delete">
-<span id="id15"></span><h3>文書の削除<a class="headerlink" href="#document-delete" title="Link to this heading"></a></h3>
+<span id="id16"></span><h3>文書の削除<a class="headerlink" href="#document-delete" title="Link to this heading"></a></h3>
 <p>eformsignでは、指定された管理者のみ文書を削除することができます。</p>
 <ol class="arabic simple">
 <li><p>文書トレイのリストの右上にある削除（<img alt="image13" src="../_images/delete_icon1.png" />）アイコンをクリックします。</p></li>
@@ -614,7 +653,7 @@
 </ol>
 </section>
 <section id="document-column">
-<span id="id16"></span><h3>文書トレイのカラムの設定<a class="headerlink" href="#document-column" title="Link to this heading"></a></h3>
+<span id="id17"></span><h3>文書トレイのカラムの設定<a class="headerlink" href="#document-column" title="Link to this heading"></a></h3>
 <p>文書トレイの右上にあるアイコンのうち、カラム(<a class="reference internal" href="../_images/column_icon.png"><img alt="image4" src="../_images/column_icon.png" style="width: 35px;" /></a>)アイコンをクリックすることで、リストに表示する項目を選択することができます。</p>
 <blockquote>
 <div><figure class="align-default">
@@ -625,7 +664,7 @@
 </section>
 </section>
 <section id="myfiles">
-<span id="id17"></span><h2>マイファイルトレイ<a class="headerlink" href="#myfiles" title="Link to this heading"></a></h2>
+<span id="id18"></span><h2>マイファイルトレイ<a class="headerlink" href="#myfiles" title="Link to this heading"></a></h2>
 <p><strong>マイファイルトレイ</strong> には、 <strong>マイファイルで作成する</strong> の過程で <strong>文書作成をスタート</strong> の前に <strong>マイファイルトレイに保存</strong> をクリックして保存した文書が保存されます。</p>
 <p><strong>マイファイルで作成する</strong>から作成した文書を保存しておけば、毎回新規作成せずとも、テンプレートのように使うことができます。</p>
 <ol class="arabic">
@@ -654,7 +693,7 @@
 <hr class="docutils" />
 </section>
 <section id="bulksend-documents">
-<span id="id18"></span><h2>一括作成文書トレイ<a class="headerlink" href="#bulksend-documents" title="Link to this heading"></a></h2>
+<span id="id19"></span><h2>一括作成文書トレイ<a class="headerlink" href="#bulksend-documents" title="Link to this heading"></a></h2>
 <p>一括作成文書トレイでは、一括作成で送信した文書を確認することができます。一括作成した文書の進行状況を確認し、予約送信の変更、キャンセルまたは再依頼ができます。</p>
 <figure class="align-default">
 <img alt="一括作成文書" src="../_images/bulksend-documents.png" />
@@ -699,7 +738,7 @@
 <hr class="docutils" />
 </section>
 <section id="shared-documents">
-<span id="id19"></span><h2>共有文書トレイ<a class="headerlink" href="#shared-documents" title="Link to this heading"></a></h2>
+<span id="id20"></span><h2>共有文書トレイ<a class="headerlink" href="#shared-documents" title="Link to this heading"></a></h2>
 <p>共有文書トレイでは、共有文書トレイを作成し、自分が所有している文書を他のメンバーと共有したり、他のメンバーが自分に共有した文書を確認することができます。</p>
 <figure class="align-default">
 <img alt="共有文書トレイ" src="../_images/shared-documents-box.png" />
@@ -782,7 +821,7 @@
 <hr class="docutils" />
 </section>
 <section id="trash">
-<span id="id20"></span><h2>ゴミ箱<a class="headerlink" href="#trash" title="Link to this heading"></a></h2>
+<span id="id21"></span><h2>ゴミ箱<a class="headerlink" href="#trash" title="Link to this heading"></a></h2>
 <p>自身が作成した文書、文書管理権限を持つ文書を削除するか、設定された文書の保管期間を過ぎた場合、その文書はゴミ箱に移動されます。 ゴミ箱に移動された文書は14日間保管され、その後完全に削除されます。</p>
 <figure class="align-default">
 <img alt="ゴミ箱" src="../_images/trash.png" />
@@ -856,6 +895,7 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#set-reminder">リマインダーの設定</a></li>
+<li><a class="reference internal" href="#reminder-list">リマインダーリスト</a></li>
 <li><a class="reference internal" href="#document-delete">文書の削除</a></li>
 <li><a class="reference internal" href="#document-column">文書トレイのカラムの設定</a></li>
 </ul>
@@ -893,8 +933,8 @@
 
 
     <div class="footer" role="contentinfo">
-    &#169; 著作権 2025, FORCS CO., LTD. All rights reserved..
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    &#169; 著作権 2026, FORCS CO., LTD. All rights reserved..
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
     </div>
 
 <p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>

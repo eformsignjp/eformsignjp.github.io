@@ -56,7 +56,7 @@
   --notificationBannerColor: white;
   --searchHighlightColor: #fff150;
   --sidebarColor: white;
-  --navbarHeight: 4rem;
+  --navbarHeight: 5rem;
 }
 :root[data-mode=darkest] {
   --mainBackgroundColor: black;
@@ -200,7 +200,7 @@ div#top_nav div#notification_banner p a {
 div#top_nav nav {
   background-color: var(--mainNavColor);
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 0.6rem 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -216,7 +216,7 @@ div#top_nav nav h1 a {
   color: white;
 }
 div#top_nav nav h1 img {
-  height: 2.5rem;
+  height: 2.8rem;
   width: auto;
 }
 div#top_nav nav p#toggle_sidebar {
@@ -597,6 +597,7 @@ div.sphinxsidebar {
   box-sizing: border-box;
   padding: var(--navbarHeight) 1rem 1rem;
   z-index: 50;
+  display: none;
 }
 @media (max-width: 50rem) {
   div.sphinxsidebar {

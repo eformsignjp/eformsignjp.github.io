@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'eformsign User Guide'
-copyright = '2025, FORCS CO., LTD. All rights reserved.'
+copyright = '2026, FORCS CO., LTD. All rights reserved.'
 author = 'FORCS'
 
 # The short X.Y version
-version = 'version 10.2025.0312.203'
+version = 'version 10.2026.1028.213'
 # The full version, including alpha/beta/rc tags
-release = '2025.03.26'
+release = '2026.11.27'
 
 
 # -- General configuration ---------------------------------------------------
@@ -90,7 +90,7 @@ html_theme = 'piccolo_theme'
 #
 # html_theme_options = {}
 
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+# html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]  # deprecated, not needed for piccolo_theme
 
 html_css_files = ['custom.css']
 
@@ -112,7 +112,8 @@ html_css_files = ['custom.css']
 html_theme_options = {
     "navbar_fixed_top": True,
     "show_sidebar": True,
-#    "globaltoc_depth": 2,  # 최대 2depth까지 표시
+    "globaltoc_maxdepth": 3,
+    "globaltoc_collapse": False,
 #    "globaltoc_includehidden": True,
 }
 
@@ -250,4 +251,4 @@ html_theme_options = {
     'titles_only': False
 }
 #html_logo = "C:\eformsign_manual\eformsignjp.github.io\images\\forcs_b.png"
-html_logo = "/Users/jihoshin/Desktop/project/eformsign_manual/eformsignjp/eformsignjp.github.io/images/forcs_b.png"
+html_logo = "/Users/jihoshin/Desktop/project/eformsign_manual/eformsignjp/eformsignjp.github.io/images/eformsign_logo_userguide.png"

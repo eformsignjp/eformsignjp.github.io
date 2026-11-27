@@ -114,7 +114,7 @@ eformsignの使用にあたり必須となる、eformsignの基本用語をご�
    各テンプレートのテンプレート修正権限を各メンバーに付与することができます。
    テンプレート使用権が付与されたメンバーは **テンプレート管理** メニューから当該のテンプレートを修正できます。   
 
-   ❗テンプレートの修正権限はテンプレート管理者権限が付与されたメンバーのみ指定できます。
+   ❗テンプレート修正権限は、テンプレートの作成権限があるメンバーにのみ付与できます。
 
 -  **メンバー**
 
@@ -134,7 +134,7 @@ eformsignとeformsign for Microsoft Office(Office用eformsignアドイン)の最
 
    -  **ブラウザー：** Microsoft Edge 79 以上、Chrome 49 以上、Safari 9 以上
 
-   -  **モバイルOS：** iOS 6.1.6 以上、Android 5.0 （Lollipop）以上
+   -  **モバイルOS：** iOS 6.1.6 以上、Android 6.0 （Marshmallow）以上
 
 
 -  **eformsign for Microsoft Office**

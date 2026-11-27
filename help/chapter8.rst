@@ -483,6 +483,44 @@ PDFファイル形式でダウンロード
       :width: 400px
 
 
+.. _reminder_list:
+
+リマインダーリスト
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+完了文書トレイで設定したすべてのリマインダーを **リマインダーリスト**\ で一度に確認し、通知の状態に応じて修正、削除、再登録することができます。
+
+1. 完了文書トレイに移動します。
+2. 画面右上のリマインダーリスト（|image21|）アイコンをクリックします。
+
+   .. figure:: resources/completed_reminder_list.png
+      :alt: 完了文書トレイ-リマインダーリスト
+      :width: 600px
+
+3. リマインダーリストのポップアップで、通知の状態（通知予定または通知完了）と期間を選択します。
+
+   .. figure:: resources/reminder_list_status.png
+      :alt: リマインダーリスト-通知の状態
+      :width: 500px
+
+4. 通知予定のリマインダーは、 **修正**\ をクリックして設定内容を変更するか、 **削除**\ をクリックしてリマインダーを削除することができます。
+
+   .. figure:: resources/reminder_list_scheduled.png
+      :alt: リマインダーリスト-通知予定
+      :width: 500px
+
+5. 通知完了のリマインダーは、 **再登録**\ をクリックして同じ文書にリマインダーを再設定することができます。
+
+   .. figure:: resources/reminder_list_done.png
+      :alt: リマインダーリスト-通知完了
+      :width: 500px
+
+.. note::
+
+   - リストではリマインダーごとの通知日時、通知先、直近の設定日を確認できます。通知日まで30日以内のリマインダーには残りの日数（例：1日残り）が、繰り返し通知を設定したリマインダーには進行状況（例：5回中、2回目の通知が完了）が表示されます。
+   - 同じ文書に通知予定のリマインダーがある場合は、再登録できません。
+
+
 .. _document_delete:
 
 文書の削除
@@ -784,4 +822,6 @@ eformsignでは、指定された管理者のみ文書を削除することが�
 .. |image19| image:: resources/clear_icon.png
    :width: 25px
 .. |image20| image:: resources/sorting_icon.png
+   :width: 25px
+.. |image21| image:: resources/reminder_list_icon.png
    :width: 25px   

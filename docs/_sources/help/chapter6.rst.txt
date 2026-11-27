@@ -334,7 +334,7 @@ Office製品の **eformsign** リボンメニューでは、チェックボッ�
    7. 下部に表示される入力項目の名前の入力欄に、署名入力項目の名前である「署名」と入力します。
 
    ※使用日入力項目の「書式設定」から設定することで、任意の表示形式に変更できます。
-      例) date-yyyy-MM-dd → date-yyyy年 MM月 dd日
+      例) yyyy-MM-dd → yyyy年 MM月 dd日
  
 .. _company stamp:
 
